@@ -1,0 +1,12 @@
+
+== Forord
+
+Difi har ansvaret for å forvalte en oversikt over anbefalte og obligatoriske IT-standarder i forvaltningen - https://www.difi.no/referansekatalogen[_Referansekatalogen]_. _Referansekatalogen_ er etablert for å sikre at innbyggere og næringsliv får tilgang til offentlig informasjon og tjenester på en standardisert måte (uavhengig av brukerutstyr), sikre god samhandling mellom offentlige virksomheter, hindre bindinger til bestemte leverandører og sikre god konkurranse i IT-markedet.
+
+Difi utreder, hører og beslutter anbefalte krav som inngår i _Referansekatalogen_. Disse kravene skal følges med mindre virksomheten har en god grunn til å la være. Obligatoriske krav utredes og høres av Difi. Høringen oppsummeres og oversendes Kommunal- og moderniseringsdepartementet, som fremmer revidert  https://lovdata.no/dokument/SF/forskrift/2013-04-05-959[_Forskrift om IT-standarder i offentlig forvaltning]_ med nye obligatoriske krav til beslutning i regjeringen.
+
+IT-ministeren satte i 2006 ned et bredt sammensatt https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/standardiseringsradet[Standardiseringsråd] med medlemmer fra både kommunal og statlig sektor. Difi får råd fra Standardiseringsrådet om hvilke standarder som bør være anbefalt eller obligatorisk i offentlig sektor.
+
+Det foreliggende dokumentet er utarbeidet av en arbeidsgruppe ledet av Difi, i henhold til Standardiseringsrådets arbeidsmetodikk.
+
+Standarden inngår i bruksområdet https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen/begrepsanalyse-og-definisjonsarbeid["Begrepsanalyse og definisjonsarbeid"] i _Referansekatalogen_.

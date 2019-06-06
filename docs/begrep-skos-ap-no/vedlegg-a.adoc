@@ -1,0 +1,105 @@
+
+== Vedlegg A (informativt) - Eksempler
+
+Dette vedlegget er informativt.
+
+Eksempelfilene er per 2018-06-14 validert korrekt mot SKOS.
+
+=== A.1 Eksempelfil av et begrep
+
+I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl og norske utvidelser.
+----
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<https://data.brreg.no/begrep/44624> a skos:Concept ;
+  dct:identifier "https://data.brreg.no/begrep/44624" ;
+  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
+  skos:example ""@nb ;
+  dct:subject "Tvangsfullbyrdelse"@nb ;
+  skosno:verdiområde ""@nb ;
+  skosno:bruksområde ""@nb ;
+  skos:editorialNote ""@nb ;
+  dct:temporal [
+	 a dct:PeriodOfTime ;
+	 schema:startDate ""^^xsd:date ;
+	 schema:endDate ""^^xsd:date ;
+  ] ;
+  dcat:contactPoint [
+	 a vcard:Organization ;
+ 	 vcard:organizationUnit "RF - Tinglysning og regnskap";
+ 	 vcard:hasEmail <mailto:informasjonsforvaltning@brreg.no> ;
+ 	 vcard:hasTelephone <tel:+4775007500>
+  ] ;
+  dct:modified "2018-01-01"^^xsd:date ;
+  # Representasjon av label
+  skosxl:prefLabel [
+    a skosxl:Label ;
+    skosxl:literalForm "utleggspant"@nb ;
+    dct:modified "2018-01-01"^^xsd:date ;
+  ] ;
+  skosxl:altLabel <>;
+
+  skosxl:hiddenLabel <>;
+  # Representasjon av betydningsbeskrivelse (her Definisjon) som muliggjør målgruppe m.m.
+  skosno:Betydningsbeskrivelse [
+	 a skosno:Definisjon ;
+	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
+	   dct:type <> ;
+	    dct:source [
+		    rdfs:label "Lov om pant (panteloven) § 5-1"@nb ;
+		    rdfs:seeAlso <https://lovdata.no/NL/lov/1980-02-08-2/§5-1> ;
+      ] ;
+    skos:scopeNote "Utleggspant vil si at namsmannen tar pant i saksøktes eiendeler, som for eksempel fast eiendom, eller annet verdifullt løsøre, som bil, båt og lignende. En kreditor som har fått utleggspant kan benytte panteretten som grunnlag for tvangssalg for å få dekket sitt krav. Utleggspant i enkelte formuesobjekter (løsøre, akvakulturtillatelser) kan få rettsvern ved tinglysing i Løsøreregisteret eller Akvakulturregisteret."@nb;
+    dct:audience <>;
+    dct:modified "2018-01-01"^^xsd:date ;
+  ];
+  # Representasjon av begrepsrepresentasjon som muliggjør navngiving m.m.
+  skosno:Begrepsrelasjon [
+	 a skosno:AssosiativRelasjon ;
+	 dct:description ""@nb ;
+ 	 dct:modified "2018-01-01"^^xsd:date ;
+ 	 skosno:assosiertBegrep <https://jira.brreg.no/browse/BEGREP-220> ; # Namsmyndighet
+  ];
+  dct:replaces <> ;
+  dct:replacedBy <>;
+  skos:scopeNote ""@nb .
+----
+
+=== A.2 Eksempelfil av en begrepssamling
+
+----
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+<enBegrepssamling> # Katalogen
+	a skos:Collection ;
+	rdfs:label "Begrepskatalog BR"@nb ;
+	dct:identifier <> ;
+	dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
+	dct:description "Brønnøysundregistrenes begrepskatalog, godkjente begreper" ;
+  dcat:contactPoint [
+		a vcard:Organization ;
+    vcard:organizationUnit "RF - Tinglysning og regnskap";
+    vcard:hasEmail <> ;
+    vcard:hasTelephone <> ;
+  ] ;
+  skos:member <https://jira.brreg.no/browse/BEGREP-246> .
+----

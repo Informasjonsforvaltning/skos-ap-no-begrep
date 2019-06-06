@@ -1,0 +1,6 @@
+
+== Definisjon av de mest sentrale begreper
+
+tilgjengeliggjøring:: publisering eller utveksling.
+
+maskinell tilgjengeliggjøring:: tilgjengeliggjøring i maskinlesbart format.

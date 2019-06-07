@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<https://begrep.difi.no/2>
+  a skos:Concept;  # Begrep
+  skosxl:prefLabel [                        # term
+    a skosxl:Label ;                        # AnbefaltTerm
+    skosxl:literalForm "Applikasjonsarkitektur"@nb ; # navn
+  ] ;
+  skosno:betydningsbeskrivelse [            # betydningsbeskrivelse
+  	a skosno:Definisjon ;                   # Definisjon
+  	rdfs:label "en beskrivelse av struktur og interaksjon mellom applikasjoner, gruppert i kapabiliteter som tilbyr viktige forretningsfunksjoner og håndterer dataressurser."@nb ;
+  	dct:source [                            # kildebeskrivelse
+  	 rdfs:label "TOGAF v. 9.1 § 3.4 (Application architecture)"@en ;             # tekst
+     ] ;
+  	] ;
+  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
+  dct:subject "Virksomhetsarkitektur"@nb ;                                       # fagområdet
+  dct:identifier <https://begrep.difi.no/2> .                                    # identifikator
+
+  <https://begrep.difi.no/9>
+    a skos:Concept;  # Begrep
+    skosxl:prefLabel [                        # term
+      a skosxl:Label ;                        # AnbefaltTerm
+      skosxl:literalForm "Arkitekturrammeverk"@nb ; # navn
+    ] ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
+    dct:subject "Virksomhetsarkitektur"@nb ;                                       # fagområdet
+    dct:identifier "https://begrep.difi.no/9" .  

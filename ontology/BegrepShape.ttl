@@ -1,0 +1,47 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+skosno:BegrepShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept;
+    sh:property [
+      sh:path skosxl:prefLabel ;
+      sh:class skosxl:Label ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha minst 1 anbefalt term" ;
+    ] ;
+    sh:property [
+      sh:path skosno:betydningsbeskrivelse ;
+      sh:class skosno:Definisjon ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha minst 1 definisjon" ;
+    ] ;
+    sh:property [
+      sh:path dct:identifier ;
+      sh:nodeKind sh:IRI ; # evt. sh:IRIOrLiteral
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha 1 og kun 1 identifikator. Identifikatoren må være en IRI" ;
+    ] ;
+    sh:property [
+      sh:path dct:publisher ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha 1 og kun 1 ansvarlig virksomhet" ;
+    ] .

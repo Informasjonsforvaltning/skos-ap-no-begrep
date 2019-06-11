@@ -3,7 +3,7 @@
 
 Tabellen under viser hvordan SKOS brukes til å representere de ulike feltene i _Forvaltningsstandard for begrepsbeskrivelser_. Se ellers eksemplene i vedlegget til dette dokumentet.
 
-SKOS er et lite vokabular (metamodell) for de mest sentrale klassene og egenskapene for begreper (concept). For å bruke SKOS som representasjonsspråk i begrepsbeskrivelser må vokabularet utvides med andre vokabularer. Denne standarden supplerer SKOS med følgende vokabularer:about:blank[[.underline]#dct:#]dcat
+SKOS er et lite vokabular (metamodell) for de mest sentrale klassene og egenskapene for begreper (concept). For å bruke SKOS som representasjonsspråk i begrepsbeskrivelser må vokabularet utvides med andre vokabularer. Denne standarden supplerer SKOS med følgende vokabularer:
 
 * http://purl.org/dc/terms/[dublin core terms (DCT)] (i tabellen under med prefiks dct:) - supplerer med generelle egenskaper knyttet til dokumentasjon
 * http://www.w3.org/ns/dcat#[data catalog vocabulary (DCAT)] (i tabellen under med prefiks dcat:) - supplerer med generelle egenskaper knyttet til datasett

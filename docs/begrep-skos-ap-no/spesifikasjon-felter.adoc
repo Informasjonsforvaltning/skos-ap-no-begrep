@@ -82,8 +82,8 @@ Merknad:: (ingen)
 === Begrep.sistOppdatert
 [properties]
 URI til definisjon:: dct:modified
-SKOS (RDF turtle)-representasjon:: <> dct:modified “”^^xsd:Date
-Datatype (med ev. URI til definisjon):: xsd:Date
+SKOS (RDF turtle)-representasjon:: <> dct:modified “”^^xsd:date
+Datatype (med ev. URI til definisjon):: xsd:date
 Merknad:: (ingen)
 
 === Begrep.anbefaltTerm
@@ -91,7 +91,7 @@ Merknad:: (ingen)
 URI til definisjon:: skosxl:prefLabel
 SKOS (RDF turtle)-representasjon:: <> skosxl:prefLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
-dct:modified "2018-01-01"^^xsd:Date ; ] .
+dct:modified "2018-01-01"^^xsd:date ; ] .
 Datatype (med ev. URI til definisjon):: URI
 Merknad:: (ingen)
 
@@ -100,7 +100,7 @@ Merknad:: (ingen)
 URI til definisjon:: skosxl:altLabel
 SKOS (RDF turtle)-representasjon:: skosxl:altLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
-dct:modified "2018-01-01"^^xsd:Date ; ] .
+dct:modified "2018-01-01"^^xsd:date ; ] .
 Datatype (med ev. URI til definisjon):: URI
 Merknad:: (ingen)
 
@@ -109,7 +109,7 @@ Merknad:: (ingen)
 URI til definisjon:: skosxl:hiddenLabel
 SKOS (RDF turtle)-representasjon:: skosxl:hiddenLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
-dct:modified "2018-01-01"^^xsd:Date ; ] .
+dct:modified "2018-01-01"^^xsd:date ; ] .
 Datatype (med ev. URI til definisjon):: URI
 Merknad:: (ingen)
 
@@ -200,10 +200,10 @@ Merknad:: Language-tagged string
 === Term.sistOppdatert
 [properties]
 URI til definisjon:: dct:modified
-SKOS (RDF turtle)-representasjon:: <> skosxl:prefLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . 
-<> skosxl:altLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . 
-<> skosxl:hiddenLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . 
-<> skosno:Datastrukturterm [a skosxl:Label ; dct:modified “”^^xsd:date ] . 
+SKOS (RDF turtle)-representasjon:: <> skosxl:prefLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] .
+<> skosxl:altLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] .
+<> skosxl:hiddenLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] .
+<> skosno:Datastrukturterm [a skosxl:Label ; dct:modified “”^^xsd:date ] .
 Datatype (med ev. URI til definisjon):: xsd:date
 Merknad:: (ingen)
 
@@ -353,12 +353,12 @@ Merknad:: (ingen)
 [properties]
 URI til definisjon:: skosno:Betydningsbeskrivelse/dct:modified
 SKOS (RDF turtle)-representasjon:: <> skosno:Betydningsbeskrivelse [a skosno:Definisjon
-dct:modified “”^^xsd:Date;.
+dct:modified “”^^xsd:date;.
 ] .
 <> skosno:Betydningsbeskrivelse [a skosno:AlternativFormulering
-dct:modified “”^^xsd:Date;.
+dct:modified “”^^xsd:date;.
 ] .
-Datatype (med ev. URI til definisjon):: xsd:Date
+Datatype (med ev. URI til definisjon):: xsd:date
 Merknad:: (ingen)
 
 === AssosiativRelasjon.beskrivelse.tekst
@@ -428,7 +428,7 @@ URI til definisjon:: skosno:begrepsrelasjon/dct:modified
 SKOS (RDF turtle)-representasjon:: <>
 skosno:begrepsrelasjon [ dct:modified “” ;
 ] .
-Datatype (med ev. URI til definisjon):: xsd:DateTime
+Datatype (med ev. URI til definisjon):: xsd:date
 Merknad:: (ingen)
 
 === Begrepsrelasjon.overordnetBegrep

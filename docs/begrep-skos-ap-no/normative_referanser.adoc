@@ -1,6 +1,6 @@
 
 == Normative referanser
 
-_Forvaltningsstandard for begrepsbeskrivelser_: Standarden stiller krav til innhold i beskrivelse av begrep og begrepssamling.
+_Forvaltningsstandard for begrepsbeskrivelser_, https://www.difi.no/referansekatalogen/begrepsstandarder/[https://www.difi.no/referansekatalogen/begrepsstandarder/]: Standarden stiller krav til innhold i beskrivelse av begrep og begrepssamling.
 
 _SKOS - Simple Knowledge Organization System_, https://www.w3.org/TR/skos-reference/[https://www.w3.org/TR/skos-reference/]: Standarden definerer hvordan begreper representeres i maskinlesbare formater.

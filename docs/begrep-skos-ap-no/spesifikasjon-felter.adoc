@@ -120,6 +120,13 @@ SKOS (RDF turtle)-representasjon:: <> skosno:Datastrukturterm
 Datatype (med ev. URI til definisjon):: rdf:Literal
 Merknad:: (ingen)
 
+=== Begrep.definisjon
+[properties]
+URI til definisjon:: skosno:Definisjon
+SKOS (RDF turtle)-representasjon:: <> skosno:Definisjon “”@nb .
+Datatype (med ev. URI til definisjon):: rdf:Literal
+Merknad:: (ingen)
+
 === Begrep.alternativFormulering
 [properties]
 URI til definisjon:: skosno:AlternativFormulering

@@ -115,7 +115,7 @@ Merknad:: (ingen)
 
 === Begrep.datastrukturterm
 [properties]
-URI til definisjon:: skosno:datastrukturterm
+URI til definisjon:: skosno:Datastrukturterm
 SKOS (RDF turtle)-representasjon:: <> skosno:Datastrukturterm
 Datatype (med ev. URI til definisjon):: rdf:Literal
 Merknad:: (ingen)
@@ -229,7 +229,7 @@ SKOS (RDF turtle)-representasjon:: <> skosno:Betydningsbeskrivelse [
 a skosno:Definisjon ;
 rdfs:label ""@nb ;
 ] .
-<> skosno:Betydningsbeskrivelse [ a skosno:alternativFormulering ;
+<> skosno:Betydningsbeskrivelse [ a skosno:AlternativFormulering ;
 rdfs:label ””@nb;
 ] .
 Datatype (med ev. URI til definisjon):: (ingen)
@@ -370,9 +370,9 @@ Merknad:: (ingen)
 
 === AssosiativRelasjon.beskrivelse.tekst
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:AssosiativRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:AssosiativRelasjon ;
 dct:description “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -381,9 +381,9 @@ skosno:AssosiativRelasjon skosno:GeneriskrRelasjon skosno:PartitivRelasjon
 
 === AssosiativRelasjon.beskrivelse.språkMålform
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:AssosiativRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:AssosiativRelasjon ;
 dct:description “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -391,9 +391,9 @@ Merknad:: (ingen)
 
 === GeneriskRelasjon.inndelingskriterium.tekst
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:GeneriskRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:GeneriskRelasjon ;
 skosno:inndelingskriterium “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -401,9 +401,9 @@ Merknad:: (ingen)
 
 === GeneriskRelasjon.inndelingskriterium.språkMålform
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:GeneriskRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:GeneriskRelasjon ;
 skosno:inndelingskriterium “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -411,9 +411,9 @@ Merknad:: (ingen)
 
 === PartitivRelasjon.inndelingskriterium.tekst
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:PartitivRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -421,9 +421,9 @@ Merknad:: (ingen)
 
 === PartitivRelasjon.inndelingskriterium.språkMålform
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:description
+URI til definisjon:: skosno:Begrepsrelasjon/dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ a skosno:PartitivRelasjon ;
+skosno:Begrepsrelasjon [ a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
@@ -431,9 +431,9 @@ Merknad:: (ingen)
 
 === Begrepsrelasjon.sistOppdatert
 [properties]
-URI til definisjon:: skosno:begrepsrelasjon/dct:modified
+URI til definisjon:: skosno:Begrepsrelasjon/dct:modified
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ dct:modified “” ;
+skosno:Begrepsrelasjon [ dct:modified “” ;
 ] .
 Datatype (med ev. URI til definisjon):: xsd:date
 Merknad:: (ingen)
@@ -441,9 +441,9 @@ Merknad:: (ingen)
 === Begrepsrelasjon.overordnetBegrep
 [properties]
 URI til definisjon:: <>
-skosno:begrepsrelasjon/skosno:overordnetBegrep
+skosno:Begrepsrelasjon/skosno:OverordnetBegrep
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ skosno:overordnetBegrep <2> ]
+skosno:Begrepsrelasjon [ skosno:OverordnetBegrep <2> ]
 .
 Datatype (med ev. URI til definisjon):: skos:Concept
 Merknad:: Refererer til et annet begrep. Merk at skos:broader ikke er egnet å bruke her siden det ville implisere at Begrepsrelasjonsklassen er et Begrep.
@@ -451,18 +451,18 @@ Merknad:: Refererer til et annet begrep. Merk at skos:broader ikke er egnet å b
 === Begrepsrelasjon.underordnetBegrep
 [properties]
 URI til definisjon:: <>
-skosno:begrepsrelasjon/skosno:underordnetBegrep
+skosno:Begrepsrelasjon/skosno:UnderordnetBegrep
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ skosno:underordnetBegrep <2> ] .
+skosno:Begrepsrelasjon [ skosno:UnderordnetBegrep <2> ] .
 Datatype (med ev. URI til definisjon):: skos:Concept
 Merknad:: Refererer til et annet begrep
 
 === Begrepsrelasjon.assosiertBegrep
 [properties]
 URI til definisjon:: <>
-skosno:begrepsrelasjon/skosno:assosiertBegrep
+skosno:Begrepsrelasjon/skosno:AssosiertBegrep
 SKOS (RDF turtle)-representasjon:: <>
-skosno:begrepsrelasjon [ skosno:assosiertBegrep <2> ] .
+skosno:Begrepsrelasjon [ skosno:AssosiertBegrep <2> ] .
 Datatype (med ev. URI til definisjon):: skos:Concept
 Merknad:: Refererer til et annet begrep
 

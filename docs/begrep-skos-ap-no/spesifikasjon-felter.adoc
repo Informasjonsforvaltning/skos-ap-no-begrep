@@ -166,7 +166,7 @@ Merknad:: (ingen)
 [properties]
 URI til definisjon:: dct:replacedBy
 SKOS (RDF turtle)-representasjon:: (ingen)
-Datatype (med ev. URI til definisjon):: (ingen)
+Datatype (med ev. URI til definisjon):: skos:Concept
 Merknad:: (ingen)
 
 === Term.navn.tekst

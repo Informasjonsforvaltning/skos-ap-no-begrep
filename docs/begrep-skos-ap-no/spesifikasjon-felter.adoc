@@ -294,10 +294,10 @@ Merknad:: (ingen)
 [properties]
 URI til definisjon:: skosno:Betydningsbeskrivelse/skos:scopeNote
 SKOS (RDF turtle)-representasjon:: <> skosno:Betydningsbeskrivelse [a skosno:Definisjon ;
-skos:skopeNote “”@nb;.
+skos:scopeNote “”@nb;.
 ] .
 <> skosno:Betydningsbeskrivelse [a skosno:AlternativFormulering ;
-skos:skopeNote “”@nb;.
+skos:scopeNote “”@nb;.
 ] .
 Datatype (med ev. URI til definisjon):: rdf:Literal
 Merknad:: fra SKOS spesifikasjon:

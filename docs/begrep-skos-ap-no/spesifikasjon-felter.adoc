@@ -505,7 +505,7 @@ dct:publisher <\https://data.brreg.no/enhetsregisteret/enhet/974760673>.
 [properties]
 URI til definisjon:: dct:description
 SKOS (RDF turtle)-representasjon:: <>
-skos:Collection ; dct:description “”@nb .
+a skos:Collection ; dct:description “”@nb .
 Datatype (med ev. URI til definisjon):: PCDATA
 Merknad:: (ingen)
 

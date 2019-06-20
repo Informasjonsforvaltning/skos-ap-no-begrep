@@ -242,7 +242,7 @@ URI til definisjon:: skosno:Betydningsbeskrivelse/rdfs:label
 SKOS (RDF turtle)-representasjon:: <> skosno:Betydningsbeskrivelse [a skosno:Definisjon ;
 rdfs:label ””@nb;
 ] .
-<> skosno:Betydningsbeskrivelse [a kosno:AlternativFormulering ;
+<> skosno:Betydningsbeskrivelse [a skosno:AlternativFormulering ;
 rdfs:label ””@nb;
 ] .
 Datatype (med ev. URI til definisjon):: (ingen)

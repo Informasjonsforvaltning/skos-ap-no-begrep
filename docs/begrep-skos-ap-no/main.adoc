@@ -1,6 +1,6 @@
 include::../shared/translation.adoc[]
 
-= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0
+= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.1
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)
 :doctype: book
 :docinfo:
@@ -22,7 +22,7 @@ include::../shared/download.adoc[]
 
 // Innhold her.
 
-Publisert: 15.03.2019
+Publisert: 25.06.2019
 
 include::forord.adoc[]
 include::formaal_omfang_avgrensninger.adoc[]

@@ -8,7 +8,7 @@ include::../shared/translation.adoc[]
 :toc: left
 :toclevels: 2
 :sectanchors:
-:title-logo-image: utils/logo.jpg
+:title-logo-image: image:../shared/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
 //:sectnums:
 

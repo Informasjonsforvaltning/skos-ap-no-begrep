@@ -10,6 +10,8 @@ include::../shared/translation.adoc[]
 :sectanchors:
 :title-logo-image: image:../shared/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
+WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden. 
+
 //:sectnums:
 
 //:sectnumlevels: 3
@@ -31,6 +33,6 @@ include::definisjoner.adoc[]
 include::spesifikasjon.adoc[]
 include::spesifikasjon-felter.adoc[]
 include::vedlegg-a.adoc[]
-
+include::vedlegg-b.adoc[]
 
 include::../shared/stats.adoc[]

@@ -8,5 +8,5 @@ SKOS er et lite vokabular (metamodell) for de mest sentrale klassene og egenskap
 * http://purl.org/dc/terms/[dublin core terms (DCT)] (i tabellen under med prefiks dct:) - supplerer med generelle egenskaper knyttet til dokumentasjon
 * http://www.w3.org/ns/dcat#[data catalog vocabulary (DCAT)] (i tabellen under med prefiks dcat:) - supplerer med generelle egenskaper knyttet til datasett
 * http://www.w3.org/2008/05/skos-xl#[SKOS extension for labels (SKOS-XL)] (i tabellen under med prefiks skosxl:) - supplerer med egenskaper knyttet til termer
-* http://rdf-vocabulary.ddialliance.org/xkos#sem-props[SKOS extension for representing statistical classifications (XKOS)] (i tabellen under med prefiks xkos:) - supplerer med egenskaper knyttet til relasjoner
-* Norske SKOS-utvidelser (i tabellen under med prefiks skosno:) - det som etter bruk av ovennevnte suppleringer fortsatt mangler, vil suppleres med egne norske utvidelser til SKOS. Norske utvidelser til SKOS vil bli definert og gjort tilgjengelig senere via vokab.norge.no/skosno#.
+* https://ddialliance.org/Specification/XKOS/1.2/OWL/xkos.html#sem-props[SKOS extension for representing statistical classifications (XKOS)] (i tabellen under med prefiks xkos:) - supplerer med egenskaper knyttet til relasjoner
+* Norske SKOS-utvidelser (i tabellen under med prefiks skosno:) - det som etter bruk av ovennevnte suppleringer fortsatt mangler, vil suppleres med egne norske utvidelser til SKOS. Norske utvidelser til SKOS vil bli definert og gjort tilgjengelig senere via data.norge.no/vocabulary/skosno#.

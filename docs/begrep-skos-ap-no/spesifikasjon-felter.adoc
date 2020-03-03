@@ -446,6 +446,8 @@ dct:modified “”^^xsd:date;.
 |===
 
 === AssosiativRelasjon.beskrivelse.tekst
+[cols="35s,65", stripes=odd]
+|===
 |URI til definisjon |skosno:Begrepsrelasjon/dct:description
 |SKOS (RDF turtle)-representasjon |<>
 skosno:Begrepsrelasjon [ a skosno:AssosiativRelasjon ;

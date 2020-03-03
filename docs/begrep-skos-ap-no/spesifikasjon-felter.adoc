@@ -23,10 +23,10 @@
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:publisher
-|SKOS (RDF turtle)-representasjon |<> dct:publisher [ +
-a dct:Agent ; +
-dct:identifier "974761076" +
-]
+|SKOS (RDF turtle)-representasjon |<> dct:publisher [ 
+a dct:Agent ; 
+dct:identifier "974761076" 
+] .
 |Datatype (med ev. URI til definisjon) |dct:Agent eller URI
 |Merknad |Kan med fordel referere direkte til URI for Enhetsregisteret, f.eks.
 dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>.
@@ -91,7 +91,7 @@ schema:endDate "2017-12-31"^^xsd:date ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dcat:contactPoint
-SKOS (RDF turtle)-representasjon <> dcat:contactPoint [ a vcard:Organization ; vcard:organizationUnit “”; vcard:hasEmail <> ; vcard:hasTelephone <> ] .
+|SKOS (RDF turtle)-representasjon | <> dcat:contactPoint [ a vcard:Organization ; vcard:organizationUnit “”; vcard:hasEmail <> ; vcard:hasTelephone <> ] .
 |Datatype (med ev. URI til definisjon) |vcard:Vcard
 |Merknad |(ingen)
 |===
@@ -135,7 +135,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 skosxl:literalForm ""@nb ;
 dct:modified "2018-01-01"^^xsd:date ; ] .
 |Datatype (med ev. URI til definisjon) |rdf:Literal
-|Merknad |(ingen)[cols="35s,65", stripes=odd]
+|Merknad |(ingen)
 |===
 
 === Begrep.datastrukturterm

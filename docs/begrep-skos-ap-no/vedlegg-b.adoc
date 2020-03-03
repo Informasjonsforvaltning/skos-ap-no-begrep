@@ -1,0 +1,7 @@
+== Endringer fra versjon 1.0 til 1.0.x
+
+Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives her i vedlegget. 
+Med redaksjonelle endringer menes endringer i formatering/strukturering eller formulering av tekst/tegninger/tabeller 
+som ikke endrer kravene i standarden. 
+mailto:informasjonsforvaltning@digdir.no[Ta kontakt med Digitaliseringsdirektoratet,
+"Forvaltningsstandard for begrepsbeskrivelser - redaksjonelle endringer",] for mer informasjon om de redaksjonelle endringene. 

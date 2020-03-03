@@ -1,8 +1,8 @@
 
 == Formål, omfang og avgrensninger
 
-Denne standarden skal sikre at begrepsbeskrivelser som forvaltes av offentlig sektor, tilgjengeliggjøres på en standardisert og maskinlesbar måte, slik at virksomheter enklere kan ta i bruk og bygge videre på begrepsarbeid som andre har gjort.
+Denne standarden skal sikre at begrepsbeskrivelser som forvaltes av offentlig forvaltning, tilgjengeliggjøres på en standardisert og maskinlesbar måte, slik at virksomheter enklere kan ta i bruk og bygge videre på begrepsarbeid som andre har gjort.
 
 Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til https://www.difi.no/referansekatalogen/begrepsstandarder/[_Forvaltningsstandard for begrepsbeskrivelser_], gjøres tilgjengelig i maskinlesbare formater i henhold til SKOS-standarden. Standarden spesifiserer ikke krav til innhold i en begrepsbeskrivelse, heller ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.
 
-Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til SKOS-standarden. Se ellers bruksområde “Begrepsanalyse og definisjonsarbeid” i https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen[_[.underline]#Referansekatalogen#_] for andre aktuelle standarder og veiledere.
+Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til SKOS-standarden. Se ellers bruksområde “Begrepsanalyse og definisjonsarbeid” i https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen[_Referansekatalogen_] for andre aktuelle standarder og veiledere.

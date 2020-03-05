@@ -16,7 +16,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skosno: <http://difi.no/skosno#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
@@ -54,7 +54,6 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   skosno:Betydningsbeskrivelse [
 	 a skosno:Definisjon ;
 	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
-	   dct:type <> ;
 	    dct:source [
 		    rdfs:label "Lov om pant (panteloven) § 5-1"@nb ;
 		    rdfs:seeAlso <https://lovdata.no/NL/lov/1980-02-08-2/§5-1> ;
@@ -63,7 +62,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
     dct:audience <>;
     dct:modified "2018-01-01"^^xsd:date ;
   ];
-  # Representasjon av begrepsrepresentasjon som muliggjør navngiving m.m.
+  # Representasjon av begrepsrelasjon som muliggjør navngiving m.m.
   skosno:Begrepsrelasjon [
 	 a skosno:AssosiativRelasjon ;
 	 dct:description ""@nb ;
@@ -72,7 +71,6 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   ];
   dct:replaces <> ;
   dct:replacedBy <>;
-  skos:scopeNote ""@nb .
 ----
 
 === A.2 Eksempelfil av en begrepssamling
@@ -85,7 +83,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skosno: <http://difi.no/skosno#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .

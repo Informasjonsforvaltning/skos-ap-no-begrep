@@ -142,7 +142,9 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |skosno:Datastrukturterm
-|SKOS (RDF turtle)-representasjon |<> skosno:Datastrukturterm
+|SKOS (RDF turtle)-representasjon |<> skosno:Datastrukturterm [a skosxl:Label ;
+skosxl:literalForm ""@nb ;
+dct:modified "2018-01-01"^^xsd:date ; ] .
 |Datatype (med ev. URI til definisjon) |rdf:Literal
 |Merknad |(ingen)
 |===
@@ -308,11 +310,11 @@ rdfs:label ””@nb;
 |===
 |URI til definisjon |skosno:Betydningsbeskrivelse/skosno:forholdTilKilde
 |SKOS (RDF turtle)-representasjon |<> skosno:Betydningsbeskrivelse [a skosno:Definisjon [
-skosno:forholdTilKilde <\http://.../sitatFraKilde> .
+skosno:sitatFraKilde <\http://.../> .
 ];
 ] . +
 <> skosno:Betydningsbeskrivelse [a skosno:AlternativFormulering [
-skosno:forholdTilKilde <\http://.../sitatFraKilde> .
+skosno:basertPåKilde <\http://.../> .
 ];
 ] .
 |Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over forholdTilKilde, med kodeverdier skosno:sitatFraKilde, skosno:basertPåKilde og skosno:egendefinert)
@@ -403,7 +405,7 @@ skos:scopeNote “”@nb;.
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |skosno:omfang
-|SKOS (RDF turtle)-representasjon |<> skosno:omfang <> .
+|SKOS (RDF turtle)-representasjon | <> skosno:omfang [ rdfs:label “en tekst”@nb; rdfs:seeAlso "https://som_peker_til_en_tekst/"^^xsd:anyURI ] . 
 |Datatype (med ev. URI til definisjon) |URI
 |Merknad |RDF Term (Literal or URI)
 |===
@@ -412,8 +414,8 @@ skos:scopeNote “”@nb;.
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |skosno:omfang
-|SKOS (RDF turtle)-representasjon |<> skosno:omfang “”@nb .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|SKOS (RDF turtle)-representasjon | <> skosno:omfang [ rdfs:label “en tekst”@nb; rdfs:seeAlso "https://som_peker_til_en_tekst/"^^xsd:anyURI ] .
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |RDF Term (Literal or URI)
 |===
 
@@ -422,10 +424,10 @@ skos:scopeNote “”@nb;.
 |===
 |URI til definisjon |skosno:Betydningsbeskrivelse/dct:audience
 |SKOS (RDF turtle)-representasjon |<> skosno:Betydningsbeskrivelse [a skosno:Definisjon ;
-dct:audience “”@nb;.
+dct:audience skosno:allmennhenten; .
 ] . +
 <> skosno:Betydningsbeskrivelse [a skosno:AlternativFormulering ;
-dct:audience “”@nb;.
+dct:audience skosno:fagspesialist; .
 ] .
 |Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:allmennheten og skosno:fagspesialist)
 |Merknad |(ingen)
@@ -611,7 +613,6 @@ dct:publisher <\https://data.brreg.no/enhetsregisteret/enhet/974760673>.
 skos:Collection ; dcat:contactPoint [ a vcard:Organization ;
 vcard:organizationUnit “”;
 vcard:hasEmail <> ;
-vcard;
 vcard:hasTelephone <> ] .
 |Datatype (med ev. URI til definisjon) |vcard:Vcard
 |Merknad |(ingen)

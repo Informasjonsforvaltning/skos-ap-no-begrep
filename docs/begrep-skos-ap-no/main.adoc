@@ -1,6 +1,6 @@
 include::../shared/translation.adoc[]
 
-= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.1
+= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.2
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)
 :doctype: book
 :docinfo:
@@ -10,7 +10,7 @@ include::../shared/translation.adoc[]
 :sectanchors:
 :title-logo-image: image:../shared/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
-WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden. 
+// WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden. 
 
 //:sectnums:
 
@@ -24,7 +24,7 @@ include::../shared/download.adoc[]
 
 // Innhold her.
 
-Publisert: 25.06.2019
+Publisert: 2020-03-05
 
 include::forord.adoc[]
 include::formaal_omfang_avgrensninger.adoc[]

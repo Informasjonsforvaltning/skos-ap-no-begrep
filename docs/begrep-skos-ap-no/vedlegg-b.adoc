@@ -4,4 +4,4 @@ Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives
 Med redaksjonelle endringer menes endringer i formatering/strukturering eller formulering av tekst/tegninger/tabeller 
 som ikke endrer kravene i standarden. 
 mailto:informasjonsforvaltning@digdir.no[Ta kontakt med Digitaliseringsdirektoratet,
-"Forvaltningsstandard for begrepsbeskrivelser - redaksjonelle endringer",] for mer informasjon om de redaksjonelle endringene. 
+"Forvaltningsstandard for begrepsbeskrivelser - redaksjonelle endringer"] for mer informasjon om de redaksjonelle endringene. 

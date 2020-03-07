@@ -10,6 +10,9 @@ include::../shared/translation.adoc[]
 :sectanchors:
 :title-logo-image: image:../shared/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+Publisert: 2020-03-05
+
 // WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden. 
 
 //:sectnums:
@@ -24,7 +27,6 @@ include::../shared/download.adoc[]
 
 // Innhold her.
 
-Publisert: 2020-03-05
 
 include::forord.adoc[]
 include::formaal_omfang_avgrensninger.adoc[]

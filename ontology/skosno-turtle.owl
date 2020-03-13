@@ -520,12 +520,10 @@ skos:Concept rdf:type owl:Class ;
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty skosno:overordnetBegrep ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass skos:Concept
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty skosno:underordnetBegrep ;
-                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass skos:Concept
                              ] ,
                              [ rdf:type owl:Restriction ;

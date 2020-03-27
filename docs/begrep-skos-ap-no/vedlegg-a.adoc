@@ -51,7 +51,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 
   skosxl:hiddenLabel <>;
   # Representasjon av betydningsbeskrivelse (her Definisjon) som muliggjør målgruppe m.m.
-  skosno:Betydningsbeskrivelse [
+  skosno:betydningsbeskrivelse [
 	 a skosno:Definisjon ;
 	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
 	    dct:source [
@@ -63,7 +63,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
     dct:modified "2018-01-01"^^xsd:date ;
   ];
   # Representasjon av begrepsrelasjon som muliggjør navngiving m.m.
-  skosno:Begrepsrelasjon [
+  skosno:begrepsrelasjon [
 	 a skosno:AssosiativRelasjon ;
 	 dct:description ""@nb ;
  	 dct:modified "2018-01-01"^^xsd:date ;

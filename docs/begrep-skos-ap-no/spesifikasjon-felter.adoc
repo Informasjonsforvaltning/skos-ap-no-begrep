@@ -355,7 +355,7 @@ dct:source [ rdfs:label “”@nb;
 rdfs:seeAlso <\http://.../> ];
 ] . +
 <> skosno:alternativFormulering
-[a skosno:AltearnativFormulering ;
+[a skosno:AlternativFormulering ;
 dct:source [ rdfs:label “”@nb;
 rdfs:seeAlso <\http://.../> ];
 ] .
@@ -549,7 +549,7 @@ skosno:AssosiativRelasjon, skosno:GeneriskRelasjon eller skosno:PartitivRelasjon
 |URI til definisjon |skosno:overordnetBegrep
 |SKOS (RDF turtle)-representasjon |
 xkos:generalizes [ a skosno:GeneriskRelasjon ;
- skosno:overordnetBegrep <2> ; ] .
+ skosno:overordnetBegrep <> ; ] .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |Refererer til et annet begrep. Merk at skos:broader ikke er egnet å bruke her siden det ville implisere at Begrepsrelasjonsklassen er et Begrep.
 |===
@@ -560,7 +560,7 @@ xkos:generalizes [ a skosno:GeneriskRelasjon ;
 |URI til definisjon |skosno:underordnetBegrep
 |SKOS (RDF turtle)-representasjon |<>
 xkos:generalizes [ a skosno:GeneriskRelasjon ;
-skosno:underordnetBegrep <2> ; ] .
+skosno:underordnetBegrep <> ; ] .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |Refererer til et annet begrep
 |===
@@ -572,7 +572,7 @@ skosno:underordnetBegrep <2> ; ] .
 |SKOS (RDF turtle)-representasjon |
 <> skos:related
 [ a skosno:AssosiativRelasjon ;
-skosno:assosiertBegrep <2> ; ] .
+skosno:assosiertBegrep <> ; ] .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |Refererer til et annet begrep
 |===
@@ -644,7 +644,7 @@ vcard:hasTelephone <> ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |skos:member
-|SKOS (RDF turtle)-representasjon |<> a skos:Collection ; skos:member <1> .
+|SKOS (RDF turtle)-representasjon |<> a skos:Collection ; skos:member <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===

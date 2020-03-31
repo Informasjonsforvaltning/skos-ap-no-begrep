@@ -41,17 +41,18 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
  	 vcard:hasTelephone <tel:+4775007500>
   ] ;
   dct:modified "2018-01-01"^^xsd:date ;
-  # Representasjon av label
+
+  # Representasjon av term
   skosxl:prefLabel [
     a skosxl:Label ;
     skosxl:literalForm "utleggspant"@nb ;
     dct:modified "2018-01-01"^^xsd:date ;
   ] ;
   skosxl:altLabel <>;
-
   skosxl:hiddenLabel <>;
+
   # Representasjon av betydningsbeskrivelse (her Definisjon) som muliggjør målgruppe m.m.
-  skosno:betydningsbeskrivelse [
+  skosno:definisjon [
 	 a skosno:Definisjon ;
 	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
 	    dct:source [
@@ -62,8 +63,9 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
     dct:audience <>;
     dct:modified "2018-01-01"^^xsd:date ;
   ];
+
   # Representasjon av begrepsrelasjon som muliggjør navngiving m.m.
-  skosno:begrepsrelasjon [
+  skos:related [
 	 a skosno:AssosiativRelasjon ;
 	 dct:description ""@nb ;
  	 dct:modified "2018-01-01"^^xsd:date ;

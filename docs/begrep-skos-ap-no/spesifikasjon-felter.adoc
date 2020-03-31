@@ -193,7 +193,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |xkos:hasPart
-|SKOS (RDF turtle)-representasjon |<> xkos.hasPart <> .
+|SKOS (RDF turtle)-representasjon |<> xkos:hasPart <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===
@@ -274,9 +274,8 @@ skosxl:literalForm “”@nb ; ] .
 |===
 |URI til definisjon |dct:audience
 |SKOS (RDF turtle)-representasjon |
-<> skosxl:altLabel [a skosxl:Label ; dct:audience skosno:allmennhenten
-] .
-|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:allmennhenten og skosno:fagspesialist)
+<> skosxl:altLabel [a skosxl:Label ; dct:audience skosno:Allmennheten ] .
+|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:Allmennheten og skosno:Fagspesialist)
 |Merknad |(ingen)
 |===
 
@@ -438,12 +437,12 @@ skosno:Definisjon skosno:AlternativFormulering
 |URI til definisjon |dct:audience
 |SKOS (RDF turtle)-representasjon |
 <> skosno:definisjon [a skosno:Definisjon ;
-dct:audience skosno:allmennhenten;
+dct:audience skosno:Allmennheten;
 ] . +
 <> skosno:alternativFormulering [a skosno:AlternativFormulering ;
-dct:audience skosno:fagspesialist;
+dct:audience skosno:Fagspesialist;
 ] .
-|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:allmennheten og skosno:fagspesialist)
+|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:Allmennheten og skosno:Fagspesialist)
 |Merknad |(ingen)
 |===
 
@@ -537,7 +536,8 @@ skosno:inndelingskriterium “”@nb ; ]
 a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb;
 dct:modified “”xsd:date ;
-] .
+] . +
+Tilsvarende for de andre relasjonstypene.
 |Datatype (med ev. URI til definisjon) |xsd:date
 |Merknad |Begrepsrelasjon er abstrakt og skal erstattes av
 skosno:AssosiativRelasjon, skosno:GeneriskRelasjon eller skosno:PartitivRelasjon.

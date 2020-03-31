@@ -51,7 +51,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   skosxl:altLabel <>;
   skosxl:hiddenLabel <>;
 
-  # Representasjon av betydningsbeskrivelse (her Definisjon) som muliggjør målgruppe m.m.
+  # Representasjon av Definisjon som muliggjør målgruppe m.m.
   skosno:definisjon [
 	 a skosno:Definisjon ;
 	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;

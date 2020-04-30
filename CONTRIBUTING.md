@@ -22,7 +22,7 @@ Alternativt i kommando-linje:
 ### Gjøre endringer
 Denne standarden er laget i [AsciiDoc](http://asciidoc.org/) med hjelp av verktøyet [Asciidoctor](https://asciidoctor.org/).
 
-Alle endringer må gjøre ved å endre eller legge til filer i docs-folderen. Se for eksempel på følgende veileder for god AsciiDoc praksis: https://asciidoctor.org/docs/asciidoc-recommended-practices
+Alle endringer må gjøres ved å endre eller legge til filer i docs-folderen. Se for eksempel på følgende veileder for god AsciiDoc praksis: https://asciidoctor.org/docs/asciidoc-recommended-practices
 
 En typisk git-arbeidsflyt vil vere som følger:
 ```

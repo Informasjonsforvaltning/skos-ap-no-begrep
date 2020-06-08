@@ -1,3 +1,4 @@
+include::locale/attributes.adoc[]
 = Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.2
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)
 :doctype: book
@@ -20,8 +21,6 @@ Publisert: 2020-03-05
 //:sectnumlevels: 3
 
 //{description}
-include::locale/attributes.adoc[]
-
 include::shared/download.adoc[]
 
 // :leveloffset: +1

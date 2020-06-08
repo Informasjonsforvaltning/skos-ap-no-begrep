@@ -16,7 +16,7 @@ ifdef::preface-title[:preface-title: Forord]
 //:section-refsig: ???
 :table-caption: Tabell
 :tip-caption: Tips
-:toc-title: Innhold
+:toc-title: Innholdsfortegnelse
 :untitled-label: Navnløs
 :version-label: Versjon
 :warning-caption: Advarsel

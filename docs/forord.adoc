@@ -1,4 +1,3 @@
-
 == Forord
 
 https://www.digdir.no/digitalisering-og-samordning/referansekatalogen-it-standarder/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.

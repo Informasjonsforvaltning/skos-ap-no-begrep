@@ -1,4 +1,3 @@
-
 == Normative referanser
 
 Følgende referanser er normative og danner grunnlag for denne standarden:

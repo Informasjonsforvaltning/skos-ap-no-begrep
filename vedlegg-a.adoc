@@ -1,4 +1,3 @@
-
 == Vedlegg A (informativt) - Eksempler
 
 Dette vedlegget er informativt.
@@ -28,7 +27,6 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   dct:subject "Tvangsfullbyrdelse"@nb ;
   skosno:verdiområde ""@nb ;
   skosno:bruksområde ""@nb ;
-  skos:editorialNote ""@nb ;
   dct:temporal [
 	 a dct:PeriodOfTime ;
 	 schema:startDate ""^^xsd:date ;

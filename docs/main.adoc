@@ -12,8 +12,8 @@ include::locale/attributes.adoc[]
 
 image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-*Publisert*: 2019-03-15 (v.1.0)
-*Oppdatert*: 2020-07-01 (v.1.0.3)
+*Publisert*: 2019-03-15 (v.1.0) +
+*Oppdatert*: 2020-07-01 (v.1.0.3) +
 *Status*: Gjeldende
 
 // WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden.

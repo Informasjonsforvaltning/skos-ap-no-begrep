@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="description" content="Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)">
-<title>Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.2</title>
+<title>Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.3</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -462,12 +462,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.2</h1>
+<h1>Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.3</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
-<li><a href="#_forord">Forord</a>
+<li><a href="#_forord">Forord</a></li>
+<li><a href="#_formål_omfang_og_avgrensninger">Formål, omfang og avgrensninger</a></li>
+<li><a href="#_normative_referanser">Normative referanser</a></li>
+<li><a href="#_definisjon_av_de_mest_sentrale_begreper">Definisjon av de mest sentrale begreper</a></li>
+<li><a href="#_spesifikasjon_for_hvordan_skos_brukes_ved_maskinell_tilgjengeliggjøring_av_begrepsbeskrivelser">Spesifikasjon for hvordan SKOS brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser</a>
 <ul class="sectlevel2">
+<li><a href="#_begrep">Begrep</a></li>
 <li><a href="#_begrep_identifikator">Begrep.identifikator</a></li>
 <li><a href="#_begrep_ansvarligvirksomhet">Begrep.ansvarligVirksomhet</a></li>
 <li><a href="#_begrep_fagområde_tekst">Begrep.fagområde.tekst</a></li>
@@ -526,13 +531,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_begrepssamling_begrep">Begrepssamling.begrep</a></li>
 </ul>
 </li>
-<li><a href="#_vedlegg_a_informativt_eksempler">Vedlegg A (informativt) - Eksempler</a>
+<li><a href="#_vedlegg_a_ikke_normativt_eksempler">Vedlegg A (ikke-normativt) - Eksempler</a>
 <ul class="sectlevel2">
 <li><a href="#_a_1_eksempelfil_av_et_begrep">A.1 Eksempelfil av et begrep</a></li>
 <li><a href="#_a_2_eksempelfil_av_en_begrepssamling">A.2 Eksempelfil av en begrepssamling</a></li>
 </ul>
 </li>
-<li><a href="#_vedlegg_b_informativt_endringer_fra_versjon_1_0_til_1_0_x">Vedlegg B (informativt) - Endringer fra versjon 1.0 til 1.0.x</a></li>
+<li><a href="#_vedlegg_b_ikke_normativt_endringer_fra_versjon_1_0_til_1_0_x">Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</a></li>
 </ul>
 </div>
 </div>
@@ -545,7 +550,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>Publisert: 2020-03-05</p>
+<p><strong>Publisert</strong>: 2019-03-15 (v.1.0)<br>
+<strong>Oppdatert</strong>: 2020-07-01 (v.1.0.3)<br>
+<strong>Status</strong>: Gjeldende</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -590,9 +597,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Denne standarden er utarbeidet av en arbeidsgruppe ledet av tidlgiere Difi (nå Digitaliseringsdirektoratet), i henhold til Standardiseringsrådets arbeidsmetodikk.</p>
 </div>
 <div class="paragraph">
-<p>Standarden inngår i bruksområdet <a href="https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen/begrepsanalyse-og-definisjonsarbeid">"Begrepsanalyse og definisjonsarbeid"</a> i <em>Referansekatalogen</em>.
-== Formål, omfang og avgrensninger</p>
+<p>Standarden inngår i bruksområdet <a href="https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen/begrepsanalyse-og-definisjonsarbeid">"Begrepsanalyse og definisjonsarbeid"</a> i <em>Referansekatalogen</em>.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_formål_omfang_og_avgrensninger"><a class="anchor" href="#_formål_omfang_og_avgrensninger"></a>Formål, omfang og avgrensninger</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Denne standarden skal sikre at begrepsbeskrivelser som forvaltes av offentlig forvaltning, tilgjengeliggjøres på en standardisert og maskinlesbar måte, slik at virksomheter enklere kan ta i bruk og bygge videre på begrepsarbeid som andre har gjort.</p>
 </div>
@@ -600,9 +611,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Standarden spesifiserer hvordan begrepsbeskrivelser som er utformet i henhold til <a href="https://www.digdir.no/digitale-felleslosninger/forvaltningsstandard-begrepsbeskrivelser/1649"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a>, gjøres tilgjengelig i maskinlesbare formater i henhold til SKOS-standarden. Standarden spesifiserer ikke krav til innhold i en begrepsbeskrivelse, heller ikke krav til et eventuelt IT-system for å forvalte begrepsbeskrivelser.</p>
 </div>
 <div class="paragraph">
-<p>Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til SKOS-standarden. Se ellers <a href="https://www.digdir.no/digitalisering-og-samordning/begrepsanalyse-og-definisjonsarbeid/1483">bruksområde “Begrepsanalyse og definisjonsarbeid”</a> i <em>Referansekatalogen</em> for andre aktuelle standarder og veiledere.
-== Normative referanser</p>
+<p>Standarden brukes når en virksomhet skal tilgjengeliggjøre begrepsbeskrivelser som de selv forvalter, i et maskinlesbart format og i henhold til SKOS-standarden. Se ellers <a href="https://www.digdir.no/digitalisering-og-samordning/begrepsanalyse-og-definisjonsarbeid/1483">bruksområde “Begrepsanalyse og definisjonsarbeid”</a> i <em>Referansekatalogen</em> for andre aktuelle standarder og veiledere.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_normative_referanser"><a class="anchor" href="#_normative_referanser"></a>Normative referanser</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Følgende referanser er normative og danner grunnlag for denne standarden:</p>
 </div>
@@ -612,8 +627,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="https://www.digdir.no/digitale-felleslosninger/forvaltningsstandard-begrepsbeskrivelser/1649"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a>: Standarden stiller krav til innhold i beskrivelse av begrep og begrepssamling.</p>
 </li>
 <li>
-<p><a href="https://www.w3.org/TR/skos-reference/"><em>SKOS - Simple Knowledge Organization System</em></a>: Standarden definerer hvordan begreper representeres i maskinlesbare formater.
-== Definisjon av de mest sentrale begreper</p>
+<p><a href="https://www.w3.org/TR/skos-reference/"><em>SKOS - Simple Knowledge Organization System</em></a>: Standarden definerer hvordan begreper representeres i maskinlesbare formater.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_definisjon_av_de_mest_sentrale_begreper"><a class="anchor" href="#_definisjon_av_de_mest_sentrale_begreper"></a>Definisjon av de mest sentrale begreper</h2>
+<div class="sectionbody">
 <div class="dlist">
 <dl>
 <dt class="hdlist1">tilgjengeliggjøring</dt>
@@ -622,14 +644,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </dd>
 <dt class="hdlist1">maskinell tilgjengeliggjøring</dt>
 <dd>
-<p>tilgjengeliggjøring i maskinlesbart format
-== Spesifikasjon for hvordan SKOS brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser</p>
+<p>tilgjengeliggjøring i maskinlesbart format</p>
 </dd>
 </dl>
 </div>
-</li>
-</ul>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_spesifikasjon_for_hvordan_skos_brukes_ved_maskinell_tilgjengeliggjøring_av_begrepsbeskrivelser"><a class="anchor" href="#_spesifikasjon_for_hvordan_skos_brukes_ved_maskinell_tilgjengeliggjøring_av_begrepsbeskrivelser"></a>Spesifikasjon for hvordan SKOS brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Tabellene under viser hvordan SKOS brukes til å representere de ulike feltene i <em>Forvaltningsstandard for begrepsbeskrivelser</em>. Se ellers eksemplene i vedlegget til dette dokumentet.</p>
 </div>
@@ -651,35 +674,37 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><a href="https://ddialliance.org/Specification/XKOS/1.2/OWL/xkos.html#sem-props">SKOS extension for representing statistical classifications (XKOS)</a> (i tabellene under med prefiks xkos:) - supplerer med egenskaper knyttet til relasjoner</p>
 </li>
 <li>
-<p>Norske SKOS-utvidelser (i tabellene under med prefiks skosno:) - det som etter bruk av ovennevnte suppleringer fortsatt mangler, vil suppleres med egne norske utvidelser til SKOS. Norske utvidelser til SKOS vil bli definert og gjort tilgjengelig senere via data.norge.no/vocabulary/skosno#.
-=== Begrep</p>
+<p>Norske SKOS-utvidelser (i tabellene under med prefiks skosno:) - det som etter bruk av ovennevnte suppleringer fortsatt mangler, vil suppleres med egne norske utvidelser til SKOS. Norske utvidelser til SKOS vil bli definert og gjort tilgjengelig senere via data.norge.no/vocabulary/skosno#.</p>
 </li>
 </ul>
 </div>
-<table class="tableblock frame-all grid-all stretch">
+<div class="sect2">
+<h3 id="_begrep"><a class="anchor" href="#_begrep"></a>Begrep</h3>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 35%;">
+<col style="width: 65%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URI til definisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til definisjon</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">SKOS (RDF turtle)-representasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatype (med ev. URI til definisjon)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Merknad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(ingen)</p></td>
 </tr>
 </tbody>
 </table>
+</div>
 <div class="sect2">
 <h3 id="_begrep_identifikator"><a class="anchor" href="#_begrep_identifikator"></a>Begrep.identifikator</h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
@@ -2322,10 +2347,10 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vedlegg_a_informativt_eksempler"><a class="anchor" href="#_vedlegg_a_informativt_eksempler"></a>Vedlegg A (informativt) - Eksempler</h2>
+<h2 id="_vedlegg_a_ikke_normativt_eksempler"><a class="anchor" href="#_vedlegg_a_ikke_normativt_eksempler"></a>Vedlegg A (ikke-normativt) - Eksempler</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dette vedlegget er informativt.</p>
+<p>Dette vedlegget er ikke-normativt.</p>
 </div>
 <div class="paragraph">
 <p>Eksempelfilene er per 2018-06-14 validert korrekt mot SKOS.</p>
@@ -2437,7 +2462,7 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vedlegg_b_informativt_endringer_fra_versjon_1_0_til_1_0_x"><a class="anchor" href="#_vedlegg_b_informativt_endringer_fra_versjon_1_0_til_1_0_x"></a>Vedlegg B (informativt) - Endringer fra versjon 1.0 til 1.0.x</h2>
+<h2 id="_vedlegg_b_ikke_normativt_endringer_fra_versjon_1_0_til_1_0_x"><a class="anchor" href="#_vedlegg_b_ikke_normativt_endringer_fra_versjon_1_0_til_1_0_x"></a>Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives her i vedlegget.
@@ -2461,7 +2486,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-06-30 11:19:52 UTC
+Sist oppdatert 2020-07-02 09:34:39 UTC
 </div>
 </div>
 </body>

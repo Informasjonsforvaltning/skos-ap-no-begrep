@@ -1,6 +1,6 @@
-== Vedlegg A (informativt) - Eksempler
+== Vedlegg A (ikke-normativt) - Eksempler
 
-Dette vedlegget er informativt.
+Dette vedlegget er ikke-normativt.
 
 Eksempelfilene er per 2018-06-14 validert korrekt mot SKOS.
 

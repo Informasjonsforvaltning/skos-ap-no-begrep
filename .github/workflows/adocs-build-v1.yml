@@ -3,7 +3,7 @@ name: build adocs v1
 on:
   push:
     branches:
-    - master
+    - v1
     paths:
       - docs/**
 

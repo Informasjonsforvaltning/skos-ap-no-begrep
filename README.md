@@ -1,7 +1,9 @@
-# SKOS-AP-NO - Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) med tilhørende ontologi
+# SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS
 
-For revisjon av Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (https://data.norge.no/specification/skos-ap-no-begrep) og ontologi. 
+For forvaltning av SKOS-AP-NO-Begrep, med tilhørende ontologi, eksempler og valideringsregler.
 
-Klikk på Issues og deretter New issue for å melde inn endringsbehov og endringsforslag. Det forutsetter at du har registrert deg som bruker på GitHub, med den fordelen at vi lettere kan få tak i deg for ev. avklaringsspørsmål.
+Gjeldende versjon: https://data.norge.no/specification/skos-ap-no-begrep/
+Redaktørens utkast: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
+
 
 \- _Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_ (https://digdir.no)

@@ -1,5 +1,5 @@
 include::locale/attributes.adoc[]
-= Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep) - Versjon 1.0.2
+= SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS
 :description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)
 :doctype: book
 :docinfo:
@@ -12,9 +12,12 @@ include::locale/attributes.adoc[]
 
 image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-Publisert: 2020-03-05
-
-// WARNING: Det foregår redaksjonelle justeringer av denne forvaltningsstandarden.
+*Status*: Gjeldende +
+*Versjon*: 1.0.3 (se <<Endringslogg, endringslogg>>) +
+*Publisert*: 2019-03-15 (v.1.0) +
+*Oppdatert*: 2020-07-01 (v.1.0.3) +
+*Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
 
 //:sectnums:
 
@@ -23,18 +26,28 @@ Publisert: 2020-03-05
 //{description}
 include::shared/download.adoc[]
 
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
 // :leveloffset: +1
 
 // Innhold her.
 
 
 include::forord.adoc[]
+
 include::formaal_omfang_avgrensninger.adoc[]
+
 include::normative_referanser.adoc[]
+
 include::definisjoner.adoc[]
+
 include::spesifikasjon.adoc[]
+
 include::spesifikasjon-felter.adoc[]
+
 include::vedlegg-a.adoc[]
+
 include::vedlegg-b.adoc[]
 
 include::shared/stats.adoc[]

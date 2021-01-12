@@ -1,6 +1,3 @@
-
-// == Felt i standarden
-
 === Begrep
 [cols="35s,65", stripes=odd]
 |===

@@ -1,4 +1,3 @@
-
 == Spesifikasjon for hvordan SKOS brukes ved maskinell tilgjengeliggjøring av begrepsbeskrivelser
 
 Tabellene under viser hvordan SKOS brukes til å representere de ulike feltene i _Forvaltningsstandard for begrepsbeskrivelser_. Se ellers eksemplene i vedlegget til dette dokumentet.

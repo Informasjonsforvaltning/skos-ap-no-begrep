@@ -29,8 +29,8 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   skosno:bruksområde ""@nb ;
   dct:temporal [
 	 a dct:PeriodOfTime ;
-	 schema:startDate ""^^xsd:date ;
-	 schema:endDate ""^^xsd:date ;
+	 schema:startDate "2017-01-01"^^xsd:date ;
+	 schema:endDate "2017-12-31"^^xsd:date ;
   ] ;
   dcat:contactPoint [
 	 a vcard:Organization ;

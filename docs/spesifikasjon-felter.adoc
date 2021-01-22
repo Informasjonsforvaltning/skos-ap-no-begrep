@@ -97,7 +97,7 @@ schema:endDate "2017-12-31"^^xsd:date ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:modified
-|SKOS (RDF turtle)-representasjon |<> dct:modified “”^^xsd:date .
+|SKOS (RDF turtle)-representasjon |<> dct:modified “2017-01-01”^^xsd:date .
 |Datatype (med ev. URI til definisjon) |xsd:date
 |Merknad |(ingen)
 |===
@@ -258,10 +258,10 @@ skosxl:literalForm “”@nb ; ] .
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:modified
-|SKOS (RDF turtle)-representasjon |<> skosxl:prefLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . +
-<> skosxl:altLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . +
-<> skosxl:hiddenLabel [a skosxl:Label ; dct:modified “”^^xsd:date ] . +
-<> skosno:datastrukturTerm [a skosxl:Label ; dct:modified “”^^xsd:date ] .
+|SKOS (RDF turtle)-representasjon |<> skosxl:prefLabel [a skosxl:Label ; dct:modified “2017-01-01”^^xsd:date ] . +
+<> skosxl:altLabel [a skosxl:Label ; dct:modified “2017-01-01”^^xsd:date ] . +
+<> skosxl:hiddenLabel [a skosxl:Label ; dct:modified “2017-01-01”^^xsd:date ] . +
+<> skosno:datastrukturTerm [a skosxl:Label ; dct:modified “2017-01-01”^^xsd:date ] .
 |Datatype (med ev. URI til definisjon) |xsd:date
 |Merknad |(ingen)
 |===
@@ -449,10 +449,10 @@ dct:audience skosno:Fagspesialist;
 |URI til definisjon |dct:modified
 |SKOS (RDF turtle)-representasjon |
 <> skosno:definisjon [a skosno:Definisjon
-dct:modified “”^^xsd:date;
+dct:modified “2017-01-01”^^xsd:date;
 ] . +
 <> skosno:alternativFormulering [a skosno:AlternativFormulering
-dct:modified “”^^xsd:date;
+dct:modified “2017-01-01”^^xsd:date;
 ] .
 |Datatype (med ev. URI til definisjon) |xsd:date
 |Merknad |(ingen)
@@ -532,7 +532,7 @@ skosno:inndelingskriterium “”@nb ; ]
 <> xkos:hasPart [
 a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb;
-dct:modified “”xsd:date ;
+dct:modified “2017-01-01”xsd:date ;
 ] . +
 Tilsvarende for de andre relasjonstypene.
 |Datatype (med ev. URI til definisjon) |xsd:date

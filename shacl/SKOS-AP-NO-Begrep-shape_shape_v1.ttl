@@ -1,0 +1,178 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix : <https://data.norge.no/vocabulary/skosno#> .
+
+# about this SHACL:
+<https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/SKOS-AP-NO-Begrep-shape_shape_v1.ttl>
+    dcat:accessURL <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/>;
+    dcat:downloadURL <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/SKOS-AP-NO-Begrep-shape_shape_v1.ttl> ;
+    adms:status <http://purl.org/adms/status/UnderDevelopment> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:conformsTo <https://www.w3.org/TR/shacl> ;
+    dct:creator [
+        foaf:homepage <https://www.digdir.no/> ;
+        foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+    ];
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2021-01-26"^^xsd:date ;
+    rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
+    dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
+    owl:versionInfo "0.1";
+    foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
+    foaf:maker [
+        foaf:mbox <mailto:informasjonsforvaltning@diggir.no> ;
+        foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet"@nb ;
+        foaf:page <https://www.digdir.no> ;
+    ] .
+
+
+:BegrepShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept;
+    sh:property [
+      sh:path skosxl:prefLabel ;
+      sh:class skosxl:Label ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha minst 1 anbefalt term"@nb ;
+    ] ;
+    sh:property [
+      sh:path skosno:betydningsbeskrivelse ;
+      sh:class skosno:Definisjon ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha minst 1 definisjon, som skal være instans av skosno:Definisjon"@nb ;
+    ] ;
+    sh:property [
+      sh:path skosno:alternativFormulering ;
+      sh:class skosno:AlternativFormulering ;
+      sh:severity sh:Violation ;
+      sh:message "AlternativFormulering må være instans av skosno:AlternativForumulering"@nb ;
+    ] ;
+    sh:property [
+      sh:path dct:identifier ;
+      sh:nodeKind sh:IRI ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha 1 og kun 1 identifikator, som skal være en IRI"@nb ;
+    ] ;
+    sh:property [
+      sh:path dct:publisher ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet må ha 1 og kun 1 ansvarlig virksomhet, som skal oppgis som IRI"@nb ;
+    ] ;
+    sh:property [
+      sh:path dct:subject ;
+      sh:nodeKind sh:Literal ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet kan ha maks. 1 fagområde"@nb ;
+    ] ;
+    sh:property [
+      sh:path skosno:bruksområde ;
+      sh:nodeKind sh:Literal ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet kan ha maks. 1 bruksområde"@nb ;
+    ] ;
+    sh:property [
+      sh:class dct:PeriodOfTime ;
+      sh:path dct:temporal ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet kan ha maks. 1 gyldighetsperiode, som skal være instans av dct:PeriodOfTime"@nb ;
+    ] ;
+    sh:property [
+      sh:class vcard:Kind ;
+      sh:path dcat:contactPoint ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepet kan ha maks. 1 kontaktpunkt, som skal være instans av vcard:Kind"@nb ;
+    ] ;
+    sh:property [
+      sh:maxCount 1 ;
+      sh:path dct:modified ;
+      sh:severity sh:Violation ;
+      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:message "Begrepet kan ha maks. 1 sist oppdatert dato, som skal være enten xsd:date eller xsd:dateTime" ;
+    ] ;
+    sh:targetClass skos:Concept ;
+    .
+
+:DeinisjonShape
+    a sh:NodeShape ;
+    sh:name "Definisjon"@en , "Definition"@nb ;
+    sh:property [
+        sh:maxCount 1 ;
+        sh:maxCount 1 ;
+        sh:path rdfs:label ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Deinisjon må ha 1 og kun 1 tekst"@nb ;
+    ] ;
+    # sh:targetClass skosno:Definisjon ;
+    sh:targetClass skosno:Definisjon ;
+    .
+
+:AlternativFormuleringShape
+    a sh:NodeShape ;
+    sh:name "Alternativ formulering"@en , "Reworded definition"@nb ;
+    sh:property [
+        sh:maxCount 1 ;
+        sh:maxCount 1 ;
+        sh:path rdfs:label ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Alternativ formulering må ha 1 og kun 1 tekst"@nb ;
+    ] ;
+    sh:targetClass skosno:AlternativFormulering ;
+    .
+
+:PeriodOfTime_Shape
+    a sh:NodeShape ;
+    sh:name "Period of Time"@en , "Tidsrom"@nb ;
+    sh:property [
+        sh:maxCount 1 ;
+        sh:path schema:endDate ;
+        sh:severity sh:Violation ;
+        sh:shape :DateOrDateTimeDataType_Shape
+    ], [
+        sh:maxCount 1 ;
+        sh:path schema:startDate ;
+        sh:severity sh:Violation ;
+        sh:shape :DateOrDateTimeDataType_Shape
+    ] ;
+    sh:targetClass dct:PeriodOfTime ;
+    .
+
+:DateOrDateTimeDataType_Shape
+    a sh:NodeShape ;
+    rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
+    rdfs:label "Date time date disjunction" ;
+    sh:message "The values must be data typed as either xsd:date or xsd:dateTime" ;
+    sh:or ([
+            sh:datatype xsd:date
+        ]
+        [
+            sh:datatype xsd:dateTime
+        ]
+    ) ;
+    .

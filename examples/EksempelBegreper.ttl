@@ -1,0 +1,57 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix : <https://examples.com/begreper/> .
+
+# Dette eksemplet skal valideres OK (uten violation/warning)
+<https://examples.com/begreper/ex1IngenFeil>
+  a skos:Concept;  # Begrep, med de fleste (ikke alle) egenskaper med
+
+  # --- mandatory ---
+  skosxl:prefLabel [ # term
+    a skosxl:Label ; # AnbefaltTerm
+    skosxl:literalForm "eksempelbegrep"@nb ; # navn
+  ] ;
+  skosno:betydningsbeskrivelse [  # betydningsbeskrivelse
+  	a skosno:Definisjon ; # Definisjon
+  	rdfs:label "eksempel på en begrepsbeskrivelse"@nb ; # tekst
+  	dct:source [ # kildebeskrivelse
+  	 rdfs:label "Eksempelordboka"@en ; # tekst
+     ] ;
+  	] ;
+  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
+  dct:identifier <https://examples.com/begreper/ex1IngenFeil> ; # identifikator
+
+  # --- optional ---
+  dct:subject "Eksemplifisering"@nb ; # fagområde
+  skosno:bruksområde "Begrepsbeskrivelser"@nb ; # bruksområde
+  dct:temporal [ a dct:PeriodOfTime ; # gyldighetsperiode
+    schema:startDate "2017-01-01"^^xsd:date ; # gyldig fra og med
+    schema:endDate "2017-12-31"^^xsd:date ; # gyldig til og med
+    ] ;
+  dct:modified "2017-01-28"^^xsd:date ; # sist oppdatert
+  dcat:concactPoint [ a vcard:organization ; # kontaktpunkt
+    vcard:organizationUnit "Avdeling for eksemplifisering" ;
+    vcard:hasEmail <mailto:examples@examples.com> ;
+    ] ;
+  .
+
+
+# Dette eksemplet skal gi flere feil:
+  <https://examples.com/begreper/ex2MedFeil>
+    a skos:Concept;  # Begrep
+    skosxl:prefLabel [                        # term
+      a skosxl:Label ;                        # AnbefaltTerm
+      skosxl:literalForm "Arkitekturrammeverk"@nb ; # navn
+    ] ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
+    dct:subject "Virksomhetsarkitektur"@nb ;                                       # fagområdet
+    dct:identifier "https://examples.com/begreper/ex2MedFeil";
+    .

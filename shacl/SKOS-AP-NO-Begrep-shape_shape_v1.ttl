@@ -26,12 +26,12 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-01-26"^^xsd:date ;
+    dct:modified "2021-01-28"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.1";
+    owl:versionInfo "0.2";
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@diggir.no> ;
@@ -145,6 +145,52 @@
     ] ;
     sh:targetClass skosno:AlternativFormulering ;
     .
+
+:BegrepssamlingShape # Begrepssamling
+    a sh:NodeShape ;
+    sh:name "Begrepssamling"@nb , "Concept collection"@en ;
+    sh:property [ # navn
+        sh:minCount 1 ;
+        sh:path rdfs:label ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Begrepssamling må ha et navn"@nb ;
+    ] ;
+    sh:property [ # identifikator
+      sh:path dct:identifier ;
+      sh:nodeKind sh:IRI ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepssamling må ha 1 og kun 1 identifikator, som skal være en IRI"@nb ;
+    ] ;
+    sh:property [ # ansvarligVirksomhet
+      sh:path dct:publisher ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepsamling må ha 1 og kun 1 ansvarlig virksomhet, som skal oppgis som IRI"@nb ;
+    ] ;
+    sh:property [ # beskrivelse
+      sh:path dct:description ;
+      sh:nodeKind sh:Literal ;
+    ] ;
+    sh:property [ # kontaktpunkt
+      sh:path dcat:contactPoint ;
+      sh:class vcard:Kind ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Begrepssamling kan ha maks. 1 kontaktpunkt, som skal være instans av vcard:Kind"@nb ;
+    ] ;
+    sh:property [ # begrep
+      sh:path skos:member ;
+      sh:class skos:Concept ;
+      sh:minCount 1 ;
+      sh:message "Begrepssamling må inneholde minst 1 begrep, som skal være instans av skos:Concept"@nb ;
+    ] ;
+    sh:targetClass skos:Collection ;
+    .
+
 
 :PeriodOfTime_Shape
     a sh:NodeShape ;

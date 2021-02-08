@@ -553,9 +553,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.0.3 (se <a href="#Endringslogg">endringslogg</a>)<br>
+<strong>Versjon</strong>: 1.0.4 (se <a href="#Endringslogg">endringslogg</a>)<br>
 <strong>Publisert</strong>: 2019-03-15 (v.1.0)<br>
-<strong>Oppdatert</strong>: 2020-07-01 (v.1.0.3)<br>
+<strong>Oppdatert</strong>: 2021-02-08<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
 </div>
@@ -1302,11 +1302,11 @@ dct:modified "2018-01-01"^^xsd:date ; ] .</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til definisjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:replacedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReplacedBy</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; dct:replacedBy &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; dct:isReplacedBy &lt;&gt; .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -1431,11 +1431,11 @@ skosxl:literalForm “”@nb ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosxl:altLabel [a skosxl:Label ; dct:audience skosno:Allmennheten ] .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosxl:altLabel [a skosxl:Label ; dct:audience skosno:allmennheten ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:Allmennheten og skosno:Fagspesialist)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:allmennheten og skosno:fagspesialist)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
@@ -1809,15 +1809,15 @@ skosno:Definisjon skosno:AlternativFormulering</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:definisjon [a skosno:Definisjon ;
-dct:audience skosno:Allmennheten;
+dct:audience skosno:allmennheten;
 ] .<br>
 &lt;&gt; skosno:alternativFormulering [a skosno:AlternativFormulering ;
-dct:audience skosno:Fagspesialist;
+dct:audience skosno:fagspesialist;
 ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:Allmennheten og skosno:Fagspesialist)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:allmennheten og skosno:fagspesialist)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
@@ -2358,7 +2358,7 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 <p>Dette vedlegget er ikke-normativt.</p>
 </div>
 <div class="paragraph">
-<p>Eksempelfilene er per 2018-06-14 validert korrekt mot SKOS.</p>
+<p>Eksempelfilene er per 2021-02-08 validert korrekt mot SKOS-AP-NO-Begrep-shape_shape_v1.ttl (som er under etablering).</p>
 </div>
 <div class="sect2">
 <h3 id="_a_1_eksempelfil_av_et_begrep"><a class="anchor" href="#_a_1_eksempelfil_av_et_begrep"></a>A.1 Eksempelfil av et begrep</h3>
@@ -2367,69 +2367,75 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+<pre>@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
-@prefix skosxl: &lt;http://www.w3.org/2008/05/skos-xl#&gt; .
-@prefix xkos: &lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt; .
-@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
-@prefix skosno: &lt;https://data.norge.no/vocabulary/skosno#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix schema: &lt;http://schema.org/&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix skosno: &lt;https://data.norge.no/vocabulary/skosno#&gt; .
+@prefix skosxl: &lt;http://www.w3.org/2008/05/skos-xl#&gt; .
 @prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .
+@prefix xkos: &lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix : &lt;https://examples.com/excons/&gt; .
 
-&lt;https://data.brreg.no/begrep/44624&gt; a skos:Concept ;
-  dct:identifier "https://data.brreg.no/begrep/44624" ;
-  dct:publisher &lt;https://data.brreg.no/enhetsregisteret/api/enheter/974760673&gt; ;
-  skos:example ""@nb ;
-  dct:subject "Tvangsfullbyrdelse"@nb ;
-  skosno:verdiområde ""@nb ;
-  skosno:bruksområde ""@nb ;
-  dct:temporal [
-	 a dct:PeriodOfTime ;
-	 schema:startDate "2017-01-01"^^xsd:date ;
-	 schema:endDate "2017-12-31"^^xsd:date ;
-  ] ;
-  dcat:contactPoint [
-	 a vcard:Organization ;
- 	 vcard:organizationUnit "RF - Tinglysning og regnskap";
- 	 vcard:hasEmail &lt;mailto:informasjonsforvaltning@brreg.no&gt; ;
- 	 vcard:hasTelephone &lt;tel:+4775007500&gt;
-  ] ;
-  dct:modified "2018-01-01"^^xsd:date ;
+# an example concept with mandatory properties only:
+:exConcept_mandatoryPropertiesOnly a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier &lt;https://examples.com/excons/1&gt; ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # ansvarligVirksomhet
+  .
 
-  # Representasjon av term
-  skosxl:prefLabel [
-    a skosxl:Label ;
-    skosxl:literalForm "utleggspant"@nb ;
-    dct:modified "2018-01-01"^^xsd:date ;
-  ] ;
-  skosxl:altLabel &lt;&gt;;
-  skosxl:hiddenLabel &lt;&gt;;
 
-  # Representasjon av Definisjon som muliggjør målgruppe m.m.
-  skosno:definisjon [
-	 a skosno:Definisjon ;
-	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
-	    dct:source [
-		    rdfs:label "Lov om pant (panteloven) § 5-1"@nb ;
-		    rdfs:seeAlso &lt;https://lovdata.no/NL/lov/1980-02-08-2/§5-1&gt; ;
+# an example concept with some (commonly used) optional properties in addition:
+:exConcept_withSomeOptionalProperties a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier &lt;https://examples.com/excons/2&gt; ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory Definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # ansvarligVirksomhet
+
+  # --- some optional properties:
+  skos:subject "terminologi"@nb ; # fagområde
+  skosno:bruksområde "eksemplifisering"@nb ; # bruksområde
+  skosno:alternativFormulering [ a skosno:AlternativFormulering ; # alterntiv formulering
+    rdfs:label "begrep som er egnet for rdf-ekseperter"@nb ; # teksten
+    skos:scopeNote "kun som illustrasjon"@nb ; # merknad
+    skos:example "eksempel1, eksempel2"@nb ; # eksempel
+    dct:source [ # kildebeskrivelse
+        rdfs:label "eksempelsamling1"@nb ;
+        xsd:seeAlso &lt;https://examples.com/eksempelsamling/1&gt; ;
       ] ;
-    skos:scopeNote "Utleggspant vil si at namsmannen tar pant i saksøktes eiendeler, som for eksempel fast eiendom, eller annet verdifullt løsøre, som bil, båt og lignende. En kreditor som har fått utleggspant kan benytte panteretten som grunnlag for tvangssalg for å få dekket sitt krav. Utleggspant i enkelte formuesobjekter (løsøre, akvakulturtillatelser) kan få rettsvern ved tinglysing i Løsøreregisteret eller Akvakulturregisteret."@nb;
-    dct:audience &lt;&gt;;
-    dct:modified "2018-01-01"^^xsd:date ;
-  ];
-
-  # Representasjon av begrepsrelasjon som muliggjør navngiving m.m.
-  skos:related [
-	 a skosno:AssosiativRelasjon ;
-	 dct:description ""@nb ;
- 	 dct:modified "2018-01-01"^^xsd:date ;
- 	 skosno:assosiertBegrep &lt;https://jira.brreg.no/browse/BEGREP-220&gt; ; # Namsmyndighet
-  ];
-  dct:replaces &lt;&gt; ;
-  dct:replacedBy &lt;&gt;;</pre>
+    skosno:forholdTilKilde skosno:basertPåKilde ; # forhold til kilde
+    dct:audience skosno:allmennheten ; # målgruppe
+    dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
+    skosno:omfang [ rdfs:label "Klassifisering av eksempelbegreper"@nb ;
+        rdfs:seeAlso &lt;https://examples.com/excodelist&gt; ; ] ;
+    ] ;
+  skosxl:altLabel [ a skosxl:Label ; # tillattTerm
+    skosxl:literalForm "testbegrep"@nb ; # navn
+    ] ;
+  dct:temporal [ a dct:PeriodOfTime ; # gyldighetsperiode
+    schema:startDate "2020-05-29"^^xsd:date;
+    ] ;
+  dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
+    vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+    vcard:hasEmail &lt;mailto:examples@examples.com&gt; ;
+    ] ;
+  dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
+  dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
+  .</pre>
 </div>
 </div>
 </div>
@@ -2437,8 +2443,7 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 <h3 id="_a_2_eksempelfil_av_en_begrepssamling"><a class="anchor" href="#_a_2_eksempelfil_av_en_begrepssamling"></a>A.2 Eksempelfil av en begrepssamling</h3>
 <div class="listingblock">
 <div class="content">
-<pre>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+<pre>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
 @prefix skosxl: &lt;http://www.w3.org/2008/05/skos-xl#&gt; .
@@ -2448,19 +2453,22 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 @prefix schema: &lt;http://schema.org/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .
-&lt;enBegrepssamling&gt; # Katalogen
-	a skos:Collection ;
-	rdfs:label "Begrepskatalog BR"@nb ;
-	dct:identifier &lt;&gt; ;
-	dct:publisher &lt;https://data.brreg.no/enhetsregisteret/api/enheter/974760673&gt; ;
-	dct:description "Brønnøysundregistrenes begrepskatalog, godkjente begreper" ;
-  dcat:contactPoint [
-		a vcard:Organization ;
-    vcard:organizationUnit "RF - Tinglysning og regnskap";
-    vcard:hasEmail &lt;&gt; ;
-    vcard:hasTelephone &lt;&gt; ;
-  ] ;
-  skos:member &lt;https://jira.brreg.no/browse/BEGREP-246&gt; .</pre>
+@prefix : &lt;https://examples.com/excolls/&gt; .
+
+# An example collection, with mandatory and optional properties:
+:ex1_withSomeOptionalProperties a skos:Collection;  # Begrepssamling
+  # --- mandatory ---
+  rdfs:label "Eksempelsamling"@nb ; # navn
+  dct:identifier &lt;https://examples.com/begrepssamling/1&gt; ; # identifikator
+  dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # ansvarligVirksomhet
+  skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
+  # --- optional ---
+  dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
+  dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+      vcard:hasEmail &lt;mailto:examples@examples.com&gt; ;
+      ] ;
+  .</pre>
 </div>
 </div>
 </div>
@@ -2491,7 +2499,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-01-22 15:01:59 UTC
+Sist oppdatert 2021-02-08 12:41:21 UTC
 </div>
 </div>
 </body>

@@ -536,9 +536,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_vedlegg_a_ikke_normativt_eksempler">Vedlegg A (ikke-normativt) - Eksempler</a>
 <ul class="sectlevel2">
 <li><a href="#_a_1_eksempelfil_av_et_begrep">A.1 Eksempelfil av et begrep</a></li>
+<li><a href="#_a_2_eksempelfil_av_en_begrepssamling">A.2 Eksempelfil av en begrepssamling</a></li>
 </ul>
 </li>
-<li><a href="#_an_example_collection_with_mandatory_and_optional_properties">An example collection, with mandatory and optional properties:</a></li>
+<li><a href="#Endringslogg">Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</a></li>
 </ul>
 </div>
 </div>
@@ -552,9 +553,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.0.3 (se <a href="#Endringslogg">endringslogg</a>)<br>
+<strong>Versjon</strong>: 1.0.4 (se <a href="#Endringslogg">endringslogg</a>)<br>
 <strong>Publisert</strong>: 2019-03-15 (v.1.0)<br>
-<strong>Oppdatert</strong>: 2020-07-01 (v.1.0.3)<br>
+<strong>Oppdatert</strong>: 2021-02-08<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
 </div>
@@ -2433,37 +2434,32 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
     ] ;
   dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
   dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
-  .
-
-
-=== A.2 Eksempelfil av en begrepssamling</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>@prefix rdfs: <a href="http://www.w3.org/2000/01/rdf-schema#" class="bare">http://www.w3.org/2000/01/rdf-schema#</a> .
-@prefix skos: <a href="http://www.w3.org/2004/02/skos/core#" class="bare">http://www.w3.org/2004/02/skos/core#</a> .
-@prefix dct: <a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a> .
-@prefix skosxl: <a href="http://www.w3.org/2008/05/skos-xl#" class="bare">http://www.w3.org/2008/05/skos-xl#</a> .
-@prefix xkos: <a href="http://rdf-vocabulary.ddialliance.org/xkos#" class="bare">http://rdf-vocabulary.ddialliance.org/xkos#</a> .
-@prefix dcat: <a href="http://www.w3.org/ns/dcat#" class="bare">http://www.w3.org/ns/dcat#</a> .
-@prefix skosno: <a href="https://data.norge.no/vocabulary/skosno#" class="bare">https://data.norge.no/vocabulary/skosno#</a> .
-@prefix schema: <a href="http://schema.org/" class="bare">http://schema.org/</a> .
-@prefix xsd: <a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a> .
-@prefix vcard: <a href="http://www.w3.org/2006/vcard/ns#" class="bare">http://www.w3.org/2006/vcard/ns#</a> .
-@prefix : <a href="https://examples.com/excolls/" class="bare">https://examples.com/excolls/</a> .</p>
+  .</pre>
 </div>
 </div>
 </div>
-</div>
-<h1 id="_an_example_collection_with_mandatory_and_optional_properties" class="sect0"><a class="anchor" href="#_an_example_collection_with_mandatory_and_optional_properties"></a>An example collection, with mandatory and optional properties:</h1>
-<div class="openblock partintro">
+<div class="sect2">
+<h3 id="_a_2_eksempelfil_av_en_begrepssamling"><a class="anchor" href="#_a_2_eksempelfil_av_en_begrepssamling"></a>A.2 Eksempelfil av en begrepssamling</h3>
+<div class="listingblock">
 <div class="content">
-<div class="paragraph">
-<p>:ex1_mandatoryPropertiesOnly a skos:Collection;  # Begrepssamling
+<pre>@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix skosxl: &lt;http://www.w3.org/2008/05/skos-xl#&gt; .
+@prefix xkos: &lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt; .
+@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
+@prefix skosno: &lt;https://data.norge.no/vocabulary/skosno#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .
+@prefix : &lt;https://examples.com/excolls/&gt; .
+
+# An example collection, with mandatory and optional properties:
+:ex1_withSomeOptionalProperties a skos:Collection;  # Begrepssamling
   # --- mandatory ---
   rdfs:label "Eksempelsamling"@nb ; # navn
-  dct:identifier <a href="https://examples.com/begrepssamling/1" class="bare">https://examples.com/begrepssamling/1</a> ; # identifikator
-  dct:publisher <a href="https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827" class="bare">https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827</a> ; # ansvarligVirksomhet
+  dct:identifier &lt;https://examples.com/begrepssamling/1&gt; ; # identifikator
+  dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # ansvarligVirksomhet
   skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
   # --- optional ---
   dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
@@ -2471,21 +2467,23 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
       vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
       vcard:hasEmail &lt;mailto:examples@examples.com&gt; ;
       ] ;
-  .</p>
+  .</pre>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre>== Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x [[Endringslogg]]
-
-Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives her i vedlegget.
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives her i vedlegget.
 Med redaksjonelle endringer menes endringer i formatering/strukturering eller justeringer i tekst/tegninger/tabeller/eksempler
 som ikke endrer kravene i standarden.
-mailto:informasjonsforvaltning@digdir.no[Ta kontakt med Digitaliseringsdirektoratet] for mer informasjon om de redaksjonelle endringene.
-
-
-++++
-&lt;!-- Google Analytics --&gt;
-&lt;script&gt;
+<a href="mailto:informasjonsforvaltning@digdir.no">Ta kontakt med Digitaliseringsdirektoratet</a> for mer informasjon om de redaksjonelle endringene.</p>
+</div>
+<!-- Google Analytics -->
+<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -2493,17 +2491,14 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-12685001-17', 'auto');
 ga('send', 'pageview');
-&lt;/script&gt;
-&lt;!-- End Google Analytics --&gt;
-++++</pre>
-</div>
-</div>
+</script>
+<!-- End Google Analytics -->
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-02-08 10:31:54 UTC
+Sist oppdatert 2021-02-08 11:09:46 UTC
 </div>
 </div>
 </body>

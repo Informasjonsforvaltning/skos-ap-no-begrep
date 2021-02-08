@@ -76,7 +76,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
   dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
   .
-
+----
 
 === A.2 Eksempelfil av en begrepssamling
 
@@ -94,7 +94,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix : <https://examples.com/excolls/> .
 
 # An example collection, with mandatory and optional properties:
-:ex1_mandatoryPropertiesOnly a skos:Collection;  # Begrepssamling
+:ex1_withSomeOptionalProperties a skos:Collection;  # Begrepssamling
   # --- mandatory ---
   rdfs:label "Eksempelsamling"@nb ; # navn
   dct:identifier <https://examples.com/begrepssamling/1> ; # identifikator

@@ -76,7 +76,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
   dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
   .
-
+----
 
 === A.2 Eksempelfil av en begrepssamling
 

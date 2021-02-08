@@ -34,6 +34,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   .
 
+
 # an example concept with some (commonly used) optional properties in addition:
 :exConcept_withSomeOptionalProperties a skos:Concept;  # Begrep
   # --- mandatory:

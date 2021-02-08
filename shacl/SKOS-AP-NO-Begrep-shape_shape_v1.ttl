@@ -67,6 +67,7 @@
       sh:path dct:identifier ;
       sh:nodeKind sh:IRI ;
       sh:minCount 1 ;
+      sh:maxCount 1 ;
       sh:severity sh:Violation ;
       sh:message "Begrepet må ha 1 og kun 1 identifikator, som skal være en IRI"@nb ;
     ] ;

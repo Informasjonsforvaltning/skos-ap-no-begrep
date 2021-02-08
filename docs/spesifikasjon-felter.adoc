@@ -216,8 +216,8 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 === Begrep.erstattesAv
 [cols="35s,65", stripes=odd]
 |===
-|URI til definisjon |dct:replacedBy
-|SKOS (RDF turtle)-representasjon | <> dct:replacedBy <> .
+|URI til definisjon |dct:isReplacedBy
+|SKOS (RDF turtle)-representasjon | <> dct:isReplacedBy <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===

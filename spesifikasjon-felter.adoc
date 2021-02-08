@@ -216,8 +216,8 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 === Begrep.erstattesAv
 [cols="35s,65", stripes=odd]
 |===
-|URI til definisjon |dct:replacedBy
-|SKOS (RDF turtle)-representasjon | <> dct:replacedBy <> .
+|URI til definisjon |dct:isReplacedBy
+|SKOS (RDF turtle)-representasjon | <> dct:isReplacedBy <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===
@@ -271,8 +271,8 @@ skosxl:literalForm “”@nb ; ] .
 |===
 |URI til definisjon |dct:audience
 |SKOS (RDF turtle)-representasjon |
-<> skosxl:altLabel [a skosxl:Label ; dct:audience skosno:Allmennheten ] .
-|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:Allmennheten og skosno:Fagspesialist)
+<> skosxl:altLabel [a skosxl:Label ; dct:audience skosno:allmennheten ] .
+|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdiene skosno:allmennheten og skosno:fagspesialist)
 |Merknad |(ingen)
 |===
 
@@ -434,12 +434,12 @@ skosno:Definisjon skosno:AlternativFormulering
 |URI til definisjon |dct:audience
 |SKOS (RDF turtle)-representasjon |
 <> skosno:definisjon [a skosno:Definisjon ;
-dct:audience skosno:Allmennheten;
+dct:audience skosno:allmennheten;
 ] . +
 <> skosno:alternativFormulering [a skosno:AlternativFormulering ;
-dct:audience skosno:Fagspesialist;
+dct:audience skosno:fagspesialist;
 ] .
-|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:Allmennheten og skosno:Fagspesialist)
+|Datatype (med ev. URI til definisjon) |skos:Concept (kodeliste over målgruppe, med kodeverdier: skosno:allmennheten og skosno:fagspesialist)
 |Merknad |(ingen)
 |===
 

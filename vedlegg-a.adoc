@@ -70,7 +70,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
  	 skosno:assosiertBegrep <https://jira.brreg.no/browse/BEGREP-220> ; # Namsmyndighet
   ];
   dct:replaces <> ;
-  dct:replacedBy <>;
+  dct:isReplacedBy <>;
 ----
 
 === A.2 Eksempelfil av en begrepssamling

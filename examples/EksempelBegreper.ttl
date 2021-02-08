@@ -1,13 +1,3 @@
-== Vedlegg A (ikke-normativt) - Eksempler
-
-Dette vedlegget er ikke-normativt.
-
-Eksempelfilene er per 2021-02-08 validert korrekt mot SKOS-AP-NO-Begrep-shape_shape_v1.ttl (som er under etablering).
-
-=== A.1 Eksempelfil av et begrep
-
-I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl og norske utvidelser.
-----
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -33,7 +23,6 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   	] ;
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   .
-
 
 # an example concept with some (commonly used) optional properties in addition:
 :exConcept_withSomeOptionalProperties a skos:Concept;  # Begrep
@@ -77,35 +66,3 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
   dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
   dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
   .
-----
-
-=== A.2 Eksempelfil av en begrepssamling
-
-----
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
-@prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix : <https://examples.com/excolls/> .
-
-# An example collection, with mandatory and optional properties:
-:ex1_withSomeOptionalProperties a skos:Collection;  # Begrepssamling
-  # --- mandatory ---
-  rdfs:label "Eksempelsamling"@nb ; # navn
-  dct:identifier <https://examples.com/begrepssamling/1> ; # identifikator
-  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
-  skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
-  # --- optional ---
-  dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
-  dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
-      vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
-      vcard:hasEmail <mailto:examples@examples.com> ;
-      ] ;
-  .
-----

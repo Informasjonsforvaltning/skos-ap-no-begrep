@@ -1,0 +1,40 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix : <https://examples.com/excolls/> .
+
+# An example collection, with mandatory properties only:
+:ex1_mandatoryPropertiesOnly a skos:Collection;  # Begrepssamling
+  # --- mandatory ---
+  rdfs:label "Eksempelsamling"@nb ; # navn
+  dct:identifier <https://examples.com/begrepssamling/1> ; # identifikator
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
+  # --- optional ---
+  dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
+  dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+      vcard:hasEmail <mailto:examples@examples.com> ;
+      ] ;
+  .
+
+# Dette eksemplet på et Begrep tas fordi en samling må ha minst 1 begrep.
+# EKsempelet skal ikke gi valideringsfeil
+:exConcept_mandatoryPropertiesOnly a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier <https://examples.com/excons/1> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .

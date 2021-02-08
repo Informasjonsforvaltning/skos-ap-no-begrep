@@ -8,40 +8,33 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix : <https://examples.com/begreper/> .
+@prefix : <https://examples.com/excolls/> .
 
-# Dette eksemplet på en Begrepssamling skal valideres OK (uten violation/warning)
-<https://examples.com/begrepssamling/ex1somSkalVæreOK>
-  a skos:Collection;  # Begrepssamling
+# An example collection, with mandatory properties only:
+:ex1_mandatoryPropertiesOnly a skos:Collection;  # Begrepssamling
   # --- mandatory ---
   rdfs:label "Eksempelsamling"@nb ; # navn
-  dct:identifier <https://examples.com/begrepssamling/ex1IngenFeil> ; # identifikator
-  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
+  dct:identifier <https://examples.com/begrepssamling/1> ; # identifikator
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
   # --- optional ---
-  dct:description "Et eksempel på en begrepssamling"@nb ;
-  dcat:concactPoint [ a vcard:organization ; # kontaktpunkt
-    vcard:organizationUnit "Avdeling for eksemplifisering" ;
-    vcard:hasEmail <mailto:examples@examples.com> ;
-    ] ;
-  skos:member <https://examples.com/begreper/ex2somSkalVæreOK> ;
+  dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
+  dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+      vcard:hasEmail <mailto:examples@examples.com> ;
+      ] ;
   .
 
 # Dette eksemplet på et Begrep tas fordi en samling må ha minst 1 begrep.
 # EKsempelet skal ikke gi valideringsfeil
-<https://examples.com/begreper/ex2somSkalVæreOK>
-  a skos:Concept;  # Begrep
-  # --- mandatory ---
-  skosxl:prefLabel [ # term
-    a skosxl:Label ; # AnbefaltTerm
-    skosxl:literalForm "eksempelbegrep"@nb ; # navn
-  ] ;
-  skosno:betydningsbeskrivelse [  # betydningsbeskrivelse
-    a skosno:Definisjon ; # Definisjon
-    rdfs:label "eksempel på en begrepsbeskrivelse"@nb ; # tekst
-    dct:source [ # kildebeskrivelse
-     rdfs:label "Eksempelordboka"@en ; # tekst
-     ] ;
+:exConcept_mandatoryPropertiesOnly a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier <https://examples.com/excons/1> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
     ] ;
-  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ; # ansvarligVirksomhet
-  dct:identifier <https://examples.com/begreper/ex1IngenFeil> ; # identifikator
-.
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .

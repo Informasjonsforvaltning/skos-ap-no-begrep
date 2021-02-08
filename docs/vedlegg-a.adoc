@@ -2,81 +2,85 @@
 
 Dette vedlegget er ikke-normativt.
 
-Eksempelfilene er per 2018-06-14 validert korrekt mot SKOS.
+Eksempelfilene er per 2021-02-08 validert korrekt mot SKOS-AP-NO-Begrep-shape_shape_v1.ttl (som er under etablering).
 
 === A.1 Eksempelfil av et begrep
 
 I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl og norske utvidelser.
 ----
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://examples.com/excons/> .
 
-<https://data.brreg.no/begrep/44624> a skos:Concept ;
-  dct:identifier "https://data.brreg.no/begrep/44624" ;
-  dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
-  skos:example ""@nb ;
-  dct:subject "Tvangsfullbyrdelse"@nb ;
-  skosno:verdiområde ""@nb ;
-  skosno:bruksområde ""@nb ;
-  dct:temporal [
-	 a dct:PeriodOfTime ;
-	 schema:startDate "2017-01-01"^^xsd:date ;
-	 schema:endDate "2017-12-31"^^xsd:date ;
-  ] ;
-  dcat:contactPoint [
-	 a vcard:Organization ;
- 	 vcard:organizationUnit "RF - Tinglysning og regnskap";
- 	 vcard:hasEmail <mailto:informasjonsforvaltning@brreg.no> ;
- 	 vcard:hasTelephone <tel:+4775007500>
-  ] ;
-  dct:modified "2018-01-01"^^xsd:date ;
+# an example concept with mandatory properties only:
+:exConcept_mandatoryPropertiesOnly a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier <https://examples.com/excons/1> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .
 
-  # Representasjon av term
-  skosxl:prefLabel [
-    a skosxl:Label ;
-    skosxl:literalForm "utleggspant"@nb ;
-    dct:modified "2018-01-01"^^xsd:date ;
-  ] ;
-  skosxl:altLabel <>;
-  skosxl:hiddenLabel <>;
+# an example concept with some (commonly used) optional properties in addition:
+:exConcept_withSomeOptionalProperties a skos:Concept;  # Begrep
+  # --- mandatory:
+  dct:identifier <https://examples.com/excons/2> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # mandatory anbefaltTerm
+    skosxl:literalForm "eksemppelbegrep"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # mandatory Definisjon
+  	rdfs:label "begrep som brukes til å eksemplifisere bruk av SKOS-AP-NO-Begrep"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
 
-  # Representasjon av Definisjon som muliggjør målgruppe m.m.
-  skosno:definisjon [
-	 a skosno:Definisjon ;
-	  rdfs:label "sikkerhet for pengekrav stiftet ved hjelp av namsmyndighet."@nb ;
-	    dct:source [
-		    rdfs:label "Lov om pant (panteloven) § 5-1"@nb ;
-		    rdfs:seeAlso <https://lovdata.no/NL/lov/1980-02-08-2/§5-1> ;
+  # --- some optional properties:
+  skos:subject "terminologi"@nb ; # fagområde
+  skosno:bruksområde "eksemplifisering"@nb ; # bruksområde
+  skosno:alternativFormulering [ a skosno:AlternativFormulering ; # alterntiv formulering
+    rdfs:label "begrep som er egnet for rdf-ekseperter"@nb ; # teksten
+    skos:scopeNote "kun som illustrasjon"@nb ; # merknad
+    skos:example "eksempel1, eksempel2"@nb ; # eksempel
+    dct:source [ # kildebeskrivelse
+        rdfs:label "eksempelsamling1"@nb ;
+        xsd:seeAlso <https://examples.com/eksempelsamling/1> ;
       ] ;
-    skos:scopeNote "Utleggspant vil si at namsmannen tar pant i saksøktes eiendeler, som for eksempel fast eiendom, eller annet verdifullt løsøre, som bil, båt og lignende. En kreditor som har fått utleggspant kan benytte panteretten som grunnlag for tvangssalg for å få dekket sitt krav. Utleggspant i enkelte formuesobjekter (løsøre, akvakulturtillatelser) kan få rettsvern ved tinglysing i Løsøreregisteret eller Akvakulturregisteret."@nb;
-    dct:audience <>;
-    dct:modified "2018-01-01"^^xsd:date ;
-  ];
+    skosno:forholdTilKilde skosno:basertPåKilde ; # forhold til kilde
+    dct:audience skosno:allmennheten ; # målgruppe
+    dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
+    skosno:omfang [ rdfs:label "Klassifisering av eksempelbegreper"@nb ;
+        rdfs:seeAlso <https://examples.com/excodelist> ; ] ;
+    ] ;
+  skosxl:altLabel [ a skosxl:Label ; # tillattTerm
+    skosxl:literalForm "testbegrep"@nb ; # navn
+    ] ;
+  dct:temporal [ a dct:PeriodOfTime ; # gyldighetsperiode
+    schema:startDate "2020-05-29"^^xsd:date;
+    ] ;
+  dcat:contactPoint [ a  vcard:Organization ; # kontaktpunkt
+    vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+    vcard:hasEmail <mailto:examples@examples.com> ;
+    ] ;
+  dct:modified "2021-01-01"^^xsd:date ; # sist oppdatert
+  dct:replaces :exConcept_mandatoryPropertiesOnly ; # erstatter
+  .
 
-  # Representasjon av begrepsrelasjon som muliggjør navngiving m.m.
-  skos:related [
-	 a skosno:AssosiativRelasjon ;
-	 dct:description ""@nb ;
- 	 dct:modified "2018-01-01"^^xsd:date ;
- 	 skosno:assosiertBegrep <https://jira.brreg.no/browse/BEGREP-220> ; # Namsmyndighet
-  ];
-  dct:replaces <> ;
-  dct:isReplacedBy <>;
-----
 
 === A.2 Eksempelfil av en begrepssamling
 
 ----
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -87,17 +91,20 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-<enBegrepssamling> # Katalogen
-	a skos:Collection ;
-	rdfs:label "Begrepskatalog BR"@nb ;
-	dct:identifier <> ;
-	dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
-	dct:description "Brønnøysundregistrenes begrepskatalog, godkjente begreper" ;
-  dcat:contactPoint [
-		a vcard:Organization ;
-    vcard:organizationUnit "RF - Tinglysning og regnskap";
-    vcard:hasEmail <> ;
-    vcard:hasTelephone <> ;
-  ] ;
-  skos:member <https://jira.brreg.no/browse/BEGREP-246> .
+@prefix : <https://examples.com/excolls/> .
+
+# An example collection, with mandatory and optional properties:
+:ex1_mandatoryPropertiesOnly a skos:Collection;  # Begrepssamling
+  # --- mandatory ---
+  rdfs:label "Eksempelsamling"@nb ; # navn
+  dct:identifier <https://examples.com/begrepssamling/1> ; # identifikator
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  skos:member :exConcept_mandatoryPropertiesOnly ; # begrep
+  # --- optional ---
+  dct:description "Eksempel på en begrepssamling, med en del dummy-verdier"@nb ; # beskrivelse
+  dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasOorganizationUnit "Avdeling for eksemplifisering"@nb ;
+      vcard:hasEmail <mailto:examples@examples.com> ;
+      ] ;
+  .
 ----

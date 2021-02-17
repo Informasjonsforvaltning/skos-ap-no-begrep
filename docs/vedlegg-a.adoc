@@ -19,7 +19,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <https://examples.com/excons/> .
+@prefix : <https://examples.com/> .
 
 # an example concept with mandatory properties only:
 :exConcept_mandatoryPropertiesOnly a skos:Concept;  # Begrep
@@ -92,7 +92,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix : <https://examples.com/excolls/> .
+@prefix : <https://examples.com/> .
 
 # An example collection, with mandatory and optional properties:
 :ex1_withSomeOptionalProperties a skos:Collection;  # Begrepssamling

@@ -8,4 +8,4 @@ IT-ministeren satte i 2006 ned et bredt sammensatt Standardiseringsråd, som fra
 
 Denne standarden er utarbeidet av en arbeidsgruppe ledet av tidlgiere Difi (nå Digitaliseringsdirektoratet), i henhold til Standardiseringsrådets arbeidsmetodikk.
 
-Standarden inngår i bruksområdet https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/standarder/referansekatalogen/begrepsanalyse-og-definisjonsarbeid["Begrepsanalyse og definisjonsarbeid"] i _Referansekatalogen_.
+Standarden inngår i bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483["Begrepsanalyse og definisjonsarbeid"] i _Referansekatalogen_.

@@ -34,7 +34,7 @@ dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>.
 |===
 |URI til definisjon |dct:subject
 |SKOS (RDF turtle)-representasjon |<> dct:subject “”@nb .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |Language-tagged string
 |===
 
@@ -52,7 +52,7 @@ dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>.
 |===
 |URI til definisjon |skosno:bruksområde
 |SKOS (RDF turtle)-representasjon |<> skosno:bruksområde “”@nb .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |Language-tagged string
 |===
 
@@ -109,7 +109,7 @@ schema:endDate "2017-12-31"^^xsd:date ] .
 |SKOS (RDF turtle)-representasjon |<> skosxl:prefLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
 dct:modified "2018-01-01"^^xsd:date ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -120,7 +120,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 |SKOS (RDF turtle)-representasjon |skosxl:altLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
 dct:modified "2018-01-01"^^xsd:date ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -131,7 +131,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 |SKOS (RDF turtle)-representasjon |skosxl:hiddenLabel [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
 dct:modified "2018-01-01"^^xsd:date ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -143,7 +143,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 <> skosno:datastrukturTerm [a skosxl:Label ;
 skosxl:literalForm ""@nb ;
 dct:modified "2018-01-01"^^xsd:date ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -153,7 +153,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 |URI til definisjon |skosno:definisjon
 |SKOS (RDF turtle)-representasjon |<> skosno:definisjon
 [a skosno:Definisjon ; rdfs:label “”@nb ; ].
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -164,7 +164,7 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 |SKOS (RDF turtle)-representasjon |
 <> skosno:alternativFormulering
 [a skosno:AlternativFormulering ; rdfs:label “”@nb ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -234,7 +234,7 @@ skosxl:literalForm “”@nb ; ] . +
 skosxl:literalForm “”@nb ; ] . +
 <> skosno:datastrukturTerm [a skosxl:Label ;
 skosxl:literalForm “”@nb ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -250,7 +250,7 @@ skosxl:literalForm “”@nb ; ] . +
 skosxl:literalForm “”@nb ; ] . +
 <> skosno:datastrukturTerm [a skosxl:Label ;
 skosxl:literalForm “”@nb ; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |Language-tagged string
 |===
 
@@ -371,7 +371,7 @@ skos:scopeNote “”@nb; ] . +
 <> skosno:alternativFormulering
 [a skosno:AlternativFormulering ;
 skos:scopeNote “”@nb; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |fra SKOS spesifikasjon: +
 scopeNote: supplies some, possibly partial, information about the intended meaning of a concept, especially as an indication of how the use of a concept is limited in indexing practice. +
 Note that no domain is stated for the SKOS documentation properties. Thus, the effective domain for these properties is the class of all resources (rdfs:Resource).
@@ -387,7 +387,7 @@ skos:scopeNote “”@nb; ] . +
 <> skosno:alternativFormulering
 [a skosno:AlternativFormulering ;
 skos:scopeNote “”@nb; ] .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |Betydningsbeskrivelse er abstrakt og skal erstattes her av en av
 skosno:Definisjon skosno:AlternativFormulering
 |===
@@ -397,7 +397,7 @@ skosno:Definisjon skosno:AlternativFormulering
 |===
 |URI til definisjon |skos:example
 |SKOS (RDF turtle)-representasjon |<> skos:example “”@nb .
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |Language-tagged string
 |===
 
@@ -468,7 +468,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 skos:related [ a skosno:AssosiativRelasjon ;
 dct:description “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -482,7 +482,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 skos:related [ a skosno:AssosiativRelasjon ;
 dct:description “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -496,7 +496,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 xkos:generalizes [ a skosno:GeneriskRelasjon ;
 skosno:inndelingskriterium “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -510,7 +510,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 xkos:generalizes [ a skosno:GeneriskRelasjon ;
 skosno:inndelingskriterium “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -524,7 +524,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 xkos:hasPart [ a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
@@ -538,7 +538,7 @@ WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tab
 |SKOS (RDF turtle)-representasjon | [.line-through]#<>
 xkos:hasPart [ a skosno:PartitivRelasjon ;
 skosno:inndelingskriterium “”@nb ; ] .#
-|Datatype (med ev. URI til definisjon) |rdf:Literal
+|Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 

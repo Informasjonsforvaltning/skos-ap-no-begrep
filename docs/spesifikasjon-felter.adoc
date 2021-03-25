@@ -171,8 +171,8 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 === Begrep.assosiativRelasjon
 [cols="35s,65", stripes=odd]
 |===
-|URI til definisjon |skos:related
-|SKOS (RDF turtle)-representasjon |<> skos:related <> .
+|URI til definisjon | skosno:assosiativRelasjon
+|SKOS (RDF turtle)-representasjon | <> skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ; ] <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===
@@ -180,8 +180,8 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 === Begrep.generiskRelasjon
 [cols="35s,65", stripes=odd]
 |===
-|URI til definisjon |xkos:generalizes
-|SKOS (RDF turtle)-representasjon | <> xkos:generalizes <> .
+|URI til definisjon | skosno:generiskRelasjon
+|SKOS (RDF turtle)-representasjon | <> skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; ] <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===
@@ -189,8 +189,8 @@ dct:modified "2018-01-01"^^xsd:date ; ] .
 === Begrep.partitivRelasjon
 [cols="35s,65", stripes=odd]
 |===
-|URI til definisjon |xkos:hasPart
-|SKOS (RDF turtle)-representasjon |<> xkos:hasPart <> .
+|URI til definisjon | skosno:partitivRelasjon
+|SKOS (RDF turtle)-representasjon | <> skosno:partitivRelasjon [ a skosno:PartitivRelasjon ; ] <> .
 |Datatype (med ev. URI til definisjon) |skos:Concept
 |Merknad |(ingen)
 |===
@@ -460,84 +460,72 @@ dct:modified “2017-01-01”^^xsd:date;
 
 === AssosiativRelasjon.beskrivelse.tekst
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-skos:related [ a skosno:AssosiativRelasjon ;
-dct:description “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ;
+dct:description “beskrivelsen av relasjonen”@nb ; skos:related <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
 === AssosiativRelasjon.beskrivelse.språkMålform
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-skos:related [ a skosno:AssosiativRelasjon ;
-dct:description “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ;
+dct:description “beskrivelsen av relasjonen”@nb ; skos:related <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
 === GeneriskRelasjon.inndelingskriterium.tekst
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-xkos:generalizes [ a skosno:GeneriskRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:generalizes <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
 === GeneriskRelasjon.inndelingskriterium.språkMålform
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-xkos:generalizes [ a skosno:GeneriskRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:generalizes <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
 === PartitivRelasjon.inndelingskriterium.tekst
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-xkos:hasPart [ a skosno:PartitivRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:hasPart <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===
 
 === PartitivRelasjon.inndelingskriterium.språkMålform
 
-WARNING: [yellow-background]#SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.#
-
 [cols="35s,65", stripes=odd]
 |===
 |URI til definisjon |dct:description
-|SKOS (RDF turtle)-representasjon | [.line-through]#<>
-xkos:hasPart [ a skosno:PartitivRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .#
+|SKOS (RDF turtle)-representasjon | <etBegrep>
+skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:hasPart <etAnnetBegrep> ; ] .
 |Datatype (med ev. URI til definisjon) |rdfs:Literal
 |Merknad |(ingen)
 |===

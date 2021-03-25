@@ -540,7 +540,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_a_2_eksempelfil_av_en_begrepssamling">A.2 Eksempelfil av en begrepssamling</a></li>
 </ul>
 </li>
-<li><a href="#Endringslogg">Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</a></li>
+<li><a href="#Endringslogg">Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.1</a></li>
 </ul>
 </div>
 </div>
@@ -554,8 +554,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.0.6 (se <a href="#Endringslogg">endringslogg</a>)<br>
-<strong>Publisert</strong>: 2019-03-15 (v.1.0)<br>
+<strong>Versjon</strong>: 1.1 (se <a href="#Endringslogg">endringslogg</a>)<br>
+<strong>Publisert</strong>: 2019-03-15 (v.1.0), 2021-03-25 (v.1.1)<br>
 <strong>Oppdatert</strong>: 2021-03-25<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
@@ -1235,11 +1235,11 @@ dct:modified "2018-01-01"^^xsd:date ; ] .</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til definisjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:related</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skosno:assosiativRelasjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skos:related &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ; ] &lt;&gt; .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -1262,11 +1262,11 @@ dct:modified "2018-01-01"^^xsd:date ; ] .</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til definisjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:generalizes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skosno:generiskRelasjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; xkos:generalizes &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; ] &lt;&gt; .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -1289,11 +1289,11 @@ dct:modified "2018-01-01"^^xsd:date ; ] .</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til definisjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:hasPart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skosno:partitivRelasjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; xkos:hasPart &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:partitivRelasjon [ a skosno:PartitivRelasjon ; ] &lt;&gt; .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -1928,18 +1928,6 @@ dct:modified “2017-01-01”^^xsd:date;
 </div>
 <div class="sect2">
 <h3 id="_assosiativrelasjon_beskrivelse_tekst"><a class="anchor" href="#_assosiativrelasjon_beskrivelse_tekst"></a>AssosiativRelasjon.beskrivelse.tekst</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -1952,9 +1940,9 @@ dct:modified “2017-01-01”^^xsd:date;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-skos:related [ a skosno:AssosiativRelasjon ;
-dct:description “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ;
+dct:description “beskrivelsen av relasjonen”@nb ; skos:related &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -1969,18 +1957,6 @@ dct:description “”@nb ; ] .</span></p></td>
 </div>
 <div class="sect2">
 <h3 id="_assosiativrelasjon_beskrivelse_språkmålform"><a class="anchor" href="#_assosiativrelasjon_beskrivelse_språkmålform"></a>AssosiativRelasjon.beskrivelse.språkMålform</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -1993,9 +1969,9 @@ dct:description “”@nb ; ] .</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-skos:related [ a skosno:AssosiativRelasjon ;
-dct:description “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ;
+dct:description “beskrivelsen av relasjonen”@nb ; skos:related &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -2010,18 +1986,6 @@ dct:description “”@nb ; ] .</span></p></td>
 </div>
 <div class="sect2">
 <h3 id="_generiskrelasjon_inndelingskriterium_tekst"><a class="anchor" href="#_generiskrelasjon_inndelingskriterium_tekst"></a>GeneriskRelasjon.inndelingskriterium.tekst</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -2034,9 +1998,9 @@ dct:description “”@nb ; ] .</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-xkos:generalizes [ a skosno:GeneriskRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:generalizes &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -2051,18 +2015,6 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </div>
 <div class="sect2">
 <h3 id="_generiskrelasjon_inndelingskriterium_språkmålform"><a class="anchor" href="#_generiskrelasjon_inndelingskriterium_språkmålform"></a>GeneriskRelasjon.inndelingskriterium.språkMålform</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -2075,9 +2027,9 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-xkos:generalizes [ a skosno:GeneriskRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:generalizes &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -2092,18 +2044,6 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </div>
 <div class="sect2">
 <h3 id="_partitivrelasjon_inndelingskriterium_tekst"><a class="anchor" href="#_partitivrelasjon_inndelingskriterium_tekst"></a>PartitivRelasjon.inndelingskriterium.tekst</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -2116,9 +2056,9 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-xkos:hasPart [ a skosno:PartitivRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:hasPart &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -2133,18 +2073,6 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </div>
 <div class="sect2">
 <h3 id="_partitivrelasjon_inndelingskriterium_språkmålform"><a class="anchor" href="#_partitivrelasjon_inndelingskriterium_språkmålform"></a>PartitivRelasjon.inndelingskriterium.språkMålform</h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-<span class="yellow-background">SKOS (RDF title)-representasjonen som er vist i tabellen under, er feil. Den skal ikke brukes slik den nå er. Ny løsning er på vei.</span>
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 35%;">
@@ -2157,9 +2085,9 @@ skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SKOS (RDF turtle)-representasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">&lt;&gt;
-xkos:hasPart [ a skosno:PartitivRelasjon ;
-skosno:inndelingskriterium “”@nb ; ] .</span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;
+skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;
+skosno:inndelingskriterium “inndelingskriteriet for relasjonen”@nb ; xkos:hasPart &lt;etAnnetBegrep&gt; ; ] .</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Datatype (med ev. URI til definisjon)</strong></p></td>
@@ -2615,14 +2543,63 @@ vcard:hasTelephone &lt;&gt; ] .</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.0.x</h2>
+<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Vedlegg B (ikke-normativt) - Endringer fra versjon 1.0 til 1.1</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Det er kun redaksjonelle endringer fra versjon 1.0 til 1.0.x, som ikke beskrives her i vedlegget.
-Med redaksjonelle endringer menes endringer i formatering/strukturering eller justeringer i tekst/tegninger/tabeller/eksempler
-som ikke endrer kravene i standarden.
-<a href="mailto:informasjonsforvaltning@digdir.no">Ta kontakt med Digitaliseringsdirektoratet</a> for mer informasjon om de redaksjonelle endringene.</p>
+<p>I tillegg til noen redaksjonelle justeringer som er foretatt siden v.1.0.0, er den viktigste endringen fra v.1.0.x til v.1.1 å rette opp (skrive)feil i RDF-representasjonene for hhv. assosiativ relasjon, generisk relasjon og partitiv relasjon mellom begreper, som forklart i tabellen under.</p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 15%;">
+<col style="width: 35%;">
+<col style="width: 35%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskap</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RDF-representasjon v.1.1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RDF-representasjon v.1.0.x</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Begrunnelse</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep.assosiativRelasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ; ] &lt;&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; skos:related &lt;&gt; .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x. skos:related har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep.generiskRelasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; ] &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; xkos:generalizes &lt;&gt; .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x xkos:generalizes har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep.partitivRelasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;&gt; skosno:partitivRelasjon [ a skosno:PartitivRelasjon ; ] &lt;&gt; .</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; xkos:hasPart &lt;&gt; .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x xkos:hasPart har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AssosiativRelasjon.beskrivelse.tekst; AssosiativRelasjon.beskrivelse.språkMålform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; skos:related [ a skosno:AssosiativRelasjon ; dct:description “”@nb ; ] .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x skos:related har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GeneriskRelasjon.inndelingskriterium.tekst; GeneriskRelasjon.inndelingskriterium.språkMålform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; xkos:generalizes [ a skosno:GeneriskRelasjon ; skosno:inndelingskriterium “”@nb ; ] .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x xkos:generalizes har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PartitivRelasjon.inndelingskriterium.tekst; PartitivRelasjon.inndelingskriterium.språkMålform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;etBegrep&gt;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><s>&lt;&gt; xkos:hasPart [ a skosno:PartitivRelasjon ; skosno:inndelingskriterium “”@nb ; ] .</s></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Skrivefeil i v.1.0.x xkos:hasPart har skos:Concept som range. Den kan bare brukes til å referere til et annet begrep og ikke til en begrepsrelasjon.</p></td>
+</tr>
+</tbody>
+</table>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -2639,7 +2616,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-03-25 10:26:37 UTC
+Sist oppdatert 2021-03-25 14:47:56 UTC
 </div>
 </div>
 </body>

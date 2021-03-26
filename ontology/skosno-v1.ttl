@@ -31,7 +31,7 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This is the ontology for SKOS-AP-NO-Begrep."@en ;
     dct:title "Ontoloty for SKOS-AP-NO-Begrep v.1.x"@en , "Ontologi for SKOS-AP-NO-Begrep v.1.x" ;
-    dct:modified "2021-03-25"^^xsd:date ;
+    dct:modified "2021-03-26"^^xsd:date ;
     owl:versionInfo "0.1" ;
     owl:versionNotes "Only the classes, properties and controlled vocabularies that are defined in SKOS-AP-NO-Begrep are defined in this ontology. Properties, classes etc. that are defined elsewhere and used in SKOS-AP-NO-Begrep without modification, are not (re)defined here."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/> ;
@@ -264,7 +264,7 @@ dct:audience a owl:ObjectProperty ;
 
 ###
 ### Classes from other vocabularies that are used in SKOS-AP-NO-Begrep,
-### without modified ussage, only with Norwegian Label:
+### without modified usage, only with Norwegian Label:
 ###
 
 skos:Collection a owl:Class ;
@@ -278,7 +278,43 @@ skosxl:Label a owl:Class ;
 
 ###
 ### Properties from other vocabularies that are used in SKOS-AP-NO-Begrep,
-### with Norwegian labels, and range/domain specified:
+### with Norwegian labels, and/or range/domain specified:
 ###
 
 ### fylles på litt etter hvert (etter behov) ...
+
+skosxl:prefLabel a owl:ObjectProperty ;
+  rdfs:label "anbefalt term"@nb .
+
+skosxl:altLabel a owl:ObjectProperty ;
+  rdfs:label "tillatt term"@nb .
+
+skosxl:hiddenLabel a owl:ObjectProperty ;
+  rdfs:label "frarådet term"@nb .
+
+dct:description a owl:ObjectProperty ;
+  rdfs:label "beskrivelse"@nb .
+
+dct:identifier a owl:ObjectProperty ;
+  rdfs:label "identifikator"@nb , "inndelingskriterium"@nb .
+
+dct:isReplacedBy a owl:ObjectProperty ;
+  rdfs:label "erstattes av"@nb .
+
+dct:modified a owl:ObjectProperty ;
+  rdfs:label "sist oppdatert"@nb .
+
+dct:publisher a owl:ObjectProperty ;
+  rdfs:label "ansvarlig virksomhet"@nb .
+
+dct:replaces a owl:ObjectProperty ;
+  rdfs:label "erstatter"@nb .
+
+dct:source a owl:ObjectProperty ;
+  rdfs:label "kilde"@nb .
+
+dct:subject a owl:ObjectProperty ;
+  rdfs:label "fagområde"@nb .
+
+dct:temporal a owl:ObjectProperty ;
+  rdfs:label "gyldighetsperoide"@nb .

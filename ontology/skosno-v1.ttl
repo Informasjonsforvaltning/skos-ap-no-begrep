@@ -293,14 +293,24 @@ xkos:generalizes a owl:ObjectProperty ;
   rdfs:label "underordnet begrep (i en generisk relasjon)"@ nb ;
   rdfs:domain skosno:GeneriskRelasjon ;
   rdfs:range skos:Concept ;
-  owl:inverseOf xkos:specializes ;
+  .
+
+xkos:specializes a owl:ObjectProperty ;
+  rdfs:label "overordnet begrep (i en generisk relasjon)"@ nb ;
+  rdfs:domain skosno:GeneriskRelasjon ;
+  rdfs:range skos:Concept ;
   .
 
 xkos:hasPart a owl:ObjectProperty ;
   rdfs:label "underordnet begrep (i en partitiv relasjon)"@ nb ;
   rdfs:domain skosno:PartitivRelasjon ;
   rdfs:range skos:Concept ;
-  owl:inverseOf xkos:isPartOf ;
+  .
+
+xkos:isPartOf a owl:ObjectProperty ;
+  rdfs:label "overordnet begrep (i en partitiv relasjon)"@ nb ;
+  rdfs:domain skosno:PartitivRelasjon ;
+  rdfs:range skos:Concept ;
   .
 
 skosxl:prefLabel a owl:ObjectProperty ;

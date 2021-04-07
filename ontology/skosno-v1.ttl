@@ -31,7 +31,7 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This is the ontology for SKOS-AP-NO-Begrep."@en ;
     dct:title "Ontoloty for SKOS-AP-NO-Begrep v.1.x"@en , "Ontologi for SKOS-AP-NO-Begrep v.1.x" ;
-    dct:modified "2021-03-26"^^xsd:date ;
+    dct:modified "2021-04-07"^^xsd:date ;
     owl:versionInfo "0.1" ;
     owl:versionNotes "Only the classes, properties and controlled vocabularies that are defined in SKOS-AP-NO-Begrep are defined in this ontology. Properties, classes etc. that are defined elsewhere and used in SKOS-AP-NO-Begrep without modification, are not (re)defined here."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/> ;
@@ -128,7 +128,7 @@ skosno:definisjon a owl:ObjectProperty ;
   rdfs:range skosno:Definisjon ;
   rdfs:label "definition"@en , "definisjon"@nb ;
   rdfs:comment "To refer to the definition of the concept."@en ,
-      "For å referere til en altertivt forumlert definisjon til begrepet."@nb ;
+      "For å referere til definisjonen til begrepet."@nb ;
   .
 
 skosno:forholdTilKilde a owl:ObjectProperty ;
@@ -231,7 +231,7 @@ skosno:sitatFraKilde a owl:NamedIndividual , skos:Concept ;
   .
 
 ###
-### Classes and properties defined elsewhere, with modified usages in SKOS-AP-NO-Begrep:
+### Properties defined elsewhere, with modified usages in SKOS-AP-NO-Begrep:
 ###
 
 dct:audience a owl:ObjectProperty ;
@@ -264,7 +264,7 @@ dct:audience a owl:ObjectProperty ;
 
 ###
 ### Classes from other vocabularies that are used in SKOS-AP-NO-Begrep,
-### without modified usage, only with Norwegian Label:
+### without modified usage, only with Norwegian label:
 ###
 
 skos:Collection a owl:Class ;
@@ -283,6 +283,36 @@ skosxl:Label a owl:Class ;
 
 ### fylles på litt etter hvert (etter behov) ...
 
+skos:related a owl:ObjectProperty ;
+  rdfs:label "relatert begrep"@ nb ;
+  rdfs:domain skosno:AssosiativRelasjon ;
+  rdfs:range skos:Concept ;
+ .
+
+xkos:generalizes a owl:ObjectProperty ;
+  rdfs:label "underordnet begrep (i en generisk relasjon)"@ nb ;
+  rdfs:domain skosno:GeneriskRelasjon ;
+  rdfs:range skos:Concept ;
+  .
+
+xkos:specializes a owl:ObjectProperty ;
+  rdfs:label "overordnet begrep (i en generisk relasjon)"@ nb ;
+  rdfs:domain skosno:GeneriskRelasjon ;
+  rdfs:range skos:Concept ;
+  .
+
+xkos:hasPart a owl:ObjectProperty ;
+  rdfs:label "underordnet begrep (i en partitiv relasjon)"@ nb ;
+  rdfs:domain skosno:PartitivRelasjon ;
+  rdfs:range skos:Concept ;
+  .
+
+xkos:isPartOf a owl:ObjectProperty ;
+  rdfs:label "overordnet begrep (i en partitiv relasjon)"@ nb ;
+  rdfs:domain skosno:PartitivRelasjon ;
+  rdfs:range skos:Concept ;
+  .
+
 skosxl:prefLabel a owl:ObjectProperty ;
   rdfs:label "anbefalt term"@nb .
 
@@ -296,10 +326,11 @@ dct:description a owl:ObjectProperty ;
   rdfs:label "beskrivelse"@nb .
 
 dct:identifier a owl:ObjectProperty ;
-  rdfs:label "identifikator"@nb , "inndelingskriterium"@nb .
+  rdfs:label "identifikator"@nb  .
 
 dct:isReplacedBy a owl:ObjectProperty ;
-  rdfs:label "erstattes av"@nb .
+  rdfs:label "erstattes av"@nb ;
+  owl:inverseOf dct:replaces .
 
 dct:modified a owl:ObjectProperty ;
   rdfs:label "sist oppdatert"@nb .

@@ -284,31 +284,31 @@ skosxl:Label a owl:Class ;
 ### fylles på litt etter hvert (etter behov) ...
 
 skos:related a owl:ObjectProperty ;
-  rdfs:label "relatert begrep"@ nb ;
+  rdfs:label "relatert begrep"@nb ;
   rdfs:domain skosno:AssosiativRelasjon ;
   rdfs:range skos:Concept ;
  .
 
 xkos:generalizes a owl:ObjectProperty ;
-  rdfs:label "underordnet begrep (i en generisk relasjon)"@ nb ;
+  rdfs:label "underordnet begrep (i en generisk relasjon)"@nb ;
   rdfs:domain skosno:GeneriskRelasjon ;
   rdfs:range skos:Concept ;
   .
 
 xkos:specializes a owl:ObjectProperty ;
-  rdfs:label "overordnet begrep (i en generisk relasjon)"@ nb ;
+  rdfs:label "overordnet begrep (i en generisk relasjon)"@nb ;
   rdfs:domain skosno:GeneriskRelasjon ;
   rdfs:range skos:Concept ;
   .
 
 xkos:hasPart a owl:ObjectProperty ;
-  rdfs:label "underordnet begrep (i en partitiv relasjon)"@ nb ;
+  rdfs:label "underordnet begrep (i en partitiv relasjon)"@nb ;
   rdfs:domain skosno:PartitivRelasjon ;
   rdfs:range skos:Concept ;
   .
 
 xkos:isPartOf a owl:ObjectProperty ;
-  rdfs:label "overordnet begrep (i en partitiv relasjon)"@ nb ;
+  rdfs:label "overordnet begrep (i en partitiv relasjon)"@nb ;
   rdfs:domain skosno:PartitivRelasjon ;
   rdfs:range skos:Concept ;
   .

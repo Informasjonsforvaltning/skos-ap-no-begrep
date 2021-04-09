@@ -313,26 +313,26 @@ xkos:isPartOf a owl:ObjectProperty ;
   rdfs:range skos:Concept ;
   .
 
-skosxl:prefLabel a owl:DataProperty ;
+skosxl:prefLabel a owl:DatatypeProperty ;
   rdfs:label "anbefalt term"@nb .
 
-skosxl:altLabel a owl:DataProperty ;
+skosxl:altLabel a owl:DatatypeProperty ;
   rdfs:label "tillatt term"@nb .
 
-skosxl:hiddenLabel a owl:DataProperty ;
+skosxl:hiddenLabel a owl:DatatypeProperty ;
   rdfs:label "frarådet term"@nb .
 
-dct:description a owl:DataProperty ;
+dct:description a owl:DatatypeProperty ;
   rdfs:label "beskrivelse"@nb .
 
-dct:identifier a owl:DataProperty ;
+dct:identifier a owl:DatatypeProperty ;
   rdfs:label "identifikator"@nb  .
 
 dct:isReplacedBy a owl:ObjectProperty ;
   rdfs:label "erstattes av"@nb ;
   owl:inverseOf dct:replaces .
 
-dct:modified a owl:DataProperty ;
+dct:modified a owl:DatatypeProperty ;
   rdfs:label "sist oppdatert"@nb .
 
 dct:publisher a owl:ObjectProperty ;
@@ -341,11 +341,11 @@ dct:publisher a owl:ObjectProperty ;
 dct:replaces a owl:ObjectProperty ;
   rdfs:label "erstatter"@nb .
 
-dct:source a owl:DataProperty ;
+dct:source a owl:DatatypeProperty ;
   rdfs:label "kilde"@nb .
 
-dct:subject a owl:DataProperty ;
+dct:subject a owl:DatatypeProperty ;
   rdfs:label "fagområde"@nb .
 
-dct:temporal a owl:DataProperty ;
+dct:temporal a owl:DatatypeProperty ;
   rdfs:label "gyldighetsperoide"@nb .

@@ -30,8 +30,8 @@
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This is the ontology for SKOS-AP-NO-Begrep."@en ;
-    dct:title "Ontoloty for SKOS-AP-NO-Begrep v.1.x"@en , "Ontologi for SKOS-AP-NO-Begrep v.1.x" ;
-    dct:modified "2021-04-08"^^xsd:date ;
+    dct:title "Ontology for SKOS-AP-NO-Begrep v.1.x"@en , "Ontologi for SKOS-AP-NO-Begrep v.1.x"@nb ;
+    dct:modified "2021-05-05"^^xsd:date ;
     owl:versionInfo "0.1" ;
     owl:versionNotes "Only the classes, properties and controlled vocabularies that are defined in SKOS-AP-NO-Begrep are defined in this ontology. Properties, classes etc. that are defined elsewhere and used in SKOS-AP-NO-Begrep without modification, are not (re)defined here."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/> ;

@@ -26,12 +26,12 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-02-08"^^xsd:date ;
+    dct:modified "2021-03-26"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.3";
+    owl:versionInfo "0.4";
     owl:owl:versionInfo "Except for 'concept relations', all relevant shapes are included in this version, i.e., also for optional properties and for usage of permitted values. The shapes are tested using test concepts/collections with dummy values, though not all properties are tested with 'intended errors'."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
@@ -43,6 +43,7 @@
 :Concept_Shape a sh:NodeShape ; # klassen Begrep
     ##### mandatory properties:
     sh:property [ # anbefalt term
+      sh:name "anbefalt term"@nb , "preferred term"@en ;
       sh:path skosxl:prefLabel ;
       sh:class skosxl:Label ;
       sh:minCount 1 ;
@@ -50,6 +51,7 @@
       sh:message "Begrepet må ha minst 1 anbefalt term (skosxl:prefLabel), som skal være instans av skosxl:Label"@nb ;
       ] ;
     sh:property [ # definisjon
+      sh:name "definisjon"@nb , "definition"@en ;
       sh:path skosno:definisjon ;
       sh:class skosno:Definisjon ;
       # sh:node :Betydningsbeskrivelse_Shape ;
@@ -58,6 +60,7 @@
       sh:message "Begrepet må ha minst 1 definisjon (skosno:definisjon), som skal være instans av skosno:Definisjon"@nb ;
       ] ;
     sh:property [ # identifikator(er)
+      sh:name "identifikator"@nb , "identifier"@en ;
       sh:path dct:identifier ;
       sh:nodeKind sh:IRI ;
       sh:minCount 1 ;
@@ -65,6 +68,7 @@
       sh:message "Begrepet må ha minst 1 identifikator (dct:identifier), som skal være en IRI"@nb ;
       ] ;
     sh:property [ # ansvarlig virksomhet
+      sh:name "ansvarlig virksomhet"@nb , "responsible organization"@en ;
       sh:path dct:publisher ;
       sh:nodeKind sh:BlankNodeOrIRI ;
       sh:minCount 1 ;
@@ -74,12 +78,14 @@
       ] ;
     ### optional properties:
     sh:property [ # alternativ formulering
+      sh:name "alternativ formulerring"@nb , "reworded definition"@en ;
       sh:path skosno:alternativFormulering ;
       sh:class skosno:AlternativFormulering ;
       sh:severity sh:Violation ;
       sh:message "AlternativFormulering (skosno:alternativFormulering) må være instans av skosno:AlternativForumulering"@nb ;
       ] ;
     sh:property [ # fagområde
+      sh:name "fagområde"@nb , "subject field"@en ;
       sh:path dct:subject ;
       sh:nodeKind sh:Literal ;
       sh:maxCount 1 ;
@@ -87,6 +93,7 @@
       sh:message "Begrepet kan ha maks. 1 fagområde (dct:subject), som skal være Literal"@nb ;
       ] ;
     sh:property [ # bruksområde
+      sh:name "bruksområde"@nb ;
       sh:path skosno:bruksområde ;
       sh:nodeKind sh:Literal ;
       sh:maxCount 1 ;
@@ -100,6 +107,7 @@
       sh:message "Gyldighetsperiode (dct:temporal) skal være instans av dct:PeriodOfTime"@nb ;
       ] ;
     sh:property [ # kontaktpunkt
+      sh:name "kontaktpunkt"@nb , "contact point"@en ;
       sh:class vcard:Kind ;
       sh:path dcat:contactPoint ;
       sh:maxCount 1 ;
@@ -107,6 +115,7 @@
       sh:message "Begrepet kan ha maks. 1 kontaktpunkt (dcat:contactPoint), som skal være instans av vcard:Kind"@nb ;
       ] ;
     sh:property [ # sist oppdatert
+      sh:name "sist oppdatert"@nb , "modified"@en ;
       sh:maxCount 1 ;
       sh:path dct:modified ;
       sh:severity sh:Violation ;
@@ -114,33 +123,45 @@
       sh:message "Begrepet kan ha maks. 1 sist oppdatert dato (dct:modified), som skal være enten xsd:date eller xsd:dateTime"@nb ;
       ] ;
     sh:property [ # erstatter
+      sh:name "erstatter"@nb , "replaces"@en ;
       sh:path dct:replaces ;
       sh:class skos:Concept ;
       sh:severity sh:Violation ;
       sh:message "Begrep som erstattes (dct:replaces) skal være instans av skos:Concept"@nb ;
       ] ;
     sh:property [ # erstattes av
+      sh:name "erstattes av"@nb , "is replaced by"@en ;
       sh:path dct:isReplacedBy ;
       sh:class skos:Concept ;
-      sh:severity skos:Concept ;
+      sh:severity sh:Violation ;
       sh:message "Begrep som erstatter dette begrep (dct:isReplacedBy) skal være instans av skos:Concept"@nb ;
       ] ;
-## foreløpig som placehoders, fullføres senere:
-#      sh:property [ # assosiativ relasjon
-#        ] ;
-#      sh:property [ # generisk relasjon
-#        ] ;
-#      sh:property [ # partitiv relasjon
-#        ] ;
-#      sh:targetClass skos:Concept ; # dette vil gjøre at validatoren også sjekker alle importerte skos:Concept-grafer
-      sh:targetObjectsOf skos:member, dct:replaces, dct:isReplacedBy,
-          skosno:assosiertBegrep, xkos:generalizes, xkos:generalizes ;
+    sh:property [ # assosiativ relasjon
+      sh:name "assosiativ relasjon"@nb , "assosiative relation"@en ;
+      sh:path skosno:assosiativRelasjon ;
+      sh:class skosno:AssosiativRelatjon ;
+      sh:severity sh:Violation ;
+        ] ;
+    sh:property [ # generisk relasjon
+      sh:name "generisk relasjon"@nb , "generic relation"@en ;
+      sh:path skosno:generiskRelasjon ;
+      sh:class skosno:GeneriskRelasjon ;
+      sh:severity sh:Violation ;
+      ] ;
+    sh:property [ # partitiv relasjon
+      sh:name "partitiv relasjon"@nb , "partitive relation"@en ;
+      sh:path skosno:partitivRelasjon ;
+      sh:class skosno:PartitiveRelasjon ;
+      sh:severity sh:Violation ;
+      ] ;
+    sh:targetClass skos:Concept ; # dette vil gjøre at validatoren også sjekker alle importerte skos:Concept-grafer
     .
 
 :Betydningsbeskrivelse_Shape a sh:NodeShape ; # Klassen Betydningsbeskrivelse
     sh:name "(Definisjon / ALternativFormulering)"@nb , "Definition / Reworded Definition"@en ;
     ### mandatory properties:
     sh:property [ # tekst
+        sh:name "tekst (til en definisjon eller alternativ formulering)"@nb , "text (of a (reworded) definition)"@en ;
         sh:maxCount 1 ;
         sh:maxCount 1 ;
         sh:path rdfs:label ;
@@ -150,12 +171,14 @@
         ] ;
     ### optional properties:
     sh:property [ # kilde
+        sh:name "kilde"@nb , "source"@en ;
         sh:path dct:source ;
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:severity sh:Violation ;
         sh:message "Kildebeskrivelsen (dct:source) skal være enten en IRI eller en blank node"@nb ;
         ] ;
     sh:property [ # forhold til kilde
+        sh:name "forhold til kilde"@nb ;
         sh:path skosno:forholdTilKilde ;
         sh:node :ForholdTilKildeRestriction_Shape ;
         sh:maxCount 1 ;
@@ -163,6 +186,7 @@
         sh:message "Det kan være maks. 1 forholdTilKilde (skosno:forholdTilKilde), som skal ha en av de predefinerte verdiene"@nb ;
         ] ;
     sh:property [ # merknad
+        sh:name "merknad"@nb ;
         sh:path skos:scopeNote ;
         sh:nodeKind sh:Literal ;
         sh:severity sh:Violation ;
@@ -175,6 +199,7 @@
         sh:message "Eksempel (skos:example) skal være Literal"@nb ;
         ] ;
     sh:property [ # målgruppe
+        sh:name "målgruppe"@nb ;
         sh:path dct:audience ;
         sh:node :AudienceRestriction_Shape ;
         sh:maxCount 1 ;
@@ -182,6 +207,7 @@
         sh:message "Begrep kan ha maks. 1 målgruppe (dct:audience), som skal ha en av de predefinerte verdiene"@nb ;
         ] ;
     sh:property [ # omfang
+        sh:name "omfang"@nb ;
         sh:path skosno:omfang ;
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:maxCount 1 ;
@@ -189,6 +215,7 @@
         sh:message "Definisjon/AlternativFormulering kan ha maks. 1 omfang (skosno:omfang), som kan bestå av en rdfs:label og/eller en rdfs:seeAlso"@nb ;
         ] ;
     sh:property [ # sist oppdatert
+        sh:name "sist oppdatert"@nb , "modified"@en ;
         sh:maxCount 1 ;
         sh:path dct:modified ;
         sh:severity sh:Violation ;
@@ -202,6 +229,7 @@
     ### mandatory properties:
     sh:name "Begrepssamling"@nb , "Concept collection"@en ;
     sh:property [ # navn
+      sh:name "navn"@nb ; "tittel"@en ;
       sh:minCount 1 ;
       sh:path rdfs:label ;
       sh:nodeKind sh:Literal ;
@@ -209,6 +237,7 @@
       sh:message "Begrepssamling må ha et navn (rdfs:label)"@nb ;
       ] ;
     sh:property [ # identifikator
+      sh:name "identifikator"@nb , "identifier"@en ;
       sh:path dct:identifier ;
       sh:nodeKind sh:IRI ;
       sh:minCount 1 ;
@@ -216,6 +245,7 @@
       sh:message "Begrepssamling må ha 1 og kun 1 identifikator (dct:identifier), som skal være en IRI"@nb ;
       ] ;
     sh:property [ # ansvarligVirksomhet
+      sh:name "ansvarlig virksomhet"@nb , "responsible organization"@en ;
       sh:path dct:publisher ;
       sh:nodeKind sh:BlankNodeOrIRI ;
       sh:minCount 1 ;
@@ -224,6 +254,7 @@
       sh:message "Begrepsamling må ha 1 og kun 1 ansvarlig virksomhet (dct:publisher), som skal oppgis som IRI"@nb ;
       ] ;
     sh:property [ # begrep
+      sh:name "begrep"@nb , "concept"@en ;
       sh:path skos:member ;
       sh:class skos:Concept ;
       sh:minCount 1 ;
@@ -232,12 +263,14 @@
       ] ;
     ### optional properties:
     sh:property [ # beskrivelse
+      sh:name "beskrivelse"@nb , "description"@en ;
       sh:path dct:description ;
       sh:nodeKind sh:Literal ;
       sh:severity sh:Violation ;
       sh:message "Beskrivelse til begrepssamling (dct:description) skal være Literel"@nb ;
       ] ;
     sh:property [ # kontaktpunkt
+      sh:name "kontaktpunkt"@nb , "contact point"@en ; 
       sh:path dcat:contactPoint ;
       sh:class vcard:Kind ;
       sh:maxCount 1 ;

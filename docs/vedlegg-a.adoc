@@ -56,7 +56,7 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
     skos:example "eksempel1, eksempel2"@nb ; # eksempel
     dct:source [ # kildebeskrivelse
         rdfs:label "eksempelsamling1"@nb ;
-        xsd:seeAlso <https://examples.com/eksempelsamling/1> ;
+        rdfs:seeAlso <https://examples.com/eksempelsamling/1> ;
       ] ;
     skosno:forholdTilKilde skosno:basertPåKilde ; # forhold til kilde
     dct:audience skosno:allmennheten ; # målgruppe

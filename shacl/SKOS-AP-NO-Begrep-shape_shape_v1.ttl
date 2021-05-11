@@ -26,7 +26,7 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-03-26"^^xsd:date ;
+    dct:modified "2021-05-11"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
@@ -229,7 +229,7 @@
     ### mandatory properties:
     sh:name "Begrepssamling"@nb , "Concept collection"@en ;
     sh:property [ # navn
-      sh:name "navn"@nb ; "tittel"@en ;
+      sh:name "navn"@nb , "tittel"@en ;
       sh:minCount 1 ;
       sh:path rdfs:label ;
       sh:nodeKind sh:Literal ;
@@ -270,7 +270,7 @@
       sh:message "Beskrivelse til begrepssamling (dct:description) skal være Literel"@nb ;
       ] ;
     sh:property [ # kontaktpunkt
-      sh:name "kontaktpunkt"@nb , "contact point"@en ; 
+      sh:name "kontaktpunkt"@nb , "contact point"@en ;
       sh:path dcat:contactPoint ;
       sh:class vcard:Kind ;
       sh:maxCount 1 ;

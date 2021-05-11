@@ -229,7 +229,7 @@
     ### mandatory properties:
     sh:name "Begrepssamling"@nb , "Concept collection"@en ;
     sh:property [ # navn
-      sh:name "navn"@nb ; "tittel"@en ;
+      sh:name "navn"@nb , "tittel"@en ;
       sh:minCount 1 ;
       sh:path rdfs:label ;
       sh:nodeKind sh:Literal ;
@@ -270,7 +270,7 @@
       sh:message "Beskrivelse til begrepssamling (dct:description) skal være Literel"@nb ;
       ] ;
     sh:property [ # kontaktpunkt
-      sh:name "kontaktpunkt"@nb , "contact point"@en ; 
+      sh:name "kontaktpunkt"@nb , "contact point"@en ;
       sh:path dcat:contactPoint ;
       sh:class vcard:Kind ;
       sh:maxCount 1 ;

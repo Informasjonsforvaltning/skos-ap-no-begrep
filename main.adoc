@@ -5,6 +5,7 @@ include::locale/attributes.adoc[]
 :docinfo:
 :icons: font
 :toc: left
+ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
 :sectanchors:
 :imagesdir: images
@@ -15,9 +16,11 @@ image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 *Status*: Gjeldende +
 *Versjon*: 1.1 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2019-03-15 (v.1.0), 2021-03-25 (v.1.1) +
-*Oppdatert*: 2021-05-05 +
+*Oppdatert*: 2021-08-23 +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
+
+toc::[]
 
 //:sectnums:
 

@@ -27,12 +27,12 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-05-11"^^xsd:date ;
+    dct:modified "2021-08-24"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.5";
+    owl:versionInfo "0.6";
     owl:owl:versionInfo "Except for 'concept relations', all relevant shapes are included in this version, i.e., also for optional properties and for usage of permitted values. The shapes are tested using test concepts/collections with dummy values, though not all properties are tested with 'intended errors'."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
@@ -155,9 +155,7 @@
       sh:class skosno:PartitiveRelasjon ;
       sh:severity sh:Violation ;
       ] ;
-    sh:and (
-     [sh:targetClass skos:Concept ]
-     [ sh:not [ sh:targetObjectsOf rov:orgType ] ] ); # midlertidig løsning for å unngå sjekk på orgType
+    sh:targetClass skos:Concept ;
     .
 
 :Betydningsbeskrivelse_Shape a sh:NodeShape ; # Klassen Betydningsbeskrivelse

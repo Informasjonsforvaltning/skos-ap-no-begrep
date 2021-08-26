@@ -27,16 +27,16 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-08-24"^^xsd:date ;
+    dct:modified "2021-08-26"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.6";
-    owl:owl:versionInfo "Except for 'concept relations', all relevant shapes are included in this version, i.e., also for optional properties and for usage of permitted values. The shapes are tested using test concepts/collections with dummy values, though not all properties are tested with 'intended errors'."@en ;
+    owl:versionInfo "0.7" ;
+    owl:versionInfo "All relevant shapes are included in this version, i.e., also for optional properties and for usage of permissible values. The shapes are tested using test concepts/collections with dummy values, though not all properties are tested with 'intended errors'."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
-        foaf:mbox <mailto:informasjonsforvaltning@diggir.no> ;
+        foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
         foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet"@nb ;
         foaf:page <https://www.digdir.no> ;
     ] .
@@ -140,7 +140,7 @@
     sh:property [ # assosiativ relasjon
       sh:name "assosiativ relasjon"@nb , "assosiative relation"@en ;
       sh:path skosno:assosiativRelasjon ;
-      sh:class skosno:AssosiativRelatjon ;
+      sh:class skosno:AssosiativRelasjon ;
       sh:severity sh:Violation ;
         ] ;
     sh:property [ # generisk relasjon
@@ -152,7 +152,7 @@
     sh:property [ # partitiv relasjon
       sh:name "partitiv relasjon"@nb , "partitive relation"@en ;
       sh:path skosno:partitivRelasjon ;
-      sh:class skosno:PartitiveRelasjon ;
+      sh:class skosno:PartitivRelasjon ;
       sh:severity sh:Violation ;
       ] ;
     sh:targetClass skos:Concept ;
@@ -225,6 +225,118 @@
         ] ;
     sh:targetObjectsOf skosno:definisjon , skosno:alternativFormulering ;
     .
+
+:AssosiativRelasjon_Shape a sh:NodeShape ; # AssosiativRelasjon
+  sh:name "Assosiativ relasjon"@nb , "Associative relation"@en ;
+  sh:property [ # assosiert begrep
+    sh:name "assosiert begrep"@nb, "associated concept"@en ;
+    sh:minCount 1 ;
+    sh:path skos:related ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+    sh:message "En assosiativ relasjon skal ha minst 1 assosiert begrep som skal være en instans av skos:Concept."@nb , "An associative relation shall have at least 1 associated concept (skos:related), which shall be an instance of skos:Concept.";
+    ] ;
+  sh:property [ # beskrivelse
+    sh:name "beskrivelse"@nb , "description"@en ;
+    sh:minCount 1 ;
+    sh:path dct:description ;
+    sh:nodeKind sh:Literal ;
+    sh:severity sh:Violation ;
+    sh:message "En assosiativ relasjon skal ha minst 1 beskrivelse av relasjonen, som skal være av type Literal."@nb , "An associative relation shall have at least 1 description, which shall be Literal.";
+    ] ;
+  sh:property [ # sist oppdatert
+      sh:name "sist oppdatert"@nb , "modified"@en ;
+      sh:maxCount 1 ;
+      sh:path dct:modified ;
+      sh:severity sh:Violation ;
+      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:message "Associativ relasjon kan ha maks. 1 sist oppdatert dato (dct:modified), som skal være enten xsd:date eller xsd:dateTime."@nb , "An associative relation may have at most 1 modified date (dct:modified), which shall be either xsd:date of xsd:dateTime.";
+      ] ;
+    sh:targetClass skosno:AssosiativRelasjon ;
+    .
+
+:GeneriskBegrep_Shape a sh:NodeShape ; # Generisk/overordnet begrep, brukes i Generisk relasjon
+  sh:name "overordnet/generisk begrep"@nb, "superordinate/generic concept"@en ;
+  sh:property [ # overordnet begrep
+    sh:minCount 1 ;
+    sh:path xkos:specializes ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+    ] ;
+    .
+
+:SpesifiktBegrep_Shape a sh:nodeKind ; # Spesifikt/underordnet begrep, brukes i Generisk relasjon
+  sh:name "underordnet/spesifikt begrep"@nb, "subordinate/specific concept"@en , "specific concept"@en ;
+  sh:property [ # underordnet begrep
+    sh:minCount 1 ;
+    sh:path xkos:generalizes ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+    ] ;
+    .
+
+:GeneriskSpesifiktBegrep_Shape a sh:NodeShape ; # Gnerisk eller spesifkt begrep
+  sh:name "generisk/overordnet eller spesifikt/underordnet begrep"@nb , "Generic/superordinate or specific/subordinate concept"@en ;
+  sh:or ( # overordnet eller underordnet begrep
+        [ sh:node :GeneriskBegrep_Shape ; ]
+        [ sh:node :SpesifiktBegrep_Shape ; ] ) ;
+  sh:severity sh:Violation ;
+  sh:message "En generisk relasjon skal ha minst 1 overordnet begrep (xkos:specializes) eller 1 underordnet begrep (xkos:generalizes), som skal være instans av skos:Concept."@nb , "A generic relation shall have at least 1 superordinate concept (xkos:specializes) or 1 subordinate concept (xkos:generalizes), which shall be an intance of skos:Concept.";
+  sh:targetClass skosno:GeneriskRelasjon ;
+  .
+
+:Inndelingskriterium_Shape a sh:NodeShape ; # Inndelingskriterium for GeneriskRelasjon eller PartitivRelasjon
+  sh:property [ # beskrivelse
+    sh:name "inndelingskriterium"@nb , "subdivision criterion"@en ;
+    sh:path dct:description ;
+    sh:nodeKind sh:Literal ;
+    sh:severity sh:Violation ;
+    sh:message "Inndelingskriterium (dct:description) skal være av type Literal."@nb ;
+    ] ;
+    sh:targetClass skosno:PartitivRelasjon , skosno:GeneriskRelasjon ;
+    .
+
+:SistOppdatertRelasjon_Shape a sh:NodeShape ; # Sist oppdatert for AssosiativRelasjon, GeneriskRelasjon eller PartitivRelasjon
+  sh:property [ # sist oppdatert
+      sh:name "sist oppdatert"@nb , "modified"@en ;
+      sh:maxCount 1 ;
+      sh:path dct:modified ;
+      sh:severity sh:Violation ;
+      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:message "Maks. 1 sist oppdatert dato (dct:modified) tillatt, den skal være enten xsd:date eller xsd:dateTime."@nb ;
+      ] ;
+      sh:targetClass skosno:PartitivRelasjon , skosno:GeneriskRelasjon ;
+    .
+
+:Helhetsbegrep_Shape a sh:NodeShape ; # brukes i PartitivRelasjon_Shape
+  sh:name "helhetsbegrep-restriksjon"@nb, "comprehensive concept restrictions"@en ;
+  sh:property [
+    sh:minCount 1 ;
+    sh:path dct:isPartOf ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+    ] ;
+    .
+
+:Delbegrep_Shape a sh:NodeShape ; # brukes i PartitivRelasjon_Shape
+  sh:name "delbegrep-restriksjon"@nb, "partitive concept restrictions"@en ;
+  sh:property [
+    sh:minCount 1 ;
+    sh:path dct:hasPart ;
+    sh:class skos:Concept ;
+    sh:severity sh:Violation ;
+    ] ;
+    .
+
+:HelhetDelbegrep_shape a sh:NodeShape ; # slå sammen Helhetsbegrep_Shape og Delbegrep_Shape
+  sh:name "Overordnet/helhets- eller 1 underordnet/del- begrep"@nb ;
+  sh:or ( # overordnet eller underordnet begrep
+        [ sh:node :Helhetsbegrep_Shape ; ]
+        [ sh:node :Delbegrep_Shape ; ] ) ;
+  sh:severity sh:Violation ;
+  sh:message "En partitiv relasjon skal ha minst 1 overordnet begrep (dct:isPartOf) eller underordnet begrep (dct:hasPart), som skal være instans av skos:Concept."@nb , "A partitive relation shall have at least 1 superordinate concept (dct:isPartOf) or 1 subordinate concept (dct:hasPart), which shall be an instance of skos:Concept.";
+  sh:targetClass skosno:PartitivRelasjon ;
+  .
 
 :Collection_Shape a sh:NodeShape ; # Begrepssamling
     ### mandatory properties:
@@ -305,7 +417,8 @@
     rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
     sh:name "Date time date disjunction" ;
     sh:message "The values must be typed as either xsd:date or xsd:dateTime" ;
-    sh:or ([ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ]
+    sh:severity sh:Violation ;
+    sh:xone ([ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ]
     ) ;
     .
 

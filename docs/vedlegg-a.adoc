@@ -109,3 +109,272 @@ I dette eksemplet benyttes standarden fullt ut. Dette medfører bruk av skos-xl 
       ] ;
   .
 ----
+
+=== A.3 Eksempler på assosiative relasjoner
+
+----
+#####
+# Eksempler på assosiative relasjoner mellom begreper
+# Skal _ikke_ gi valideringsfeil
+#    bortsett fra ev. feil på instanser av skos:Concept som det blir pekt på herfra
+###
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://examples.com/concepts/> .
+
+##### Dette første eksemplet viser bruken av alle mulige egenskaper relatert til assosiative relasjoner mellom begreper
+
+# begrepet 'bil':
+:bil a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <https://examples.com/concepts/bil> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "bil"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "her kommer definisjonsteksten ..."@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  # --- optional, herunder assosiative relasjoner:
+    skosno:assosiativRelasjon [ a skosno:AssosiativRelasjon ; # assosiativRelasjon
+      # --- mandatory:
+        skos:related :vei ; # assosiertBegrep
+        dct:description "kjører på"@nb; # beskrivelse
+      # --- optional:
+        dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
+      ] ;
+  .
+
+#### Eksemplene herfra inneholder stort sett kun obligatoriske egenskaper
+
+# begrepet 'vei':
+:vei a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <https://examples.com/concepts/vei> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "vei"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "her kommer definisjonsteksten ..."@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+ .
+----
+
+=== A.4 Eksempler på generiske relasjoner
+
+----
+#####
+# Eksempler på generiske relasjoner mellom begreper
+# Skal _ikke_ gi valideringsfeil
+#    bortsett fra ev. feil på instanser av skos:Concept som det blir pekt på herfra
+###
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://examples.com/concepts/> .
+
+##### Dette første eksemplet viser bruken av alle mulige egenskaper relatert til generiske relasjoner mellom begreper
+
+# begrepet 'bestikk':
+:bestikk a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <https://examples.com/concepts/bestikk> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "bestikk"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "redskap som man bruker til å håndtere maten under et måltid eller når man spiser"@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  # --- optional, herunder generiske relasjoner:
+    skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        xkos:generalizes :fiskebestikk ; # underordnetBegrep
+      # --- optional:
+        skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium
+        dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
+      ] ;
+    skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        xkos:generalizes :biffbestikk ; # underordnetBegrep
+      # --- optional:
+        skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium
+        dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
+      ] ;
+    skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        xkos:generalizes :sølvbestikk ; # underordnetBegrep
+      # --- optional:
+        skosno:inndelingskriterium "materiale"@nb; # inndelingskriterium
+        dct:modified "2021-08-24"^^xsd:date ; # sistOppdatert
+      ] ;
+    skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        xkos:generalizes :stålbestikk ; # underordnetBegrep
+      # --- optional:
+        skosno:inndelingskriterium "materiale"@nb; # inndelingskriterium
+        dct:modified "2021-08-24"^^xsd:date ; # sistOppdatert
+      ] ;
+  .
+
+#### Eksemplene herfra inneholder stort sett kun obligatoriske egenskaper
+
+# begrepet 'fiskebestikk':
+:fiskebestikk a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <https://examples.com/concepts/fiskebestikk> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "fiskebestikk"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "bestikk til å spise fisk med"@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  # --- optional, herunder generiske relasjoner:
+    skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generisk relasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        xkos:specializes :bestikk ; # overordnetBegrep
+      # --- optional:
+        skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium
+        dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
+      ] .
+
+# begrepet 'biffbestikk':
+:biffbestikk a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <https://examples.com/concepts/biffbestikk> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "biffbestikk"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "bestikk til å spise biff med"@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .
+
+# begrepet 'sølvbestikk':
+:sølvbestikk a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+  dct:identifier <https://examples.com/concepts/sølvbestikk> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+    skosxl:literalForm "sølvbestikk"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # definisjon
+  	rdfs:label "bestikk laget av sølv"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .
+
+# begrepet 'stålbestikk':
+:stålbestikk a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+  dct:identifier <https://examples.com/concepts/stålbestikk> ; # identifikator
+  skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+    skosxl:literalForm "stålbestikk"@nb ; # navn
+    ] ;
+  skosno:definisjon [ a skosno:Definisjon ; # definisjon
+  	rdfs:label "bestikk laget av stål"@nb ; # definisjonsteksten
+  	] ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .
+----
+
+
+=== A.5 Eksempler på partitive relasjoner
+
+----
+#####
+# Eksempler på partitive relasjoner mellom begreper
+# Skal _ikke_ gi valideringsfeil
+#    bortsett fra ev. feil på instanser av skos:Concept som det blir pekt på herfra
+###
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://examples.com/concepts/> .
+
+##### Dette første eksemplet viser bruken av alle mulige egenskaper relatert til partitive relasjoner mellom begreper
+
+# begrepet 'virksomhet':
+:virksomhet a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <hhttps://examples.com/concepts/virksomhet> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "virksomhet"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "her kommer definisjonsteksten ..."@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  # --- optional, herunder partitive relasjoner:
+    skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        dct:hasPart :organisatoriskEnhet ; # underordnetBegrep
+      # --- optional:
+        dct:description "funksjon"@nb ; # inndelingskriterium
+        dct:modified "2021-01-01"^^xsd:data ; # sistOppdatert
+    ] ;
+  skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
+    # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+      dct:hasPart :geografiskEnhet ; # underordnetBegrep # underordnetBegrep
+    # --- optional:
+      dct:description "lokasjon"@nb ; # inndelingskriterium
+      dct:modified "2021-08-01"^^xsd:data ; # sistOppdatert
+  ] ;
+  .
+
+#### Eksemplene herfra inneholder stort sett kun obligatoriske egenskaper
+
+# begrepet 'organisatoriskEnhet':
+:organisatoriskEnhet a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <hhttps://examples.com/concepts/organisatoriskEnhet> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "organisatorisk enhet"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "her kommer definisjonsteksten ..."@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  # --- optional, herunder partitive relasjoner:
+    skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
+        dct:isPartOf :virksomhet ; # overordnetBegrep
+      # --- optional:
+        dct:description "funksjon"@nb ; # inndelingskriterium
+      ] ;
+  .
+
+# begrepet 'geografiskEnhet':
+:geografiskEnhet a skos:Concept;  # Begrep
+  # --- mandatory, for selve begrepet:
+    dct:identifier <hhttps://examples.com/concepts/geografiskEnhet> ; # identifikator
+    skosxl:prefLabel [ a skosxl:Label ; # anbefaltTerm
+      skosxl:literalForm "geografisk enhet"@nb ; # navn
+      ] ;
+    skosno:definisjon [ a skosno:Definisjon ; # definisjon
+    	rdfs:label "her kommer definisjonsteksten ..."@nb ; # definisjonsteksten
+    	] ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
+  .
+----

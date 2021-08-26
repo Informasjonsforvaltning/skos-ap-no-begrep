@@ -29,14 +29,14 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   # --- optional, herunder partitive relasjoner:
     skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         dct:hasPart :organisatoriskEnhet ; # underordnetBegrep
       # --- optional:
         dct:description "funksjon"@nb ; # inndelingskriterium
         dct:modified "2021-01-01"^^xsd:data ; # sistOppdatert
     ] ;
   skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
-    # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+    # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
       dct:hasPart :geografiskEnhet ; # underordnetBegrep # underordnetBegrep
     # --- optional:
       dct:description "lokasjon"@nb ; # inndelingskriterium
@@ -59,7 +59,7 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   # --- optional, herunder partitive relasjoner:
     skosno:partitivRelasjon [ a skosno:PartitivRelasjon ;  # partitivRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         dct:isPartOf :virksomhet ; # overordnetBegrep
       # --- optional:
         dct:description "funksjon"@nb ; # inndelingskriterium

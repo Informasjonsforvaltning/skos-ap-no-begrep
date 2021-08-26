@@ -14,7 +14,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix : <https://examples.com/concepts/> .
 
-##### Dette første eksemplet viser bruken av alle mulige egenskaper relatert til assoviate relasjoner mellom begreper
+##### Dette første eksemplet viser bruken av alle mulige egenskaper relatert til assosiative relasjoner mellom begreper
 
 # begrepet 'bil':
 :bil a skos:Concept;  # Begrep

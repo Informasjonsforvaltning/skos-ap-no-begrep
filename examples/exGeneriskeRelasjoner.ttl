@@ -29,28 +29,28 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   # --- optional, herunder generiske relasjoner:
     skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         xkos:generalizes :fiskebestikk ; # underordnetBegrep
       # --- optional:
         skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium
         dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
       ] ;
     skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         xkos:generalizes :biffbestikk ; # underordnetBegrep
       # --- optional:
         skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium
         dct:modified "2021-08-01"^^xsd:date ; # sistOppdatert
       ] ;
     skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         xkos:generalizes :sølvbestikk ; # underordnetBegrep
       # --- optional:
         skosno:inndelingskriterium "materiale"@nb; # inndelingskriterium
         dct:modified "2021-08-24"^^xsd:date ; # sistOppdatert
       ] ;
     skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generiskRelasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         xkos:generalizes :stålbestikk ; # underordnetBegrep
       # --- optional:
         skosno:inndelingskriterium "materiale"@nb; # inndelingskriterium
@@ -73,7 +73,7 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # ansvarligVirksomhet
   # --- optional, herunder generiske relasjoner:
     skosno:generiskRelasjon [ a skosno:GeneriskRelasjon ; # generisk relasjon
-      # --- mandatory (minst 1 overordnetBegrep eller 1 underordetBegrep):
+      # --- mandatory (minst 1 overordnetBegrep eller 1 underordnetBegrep):
         xkos:specializes :bestikk ; # overordnetBegrep
       # --- optional:
         skosno:inndelingskriterium "bruksformål"@nb; # inndelingskriterium

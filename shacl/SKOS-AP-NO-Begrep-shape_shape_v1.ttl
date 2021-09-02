@@ -27,12 +27,12 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-08-26"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.7" ;
+    dct:modified "2021-09-02"^^xsd:date ;
+    owl:versionInfo "0.8" ;
     owl:versionInfo "All relevant shapes are included in this version, i.e., also for optional properties and for usage of permissible values. The shapes are tested using test concepts/collections with dummy values, though not all properties are tested with 'intended errors'."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
@@ -120,7 +120,7 @@
       sh:maxCount 1 ;
       sh:path dct:modified ;
       sh:severity sh:Violation ;
-      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:node :DateOrDateTimeDataType_Shape ;
       sh:message "Begrepet kan ha maks. 1 sist oppdatert dato (dct:modified), som skal være enten xsd:date eller xsd:dateTime"@nb ;
       ] ;
     sh:property [ # erstatter
@@ -220,7 +220,7 @@
         sh:maxCount 1 ;
         sh:path dct:modified ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape ;
+        sh:node :DateOrDateTimeDataType_Shape ;
         sh:message "Definsjon/AlternativFormulering kan ha maks. 1 sist oppdatert dato (dct:modified), som skal være enten xsd:date eller xsd:dateTime"@nb ;
         ] ;
     sh:targetObjectsOf skosno:definisjon , skosno:alternativFormulering ;
@@ -249,7 +249,7 @@
       sh:maxCount 1 ;
       sh:path dct:modified ;
       sh:severity sh:Violation ;
-      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:node :DateOrDateTimeDataType_Shape ;
       sh:message "Associativ relasjon kan ha maks. 1 sist oppdatert dato (dct:modified), som skal være enten xsd:date eller xsd:dateTime."@nb , "An associative relation may have at most 1 modified date (dct:modified), which shall be either xsd:date of xsd:dateTime.";
       ] ;
     sh:targetClass skosno:AssosiativRelasjon ;
@@ -302,7 +302,7 @@
       sh:maxCount 1 ;
       sh:path dct:modified ;
       sh:severity sh:Violation ;
-      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:node :DateOrDateTimeDataType_Shape ;
       sh:message "Maks. 1 sist oppdatert dato (dct:modified) tillatt, den skal være enten xsd:date eller xsd:dateTime."@nb ;
       ] ;
       sh:targetClass skosno:PartitivRelasjon , skosno:GeneriskRelasjon ;
@@ -401,13 +401,13 @@
         sh:maxCount 1 ;
         sh:path schema:endDate ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape ;
+        sh:node :DateOrDateTimeDataType_Shape ;
         sh:message "Det kan være maks. 1 slutt på en gyldighetsperiode, som skal være enten xsd:date eller xsd:dateTime"@nb ;
     ], [
         sh:maxCount 1 ;
         sh:path schema:startDate ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape ;
+        sh:node :DateOrDateTimeDataType_Shape ;
         sh:message "Det kan være maks. 1 start på en gyldighetsperiode, som skal være enten xsd:date eller xsd:dateTime"@nb ;
     ] ;
     sh:targetClass dct:PeriodOfTime ;

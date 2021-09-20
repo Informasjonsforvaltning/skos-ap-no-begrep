@@ -1,0 +1,45 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+# This file provides the imports that are implicitly the result of reusing them in the SKOS-AP-NO-Begrep application profile.
+# The imports point to the URL of the RDF serializations (mostly the turtle serializations) as not all ontology URIs have content negotation implemented.
+
+<https://data.norge.no/specification/skos-ap-no-begrep/#ontologies>
+    dcat:accessURL <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/tree/develop/shacl>;
+    dcat:downloadURL <https://raw.githubusercontent.com/Informasjonsforvaltning/skos-ap-no-begrep/develop/shacl/ontologies.ttl> ;
+    dcatap:availability <http://data.europa.eu/r5r/draft> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:creator [
+        foaf:homepage <https://www.digdir.no/> ;
+        foaf:name "Digitaliseringsdirektoratet"@nb ,
+           "Norwegian Digitalisation Agency"@en ;
+    ];
+    dct:license <https://creativecommons.org/licenses/by/4.0> ;
+    cc:attributionURL <http://ec.europa.eu/> ;
+    dct:modified "2021-04-15"^^xsd:date ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:description "This document specifies the ontology information needed by the FDK validator tool."@en ;
+    dct:title "The ontologies used by SKOS-AP-NO-Begrep"@en ;
+    owl:versionInfo "0.1" ;
+    foaf:homepage <https://data.norge.no/specification/skos-ap-no-begrep/> ;
+    foaf:maker [
+        foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
+        foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet" ;
+        foaf:page <https://www.digdir.no>
+    ] .
+
+
+<http://data.norge.no/r5r>
+  rdf:type owl:Ontology ;
+  owl:imports <https://www.w3.org/ns/regorg> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/ontology/org-type.ttl> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/ontology/org-status.ttl> ;
+  owl:imports <http://www.w3.org/2006/vcard/ns> ;
+  .

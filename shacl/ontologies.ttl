@@ -24,7 +24,7 @@
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
     dct:modified "2021-04-15"^^xsd:date ;
-    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the ontology information needed by the FDK validator tool."@en ;
     dct:title "The ontologies used by SKOS-AP-NO-Begrep"@en ;
     owl:versionInfo "0.1" ;
@@ -39,7 +39,7 @@
 <http://data.norge.no/r5r>
   rdf:type owl:Ontology ;
   owl:imports <https://www.w3.org/ns/regorg> ;
-  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/ontology/org-type.ttl> ;
-  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/ontology/org-status.ttl> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/master/src/main/resources/ontology/org-type.ttl> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/master/src/main/resources/ontology/org-status.ttl> ;
   owl:imports <http://www.w3.org/2006/vcard/ns> ;
   .

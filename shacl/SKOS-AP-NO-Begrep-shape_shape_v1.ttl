@@ -27,13 +27,13 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2022-02-16"^^xsd:date ;
+    dct:modified "2022-04-11"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by SKOS-AP-NO-Begrep in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "0.8" ;
-    owl:versionInfo "dct:identifier for skos:Concept has now sh:IRIOrLiteral as range"@en ;
+    owl:versionInfo "0.9" ;
+    owl:versionInfo "dct:identifier for skos:Collection has now sh:IRIOrLiteral as range"@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -359,10 +359,10 @@
     sh:property [ # identifikator
       sh:name "identifikator"@nb , "identifier"@en ;
       sh:path dct:identifier ;
-      sh:nodeKind sh:IRI ;
+      sh:nodeKind sh:IRIOrLiteral ;
       sh:minCount 1 ;
       sh:severity sh:Violation ;
-      sh:message "Begrepssamling må ha 1 og kun 1 identifikator (dct:identifier), som skal være en IRI"@nb ;
+      sh:message "Begrepssamling må ha 1 og kun 1 identifikator (dct:identifier)"@nb ;
       ] ;
     sh:property [ # ansvarligVirksomhet
       sh:name "ansvarlig virksomhet"@nb , "responsible organization"@en ;

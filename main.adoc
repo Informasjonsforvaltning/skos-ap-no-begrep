@@ -13,6 +13,8 @@ ifdef::backend-pdf[:toc: macro]
 
 image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
+WARNING: #Standarden er p.t. under revisjon#. Forslag til revidert versjon vil bli tilgjengelig som https://informasjonsforvaltning.github.io/skos-ap-no-begrep/[Redaktørens utkast]
+
 *Status*: Gjeldende +
 *Versjon*: 1.1.1 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2019-03-15 (v.1.0), 2021-03-25 (v.1.1) +

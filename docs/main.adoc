@@ -76,3 +76,5 @@ include::Om-begrepsrelasjoner.adoc[]
 include::RDF-eksempler.adoc[]
 
 include::Endringslogg.adoc[]
+
+include::shared/stats.adoc[]

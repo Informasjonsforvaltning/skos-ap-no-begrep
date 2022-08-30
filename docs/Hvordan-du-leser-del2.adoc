@@ -1,0 +1,24 @@
+=== Hvordan du leser denne delen av standarden [[Hvordan-du-leser-del2]]
+
+
+Alle krav i del 1 i denne standarden uttrykkes her i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.
+
+[cols="30s,70"]
+|===
+| Ledetekst i tabellen | *Hensikt med raden i tabellen*
+| English name | Brukes til å angi klasse- eller egenskapsnavn på engelsk, primært ment for engelsktalende utviklere av verktøystøtte.
+| URI | Brukes til å angi en unik identifikator til klassen eller egenskapen.
+
+Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.
+
+Eksempel: `skos:Concept` er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i `skos` (se under <<Navnerom-brukt-i-standarden>> for hva `skos` står for).
+| Subklasse av / Subclass of | Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klassen eventuelt er subklasse av.
+| Subegenskap av / Subproperty of | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskapen eventuelt er subegenskap av.
+| Verdiområde / Range | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.
+
+Eksempel: Verdiområde `skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
+|Anvendelse / Usage note | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet i engelsk (Usage note), primært ment for engelsktalende utviklere av verktøystøtte.
+| Multiplisitet | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
+| Kravnivå / Requirement level | Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene-i-denne-standarden>>.
+| Merknad / Note | Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet i engelsk (Note), primært ment for engelsktalende utviklere av verktøystøtte.
+|===

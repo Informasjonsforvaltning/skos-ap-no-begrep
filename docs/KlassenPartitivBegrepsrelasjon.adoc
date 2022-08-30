@@ -1,0 +1,90 @@
+=== Krav til RDF-representasjon av Partitiv begrepsrelasjon [[Partitiv-begrepsrelasjon]]
+
+
+[cols="30s,70d"]
+|===
+|English name |Partitive concept relation
+|Anvendelse / Usage note |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon].
+
+(English) This class is used to represent a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation].
+|URI |skosno:GenericConceptRelation
+|Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+==== Obligatoriske egenskaper for _Partitiv begrepsrelasjon_ [[Partitiv-begrepsrelasjon-obligatoriske-egenskaper]]
+
+===== Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept) [[Partitiv-begrepsrelasjon-har-delbegrep]]
+
+[cols="30s,70d"]
+|===
+|English name |has partitive concept
+|URI |skosno:hasPartitiveConcept
+|Verdiområde / Range |skos:Concept
+|Anvendelse / Usage note |(norsk Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551206237/nob[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+
+(English) This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551206237/eng[partitive concept]) which is part of this concept, in a partitive concept relation between the two concepts.
+|Multiplisitet |1..n
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|Merknad / Note |(norsk) Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-helhetsbegrep>> skal brukes, ikke begge samtidig.
+
+(English) Either this property or the property <<Partitiv-begrepsrelasjon-har-helhetsbegrep>> shall be used, not both at the same time.
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
+-----
+<https://data.nav.no/begrep/BEGREP-974> a skos:Concept ; # begrep
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitive relasjon
+      skosno:hasPartitiveConcept <https://data.nav.no/begrep/BEGREP-975> ; ] ; # .. som har delbegrep
+  .
+-----
+
+===== Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept) [[Partitiv-begrepsrelasjon-har-helhetsbegrep]]
+
+[cols="30s,70d"]
+|===
+|English name |has comprehensive concept
+|URI |skosno:hasComprehensiveConcept
+|Verdiområde / Range |skos:Concept
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+
+(English) This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept]) which contains this concept, in a partitive concept relation between the two concepts.
+|Multiplisitet |1..n
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|Merknad / Note |(norsk) Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-delbegrep>> skal brukes, ikke begge samtidig.
+
+(English) Either this property of the property <<Partitiv-begrepsrelasjon-har-delbegrep>> shall be used, not both at the same time.
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
+-----
+<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har partitive relasjon
+      skosno:hasComprehensiveConcept <https://data.nav.no/begrep/BEGREP-974> ; ] ; # … som har helhetsbegrep
+  .
+-----
+
+==== Anbefalte egenskaper for _Partitiv begrepsrelasjon_ [[Partitiv-begrepsrelasjon-anbefalte-egenskaper]]
+
+
+===== Partitiv begrepsrelasjon – inndelingskriterium (dct:description) [[Partitiv-begrepsrelasjon-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+|English name |criterion of subdivision
+|URI |dct:description
+|Verdiområde / Range |rdf:langString
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er i flere språk.
+
+(English) This property is used to specify the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision] for the concept relation. This property should be repeated when the text is in several languages.
+|Multiplisitet |0..n
+|Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i RDF Turtle:
+-----
+<tre> a skos:Concept ; # begrep ‘tre’
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har partitiv relasjon
+      <skosno:hasPartitiveConcept> <stamme>, <rot>, <grein> # … som har delbegrep
+      dct:description "anatomi"@nb ; ] ; # med inndelingskriterium “anatomi” (bokmål)
+  .
+-----

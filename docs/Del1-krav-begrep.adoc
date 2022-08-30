@@ -1,0 +1,78 @@
+=== Krav til beskrivelse av et begrep [[Del1-krav-til-beskrivelse-av-et-begrep]]
+
+[[Tabell-obligatoriske-opplysninger]]
+.Obligatoriske opplysninger som en begrepsbeskrivelse skal inneholde
+[cols="25,50,25"]
+|===
+|*Obligatorisk* |*Regler og anbefalinger* |*I tillegg, hvis de finnes*
+|https://termbasen.standard.no/term/165575552506687/nob[anbefalt term] | én per skriftspråk; +
+skal oppgi hvilket skriftspråk termen er skrevet i; +
+bør finnes i begge norske skriftspråk
+ |
+|https://termbasen.standard.no/term/165575612703717/nob[definisjon] | én per skriftspråk og målgruppe; +
+skal oppgi hvilket skriftspråk definisjon er skrevet i; +
+minst én kombinasjon av anbefalt term og definisjon skal være i samme skriftspråk
+ | forhold til kilde; +
+kilde; +
+målgruppe
+|identifikator |identifikator skal være unik innen en gitt kontekst |
+|kontaktpunkt |maks. ett kontaktpunkt per språk, relevant hvis det er ulike kontaktpunkter for norske og utenlandske kontakter; +
+bør unngå enkeltperson som kontaktpunkt
+ |
+|publisert av | skal oppgis som virksomhet og ikke enkeltperson |
+|===
+
+[[Tabell-anbefalte-opplysninger]]
+.Anbefalte opplysninger som en begrepsbeskrivelse bør inneholde, hvis de finnes
+[cols="25,50,25"]
+|===
+|*Anbefalt* |*Regler og anbefalinger* | *I tillegg, hvis de finnes*
+|dato opprettet  ||
+|dato sist oppdatert ||
+|https://termbasen.standard.no/term/165575653105392/nob[fagområde] | fortrinnsvis valgt fra en kontrollert liste; +
+når fagområde oppgis som tekst, skal det oppgis hvilket skriftspråk teksten er skrevet i; +
+fagområde trenger ikke være det samme som akademisk disiplin
+ |
+|gyldighetsperiode |oppgis som dato fra og med, og/eller dato til og med |
+|merknad | utfyllende forklaring; +
+skal oppgi hvilket skriftspråk merknaden er skrevet i
+ |
+|https://termbasen.standard.no/term/165575552506675/nob[tillatt term] | skal oppgi hvilket skriftspråk termen er skrevet i |
+|===
+
+[[Tabell-valgfrie-opplysninger]]
+.Valgfrie opplysninger som en begrepsbeskrivelse kan inneholde
+[cols="25,50,25"]
+|===
+|*Valgfri* |*Regler og anbefalinger* |*I tillegg, hvis de finnes*
+|datastrukturterm ||
+|eksempel | skal oppgi hvilket skriftspråk eksempel er skrevet i |
+|https://termbasen.standard.no/term/165575654205830/nob[frarådd term] | skal oppgi hvilket skriftspråk termen er skrevet i |
+|status|fortrinnsvis valgt fra en kontrollert liste; +
+når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i |
+|verdiområde | oppgis som tekst eller referanse til der verdiområdet er spesifisert; +
+når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i |
+|versjonsnummer ||
+|versjonsnote | skal oppgi hvilket skriftspråk versjonsnoten er skrevet i |
+|===
+
+Et begrep kan ha relasjoner til andre begreper. Når et begreps relasjon til et annet begrep skal beskrives, skal det gjøres i henhold til en av radene i <<Tabell-valgfrie-begrepsrelasjoner>> nedenfor.
+
+[[Tabell-valgfrie-begrepsrelasjoner]]
+.Valgfrie begrepsrelasjoner som en begrepsbeskrivelse kan inneholde
+[cols="25,50,25"]
+|===
+|*Type relasjon til det andre begrepet* |*Regler for det andre begrepet* |*I tillegg, hvis de finnes*
+|https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon] | enten det begrepet som dette begrepet *spesialiserer*, eller det begrepet som dette begrepet *generaliserer* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
+|https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] | enten det begrepet som dette begrepet *er del av*, eller det begrepet som dette begrepet *inneholder* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
+|https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] | det begrepet som dette begrepet *er assosiert med*, og med *relasjonstype*, eventuelt uttrykt som begrepets *relasjonsrolle* overfor det andre begrepet |
+|===
+
+Dersom en begrepsrelasjon skal være kjent begge veier, bør den beskrives begge veier.
+
+Eksempler på ofte brukte relasjonsroller for begreper i assosiative relasjoner:
+
+* har nært samsvar med
+* har eksakt samsvar med
+* se også
+* erstatter – er erstattet av

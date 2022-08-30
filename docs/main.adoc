@@ -1,60 +1,78 @@
 include::locale/attributes.adoc[]
-= SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS
-:description: Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (SKOS-AP-NO-Begrep)
+= Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)
+:description: Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)
 :doctype: book
-:docinfo:
+:docinfo: shared
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
 :sectanchors:
-:imagesdir: images
-:title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:table-stripes: odd
+:xrefstyle: short
+:title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
 
-image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
-WARNING: #Standarden er p.t. under revisjon#. Forslag til revidert versjon vil bli tilgjengelig som https://informasjonsforvaltning.github.io/skos-ap-no-begrep/[Redaktørens utkast]
+include::shared/download.adoc[]
 
-*Status*: Gjeldende +
-*Versjon*: 1.1.1 (se <<Endringslogg, endringslogg>>) +
-*Publisert*: 2019-03-15 (v.1.0), 2021-03-25 (v.1.1) +
-*Oppdatert*: 2021-08-26 +
+*Status*: #under arbeid# +
+*Versjon*: #forberedelse til høringsversjon# +
+*Publisert*: #ikke ennå# +
+*Oppdatert*: 2022-08-30 #løpende oppdateres# +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
-
-toc::[]
-
-//:sectnums:
-
-//:sectnumlevels: 3
-
-//{description}
-include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
-// :leveloffset: +1
+toc::[]
 
 // Innhold her.
 
 
 include::forord.adoc[]
 
-include::formaal_omfang_avgrensninger.adoc[]
+include::Om-denne-standarden.adoc[]
 
-include::normative_referanser.adoc[]
+include::Del1-med-normative-referanser.adoc[]
 
-include::definisjoner.adoc[]
+include::Del1-krav-begrep.adoc[]
 
-include::navnerom.adoc[]
+include::Del1-eksempler-begrepsbeskrivelser.adoc[]
 
-include::spesifikasjon.adoc[]
+include::Del1-krav-begrepssamling.adoc[]
 
-include::spesifikasjon-felter.adoc[]
+include::Del2-med-normative-referanser.adoc[]
 
-include::vedlegg-a.adoc[]
+include::Om-del2.adoc[]
 
-include::vedlegg-b.adoc[]
+include::Hvordan-du-leser-del2.adoc[]
 
-include::shared/stats.adoc[]
+include::To-måter-definisjon.adoc[]
+
+include::To-måter-begrepsrelasjon.adoc[]
+
+include::Generelle-krav-formater.adoc[]
+
+include::KlassenBegrep.adoc[]
+
+include::KlassenDefinisjon.adoc[]
+
+include::KlassenAssosiativBegrepsrelasjon.adoc[]
+
+include::KlassenGeneriskBegrepsrelasjon.adoc[]
+
+include::KlassenPartitivBegrepsrelasjon.adoc[]
+
+include::KlassenBegrepssamling.adoc[]
+
+include::Navnerom.adoc[]
+
+include::ForenkledeModeller.adoc[]
+
+include::Om-begrepsrelasjoner.adoc[]
+
+include::RDF-eksempler.adoc[]
+
+include::Endringslogg.adoc[]

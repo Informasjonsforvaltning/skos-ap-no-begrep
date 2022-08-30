@@ -1,0 +1,8 @@
+== Del 2 - Krav til RDF-representasjon av begreper og begrepssamlinger [[Del2]]
+
+
+=== Normative referanser [[Del2-normative-referanser]]
+
+* https://www.w3.org/TR/2009/REC-skos-reference-20090818/[_KOS Simple Knowledge Organization System Reference_], W3C Recommendation 18 August 2009
+* https://www.w3.org/RDF/[_Resource Desciption Framework (RDF)_]
+* <<Del1, Del1>> av denne standarden

@@ -1,0 +1,7 @@
+== Del 1 - Krav til beskrivelse av begreper og begrepssamlinger [[Del1]]
+
+=== Normative referanser [[Del1-normative-referanser]]
+
+* https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1131185[NS-ISO 1087:2019 _Terminologiarbeid og terminologivitenskap — Ordliste_]
+
+* https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1428687[NS-ISO 704:2022  _Terminologiarbeid — Prinsipper og metoder_]

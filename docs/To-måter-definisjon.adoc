@@ -1,0 +1,32 @@
+==== To måter i RDF å angi en definisjon på [[To-RDF-måter-definisjon]]
+
+
+I RDF er alt uttrykt som «subjekt – predikat – objekt». «Subjektet» i denne sammenhengen er det begrepet som beskrives.
+
+Den enkleste og direkte måten å angi en definisjon på, er vist i <<Figur-den-enkle-måten-definisjon>>.
+
+[[Figur-den-enkle-måten-definisjon]]
+.Den enkle og direkte måten å angi en definisjon på
+[link=images/RDF-eksempel-definisjon-1.png]
+image::images/RDF-eksempel-definisjon-1.png[]
+
+I RDF Turtle ser det slik ut:
+-----
+<975> skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; .
+-----
+
+Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle noe mer enn selve definisjonsteksten. Når vi vil si noe mer om definisjonen, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <<Figur-definisjon-via-definisjonsobjekt>> nedenfor viser et eksempel på en definisjon som er oppgitt via et definisjonsobjekt som har med opplysninger om kilde i tillegg til definisjonsteksten.
+
+[[Figur-definisjon-via-definisjonsobjekt]]
+.Definisjon via et definisjonsobjekt
+[link=images/RDF-eksempel-definisjon-2.png]
+image::images/RDF-eksempel-definisjon-2.png[]
+
+I RDF Turtle ser det slik ut:
+-----
+<975> euvoc:xlDefinition [ a euvoc:XlNote ; # definisjonsobjekt
+   rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
+   skosno:relationshipWithSource <derivedFromSource> ; # forhold til kilde ‘basert på kilde’
+   dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; ] ;  # kilde
+   .
+-----

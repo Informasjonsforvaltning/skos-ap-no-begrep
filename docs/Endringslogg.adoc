@@ -1,0 +1,130 @@
+== Vedlegg E – Endringslogg [[Endringslogg]]
+
+
+_Vedlegget er deskriptivt_.
+
+Denne standarden skal erstatte følgende to standarder:
+
+* https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] (v.2.0.2)
+* https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_] (v.1.1.1)
+
+Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] (v.2.0.2) til denne versjonen:
+
+* *Kravnivå*: Denne versjonen opererer med kravnivåene «obligatorisk» (opplysninger som skal beskrives med), «anbefalt» (opplysninger som bør beskrives med hvis de finnes) og «valgfri» (opplysninger som kan beskrives med), mens forrige har kun «obligatorisk» (representert med multiplisitet 1..1 eller 1..n) og ellers (ikke-obligatorisk).
+* *UML-diagram*: UML-diagrammene i denne versjonen brukes bare til del 2 og ikke del 1. De er dessuten deskriptive og ikke normative i denne versjonen (en praksis som også EU-standardene i dette området nå bruker), mens de var normative i forrige versjon.
+* *Begrep*:
+** Følgende egenskaper har fått endret kravnivå:
+*** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepet.
+** Følgende egenskaper har fått endret norske navn:
+*** «ansvarlig virksomhet» er endre til «publisert av» som er et mer presist navn.
+*** «sist oppdatert» er endret til «dato sist oppdatert» som er et mer presist navn.
+*** «betydningsbeskrivelse» er endret til «definisjon» som er et mer presist navn.
+** Følgende egenskaper utgår:
+*** «alternativ formulering» utgår, fordi behovet kan dekkes av kombinasjonen «definisjon» og «målgruppe».
+** Følgende egenskaper er blitt slått sammen:
+*** «fagområde» og «bruksområde» er slått sammen til én egenskap, «fagområde», fordi det har vist seg å være vanskelig å skille mellom disse to.
+** Følgende egenskaper er flyttet til denne klassen:
+*** «eksempel» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.
+*** «merknad» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.
+*** «verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke en gitt definisjonstekst.
+** Følgende nye egenskaper er lagt til:
+*** «dato opprettet» er lagt til, for å kunne oppgi dato når begrepet ble opprettet.
+*** «status» er lagt til, for å kunne oppgi status på et begrep.
+*** «versjonsnummer» er lagt til, for å kunne referere til en gitt versjon av et begrep.
+*** «versjonsnote» er lagt til, for å kunne beskrive en gitt versjon av et begrep.
+* *Definisjon*:
+** Følgende egenskaper er flyttet fra denne klassen:
+*** «eksempel» er flyttet til «Begrep», fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.
+*** «merknad» er flyttet til «Begrep», fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.
+*** «verdiområde» (tidligere «omfang») er flyttet til «Begrep», fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.
+** Følgende egenskaper utgår:
+*** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+* *Assosiativ begrepsrelasjon*:
+** Følgende egenskaper er lagt til:
+*** «relasjonsrolle» er lagt til, fordi det er viktig å oppgi relasjonsrollen begrepet har overfor det andre begrepet i en assosiativ relasjon mellom disse to.
+** Følgende egenskaper utgår:
+*** «beskrivelse» utgår, og er erstattet av «relasjonsrolle» som det egentlig er behov for.
+*** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+* *Generisk begrepsrelasjon*:
+** Følgende egenskaper utgår:
+*** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+* *Partitiv begrepsrelasjon*:
+** Følgende egenskaper utgår:
+*** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+* *Begrepssamling*:
+** Følgende egenskaper har fått endret kravnivå:
+*** «kontaktpunkt» (dcat:contactPoint) er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepssamlingen.
+* *Følgende klasser utgår*:
+** «Alternativ formulering» utgår, Behovet kan dekkes av definisjon + målgruppe.
+** «Betydningsbeskrivelse» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Behovet for denne klassen bortfaller når den ene subklassen «Alternativ formulering» utgår. I denne versjonen brukes kun klassen «Definisjon» som var den andre subklassen av «Betydningsbeskrivelse».
+** «Begrepsrelasjon» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Denne versjonen bruker de konkrete/spesialiserte klassene direkte. Det er derfor ikke lenger behov for denne abstrakte klassen.
+** «Term» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Det er ikke lenger behov for egenskapene i klassen («(dato) sist oppdatert» og «målgruppe»).
+** «AnbefaltTerm», «TillattTerm», «FrarådetTerm» og «Datastrukturterm» utgår. Det er ikke lenger behov for egenskapene i disse klassene («(dato) sist oppdatert» og «målgruppe»).
+
+Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_] (v.1.1.1) til del 2 av denne versjonen:
+
+* *Endringene i krav til innhold* nevnt ovenfor, fra https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] (v.2.0.2) til denne versjonen, gjelder også her.
+* *Måten å spesifisere krav til RDF-representasjon på*, er i denne versjonen samkjørt med de andre RDF-baserte spesifikasjoner for informasjonsforvaltning, og dermed betydelig endret fra forrige versjon.
+* *Kravnivå*: Denne versjonen spesifiserer eksplisitt kravnivå («obligatorisk», «anbefalt» og «valgfri») samt multiplisitet, mens forrige versjon henviste til kravene i tidligere _Forvaltningsstandard for begrepsbeskrivelser_.
+* *URIer for klasser og egenskaper i RDF-representasjon*: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se oversikt over endinger av URIer nedenfor.
+* *Interoperabilitet med resten av EU*: Så langt det er mulig, gjenbruker denne versjonen EU-spesifikasjonen https://github.com/meaningfy-ws/SKOS-AP-EU[SKOS-AP-EU] som EUs Publications Office også bruker.
+* *Detaljerte endringer*: Som nevnt ovenfor er måten å spesifisere krav til RDF-representasjon på betydelig forskjellig fra forrige versjon, det er derfor uhensiktsmessig å beskrive alle endringer med detaljer.
+
+.Oversikt over endringer av URIer til klasse- og egenskapsnavnene
+|===
+|*Klasse-/egenskapsURI i SKOS-AP-NO v.1.1.1*|*Klasse-/egenskapsURI i del 2 av denne versjon*
+|*Klassen Begrep, skos:Concept*|*Klassen Begrep, skos:Concept*
+|Begrep – bruksområde, skosno:bruksområde |Utgår
+|Begrep – gyldig fra og med, schema:startDate |<<Begrep-dato-gyldig-fra-og-med>>
+|Begrep – gyldig fra og med, schema:endDate |<<Begrep-dato-gyldig-til-og-med>>
+|Begrep – definisjon, skosno:definisjon |<<Begrep-definisjon-via-definisjonsobjekt>>
+|Begrep – alternativ formulering, skosno:alternativFormulering |Utgår
+|Begrep – anbefaltTerm, skosxl:prefLabel |Utgår
+|Begrep – tillattTerm, skosxl:altLabel |Utgår
+|Begrep – frarådetTerm, skosxl:hiddenLabel |Ugår
+|Begrep – datastrukturterm, skosno:datastrukturTerm |Ugår
+||Ny <<Begrep-dato-opprettet>>
+||Ny <<Begrep-anbefalt-term>>
+||Ny <<Begrep-tillatt-term>>
+||Ny <<Begrep-frarådd-term>>
+||Ny <<Begep-datastrukturterm>>
+||Ny <<Begrep-definisjon-direkte-angivelse>>
+||Ny <<Begrep-er-relatert-til>>
+||Ny <<Begrep-generaliserer>>
+||Ny <<Begrep-spesialiserer>>
+||Ny <<Begrep-er-del-av>>
+||Ny <<Begrep-inneholder>>
+||Ny <<Begrep-har-eksakt-samsvar-med>>
+||Ny <<Begrep-har-nært-samsvar-med>>
+||Ny <<Begrep-inngår-i>>
+||Flyttet fra tidligere Definisjon, <<Begrep-merknad>>
+||Flyttet fra tidligere Definisjon, <<Begrep-eksempel>>
+||Flyttet fra tidligere Definisjon, <<Begrep-verdiområde>>
+|Begrep – assosiativ relasjon, skosno:assiciativRelasjon | <<Begrep-er-fra-begrep-i>>
+|Begrep – generisk relasjon, skosno:generiskRelasjon |<<Begrep-har-generisk-begrepsrelasjon>>
+|Begrep – partitiv relasjon, skosno:partitivRelasjon |<<Begrep-har-partitiv-begrepsrelasjon>>
+|*Klassen Term, skosxl:Label* | Utgår
+|*Klassen Definisjon, skosno:Definisjon* |*Klassen Definisjon, euvoc:XlNote*
+|Definisjon – tekst, rdfs:label |<<Definisjon-tekst>>
+|Definisjon – kildebeskrivelse.forholdTilKilde, skosno:forholdTilKilde |<<Definisjon-forhold-til-kilde>>
+|Definisjon – merknad, skos:scopeNote |Flyttet til klassen Begrep, <<Begrep-merknad>>
+|Definisjon – eksempel, skos:example|Flyttet til klassen Begrep, <<Begrep-eksempel>>
+|Definisjon – omfang, skosno:omfang|Flyttet til klassen Begrep, <<Begrep-verdiområde>>
+|Definition – sistOppdatert, dct:modified |Utgår
+|*Klassen Alternativ formulering, skosno:AlternativFormulering* | Utgår
+|*Klassen Assosiativ relasjon, skosno:AssosiativRelasjon* |*Klassen Assosiativ begrepsrelasjon, skosno:AssociativeConceptRelation*
+|Assosiativ relasjon – assosiert begrep, skos:related |<<Assosiativ-begrepsrelasjon-har-til-begrep>>
+|Assosiativ relasjon – beskrivelse, dct:description |Utgår
+|Assosiativ relasjon – sistOppdatert, dct:modified |Utgår
+||Ny <<Assosiativ-begrepsrelasjon-relasjonsrolle>>
+|*Klassen Generisk relasjon, skosno:GeneriskRelasjon* |*Klassen Generisk begrepsrelasjon, skosno:GenericConceptRelation*
+|Generisk relasjon – overordnet begrep, xkos:specializes |<<Generisk-begrepsrelasjon-har-overbegrep>>
+|Generisk relasjon – underordnet begrep, xkos:generalizes|<<Generisk-begrepsrelasjon-har-underbegrep>>
+|Generisk relasjon – sistOppdatert, dct:modified |Utgår
+|*Klassen Partitiv relasjon, skosno:PartitivRelasjon* | *Klassen Partitiv begrepsrelasjon, skosno:PartitiveConceptRelation*
+|Partitiv relasjon – overordnet begrep, dct:isPartOf |<<Partitiv-begrepsrelasjon-har-helhetsbegrep>>
+|Partitiv relasjon – underordnet begrep, dct:hasPart |<<Partitiv-begrepsrelasjon-har-delbegrep>>
+|Partitiv relasjon – sistOppdatert, dct:modified |Utgår
+|*Klassen Begrepssamling, skos:Collection* |*Klassen Begrepssamling, skos:Collection*
+|Begrepssamling – navn, rdfs:label |<<Begrepssamling-navn>>
+|===

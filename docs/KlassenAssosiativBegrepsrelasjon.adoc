@@ -1,0 +1,58 @@
+=== Krav til RDF-representasjon av Assosiativ begrepsrelasjon [[Assosiativ-begrepsrelasjon]]
+
+[cols="30s,70d"]
+|===
+| English name  |Associative concept relation
+| Anvendelse / Usage note  |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon].
+
+(English) This class is used to represent an https://termbasen.standard.no/term/165575612703735/eng[associative concept relation].
+| URI  |skosno:AssociativeConceptRelation
+| Kravnivå / Requirement level  |Valgfri / Optional
+|===
+
+==== Obligatoriske egenskaper for Assosiativ begrepsrelasjon [[Assosiativ-begrepsrelasjon-obligatoriske-egenskaper]]
+
+===== Assosiativ begrepsrelasjon – har til-begrep (skosno:hasToConcept) [[Assosiativ-begrepsrelasjon-har-til-begrep]]
+
+[cols="30s,70d"]
+|===
+| English name  |has to-concept
+| URI  |skosno:hasToConcept
+| Verdiområde / Range  |skos:Concept
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi et til-begrep i en assosiativ begrepsrelasjon.
+
+(English) This property is used to refer to a to-concept in an associative concept relation.
+| Multiplisitet  |1..n
+| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
+-----
+<https://data.nav.no/begrep/BEGREP-1169> a skos:Concept ; # begrep 1169
+   skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ relasjon
+      skosno:hasToConcept <https://data.nav.no/begrep/BEGREP-170> ; ] ; # … som har til-begrep
+     .
+-----
+
+===== Assosiativ begrepsrelasjon – relasjonsrolle (skosno:relationRole) [[Assosiativ-begrepsrelasjon-relasjonsrolle]]
+
+[cols="30s,70d"]
+|===
+| English name  |relation role
+| URI  |skosno:relationRole
+| Verdiområde / Range  |skos:Concept or rdf:langString
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verd valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er i flere språk.
+
+(English) This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated if the text is in parallel languages.
+| Multiplisitet  |1..1 når skos:Concept brukes, 1..n når rdf:langString brukes
+| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
+-----
+<https://data.nav.no/begrep/BEGREP-1169> a skos:Concept ; # begrep 1169
+   skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ relasjon
+      skosno:hasToConcept <https://data.nav.no/begrep/BEGREP-170> ;  # … som har til-begrep
+      skosno:relationRole <muliggjør> ; ] ; # relasjonsrolle
+     .
+-----

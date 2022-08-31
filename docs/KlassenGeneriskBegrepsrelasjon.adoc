@@ -1,0 +1,89 @@
+=== Krav til RDF-representasjon av Generisk begrepsrelasjon [[Generisk-begrepsrelasjon]]
+
+[cols="30s,70d"]
+|===
+| English name  |Generic concept relation
+| Anvendelse / Usage note  |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon].
+
+(English) This class is used to represent a https://termbasen.standard.no/term/165575612703726/eng[generic concept relation].
+| URI  |skosno:GenericConceptRelation
+| Kravnivå / Requirement level  |Valgfri / Optional
+|===
+
+==== Obligatoriske egenskaper for Generisk begrepsrelasjon [[Generisk-begrepsrelasjon-obligatoriske-egenskaper]]
+
+===== Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept) [[Generisk-begrepsrelasjon-har-overbegrep]]
+
+[cols="30s,70d"]
+|===
+| English name  |has generic concept
+| URI  |skosno:hasGenericConcept
+| Verdiområde / Range  |skos:Concept
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] i en generisk begrepsrelasjon.
+
+(English) This property is used to specify the https://termbasen.standard.no/term/165575654205842/eng[generic concept] in a generic concept relation.
+| Multiplisitet  |1..n
+| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+| Merknad / Note  |(norsk) Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-underbegrep>> skal brukes, men ikke begge samtidig.
+
+(English) Either this property or the property <<Generisk-begrepsrelasjon-har-underbegrep>> shall be used, not both at the same time.
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
+-----
+<https://data.nav.no/begrep/BEGREP-974> a skos:Concept ; # begrep
+   skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har generisk relasjon
+      skosno:hasGenericConcept <https://data.nav.no/begrep/BEGREP-625> ; ] ; # som har overbegrep
+     .
+-----
+
+===== Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept) [[Generisk-begrepsrelasjon-har-underbegrep]]
+
+[cols="30s,70d"]
+|===
+| English name  |has specific concept
+| URI  |skosno:hasSpecificConcept
+| Verdiområde / Range  |skos:Concept
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] i en generisk begrepsrelasjon.
+
+(English) This property is used to refer to the https://termbasen.standard.no/term/165575654205860/eng[specific concept] in a generic concept relation.
+| Multiplisitet  |1..n
+| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+| Merknad / Note  |(norsk) Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-overbegrep>> skal brukes, ikke begge samtidig.
+
+(English) Either this property or the property <<Generisk-begrepsrelasjon-har-overbegrep>> shall be used, not both at the same time.
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
+-----
+<https://data.nav.no/begrep/BEGREP-625> a skos:Concept ; # begrep
+   skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har generisk relasjon
+      skosno:hasSpecificConcept <https://data.nav.no/begrep/BEGREP-974> ; ] ; # som har underbegrep
+     .
+-----
+
+==== Anbefalte egenskaper for Generisk begrepsrelasjon [[Generisk-begrepsrelasjon-anbefalte-egenskaper]]
+
+
+===== Generisk begrepsrelasjon – inndelingskriterium (dct:description) [[Generisk-begrepsrelasjon-inndelingskriterium]]
+
+[cols="30s,70d"]
+|===
+| English name  |criterion of subdivision
+| URI  |dct:description
+| Verdiområde / Range  |rdf:langString
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er i flere språk.
+
+(English) This property is used to specify the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision] for the concept relation. This property should be repeated when the text is in several languages.
+| Multiplisitet  |0..n
+| Kravnivå / Requirement level  |Anbefalt / Recommended
+|===
+
+Eksempel i RDF Turtle:
+-----
+<tre> a skos:Concept ; # begrep ‘tre’
+   skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har generisk relasjon
+      skosno:hasSpecificConcept <løvtre> ; # … som har ‘løvtre’ som underbegrep
+      dct:description "anatomi"@nb ; ] ; # med inndelingskriterium «anatomi» (bokmål)
+  .
+-----

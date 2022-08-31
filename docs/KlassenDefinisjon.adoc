@@ -1,0 +1,112 @@
+=== Krav til RDF-representasjon av Definisjon [[Definisjon]]
+
+[cols="30s,70d"]
+|===
+| English name |Definition
+| Anvendelse / Usage note |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703717/nob[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
+
+(English) This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need for describing more than the definition itself.
+| URI |euvoc:XlNote
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+==== Obligatoriske egenskaper for _Definisjon_ [[Definisjon-obligatoriske-egenskaper]]
+
+===== Definisjon – tekst (rdf:value) [[Definisjon-tekst]]
+
+[cols="30s,70d"]
+|===
+| English name |text
+| URI |rdf:value
+| Verdiområde / Range  |rdf:langString
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonsteksten i et gitt skriftspråk.
+
+(English) This property is used to specify the definition text in a given language.
+| Multiplisitet  |1..1
+| Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
+-----
+<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+   skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; ] ; # tekst i bokmål
+     .
+-----
+
+==== Anbefalte egenskaper for _Definisjon_ [[Definisjon-anbefalte-egenskaper]]
+
+===== Definisjon – forhold til kilde (skosno:relationshipWithSource) [[Definisjon-forhold-til-kilde]]
+
+[cols="30s,70d"]
+|===
+| English name |relationship with source
+| URI |skosno:relationshipWithSource
+| Verdiområde / Range  |skos:Concept
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi forhold til kilde, som kodet verdi valgt fra et kontrollert vokabular.
+
+(English) This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary.
+| Multiplisitet  |0..1
+| Kravnivå / Requirement level |Anbefalt / Recommended
+| Merknad / Note |(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/relationship-with-source-type/[https://data.norge.no/vocabulary/relationship-with-source/] hvis verdien finnes på listen. #NB! Listen er ikke publisert ennå, men den kommer til å inneholde følgende tre verdier: egendefinert, basert på kilde, sitat fra kilde#.
+
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type/, if the value is on the list. #NB! The list is not yet published, but it will contain the following three values: self-composed, derived from source, direct from source#.
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
+-----
+<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+  skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
+      skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type/derived-from-source> ; ] ; # forhold til kilde ‘basert på kilde’
+     .
+-----
+
+===== Definisjon – kilde (dct:source) [[Definisjon-kilde]]
+
+[cols="30s,70d"]
+|===
+| English name |source
+| URI |dct:source
+| Verdiområde / Range  |rdfs:Resource
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til kilde.
+
+(English) This property is used to refer to a source.
+| Multiplisitet  |0..n
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
+-----
+<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
+      dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; ] ; # kilde
+     .
+-----
+
+==== Valgfrie egenskaper for _Definisjon_ [[Definisjon-valgfrie-egenskaper]]
+
+===== Definisjon – målgruppe (dct:audience) [[Definisjon-målgruppe]]
+
+[cols="30s,70d"]
+|===
+| English name |audience
+| URI |dct:audience
+| Verdiområde / Range  |skos:Concept
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi målgruppen for definisjonen. Verdien velges fra et kontrollert vokabular.
+
+(English) This property is used to specify the audience of the definition, as a coded value chosen from a controlled vocabulary.
+| Multiplisitet  |0..1
+| Kravnivå / Requirement level |Valgfri / Optional
+| Merknad / Note |(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/audience-type/[https://data.norge.no/vocabulary/audience-type/] hvis verdien finnes på listen. #NB! Listen er ikke publisert ennå, men den kommer til å inneholde følgende to verdier: allmennhet, spesialist#.
+
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type/ if the value is on the list. #NB! The list is not published yet, but it will contain the following two values: public, specialist#.
+|===
+
+Eksempel i RDF Turtle:
+-----
+<eksempel-begrep> a skos:Concept ; # eksempel-begrep
+   skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+      dct:audience <https://data.norge.no/vacabulary/audience-type/public> ; ] ; # målgruppe
+     .
+-----

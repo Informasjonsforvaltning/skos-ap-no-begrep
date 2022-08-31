@@ -1,0 +1,25 @@
+=== Krav til beskrivelse av en begrepssamling, med eksempel [[Krav-begrepssamling-med-eksempler]]
+
+
+Begreper kan samles i en begrepssamling.
+
+En begrepssamling skal inneholde minst ett begrep, og skal i tillegg alltid beskrives med følgende obligatoriske opplysninger:
+
+* *identifikator* som skal være unik innen en gitt kontekst
+* *kontaktpunkt* som ikke bør være til enkeltpersoner, og som bør være maks. ett for hvert språk (relevant hvis det er ulike kontaktpunkter for norske og utenlandske kontakter)
+* *navn* (maks. ett per skriftspråk), og det skal oppgis hvilket skriftspråk navnet er skrevet i
+* *publisert av* som skal oppgis som virksomhet og ikke enkeltperson
+
+En begrepssamling bør beskrives med følgende anbefalte opplysninger hvis de finnes:
+
+* *beskrivelse* (og maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet i
+
+|===
+a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
+
+* *identifikator*: _https://data.norge.no/concepts_
+* *kontaktpunkt*: _fellesdatakatalog@digdir.no_
+* *navn*: _Begrepsoversikt (bokmål)_
+* *publisert av*: _991825827 (organisasjonsnummer for Digitaliseringsdirektoratet)_
+* *beskrivelse*: _Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)_
+|===

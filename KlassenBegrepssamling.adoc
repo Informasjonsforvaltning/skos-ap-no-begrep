@@ -1,0 +1,117 @@
+=== Krav til RDF-representasjon av Begrepssamling [[Begrepssamling]]
+
+[cols="30s,70d"]
+|===
+|English name |Collection
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å representere en samling av https://termbasen.standard.no/term/165575653105429/nob[begreper].
+
+(English) This property is used to represent a collection of https://termbasen.standard.no/term/165575653105429/eng[concepts].
+|URI |skos:Collection
+|Kravnivå / Requirement level |Valgfri / Optional
+|===
+
+==== Obligatoriske egenskaper for _Begrepssamling_ [[Begrepssamling-obligatoriske-egenskaper]]
+
+===== Begrepssamling – identifikator (dct:identifier) [[Begrepssamling-identifikator]]
+
+[cols="30s,70d"]
+|===
+|English name |identifier
+|URI |dct:identifier
+|Verdiområde / Range |rdfs:Literal typed as xsd:anyURI
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi identifikator til begrepssamlingen.
+
+(English) This property is used to specify the identifier of the concept collection.
+|Multiplisitet |1..1
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|Merknad / Note |(norsk) Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+
+(English) See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+|===
+
+Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
+
+===== Begrepssamling – inneholder begrep (skos:member) [[Begrepssamling-inneholder-begrep]]
+
+[cols="30s,70d"]
+|===
+|English name |member
+|URI |skos:member
+|Verdiområde / Range |skos:Concept
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til begrep som inngår i begrepssamlingen.
+
+(English) This property is used to refer to concepts which are members of the concept collection.
+|Multiplisitet |1..n
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
+
+===== Begrepssamling – kontaktpunkt (dcat:contactPoint) [[Begrepssamling-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+|English name |contact point
+|URI |dcat:contactPoint
+|Verdiområde / Range |vcard:Organization or vcard:Group
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål vedrørende begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
+
+(English) This property is used to specify contact point which may be reached regarding the concept collection. There shall be maximum one contact point per language, when there are different contact points for e.g. Norwegian vs. international contacts.
+|Multiplisitet |1..n
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
+
+===== Begrepssamling – navn (dct:title) [[Begrepssamling-navn]]
+
+[cols="30s,70d"]
+|===
+|English name |title
+|URI |dct:title
+|Verdiområde / Range |rdf:langString
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi navnet på begrepssamlingen. Egenskapen bør gjentas når navnet finnes i flere skriftspråk.
+
+(English) This property is used to specify the title of the concept collection. This property should be repeated for each language when the title is in several languages.
+|Multiplisitet |1..n
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|===
+
+Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
+
+===== Begrepssamling – publisert av (dct:publisher) [[Begrepssamling-publisert-av]]
+
+[cols="30s,70d"]
+|===
+|English name |responsible organization
+|URI |dct:publisher
+|Verdiområde / Range |org:Organization
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som har publisert begrepssamlingen.
+
+(English) This property is used to refer to the publisher of the concept collection.
+|Multiplisitet |1..1
+|Kravnivå / Requirement level |Obligatorisk / Mandatory
+|Merknad / Note |(norsk) Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+
+(English) The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)].
+|===
+
+Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.
+
+==== Anbefalte egenskaper for _Begrepssamling_
+
+===== Begrepssamling – beskrivelse (dct:description) [[Begrepssamling-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|English name |description
+|URI |dct:description
+|Verdiområde / Range |rdf:langString
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi beskrivelsen av begrepssamling. Egenskapen bør gjentas når beskrivelsen finnes i flere skriftspråk.
+
+(English) This property is used to provide a description of the concept collection. This property should be repeated for each language when the description is in several languages.
+|Multiplisitet |0..n
+|Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
+Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.

@@ -1,0 +1,43 @@
+== Om denne standarden [[Om-denne-standarden]]
+
+=== Formål [[Formål]]
+
+Standarden skal sikre at begreper som forvaltes av offentlig forvaltning, beskrives og tilgjengeliggjøres på en standardisert og maskinlesbar måte, slik at virksomheter enklere kan ta i bruk og bygge videre på begrepsarbeid som andre har gjort.
+
+=== Omfang og avgrensinger [[Omfang-og-avgrensninger]]
+
+Standarden spesifiserer
+
+* hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives (del 1)
+* hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_] (del 2)
+
+Se ellers bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere.
+
+=== Målgrupper [[Målgrupper]]
+
+Standarden er primært for
+
+* deg som beskriver og tilgjengeliggjør din virksomhets begreper og begrepssamlinger
+* deg som utvikler/tilpasser verktøystøtte for å beskrive begreper og/eller for å tilgjengeliggjøre begrepsbeskrivelser
+
+Du kan også ha nytte av å lese standarden hvis hensikten er å forstå andres begrepsbeskrivelser.
+
+=== Forvaltningsregime [[Forvaltningsregime]]
+
+Standarden forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir)].
+
+Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir sette sammen en arbeidsgruppe med representanter fra aktuelle virksomheter. Arbeidsgruppen utarbeider forslag til den reviderte versjonen som sendes ut på åpen høring før fastsetting.
+
+=== Kravnivåene i denne standarden [[Kravnivåene-i-denne-standarden]]
+
+
+Standarden bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+
+=== Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
+
+
+<<Del1>> er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.
+
+<<Del2>> er ment for lesere som skal utvikle/tilpasse verktøystøtte for begrepsbeskrivelser. Den spesifiserer hvordan kravene beskrevet i del 1 skal implementeres iht. https://www.w3.org/RDF/[_Resource Description Framework (RDF)_] og https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_].
+
+Eksemplene i denne standarden er deskriptive. De kan inneholde fiktive data. Ikke alle eksemplene er komplette, dvs. at de kan mangle obligatoriske opplysninger.

@@ -1,11 +1,12 @@
-== Forord
+== Forord [[Forord]]
 
-https://www.digdir.no/digitalisering-og-samordning/referansekatalogen-it-standarder/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
+IMPORTANT: Dette er en høringsversjon, som skal erstatte: +
+1. https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_ (v.2.0.2)] +
+2. https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_ (v.1.1.1)] +
+ +
+*Vennligst bruk* link:files/Mal-tilbakemeldinger.docx[denne malen for detaljerte tilbakemeldinger (Word)].
 
-_Referansekatalogen_ skal sikre at innbyggere og næringsliv får tilgang til offentlig informasjon og tjenester på en standardisert måte (uavhengig av brukerutstyr). Den skal også sikre god samhandling mellom offentlige virksomheter, hindre bindinger til bestemte leverandører og sikre god konkurranse i IT-markedet. Katalogen forvaltes av https://www.digdir.no/[Digitaliseringsdirektoratet].
 
-IT-ministeren satte i 2006 ned et bredt sammensatt Standardiseringsråd, som fra 2019 endret sitt navn til https://www.digdir.no/digitalisering-og-samordning/arkitektur-og-standardiseringsradet/1473[Arkitektur- og standardiseringsråd], med medlemmer fra kommunal og statlig sektor. Digitaliseringsdirektoratet får råd fra dette rådet om hvilke standarder som bør være anbefalte eller obligatoriske. Forslag til obligatoriske standarder blir først utredet av Digitaliseringsdirektoratet og deretter oversendt til Kommunal- og moderniseringsdepartementet etter høring. Revidert https://lovdata.no/dokument/SF/forskrift/2013-04-05-959[_Forskrift om IT-standarder i offentlig forvaltning_] med nye obligatoriske standarder legges så fram for Kongen i statsråd som vedtar forskriftsendringer. Digitaliseringsdirektoratet beslutter hva som skal være anbefalte standarder i _Referansekatalogen_, etter utredning og høring i henhold til Arkitektur- og standardiseringsrådets arbeidsmetodikk.
+Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
 
-Denne standarden er utarbeidet av en arbeidsgruppe ledet av tidligere Difi (nå Digitaliseringsdirektoratet), i henhold til Standardiseringsrådets arbeidsmetodikk.
-
-Standarden inngår i bruksområdet https://www.digdir.no/digitalisering-og-samordning/omgrepsanalyse-og-definisjonsarbeid/1483["Begrepsanalyse og definisjonsarbeid"] i _Referansekatalogen_.
+Denne standarden er utarbeidet i henhold til arbeidsmetodikken til Arkitektur- og standardiseringsrådet, av en arbeidsgruppe ledet av Digitaliseringsdirektoratet.

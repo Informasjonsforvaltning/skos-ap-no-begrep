@@ -1,0 +1,153 @@
+== Vedlegg D – Eksempler i RDF Turtle [[Eksempler-i-RDF-Turtle]]
+
+_Vedlegget er deskriptivt_.
+
+=== Eksempler på begrepsbeskrivelser representert i RDF Turtle [[RDF-eksempler-begreper]]
+
+[stripes=even]
+|===
+a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra https://data.nav.no/begrep/BEGREP-975[NAV] 2022-08-23, for begrepet «mødrekvote»:
+
+* *anbefalt term*: «mødrekvote» (bokmål)
+* *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
+* *identifikator*: https://data.nav.no/begrep/BEGREP-975
+* *kontaktpunkt*: mailto:begrepskatalogen@nav.no[begrepskatalogen@nav.no]
+* *publisert av*: 889640782 (organisasjonsnummer til NAV)
+
+a| *Eksempelet i RDF Turtle*:
+-----
+<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+   skos:prefLabel "mødrekvote"@nb ; # anbefalt term
+   skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ;  # definisjon
+   dct:identifier "https://data.nav.no/begrep/BEGREP-975"^^xsd:anyURI ; # identifikator
+   dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasEmail <mailto:begrepskatalogen@nav.no> ; ] ; # e-post
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/889640782> ; # publisert av
+   .
+-----
+|===
+
+[stripes=even]
+|===
+a|*Eksempel på noen anbefalte opplysninger*, hentet fra https://termbasen.standard.no/term/165575613303956/nob[Standard Norge] 2022-08-30, for begrepet «innholdsdefinisjon»:
+
+* *fagområde*: terminologi
+* *merknad*: Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig. (bokmål)
+* *tillatt term*: intensjonell definisjon (bokmål)
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<hentetFraSNORRE> a skos:Concept ; # begrep
+   dct:subject "terminologi"@nb ; # fagområde
+   skos:scopeNote "Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner …"@nb ; # merknad
+   skos:altLabel "intensjonell definisjon"@nb ; # tillatt term
+.
+-----
+|===
+
+[stripes=even]
+|===
+a|*Eksempel på noen valgfrie opplysninger*, ved å bruke et fiktivt eksempel, begrepet «fiktivt begrep»:
+
+* *datastrukturterm*: aFictiveConcept
+* *eksempel*: eksempelbegrep, testbegrep (bokmål)
+* *frarådd term*: fiktivt konsept (bokmål)
+* *status*: gyldig
+* *verdiområde*: lovlige verdier: eksempelbegrep, testbegrep, tullebegrep
+* *versjonsnummer*: 1.1
+* *versjonsnote*: Nå med «tullebegrep» også som en lovlig verdi (bokmål)
+* *inngår i begrepssamling*: Fiktiv begrepssamling
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<aFictiveConcept> a skos:Concept ; # begrep
+   skosno:dataStructureLabel "aFictiveConcept" ; # datastrukturterm
+   skos:example "eksempelbegrep, testbegrep"@nb ; # eksempel
+   skos:hiddenLabel "fiktivt konsept"@nb ; # frarådd term
+   adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
+   skosno:valueRange <https://example.org/aFictiveCodeList/> ; # verdiområde
+   owl:versionInfo "1.1" ; # versjonsnummer
+   adms:versionsNote "Nå med «tullebegrep» også som en lovlig verdi"@nb ; # versjonsnote
+   uneskos:memberOf <https://example.org/aFictiveConceptCollection/> ; # inngår i begrepssamling
+   .
+-----
+|===
+
+[stripes=even]
+|===
+a|*Eksempel på en generisk relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.1[figur 4 i Termlosen], for begrepet «tre»:
+
+* *generaliserer*: det andre begrepet som har anbefalt term «eviggrønt tre» (nynorsk)
+* *inndelingskriterium*: «bladfelling» (nynorsk)
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<tre> a skos:Concept ; # begrep
+   skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har en generisk begrepsrelasjon
+      skosno:hasSpecificConcept <eviggrnøt-tre> ; # … som har et underbegrep / spesifikt begrep
+      dct:description "bladfelling"@nn ; # … og med inndelingskriterium oppgitt i nynorsk
+      ] ;
+   .
+-----
+|===
+
+[stripes=even]
+|===
+a|*Eksempel på en partitiv relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.1[figur 6 i Termlosen], for begrepet «rot»:
+
+* *helhetsbegrep*: det andre begrepet som har anbefalt term «tre» (nynorsk)
+* *inndelingskriterium*: «anatomi» (nynorsk)
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<rot> a skos:Concept ; # begrep
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitiv begrepsrelasjon
+      skosno:hasComprehensiveConcept <tre> ; # … som har et helhetsbegrep
+      dct:description "anatomi"@nn ; # … og med inndelingskriterium oppgitt i nynorsk
+      ] ;
+   .
+-----
+|===
+
+[stripes=even]
+|===
+a|*Eksempel på en assosiativ relasjon*, hentet fra https://data.nav.no/begrep/BEGREP-1169[NAV] 2022-08-23, for begrepet 1169 «lovlig opphold»:
+
+* *er relatert til*: begrep 170 «medlem i folketrygden»
+* *relasjonsrolle*: muliggjør
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<1169> a skos:Concept ; # begrep
+   skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ begrepsrelasjon
+      skosno:hasToConcept <170> ; # … som har til-begrep "170"
+      skosno:relationRole <muliggjør> ; # … og som har relasjonsrollen ‘muliggjør’
+      ] ;
+   .
+-----
+|===
+
+=== Eksempel på en begrepssamling representert i RDF Turtle [[RDF-eksempel-Begrepssamling]]
+
+[stripes=even]
+|===
+a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
+
+* *identifikator*: https://data.norge.no/concepts
+* *kontaktpunkt*: fellesdatakatalog@digdir.no
+* *navn*: Begrepsoversikt (bokmål)
+* *publisert av*: 991825827 (organisasjonsnummer til Digitaliseringsdirektoratet)
+* *beskrivelse*: Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)
+
+a|*Eksempelet i RDF Turtle*:
+-----
+<https://data.norge.no/concepts> a skos:Collection ; # begrepssamling
+   dct:identifier "https://data.norge.no/concepts"^^xsd:anyURI ; # identifikator
+   dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
+      vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ; ] ; # e-post
+   dct:title "Begrepsoversikt"@nb ; # navn i bokmål
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # publisert av
+   dct:description "Oversikt over begreper som er forvaltet av offentlig forvaltning"@nb ; # beskrivelse i bokmål
+   .
+-----
+|===

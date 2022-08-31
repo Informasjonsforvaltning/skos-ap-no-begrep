@@ -1,0 +1,38 @@
+== Vedlegg C – Om begrepsrelasjoner [[Om-begrepsrelasjoner]]
+
+
+_Vedlegget er deskriptivt_.
+
+Et begrep kan ha relasjoner til andre begreper. En relasjon består av to begreper pluss en betydning som kan uttrykkes med tekst eller type. https://data.norge.no/specification/termlosen/#kap1.4[Termlosen] nevner tre hovedgrupper av relasjoner: generiske, partitive og assosiative.
+
+En _generisk_ relasjon består et overbegrep og et underbegrep. Relasjonen har en iboende betydning som kan leses slik:
+[no-bullet]
+*   <overbegrep> _kan være_ <underbegrep>
+*   <underbegrep> _er_ _en slags_ <overbegrep>
+
+Underbegrepet har de samme kjennetegnene som overbegrepet, og minst ett atskillende kjennetegn i tillegg. Et klassisk eksempel: begrepet «tre» kan ha et underbegrep «eviggrønt tre» og et annet underbegrep «sommergrønt tre». Her har vi altså to relasjoner. Valget av atskillende kjennetegn kalles _inndelingskriterium_. I dette eksemplet er inndelingskriteriet «bladfelling».
+
+Generiske relasjoner danner ofte rene hierarkier, men i noen tilfeller kan det være aktuelt å gi et underbegrep flere overbegreper.
+
+En _partitiv_ relasjon angir at et begrep _er del av_ (inngår i) et annet begrep, som dermed _inneholder_ det første begrepet. Relasjonen skal kunne forstås begge veier, for eksempel:
+[no-bullet]
+*   «mødrekvote» _er del av_ «foreldrepengeperiode»
+*   «foreldrepengeperiode» _inneholder_ «mødrekvote»
+
+Begrepet «foreldrepengeperiode» _inneholder_ også begrepene «fedrekvote» og «fellesperiode», i tillegg til «mødrekvote». Dermed har vi til sammen tre partitive relasjoner med utgangspunkt i begrepet «foreldrepengeperiode».
+
+Et begrep kan være del av flere andre begreper. For eksempel kan begrepet «styringsenhet» være del av begrepet «lydanlegg» og begrepet «lysanlegg». Til sammen har vi da to partitive relasjoner med utgangspunkt i begrepet «styringsenhet».
+
+En _assosiativ_ relasjon kan være av en av mange forskjellige typer. Her blir rollene viktige, for de er ikke forutbestemte slik som i generiske og partitive relasjoner. For eksempel kan vi ønske å uttrykke at
+[no-bullet]
+* begrep A _muliggjør_ begrep B
+
+Her er _muliggjør_ den rollen begrep A spiller overfor begrep B. Leser vi relasjonen motsatt vei, må vi i dette tilfellet velge en annen rolle: begrep B _forutsetter_ begrep A.
+
+Det er opp til begrepsforfatterne å velge hvilke typer assosiative relasjoner de trenger. Relasjonene skal kunne forstås begge veier, og ordlyden hjelper oss til å bestemme typen. Eksempler på assosiative relasjoner kan være
+
+* «forutsetter – muliggjør»
+* «har nært samsvar med – har nært samsvar med»
+* «erstatter – er erstattet av»
+
+Merk at noen relasjonstyper er symmetriske; de leses likt begge veier. Dette gjelder blant andre relasjonstypene «har nært samsvar med» og «er relatert til». Det finnes ingen endelig liste over assosiative relasjonstyper, men https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1428687[NS-ISO 704:2022  _Terminologiarbeid — Prinsipper og metoder_] gir mange gode forslag.

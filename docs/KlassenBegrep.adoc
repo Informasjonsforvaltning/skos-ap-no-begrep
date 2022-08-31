@@ -135,7 +135,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Kravnivå / Requirement level |Obligatorisk / Mandatory
 | Merknad / Note |(norsk) Når det er ulike kontaktpunkter for ulike språk (f.eks. norske vs. internasjonale kontakter), skal det oppgis maks. ett kontaktpunkt per språk.
 
-English) When there are different contact points for different languages (e.g. Norwegian vs. international contacts), there shall be maximum one contact points per language.
+(English) When there are different contact points for different languages (e.g. Norwegian vs. international contacts), there shall be maximum one contact points per language.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -203,7 +203,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / Range |xsd:date
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi dato begrepet er gyldig til og med.
 
-English) This property is used to specify the date (inclusively) through which the concept is valid.
+(English) This property is used to specify the date (inclusively) through which the concept is valid.
 | Multiplisitet |0..1
 | Kravnivå / Requirement level |Anbefalt / Recommended
 |===
@@ -291,7 +291,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / Range |rdf:langString
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi merknad til begrepet. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
 
-English) This property is used to specify notes regarding the concept. The property should be repeated when the text is in several languages.
+(English) This property is used to specify notes regarding the concept. The property should be repeated when the text is in several languages.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Anbefalt / Recommended
 |===
@@ -662,7 +662,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | Kravnivå / Requirement level |Valgfri / Optional
 | Merknad / Note |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrepssamling-inneholder-begrep>>.
 
-English) This property/relation is the inverse of <<Begrepssamling-inneholder-begrep>>.
+(English) This property/relation is the inverse of <<Begrepssamling-inneholder-begrep>>.
 |===
 
 Eksempel i RDF Turtle:
@@ -681,7 +681,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / Range |skos:Concept
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet har en «se også»-relasjon til.
 
-v(English) This property is used to refer to another concept that this concept has a “see also”-relation with.
+(English) This property is used to refer to another concept that this concept has a “see also”-relation with.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
 |===

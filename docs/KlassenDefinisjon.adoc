@@ -107,6 +107,6 @@ Eksempel i RDF Turtle:
 -----
 <eksempel-begrep> a skos:Concept ; # eksempel-begrep
    skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
-      dct:audience <https://data.norge.no/vacabulary/audience-type#public> ; ] ; # målgruppe
+      dct:audience <https://data.norge.no/vocabulary/audience-type#public> ; ] ; # målgruppe
   .
 -----

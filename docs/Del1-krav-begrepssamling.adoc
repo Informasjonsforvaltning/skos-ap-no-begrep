@@ -17,9 +17,9 @@ En begrepssamling bør beskrives med følgende anbefalte opplysninger hvis de fi
 |===
 a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
 
-* *identifikator*: _https://data.norge.no/concepts_
-* *kontaktpunkt*: _fellesdatakatalog@digdir.no_
-* *navn*: _Begrepsoversikt (bokmål)_
-* *publisert av*: _991825827 (organisasjonsnummer for Digitaliseringsdirektoratet)_
-* *beskrivelse*: _Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)_
+* *identifikator*: https://data.norge.no/concepts
+* *kontaktpunkt*: fellesdatakatalog@digdir.no
+* *navn*: «Begrepsoversikt» (bokmål)
+* *publisert av*: 991825827 (organisasjonsnummer for Digitaliseringsdirektoratet)
+* *beskrivelse*: «Oversikt over begreper som er forvaltet av offentlig forvaltning» (bokmål)
 |===

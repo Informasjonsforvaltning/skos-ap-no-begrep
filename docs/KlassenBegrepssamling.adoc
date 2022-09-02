@@ -18,7 +18,7 @@
 |===
 |English name |identifier
 |URI |dct:identifier
-|Verdiområde / Range |rdfs:Literal typed as xsd:anyURI
+|Verdiområde / Range |xsd:anyURI
 |Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi identifikator til begrepssamlingen.
 
 (English) This property is used to specify the identifier of the concept collection.
@@ -83,7 +83,7 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 
 [cols="30s,70d"]
 |===
-|English name |responsible organization
+|English name |publisher
 |URI |dct:publisher
 |Verdiområde / Range |org:Organization
 |Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som har publisert begrepssamlingen.

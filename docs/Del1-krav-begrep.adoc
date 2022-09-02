@@ -62,10 +62,10 @@ Et begrep kan ha relasjoner til andre begreper. Når et begreps relasjon til et 
 .Valgfrie begrepsrelasjoner som en begrepsbeskrivelse kan inneholde
 [cols="25,50,25"]
 |===
-|*Type relasjon til det andre begrepet* |*Regler for det andre begrepet* |*I tillegg, hvis de finnes*
+|*Type relasjon til det andre begrepet* |*Regler og anbefalinger* |*I tillegg, hvis de finnes*
 |https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon] | enten det begrepet som dette begrepet *spesialiserer*, eller det begrepet som dette begrepet *generaliserer* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
 |https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] | enten det begrepet som dette begrepet *er del av*, eller det begrepet som dette begrepet *inneholder* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
-|https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] | det begrepet som dette begrepet *er assosiert med*, og med *relasjonstype*, eventuelt uttrykt som begrepets *relasjonsrolle* overfor det andre begrepet |
+|https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] | det begrepet som dette begrepet *er relatert til*, og med *relasjonstype*, eventuelt uttrykt som begrepets *relasjonsrolle* overfor det andre begrepet |
 |===
 
 Dersom en begrepsrelasjon skal være kjent begge veier, bør den beskrives begge veier.

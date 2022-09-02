@@ -31,9 +31,9 @@ a| *Eksempelet i RDF Turtle*:
 |===
 a|*Eksempel på noen anbefalte opplysninger*, hentet fra https://termbasen.standard.no/term/165575613303956/nob[Standard Norge] 2022-08-30, for begrepet «innholdsdefinisjon»:
 
-* *fagområde*: terminologi
-* *merknad*: Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig. (bokmål)
-* *tillatt term*: intensjonell definisjon (bokmål)
+* *fagområde*: «terminologi» (bokmål)
+* *merknad*: «Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig.» (bokmål)
+* *tillatt term*: «intensjonell definisjon» (bokmål)
 
 a|*Eksempelet i RDF Turtle*:
 -----
@@ -50,12 +50,12 @@ a|*Eksempelet i RDF Turtle*:
 a|*Eksempel på noen valgfrie opplysninger*, ved å bruke et fiktivt eksempel, begrepet «fiktivt begrep»:
 
 * *datastrukturterm*: aFictiveConcept
-* *eksempel*: eksempelbegrep, testbegrep (bokmål)
-* *frarådd term*: fiktivt konsept (bokmål)
+* *eksempel*: «eksempelbegrep, testbegrep» (bokmål)
+* *frarådd term*: «fiktivt konsept» (bokmål)
 * *status*: gyldig
 * *verdiområde*: lovlige verdier: eksempelbegrep, testbegrep, tullebegrep
 * *versjonsnummer*: 1.1
-* *versjonsnote*: Nå med «tullebegrep» også som en lovlig verdi (bokmål)
+* *versjonsnote*: «Nå med 'tullebegrep' også som en lovlig verdi» (bokmål)
 * *inngår i begrepssamling*: Fiktiv begrepssamling
 
 a|*Eksempelet i RDF Turtle*:
@@ -77,7 +77,7 @@ a|*Eksempelet i RDF Turtle*:
 |===
 a|*Eksempel på en generisk relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.1[figur 4 i Termlosen], for begrepet «tre»:
 
-* *generaliserer*: det andre begrepet som har anbefalt term «eviggrønt tre» (nynorsk)
+* *generaliserer*: «eviggrønt tre» (nynorsk)
 * *inndelingskriterium*: «bladfelling» (nynorsk)
 
 a|*Eksempelet i RDF Turtle*:
@@ -95,7 +95,7 @@ a|*Eksempelet i RDF Turtle*:
 |===
 a|*Eksempel på en partitiv relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.1[figur 6 i Termlosen], for begrepet «rot»:
 
-* *helhetsbegrep*: det andre begrepet som har anbefalt term «tre» (nynorsk)
+* *helhetsbegrep*: «tre» (nynorsk)
 * *inndelingskriterium*: «anatomi» (nynorsk)
 
 a|*Eksempelet i RDF Turtle*:
@@ -113,14 +113,14 @@ a|*Eksempelet i RDF Turtle*:
 |===
 a|*Eksempel på en assosiativ relasjon*, hentet fra https://data.nav.no/begrep/BEGREP-1169[NAV] 2022-08-23, for begrepet 1169 «lovlig opphold»:
 
-* *er relatert til*: begrep 170 «medlem i folketrygden»
 * *relasjonsrolle*: muliggjør
+* *til-begrep*: «medlem i folketrygden» (begrep 170)
 
 a|*Eksempelet i RDF Turtle*:
 -----
-<1169> a skos:Concept ; # begrep
+<BEGREP-1169> a skos:Concept ; # begrep
    skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ begrepsrelasjon
-      skosno:hasToConcept <170> ; # … som har til-begrep "170"
+      skosno:hasToConcept <BEGREP-170> ; # … som har til-begrep "170"
       skosno:relationRole <muliggjør> ; # … og som har relasjonsrollen ‘muliggjør’
       ] ;
    .
@@ -135,9 +135,9 @@ a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversi
 
 * *identifikator*: https://data.norge.no/concepts
 * *kontaktpunkt*: fellesdatakatalog@digdir.no
-* *navn*: Begrepsoversikt (bokmål)
+* *navn*: «Begrepsoversikt» (bokmål)
 * *publisert av*: 991825827 (organisasjonsnummer til Digitaliseringsdirektoratet)
-* *beskrivelse*: Oversikt over begreper som er forvaltet av offentlig forvaltning (bokmål)
+* *beskrivelse*: «Oversikt over begreper som er forvaltet av offentlig forvaltning» (bokmål)
 
 a|*Eksempelet i RDF Turtle*:
 -----

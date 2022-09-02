@@ -151,7 +151,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |responsible organization
+| English name | publisher
 | URI |dct:publisher
 | Verdiområde / Range |org:Organization
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som har publisert begrepet.
@@ -262,7 +262,7 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |concept field
+| English name |subject field
 | URI |dct:subject
 | Verdiområde / Range |rdf:langString or skos:Concept
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575653105392/nob[fagområde] som begrepet kan grupperes/klassifiseres under, oppgis som enten tekst med språkkode eller kodet verdi. Hvis tekst, og når teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert skriftspråk.
@@ -376,7 +376,7 @@ Eksempel i RDF Turtle, hentet fra https://termbasen.standard.no/term/16557565310
 | English name |is part of
 | URI |xkos:isPartOf
 | Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er en el del av. Begrepet er et https://termbasen.standard.no/term/165575551206237/nob[delbegrep] og det andre begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet], i en partitiv relasjon mellom disse.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termbasen.standard.no/term/165575551206237/nob[delbegrep] og det andre begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet], i en partitiv relasjon mellom disse.
 
 (English) To refer to the concept that this concept is a part of. This concept is a https://termbasen.standard.no/term/165575551206237/eng[partitive concept] and the other concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept], in a partitive concept relation between the two concepts.
 | Multiplisitet |0..n
@@ -430,9 +430,9 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 | English name |is from-concept in
 | URI |skosno:isFromConceptIn
 | Verdiområde / Range |skosno:AssociativeConceptRelation
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen begrepet har.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) This property is used to refer to an https://termbasen.standard.no/term/165575612703735/eng[associative concept relation] that this concept has with another concept, when there is need for describing the relation role that the concept has.
+(English) This property is used to refer to an https://termbasen.standard.no/term/165575612703735/eng[associative concept relation] that this concept has with another concept, when there is need for describing the relation role of this concept.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
 |===
@@ -446,9 +446,9 @@ Eksempel i RDF Turtle: Se under <<Assosiativ-begrepsrelasjon>>.
 | English name |is related to
 | URI |skos:related
 | Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi et annet begrep som begrepet er assosiert med, når det ikke er behov for å beskrive relasjonsrollen begrepet har.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som begrepet er relatert til, når det ikke er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) This property is used to refer to a concept which this concept is related to, when there is no need for describing the relation role that the concept has.
+(English) This property is used to refer to a concept which this concept is related to, when there is no need for describing the relation role of this concept.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
 | Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har assosiert begrep».
@@ -457,9 +457,9 @@ Eksempel i RDF Turtle: Se under <<Assosiativ-begrepsrelasjon>>.
 | Merknad 2 / Note 2 |(norsk) Bruk heller en av de andre semantisk mer presise assosiative begrepsrelasjonene.
 
 English) Use rather one of the other semantically more precise associative concept relations.
-| Merknad 3 / Note 3 |(norsk) Bruk <<Begrep-er-fra-begrep-i>> når det er behov for å beskrive relasjonsrollen begrepet har.
+| Merknad 3 / Note 3 |(norsk) Bruk <<Begrep-er-fra-begrep-i>> når det er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) Use <<Begrep-er-fra-begrep-i>> when there is need for describing the relation role that the concept has.
+(English) Use <<Begrep-er-fra-begrep-i>> when there is need for describing the relation role of this concept.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
@@ -609,9 +609,9 @@ Eksempel i RDF Turtle:
 | English name |has partitive concept relation
 | URI |skosno:hasPartitiveConceptRelation
 | Verdiområde / Range |skosno:PartitiveConceptRelation
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å relasjonen med detaljer.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) This property is used to refer to a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation] that this concept has with another concept, when there is need for describing the relation with details.
+(English) This property is used to refer to a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation] that this concept has with another concept, when there is need for describing the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Valgfri / Optional
 |===
@@ -625,7 +625,7 @@ Eksempel i RDF Turtle: Se under <<Partitiv-begrepsrelasjon>>.
 | English name |has part
 | URI |xkos:hasPart
 | Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet består av. Begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet] og det andre begrepet https://termbasen.standard.no/term/165575551206237/nob[delbegrepet], i en partitiv relasjon mellom disse.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet] og det andre begrepet https://termbasen.standard.no/term/165575551206237/nob[delbegrepet], i en partitiv relasjon mellom disse.
 
 (English) This property is used to refer to the concept that this concept has as a part. This concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept] and the other concept is the https://termbasen.standard.no/term/165575551206237/eng[partitive concept], in a partitive concept relation between the two concepts.
 | Multiplisitet |0..n
@@ -655,7 +655,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | English name |member of
 | URI |uneskos:memberOf
 | Verdiområde / Range |skos:Collection
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å knytte begrepet til en begrepssamling der begrepet inngår.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til en begrepssamling der begrepet inngår.
 
 (English) This property is used to refer to the collection that this concept is a member of.
 | Multiplisitet |0..n

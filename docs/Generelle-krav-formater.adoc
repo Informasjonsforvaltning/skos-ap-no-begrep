@@ -5,8 +5,8 @@ Det anbefales å bruke standardiserte formater til å representere enkeltypene, 
 
 * *Dato*: NS-ISO 8601 brukes for intern lagring og maskinell tilgjengeliggjøring eksternt, som `ÅÅÅÅ-MM-DD`.
 
-* *URI*: Se kravene i https://www.digdir.no/1492[bruksområdet “Pekere til offentlige ressurser på nett” i _Referansekatalogen_].
+* *URI*: Se kravene i https://www.digdir.no/1492[bruksområdet «Pekere til offentlige ressurser på nett» i _Referansekatalogen_].
 
 * *Kontaktpunkt* (vcard): Se spesifikasjon fra W3C, https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/[_vCard Ontology - for describing People and Organizations_].
 
-* *Tekst*: Se kravene i https://www.digdir.no/1494[bruksområdet “Publisering av tekstdokumenter” i _Referansekatalogen_].
+* *Tekst*: Se kravene i https://www.digdir.no/1494[bruksområdet «Publisering av tekstdokumenter» i _Referansekatalogen_].

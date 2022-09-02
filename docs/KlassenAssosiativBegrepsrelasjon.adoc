@@ -19,7 +19,7 @@
 | English name  |has to-concept
 | URI  |skosno:hasToConcept
 | Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi et til-begrep i en assosiativ begrepsrelasjon.
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å referere til et til-begrep i en assosiativ begrepsrelasjon.
 
 (English) This property is used to refer to a to-concept in an associative concept relation.
 | Multiplisitet  |1..n

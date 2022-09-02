@@ -18,7 +18,7 @@ image::images/RDF-eksempel-assosiativrelasjon.png[]
 RDF gir muligheten til å bunte sammen begrepsrelasjoner som tar utgangspunktet i det samme begrepet og som har samme predikat. Hvis et begrep A inneholder flere andre begreper B, C og D, kan vi uttrykke dette på kortform slik:
 
 -----
-<begrepA> xkos:hasPart < begrepB> , <begrepC> , <begrepD> ; .
+<begrepA> xkos:hasPart <begrepB> , <begrepC> , <begrepD> ; .
 -----
 
 [[Tabell-to-måter-begrepsrelasjon]]

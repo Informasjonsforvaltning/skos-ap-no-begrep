@@ -34,14 +34,14 @@ a|*Eksempel på noen valgfrie opplysninger*, ved å bruke et fiktivt eksempel, b
 |===
 a|*Eksempel på en generisk relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.1[figur 4 i Termlosen], for begrepet «tre»:
 
-* *generaliserer*: «eviggrønt tre»
+* *generaliserer*: «eviggrønt tre» (nynorsk)
 * *inndelingskriterium*: «bladfelling» (nynorsk)
 |===
 
 |===
 a|*Eksempel på en partitiv relasjon*, basert på https://data.norge.no/specification/termlosen/#kap1.4.2[figur 6 i Termlosen], for begrepet «rot»:
 
-* *helhetsbegrep*: «tre»
+* *helhetsbegrep*: «tre» (nynorsk)
 * *inndelingskriterium*: «anatomi» (nynorsk)
 |===
 

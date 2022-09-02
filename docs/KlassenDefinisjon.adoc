@@ -48,9 +48,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 (English) This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary.
 | Multiplisitet  |0..1
 | Kravnivå / Requirement level |Anbefalt / Recommended
-| Merknad / Note |(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/relationship-with-source-type/[https://data.norge.no/vocabulary/relationship-with-source/] hvis verdien finnes på listen. #NB! Listen er ikke publisert ennå, men den kommer til å inneholde følgende tre verdier: egendefinert, basert på kilde, sitat fra kilde#.
+| Merknad / Note |(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] hvis verdien finnes på listen.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type/, if the value is on the list. #NB! The list is not yet published, but it will contain the following three values: self-composed, derived from source, direct from source#.
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], if the value is on the list.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -58,8 +58,8 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 <https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
   skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
       rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
-      skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type/derived-from-source> ; ] ; # forhold til kilde ‘basert på kilde’
-     .
+      skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ; ] ; # forhold til kilde ‘basert på kilde’
+  .
 -----
 
 ===== Definisjon – kilde (dct:source) [[Definisjon-kilde]]
@@ -98,15 +98,15 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 (English) This property is used to specify the audience of the definition, as a coded value chosen from a controlled vocabulary.
 | Multiplisitet  |0..1
 | Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Verdien skal velges fra kontrollert vokabular https://data.norge.no/vocabulary/audience-type/[https://data.norge.no/vocabulary/audience-type/] hvis verdien finnes på listen. #NB! Listen er ikke publisert ennå, men den kommer til å inneholde følgende to verdier: allmennhet, spesialist#.
+| Merknad / Note |(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] hvis verdien finnes på listen.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type/ if the value is on the list. #NB! The list is not published yet, but it will contain the following two values: public, specialist#.
+(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] if the value is on the list.
 |===
 
 Eksempel i RDF Turtle:
 -----
 <eksempel-begrep> a skos:Concept ; # eksempel-begrep
    skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
-      dct:audience <https://data.norge.no/vacabulary/audience-type/public> ; ] ; # målgruppe
-     .
+      dct:audience <https://data.norge.no/vacabulary/audience-type#public> ; ] ; # målgruppe
+  .
 -----

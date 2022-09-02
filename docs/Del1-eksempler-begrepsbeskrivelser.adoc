@@ -13,21 +13,21 @@ a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hente
 |===
 a|*Eksempel på noen anbefalte opplysninger*, hentet fra https://termbasen.standard.no/term/165575613303956/nob[Standard Norge] 2022-08-30, for begrepet «innholdsdefinisjon»
 
-* *fagområde*: terminologi
-* *merknad*: Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig. (bokmål)
-* *tillatt term*: intensjonell definisjon (bokmål)
+* *fagområde*: «terminologi» (bokmål)
+* *merknad*: «Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig.» (bokmål)
+* *tillatt term*: «intensjonell definisjon» (bokmål)
 |===
 
 |===
 a|*Eksempel på noen valgfrie opplysninger*, ved å bruke et fiktivt eksempel, begrepet «fiktivt begrep»:
 
 * *datastrukturterm*: aFictiveConcept
-* *eksempel*: eksempelbegrep, testbegrep (bokmål)
-* *frarådd term*: fiktivt konsept (bokmål)
+* *eksempel*: «eksempelbegrep, testbegrep» (bokmål)
+* *frarådd term*: «fiktivt konsept» (bokmål)
 * *status*: gyldig
 * *verdiområde*: lovlige verdier: eksempelbegrep, testbegrep, tullebegrep
 * *versjonsnummer*: 1.1
-* *versjonsnote*: Nå med «tullebegrep» også som en lovlig verdi (bokmål)
+* *versjonsnote*: «Nå med 'tullebegrep' også som en lovlig verdi» (bokmål)
 * *inngår i begrepssamling*: Fiktiv begrepssamling
 |===
 

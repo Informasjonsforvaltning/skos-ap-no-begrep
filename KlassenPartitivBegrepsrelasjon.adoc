@@ -7,7 +7,7 @@
 |Anvendelse / Usage note |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon].
 
 (English) This class is used to represent a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation].
-|URI |skosno:GenericConceptRelation
+|URI |skosno:PartitiveConceptRelation
 |Kravnivå / Requirement level |Valgfri / Optional
 |===
 

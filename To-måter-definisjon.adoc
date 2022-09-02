@@ -15,7 +15,7 @@ I RDF Turtle ser det slik ut:
 <975> skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; .
 -----
 
-Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle noe mer enn selve definisjonsteksten. Når vi vil si noe mer om definisjonen, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <<Figur-definisjon-via-definisjonsobjekt>> nedenfor viser et eksempel på en definisjon som er oppgitt via et definisjonsobjekt som har med opplysninger om kilde i tillegg til definisjonsteksten.
+Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle noe mer enn selve definisjonsteksten. Når vi vil si noe mer, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <<Figur-definisjon-via-definisjonsobjekt>> nedenfor viser et eksempel på en definisjon som er angitt via et definisjonsobjekt som har med opplysninger om kilde i tillegg til definisjonsteksten.
 
 [[Figur-definisjon-via-definisjonsobjekt]]
 .Definisjon via et definisjonsobjekt
@@ -26,7 +26,8 @@ I RDF Turtle ser det slik ut:
 -----
 <975> euvoc:xlDefinition [ a euvoc:XlNote ; # definisjonsobjekt
    rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
-   skosno:relationshipWithSource <derivedFromSource> ; # forhold til kilde ‘basert på kilde’
-   dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; ] ;  # kilde
+   skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ; # forhold til kilde ‘basert på kilde’
+   dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; # kilde
+   ] ;
    .
 -----

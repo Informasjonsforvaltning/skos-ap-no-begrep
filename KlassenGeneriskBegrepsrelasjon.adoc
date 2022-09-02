@@ -19,7 +19,7 @@
 | English name  |has generic concept
 | URI  |skosno:hasGenericConcept
 | Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] i en generisk begrepsrelasjon.
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] i en generisk begrepsrelasjon.
 
 (English) This property is used to specify the https://termbasen.standard.no/term/165575654205842/eng[generic concept] in a generic concept relation.
 | Multiplisitet  |1..n
@@ -44,7 +44,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | English name  |has specific concept
 | URI  |skosno:hasSpecificConcept
 | Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] i en generisk begrepsrelasjon.
+| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å referere til https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] i en generisk begrepsrelasjon.
 
 (English) This property is used to refer to the https://termbasen.standard.no/term/165575654205860/eng[specific concept] in a generic concept relation.
 | Multiplisitet  |1..n

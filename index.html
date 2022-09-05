@@ -552,6 +552,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Begrepssamling">Krav til RDF-representasjon av Begrepssamling</a></li>
 </ul>
 </li>
+<li><a href="#Navnerom-brukt-i-standarden">Vedlegg A - Navnerom som er brukt i denne standard</a></li>
 <li><a href="#Forenklet-modell">Vedlegg B - Forenklet modell for SKOS-AP-NO-Begrep</a>
 <ul class="sectlevel2">
 <li><a href="#_forenklet_modell_med_kun_obligatoriske_klasser_og_deres_obligatoriske_egenskaper">Forenklet modell, med kun obligatoriske klasser og deres obligatoriske egenskaper</a></li>
@@ -594,7 +595,7 @@ Dette dokumentet kan også lastes ned <a href="skos-ap-no-begrep.pdf">som PDF</a
 <p><strong>Status</strong>: <mark>under arbeid</mark><br>
 <strong>Versjon</strong>: <mark>forberedelse til høringsversjon</mark><br>
 <strong>Publisert</strong>: <mark>ikke ennå</mark><br>
-<strong>Oppdatert</strong>: 2022-09-02 <mark>løpende oppdateres</mark><br>
+<strong>Oppdatert</strong>: 2022-09-05 <mark>løpende oppdateres</mark><br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
 </div>
@@ -1196,7 +1197,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p>Denne delen av standarden spesifiserer hvordan vi skal beskrive begreper og begrepssamlinger på en maskinlesbar måte, slik at virksomheter kan tilgjengeliggjøre begrepene sine på en standardisert og maskinlesbar måte.</p>
 </div>
 <div class="paragraph">
-<p>Del 2 spesifiserer hvordan begrepsbeskrivelsene i <a href="#Del1">del 1</a> skal uttrykkes på en form som er i henhold til <a href="https://www.w3.org/RDF/"><em>Resource Desciption Framework (RDF)</em></a>. RDF gir struktur og syntaks. Innholdet skal uttrykkes i henhold til <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/"><em>SKOS Simple Knowledge Organization System Reference</em></a>. SKOS er et vokabular (en metamodell) for de mest sentrale klassene og egenskapene vi behøver når vi beskriver begreper. Det vi trenger i tillegg til SKOS, for å oppgi datoer, kontaktpunkter m.m., må vi hente fra andre vokabularer. <a href="#Navnerom-brukt-i-standarden">[Navnerom-brukt-i-standarden]</a> gir en oversikt over de vokabularene som er brukt. Denne standarden er dermed en norsk applikasjonsprofil av SKOS (SKOS-AP-NO-Begrep).</p>
+<p>Del 2 spesifiserer hvordan begrepsbeskrivelsene i <a href="#Del1">del 1</a> skal uttrykkes på en form som er i henhold til <a href="https://www.w3.org/RDF/"><em>Resource Desciption Framework (RDF)</em></a>. RDF gir struktur og syntaks. Innholdet skal uttrykkes i henhold til <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/"><em>SKOS Simple Knowledge Organization System Reference</em></a>. SKOS er et vokabular (en metamodell) for de mest sentrale klassene og egenskapene vi behøver når vi beskriver begreper. Det vi trenger i tillegg til SKOS, for å oppgi datoer, kontaktpunkter m.m., må vi hente fra andre vokabularer. <a href="#Navnerom-brukt-i-standarden"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> gir en oversikt over de vokabularene som er brukt. Denne standarden er dermed en norsk applikasjonsprofil av SKOS (SKOS-AP-NO-Begrep).</p>
 </div>
 </div>
 <div class="sect2">
@@ -1222,7 +1223,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen.</p>
 <p class="tableblock">Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.</p>
-<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (se under <a href="#Navnerom-brukt-i-standarden">[Navnerom-brukt-i-standarden]</a> for hva <code>skos</code> står for).</p></td>
+<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (se under <a href="#Navnerom-brukt-i-standarden"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> for hva <code>skos</code> står for).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
@@ -4128,10 +4129,128 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: se under <a href="#RDF-eksempel-Begrepssamling">Eksempel på en begrepssamling representert i RDF Turtle</a>.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Navnerom-brukt-i-standarden"><a class="anchor" href="#Navnerom-brukt-i-standarden"></a>Vedlegg A - Navnerom som er brukt i denne standard</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Unresolved directive in main.adoc - include::Navnerom.adoc[]</p>
+<p>Navnerom for denne standarden er <a href="https://data.norge.no/vocabulary/skosno">https://data.norge.no/vocabulary/skosno#</a></p>
 </div>
+<table id="Tabell-navnerom" class="tableblock frame-all grid-all stripes-odd stretch">
+<caption class="title">Tabell 6. Oversikt over navnerom som er brukt i denne standarden (tabellen nedenfor er deskriptiv)</caption>
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 45%;">
+<col style="width: 45%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prefiks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navnerom</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring/navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/adms">http://www.w3.org/ns/adms#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-adms/">Asset Description Metadata Schema</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/dcat">http://www.w3.org/ns/dcat#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/">Data Catalog Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">euvoc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/" class="bare">http://publications.europa.eu/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(EU) Publications Office Extensions Ontology</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/locn">http://www.w3.org/ns/locn#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/ns/locn">ISA Programme Location Core Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">owl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl">http://www.w3.org/2002/07/owl#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/OWL/">Web Ontology Language (OWL)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF 1.1 XML Syntax</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema">http://www.w3.org/2000/01/rdf-schema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/">SKOS Simple Knowledge Organization System</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skosno</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/skosno">https://data.norge.no/vocabulary/skosno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skosxl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2008/05/skos-xl">http://www.w3.org/2008/05/skos-xl#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/#xl">SKOS eXtension for Labels (SKOS-XL)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uneskos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/umu/uneskos">http://purl.org/umu/uneskos#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://skos.um.es/TR/uneskos/">UNESKOS Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/vcard/ns">http://www.w3.org/2006/vcard/ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vcard-rdf/">vCard Ontology - for describing People and Organizations</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos#" class="bare">http://rdf-vocabulary.ddialliance.org/xkos#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://rdf-vocabulary.ddialliance.org/xkos.html">An SKOS extension for representing statistical classifications</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel på prefiksene ovenfor uttrykt i RDF Turtle (<em>eksemplet er deskriptivt</em>):</p>
 </div>
+<div class="listingblock">
+<div class="content">
+<pre>@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix skosno: &lt;https://data.norge.no/vocabulary/skosno#&gt; .
+@prefix skosxl: &lt;http://www.w3.org/2008/05/skos-xl#&gt; .
+@prefix uneskos: &lt;http://purl.org/umu/uneskos#&gt; .
+@prefix vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt; .
+@prefix xkos: &lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt; .
+@prefix xkosno: &lt;https://data.norge.no/vocabulary/xkosno#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .</pre>
 </div>
 </div>
 </div>
@@ -4851,7 +4970,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p><strong>Kravnivå</strong>: Denne versjonen spesifiserer eksplisitt kravnivå («obligatorisk», «anbefalt» og «valgfri») samt multiplisitet, mens forrige versjon henviste til kravene i tidligere <em>Forvaltningsstandard for begrepsbeskrivelser</em>.</p>
 </li>
 <li>
-<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se <a href="#Tabell-endringene-i-URIer">Tabell 6</a> nedenfor for oversikt over endinger av URIer.</p>
+<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se <a href="#Tabell-endringene-i-URIer">Tabell 7</a> nedenfor for oversikt over endinger av URIer.</p>
 </li>
 <li>
 <p><strong>Interoperabilitet med resten av EU</strong>: Så langt det er mulig, gjenbruker denne versjonen EU-spesifikasjonen <a href="https://github.com/meaningfy-ws/SKOS-AP-EU">SKOS-AP-EU</a> som EUs Publications Office også bruker.</p>
@@ -4862,7 +4981,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </ul>
 </div>
 <table id="Tabell-endringene-i-URIer" class="tableblock frame-all grid-all stripes-odd stretch">
-<caption class="title">Tabell 6. Oversikt over endringer av URIer til klasse- og egenskapsnavnene</caption>
+<caption class="title">Tabell 7. Oversikt over endringer av URIer til klasse- og egenskapsnavnene</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5106,7 +5225,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-02 13:25:38 UTC
+Sist oppdatert 2022-09-05 08:08:22 UTC
 </div>
 </div>
 </body>

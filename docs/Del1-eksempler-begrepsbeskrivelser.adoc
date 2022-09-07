@@ -1,7 +1,7 @@
 === Eksempler på begrepsbeskrivelser [[Del1-eksempler-på-begrepsbeskrivelser]]
 
 |===
-a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra https://data.nav.no/begrep/BEGREP-975[NAV] 2022-08-23, for begrepet «mødrekvote»:
+a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra NAV 2022-08-23, for begrepet https://data.nav.no/begrep/BEGREP-975[«mødrekvote»]:
 
 * *anbefalt term*: «mødrekvote» (bokmål)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
@@ -11,7 +11,7 @@ a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hente
 |===
 
 |===
-a|*Eksempel på noen anbefalte opplysninger*, hentet fra https://termbasen.standard.no/term/165575613303956/nob[Standard Norge] 2022-08-30, for begrepet «innholdsdefinisjon»
+a|*Eksempel på noen anbefalte opplysninger*, hentet fra Termbasen til Standard Norge 2022-08-30, for begrepet https://termbasen.standard.no/term/165575613303956/nob[«innholdsdefinisjon»]:
 
 * *fagområde*: «terminologi» (bokmål)
 * *merknad*: «Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig.» (bokmål)
@@ -46,7 +46,7 @@ a|*Eksempel på en partitiv relasjon*, basert på https://data.norge.no/specific
 |===
 
 |===
-a|*Eksempel på en assosiativ relasjon*, hentet fra https://data.nav.no/begrep/BEGREP-1169[NAV] 2022-08-23, for begrepet 1169 «lovlig opphold»:
+a|*Eksempel på en assosiativ relasjon*, hentet fra NAV 2022-08-23, for begrepet 1169 https://data.nav.no/begrep/BEGREP-1169[«lovlig opphold»]:
 
 * *relasjonsrolle*: muliggjør
 * *til-begrep*: «medlem i folketrygden»

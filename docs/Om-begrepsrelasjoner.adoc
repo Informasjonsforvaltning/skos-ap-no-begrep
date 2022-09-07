@@ -3,7 +3,7 @@
 
 _Vedlegget er deskriptivt_.
 
-Et begrep kan ha relasjoner til andre begreper. En relasjon består av to begreper pluss en betydning som kan uttrykkes med tekst eller type. https://data.norge.no/specification/termlosen/#kap1.4[Termlosen] nevner tre hovedgrupper av relasjoner: generiske, partitive og assosiative.
+Et begrep kan ha relasjoner til andre begreper. En relasjon består av to begreper pluss en betydning som kan uttrykkes med tekst eller type. https://data.norge.no/specification/termlosen/#kap1.4[Omgrepssystem i Termlosen] nevner tre hovedgrupper av relasjoner: generiske, partitive og assosiative.
 
 En _generisk_ relasjon består et overbegrep og et underbegrep. Relasjonen har en iboende betydning som kan leses slik:
 [no-bullet]

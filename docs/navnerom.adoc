@@ -1,28 +1,28 @@
 == Vedlegg A - Navnerom som er brukt i denne standard [[Navnerom-brukt-i-standarden]]
 
 
-Navnerom for denne standarden er https://data.norge.no/vocabulary/skosno[https://data.norge.no/vocabulary/skosno#]
+Navnerom for denne standarden er `\https://data.norge.no/vocabulary/skosno#`
 
 [[Tabell-navnerom]]
 .Oversikt over navnerom som er brukt i denne standarden (tabellen nedenfor er deskriptiv)
 [cols="10,45,45"]
 |===
 |*Prefiks*|*Navnerom*|*Forklaring/navn*
-|adms|http://www.w3.org/ns/adms[http://www.w3.org/ns/adms#]|https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema]
-|dcat|http://www.w3.org/ns/dcat[http://www.w3.org/ns/dcat#]|https://www.w3.org/TR/vocab-dcat-2/[Data Catalog Vocabulary]
-|dct|http://purl.org/dc/terms/[http://purl.org/dc/terms/]|https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
-|euvoc|http://publications.europa.eu/ |(EU) Publications Office Extensions Ontology
-|locn|http://www.w3.org/ns/locn[http://www.w3.org/ns/locn#]|https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
-|owl|http://www.w3.org/2002/07/owl[http://www.w3.org/2002/07/owl#]|https://www.w3.org/OWL/[Web Ontology Language (OWL)]
-|rdf|http://www.w3.org/1999/02/22-rdf-syntax-ns[http://www.w3.org/1999/02/22-rdf-syntax-ns#]|https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
-|rdfs|http://www.w3.org/2000/01/rdf-schema[http://www.w3.org/2000/01/rdf-schema#]|https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
-|skos|http://www.w3.org/2004/02/skos/core[http://www.w3.org/2004/02/skos/core#]|https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
-|skosno|https://data.norge.no/vocabulary/skosno[https://data.norge.no/vocabulary/skosno#] |Denne standard
-|skosxl|http://www.w3.org/2008/05/skos-xl[http://www.w3.org/2008/05/skos-xl#] |https://www.w3.org/TR/skos-reference/#xl[SKOS eXtension for Labels (SKOS-XL)]
-|uneskos|http://purl.org/umu/uneskos[http://purl.org/umu/uneskos#]|https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
-|vcard|http://www.w3.org/2006/vcard/ns[http://www.w3.org/2006/vcard/ns#]|https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations]
-|xkos|http://rdf-vocabulary.ddialliance.org/xkos#|https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
-|xsd|http://www.w3.org/2001/XMLSchema[http://www.w3.org/2001/XMLSchema#]|https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
+|adms| `\http://www.w3.org/ns/adms#` | https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema]
+|dcat| `\http://www.w3.org/ns/dcat#` | https://www.w3.org/TR/vocab-dcat-2/[Data Catalog Vocabulary]
+|dct| `\http://purl.org/dc/terms/` | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
+|euvoc| `\http://publications.europa.eu/` | (EU) Publications Office Extensions Ontology
+|locn| `\http://www.w3.org/ns/locn#` | https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
+|owl| `\http://www.w3.org/2002/07/owl#` |https://www.w3.org/OWL/[Web Ontology Language (OWL)]
+|rdf| `\http://www.w3.org/1999/02/22-rdf-syntax-ns#` | https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
+|rdfs| `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
+|skos| `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
+|skosno| `\https://data.norge.no/vocabulary/skosno#` | Denne standard
+|skosxl| `\http://www.w3.org/2008/05/skos-xl#` | https://www.w3.org/TR/skos-reference/#xl[SKOS eXtension for Labels (SKOS-XL)]
+|uneskos| `\http://purl.org/umu/uneskos#` | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
+|vcard| `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations]
+|xkos| `\http://rdf-vocabulary.ddialliance.org/xkos#` | https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
+|xsd| `\http://www.w3.org/2001/XMLSchema#` | https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
 |===
 
 Eksempel på prefiksene ovenfor uttrykt i RDF Turtle (_eksemplet er deskriptivt_):

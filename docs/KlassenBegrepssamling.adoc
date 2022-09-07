@@ -45,8 +45,6 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 |Kravnivå / Requirement level |Obligatorisk / Mandatory
 |===
 
-Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
-
 ===== Begrepssamling – kontaktpunkt (dcat:contactPoint) [[Begrepssamling-kontaktpunkt]]
 
 [cols="30s,70d"]
@@ -93,7 +91,7 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 |Kravnivå / Requirement level |Obligatorisk / Mandatory
 |Merknad / Note |(norsk) Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
 
-(English) The organization’s identifier should be used, e.g. in accordance to https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[the organization number registered in the Central Coordinating Register for Legal Entities (CCR)].
+(English) The organization’s identifier should be used, e.g. in accordance to the organization number registered in the Central Coordinating Register for Legal Entities (CCR).
 |===
 
 Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.

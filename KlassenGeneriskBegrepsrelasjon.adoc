@@ -27,7 +27,7 @@
 | Merknad 1 / Note 1 |(norsk) Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-underbegrep>> skal brukes, men ikke begge samtidig.
 
 (English) Either this property or the property <<Generisk-begrepsrelasjon-har-underbegrep>> shall be used, not both at the same time.
-| Merknad 2 |(norsk) Vi har i denne standarden valgt å bruke de norske termene «overbegrep» og «underbegrep» kun i generiske relasjoner, mens ISO 1087 bruker disse i både generiske og partitive relasjoner.
+| Merknad 2 |(norsk) Vi har i denne standarden valgt å bruke de norske termene «overbegrep» og «underbegrep» kun i generiske relasjoner, mens NS-ISO 1087 bruker disse i både generiske og partitive relasjoner.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
@@ -53,7 +53,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | Merknad 1 / Note 1 |(norsk) Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-overbegrep>> skal brukes, ikke begge samtidig.
 
 (English) Either this property or the property <<Generisk-begrepsrelasjon-har-overbegrep>> shall be used, not both at the same time.
-| Merknad 2 |(norsk) Vi har i denne standarden valgt å bruke de norske termene «overbegrep» og «underbegrep» kun i generiske relasjoner, mens NS-ISO 1087 bruker disse i både generiske og partitive relasjoner. 
+| Merknad 2 |(norsk) Vi har i denne standarden valgt å bruke de norske termene «overbegrep» og «underbegrep» kun i generiske relasjoner, mens NS-ISO 1087 bruker disse i både generiske og partitive relasjoner.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:

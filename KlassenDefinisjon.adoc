@@ -5,7 +5,7 @@
 | English name |Definition
 | Anvendelse / Usage note |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703717/nob[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-(English) This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need for describing more than the definition itself.
+(English) This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need to describe more than the definition itself.
 | URI |euvoc:XlNote
 | Kravnivå / Requirement level |Anbefalt / Recommended
 |===

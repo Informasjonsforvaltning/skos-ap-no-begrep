@@ -43,12 +43,4 @@ jobs:
           files: |
             docs/index.html text/html nb
             docs/files/skos-ap-no-begrep.pdf application/pdf nb files/skos-ap-no-begrep.pdf
-            docs/files/Mal-tilbakemeldinger.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document nb files/Mal-tilbakemeldinger.docx
-            docs/images/Digdir.png image/png nb images/Digdir.png
-            docs/images/RDF-eksempel-assosiativrelasjon.png image/png nb images/RDF-eksempel-assosiativrelasjon.png
-            docs/images/RDF-eksempel-definisjon-1.png image/png nb images/RDF-eksempel-definisjon-1.png
-            docs/images/RDF-eksempel-definisjon-2.png image/png nb images/RDF-eksempel-definisjon-2.png
-            docs/images/RDF-eksempel-partitivrelasjon.png image/png nb images/RDF-eksempel-partitivrelasjon.png
-            docs/images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png image/png nb images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png
-            docs/images/SKOS-AP-NO-Begrep-kun-obligatoriske.png image/png nb images/SKOS-AP-NO-Begrep-kun-obligatoriske.png
-            docs/images/SKOS-AP-NO-Begrep-uten-relasjoner.png image/png nb images/SKOS-AP-NO-Begrep-uten-relasjoner.png
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png

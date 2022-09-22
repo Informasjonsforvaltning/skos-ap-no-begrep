@@ -1,0 +1,54 @@
+name: build adocs and publish v1 to production
+
+on:
+  push:
+    branches:
+      - v1
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor build
+
+    steps:
+      - name: Checkout v1 branch
+        uses: actions/checkout@v3
+        with:
+          ref: v1
+
+      - name: Build html
+        id: adocbuild
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
+      - name: Build pdf
+        id: adocbuild_pdf
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor-pdf -D docs -o files/skos-ap-no-begrep.pdf -a lang=nb docs/main.adoc"
+        continue-on-error: true
+
+      - name: Upload rdf to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.1.0
+        id: upload-rdf
+        with:
+          ontology-type: "specification"
+          ontology: "skos-ap-no-begrep"
+          host: "https://fellesdatakatalog.digdir.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            docs/index.html text/html nb
+            docs/files/skos-ap-no-begrep.pdf application/pdf nb files/skos-ap-no-begrep.pdf
+            docs/files/Mal-tilbakemeldinger.docx application/vnd.openxmlformats-officedocument.wordprocessingml.document nb files/Mal-tilbakemeldinger.docx
+            docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/RDF-eksempel-assosiativrelasjon.png image/png nb images/RDF-eksempel-assosiativrelasjon.png
+            docs/images/RDF-eksempel-definisjon-1.png image/png nb images/RDF-eksempel-definisjon-1.png
+            docs/images/RDF-eksempel-definisjon-2.png image/png nb images/RDF-eksempel-definisjon-2.png
+            docs/images/RDF-eksempel-partitivrelasjon.png image/png nb images/RDF-eksempel-partitivrelasjon.png
+            docs/images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png image/png nb images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png
+            docs/images/SKOS-AP-NO-Begrep-kun-obligatoriske.png image/png nb images/SKOS-AP-NO-Begrep-kun-obligatoriske.png
+            docs/images/SKOS-AP-NO-Begrep-uten-relasjoner.png image/png nb images/SKOS-AP-NO-Begrep-uten-relasjoner.png

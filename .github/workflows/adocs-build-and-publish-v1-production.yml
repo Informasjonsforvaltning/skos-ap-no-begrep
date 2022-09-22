@@ -14,8 +14,10 @@ jobs:
     name: asciidoctor build
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout v1 branch
+        uses: actions/checkout@v3
+        with:
+          ref: v1
 
       - name: Build html
         id: adocbuild

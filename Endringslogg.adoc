@@ -83,12 +83,11 @@ Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-N
 |Begrep – anbefaltTerm, skosxl:prefLabel |Utgår
 |Begrep – tillattTerm, skosxl:altLabel |Utgår
 |Begrep – frarådetTerm, skosxl:hiddenLabel |Ugår
-|Begrep – datastrukturterm, skosno:datastrukturTerm |Ugår
+|Begrep – datastrukturterm, skosno:datastrukturTerm | <<Begep-datastrukturterm>>
 ||Ny <<Begrep-dato-opprettet>>
 ||Ny <<Begrep-anbefalt-term>>
 ||Ny <<Begrep-tillatt-term>>
 ||Ny <<Begrep-frarådd-term>>
-||Ny <<Begep-datastrukturterm>>
 ||Ny <<Begrep-definisjon-direkte-angivelse>>
 ||Ny <<Begrep-er-relatert-til>>
 ||Ny <<Begrep-generaliserer>>

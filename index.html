@@ -757,7 +757,7 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termbasen.standard.no/term/165575552506687/nob">anbefalt term</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">én per skriftspråk;<br>
 skal oppgi hvilket skriftspråk termen er skrevet i;<br>
-bør finnes i begge norske skriftspråk</p></td>
+skal finnes i begge norske skriftspråk</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -1459,7 +1459,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / Requirement level</strong></p></td>
@@ -1467,18 +1467,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / Note 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Det skal være minimum én anbefalt term og maksimum én per skriftspråk.</p>
-<p class="tableblock">(English) There shall be minimum one preferred term and maximum one per language.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Anbefalt term skal finnes i begge norske skriftspråk. Det skal være maksimum én per skriftspråk.</p>
+<p class="tableblock">(English) The preferred term shall be in both Norwegian written languages. There shall be maximum one per language.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / Note 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.</p>
 <p class="tableblock">(English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / Note 3</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Anbefalt term bør finnes i begge norske skriftspråk.</p>
-<p class="tableblock">(English) The preferred term should be in both Norwegian written languages.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1488,7 +1483,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;https://data.nav.no/begrep/BEGREP-975&gt; a skos:Concept ; # begrep
-   skos:prefLabel "mødrekvote"@nb ; # anbefalt term
+   skos:prefLabel "mødrekvote"@nb, mødrekvote"@nn ; # anbefalt term
    .</pre>
 </div>
 </div>
@@ -5271,7 +5266,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-18 12:37:06 UTC
+Sist oppdatert 2022-11-18 13:07:02 UTC
 </div>
 </div>
 </body>

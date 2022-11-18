@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <meta name="description" content="Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digilitasation Agency">
 <title>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</title>
@@ -86,10 +86,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -596,10 +596,10 @@ Dette dokumentet kan også lastes ned <a href="files/skos-ap-no-begrep.pdf">som 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>Til høring</mark><br>
-<strong>Versjon</strong>: <mark>Høringsversjon</mark><br>
-<strong>Publisert</strong>: 2022-09-08<br>
-<strong>Oppdatert</strong>: 2022-09-08 <br>
+<p><strong>Status</strong>: <mark>under ferdigstilling</mark><br>
+<strong>Versjon</strong>: <mark>utkast til v.2.0</mark><br>
+<strong>Publisert</strong>: <mark>under publisering</mark><br>
+<strong>Oppdatert</strong>: 2022-11-18 <br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
 </div>
@@ -629,11 +629,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <i class="fa icon-important" title="Viktig"></i>
 </td>
 <td class="content">
-Dette er en høringsversjon, som skal erstatte:<br>
+Dette er <mark>redaktørens utkast</mark>, til kommende v.2.0 av denne standarden som skal erstatte:<br>
 1. <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em> (v.2.0.2)</a><br>
 2. <a href="https://data.norge.no/specification/skos-ap-no-begrep/"><em>SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS</em> (v.1.1.1)</a><br>
 <br>
-<strong>Vennligst bruk</strong> <a href="files/Mal-tilbakemeldinger.docx">denne malen for detaljerte tilbakemeldinger (Word)</a>.
+Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir håndtert av arbeidsgruppen.
 </td>
 </tr>
 </table>
@@ -1843,7 +1843,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-dato-opprettet"><a class="anchor" href="#Begrep-dato-opprettet"></a>Begrep – dato opprettet (dcat:created)</h5>
+<h5 id="Begrep-dato-opprettet"><a class="anchor" href="#Begrep-dato-opprettet"></a>Begrep – dato opprettet (dct:created)</h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1856,7 +1856,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:created</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / Range</strong></p></td>
@@ -3193,7 +3193,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;https://data.nav.no/begrep/BEGREP-975&gt; a skos:Concept ; # begrep
-   skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
       rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; ] ; # tekst i bokmål
      .</pre>
 </div>
@@ -3248,7 +3248,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;https://data.nav.no/begrep/BEGREP-975&gt; a skos:Concept ; # begrep
-  skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+  euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
       rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
       skosno:relationshipWithSource &lt;https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source&gt; ; ] ; # forhold til kilde ‘basert på kilde’
   .</pre>
@@ -3351,7 +3351,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;eksempel-begrep&gt; a skos:Concept ; # eksempel-begrep
-   skosno:xlDefinition [ a euvoc:XlNote ; # definisjon
+   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
       dct:audience &lt;https://data.norge.no/vocabulary/audience-type#public&gt; ; ] ; # målgruppe
   .</pre>
 </div>
@@ -3730,7 +3730,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk Egenskapen brukes til å referere til et annet begrep (<a href="https://termbasen.standard.no/term/165575551206237/nob">delbegrepet</a>) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen brukes til å referere til et annet begrep (<a href="https://termbasen.standard.no/term/165575551206237/nob">delbegrepet</a>) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
 <p class="tableblock">(English) This property is used to refer to another concept (the <a href="https://termbasen.standard.no/term/165575551206237/eng">partitive concept</a>) which is part of this concept, in a partitive concept relation between the two concepts.</p></td>
 </tr>
 <tr>
@@ -3879,8 +3879,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen brukes til å representere en samling av <a href="https://termbasen.standard.no/term/165575653105429/nob">begreper</a>.</p>
-<p class="tableblock">(English) This property is used to represent a collection of <a href="https://termbasen.standard.no/term/165575653105429/eng">concepts</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Klassen brukes til å representere en samling av <a href="https://termbasen.standard.no/term/165575653105429/nob">begreper</a>.</p>
+<p class="tableblock">(English) This class is used to represent a collection of <a href="https://termbasen.standard.no/term/165575653105429/eng">concepts</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -4179,12 +4179,17 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">euvoc</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://publications.europa.eu/ontology/euvoc#</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(EU) Publications Office Extensions Ontology (tilgjengelig i <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cdm">RDF</a>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data">OP_EuVoc_Ontology</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">locn</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://www.w3.org/ns/locn#</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/ns/locn">ISA Programme Location Core Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">org</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://www.w3.org/ns/org#</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-org/">The Organization Ontology</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">owl</p></td>
@@ -5042,7 +5047,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-dato-opprettet">Begrep – dato opprettet (dcat:created)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-dato-opprettet">Begrep – dato opprettet (dct:created)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
@@ -5234,7 +5239,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-22 11:30:16 UTC
+Sist oppdatert 2022-11-18 09:52:09 UTC
 </div>
 </div>
 </body>

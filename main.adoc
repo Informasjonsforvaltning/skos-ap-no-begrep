@@ -17,10 +17,10 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
 
-*Status*: #Til høring# +
-*Versjon*: #Høringsversjon# +
-*Publisert*: 2022-09-08 +
-*Oppdatert*: 2022-09-08  +
+*Status*: #under ferdigstilling# +
+*Versjon*: #utkast til v.2.0# +
+*Publisert*: #under publisering# +
+*Oppdatert*: 2022-11-18  +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
 

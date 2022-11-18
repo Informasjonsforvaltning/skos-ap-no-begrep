@@ -20,7 +20,7 @@
 |English name |has partitive concept
 |URI |skosno:hasPartitiveConcept
 |Verdiområde / Range |skos:Concept
-|Anvendelse / Usage note |(norsk Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551206237/nob[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+|Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551206237/nob[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
 (English) This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551206237/eng[partitive concept]) which is part of this concept, in a partitive concept relation between the two concepts.
 |Multiplisitet |1..n

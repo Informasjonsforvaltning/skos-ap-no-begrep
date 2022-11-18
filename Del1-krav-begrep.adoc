@@ -27,6 +27,7 @@ bør unngå enkeltperson som kontaktpunkt
 [cols="25,50,25"]
 |===
 |*Anbefalt* |*Regler og anbefalinger* | *I tillegg, hvis de finnes*
+|ansvarlig virksomhet ||
 |dato opprettet  ||
 |dato sist oppdatert ||
 |https://termbasen.standard.no/term/165575653105392/nob[fagområde] | fortrinnsvis valgt fra en kontrollert liste; +

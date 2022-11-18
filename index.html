@@ -801,6 +801,11 @@ bør unngå enkeltperson som kontaktpunkt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>I tillegg, hvis de finnes</strong></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ansvarlig virksomhet</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dato opprettet</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -1750,6 +1755,42 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </div>
 <div class="sect3">
 <h4 id="Begrep-anbefalte-egenskaper"><a class="anchor" href="#Begrep-anbefalte-egenskaper"></a>Anbefalte egenskaper for <em>Begrep</em></h4>
+<div class="sect4">
+<h5 id="Begrep-ansvarlig-virksomhet"><a class="anchor" href="#Begrep-ansvarlig-virksomhet"></a>Begrep – ansvarlig virksomhet (dct:creator)</h5>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">responsible organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:creator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <a href="#Begrep-publisert-av">Begrep – publisert av (dct:publisher)</a>.</p>
+<p class="tableblock">(English) This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <a href="#Begrep-publisert-av">Begrep – publisert av (dct:publisher)</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / Requirement level</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / Recommended</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect4">
 <h5 id="Begrep-dato-gyldig-fra-og-med"><a class="anchor" href="#Begrep-dato-gyldig-fra-og-med"></a>Begrep – dato gyldig fra og med (euvoc:startDate)</h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
@@ -4752,6 +4793,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="ulist">
 <ul>
 <li>
+<p>«ansvarlig virksomhet» er endret til «anbefalt» fra tidligere «obligatorisk». Dette fordi mange begrepsbeskrivelser har et uklart opphav, og selv om kilden er kjent er det ikke sikkert at denne virksomheten vil vedkjenne seg ansvaret for definisjonen. Se også den nye obligatoriske egenskapen «publisert av».</p>
+</li>
+<li>
 <p>«kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepet.</p>
 </li>
 </ul>
@@ -4761,9 +4805,6 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p>Følgende egenskaper har fått endret norske navn:</p>
 <div class="ulist">
 <ul>
-<li>
-<p>«ansvarlig virksomhet» er endre til «publisert av» som er et mer presist navn.</p>
-</li>
 <li>
 <p>«sist oppdatert» er endret til «dato sist oppdatert» som er et mer presist navn.</p>
 </li>
@@ -4815,6 +4856,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <ul>
 <li>
 <p>«dato opprettet» er lagt til, for å kunne oppgi dato når begrepet ble opprettet.</p>
+</li>
+<li>
+<p>«publisert av» er lagt til, for å kunne oppgi virksomheten som har publisert begrepsbeskrivelsen.</p>
 </li>
 <li>
 <p>«status» er lagt til, for å kunne oppgi status på et begrep.</p>
@@ -5010,36 +5054,20 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klassen Begrep, skos:Concept</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – bruksområde, skosno:bruksområde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utgår</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig fra og med, schema:startDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-fra-og-med">Begrep – dato gyldig fra og med (euvoc:startDate)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig fra og med, schema:endDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-til-og-med">Begrep – dato gyldig til og med (euvoc:endDate)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – definisjon, skosno:definisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-definisjon-via-definisjonsobjekt">Begrep – definisjon (via definisjonsobjekt) (euvoc:xlDefinition)</a></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – alternativ formulering, skosno:alternativFormulering</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Utgår</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – anbefaltTerm, skosxl:prefLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utgår</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-anbefalt-term">Begrep – anbefalt term (skos:prefLabel)</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – tillattTerm, skosxl:altLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utgår</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – ansvarlig virksomhet, dct:publisher</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-ansvarlig-virksomhet">Begrep – ansvarlig virksomhet (dct:creator)</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – frarådetTerm, skosxl:hiddenLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ugår</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – bruksområde, skosno:bruksområde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utgår</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – datastrukturterm, skosno:datastrukturTerm</p></td>
@@ -5051,19 +5079,39 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-anbefalt-term">Begrep – anbefalt term (skos:prefLabel)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-tillatt-term">Begrep – tillatt term (skos:altLabel)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-frarådd-term">Begrep – frarådd term (skos:hiddenLabel)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-definisjon-direkte-angivelse">Begrep – definisjon (direkte angivelse) (skos:definition)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – definisjon, skosno:definisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-definisjon-via-definisjonsobjekt">Begrep – definisjon (via definisjonsobjekt) (euvoc:xlDefinition)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-eksempel">Begrep – eksempel (skos:example)</a>, flyttet fra tidligere Definisjon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – frarådetTerm, skosxl:hiddenLabel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-frarådd-term">Begrep – frarådd term (skos:hiddenLabel)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig fra og med, schema:startDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-fra-og-med">Begrep – dato gyldig fra og med (euvoc:startDate)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig til og med, schema:endDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-til-og-med">Begrep – dato gyldig til og med (euvoc:endDate)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-merknad">Begrep – merknad (skos:scopeNote)</a>, flyttet fra tidligere Definisjon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – tillattTerm, skosxl:altLabel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-tillatt-term">Begrep – tillatt term (skos:altLabel)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-verdiområde">Begrep – verdiområde (skosno:valueRange)</a>, flyttet fra tidligere Definisjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
@@ -5096,18 +5144,6 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-inngår-i">Begrep – inngår i begrepssamling (uneskos:memberOf)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet fra tidligere Definisjon, <a href="#Begrep-merknad">Begrep – merknad (skos:scopeNote)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet fra tidligere Definisjon, <a href="#Begrep-eksempel">Begrep – eksempel (skos:example)</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet fra tidligere Definisjon, <a href="#Begrep-verdiområde">Begrep – verdiområde (skosno:valueRange)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – assosiativ relasjon, skosno:assiciativRelasjon</p></td>
@@ -5235,7 +5271,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-18 10:14:02 UTC
+Sist oppdatert 2022-11-18 12:37:06 UTC
 </div>
 </div>
 </body>

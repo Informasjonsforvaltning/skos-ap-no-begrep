@@ -12,11 +12,12 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 
 * *Kravnivå*: Denne versjonen opererer med kravnivåene «obligatorisk» (opplysninger som skal beskrives med), «anbefalt» (opplysninger som bør beskrives med hvis de finnes) og «valgfri» (opplysninger som kan beskrives med), mens forrige har kun «obligatorisk» (representert med multiplisitet 1..1 eller 1..n) og ellers (ikke-obligatorisk).
 * *UML-diagram*: UML-diagrammene i denne versjonen brukes bare til del 2 og ikke del 1. De er dessuten deskriptive og ikke normative i denne versjonen (en praksis som også EU-standardene i dette området nå bruker), mens de var normative i forrige versjon.
+
 * *Begrep*:
 ** Følgende egenskaper har fått endret kravnivå:
+*** «ansvarlig virksomhet» er endret til «anbefalt» fra tidligere «obligatorisk». Dette fordi mange begrepsbeskrivelser har et uklart opphav, og selv om kilden er kjent er det ikke sikkert at denne virksomheten vil vedkjenne seg ansvaret for definisjonen. Se også den nye obligatoriske egenskapen «publisert av».
 *** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepet.
 ** Følgende egenskaper har fått endret norske navn:
-*** «ansvarlig virksomhet» er endre til «publisert av» som er et mer presist navn.
 *** «sist oppdatert» er endret til «dato sist oppdatert» som er et mer presist navn.
 *** «betydningsbeskrivelse» er endret til «definisjon» som er et mer presist navn.
 ** Følgende egenskaper utgår:
@@ -29,9 +30,11 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 *** «verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke en gitt definisjonstekst.
 ** Følgende nye egenskaper er lagt til:
 *** «dato opprettet» er lagt til, for å kunne oppgi dato når begrepet ble opprettet.
+*** «publisert av» er lagt til, for å kunne oppgi virksomheten som har publisert begrepsbeskrivelsen.
 *** «status» er lagt til, for å kunne oppgi status på et begrep.
 *** «versjonsnummer» er lagt til, for å kunne referere til en gitt versjon av et begrep.
 *** «versjonsnote» er lagt til, for å kunne beskrive en gitt versjon av et begrep.
+
 * *Definisjon*:
 ** Følgende egenskaper er flyttet fra denne klassen:
 *** «eksempel» er flyttet til «Begrep», fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.
@@ -39,6 +42,7 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 *** «verdiområde» (tidligere «omfang») er flyttet til «Begrep», fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.
 ** Følgende egenskaper utgår:
 *** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+
 * *Assosiativ begrepsrelasjon*:
 ** Følgende egenskaper er lagt til:
 *** «relasjonsrolle» er lagt til, fordi det er viktig å oppgi relasjonsrollen begrepet har overfor det andre begrepet i en assosiativ relasjon mellom disse to.
@@ -51,9 +55,11 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 * *Partitiv begrepsrelasjon*:
 ** Følgende egenskaper utgår:
 *** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
+
 * *Begrepssamling*:
 ** Følgende egenskaper har fått endret kravnivå:
 *** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepssamlingen.
+
 * *Følgende klasser utgår*:
 ** «Alternativ formulering» utgår, fordi behovet kan dekkes av «definisjon» + «målgruppe».
 ** «Betydningsbeskrivelse» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Behovet for denne klassen bortfaller når den ene subklassen «Alternativ formulering» utgår. I denne versjonen brukes kun klassen «Definisjon» som var den andre subklassen av «Betydningsbeskrivelse».
@@ -75,20 +81,21 @@ Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-N
 |===
 |*Klasse-/egenskapsURI i SKOS-AP-NO v.1.1.1*|*Klasse-/egenskapsURI i del 2 av denne versjon*
 |*Klassen Begrep, skos:Concept*|*Klassen Begrep, skos:Concept*
-|Begrep – bruksområde, skosno:bruksområde |Utgår
-|Begrep – gyldig fra og med, schema:startDate |<<Begrep-dato-gyldig-fra-og-med>>
-|Begrep – gyldig fra og med, schema:endDate |<<Begrep-dato-gyldig-til-og-med>>
-|Begrep – definisjon, skosno:definisjon |<<Begrep-definisjon-via-definisjonsobjekt>>
 |Begrep – alternativ formulering, skosno:alternativFormulering |Utgår
-|Begrep – anbefaltTerm, skosxl:prefLabel |Utgår
-|Begrep – tillattTerm, skosxl:altLabel |Utgår
-|Begrep – frarådetTerm, skosxl:hiddenLabel |Ugår
+|Begrep – anbefaltTerm, skosxl:prefLabel | <<Begrep-anbefalt-term>>
+|Begrep – ansvarlig virksomhet, dct:publisher | <<Begrep-ansvarlig-virksomhet>>
+|Begrep – bruksområde, skosno:bruksområde |Utgår
 |Begrep – datastrukturterm, skosno:datastrukturTerm | <<Begep-datastrukturterm>>
 ||Ny <<Begrep-dato-opprettet>>
-||Ny <<Begrep-anbefalt-term>>
-||Ny <<Begrep-tillatt-term>>
-||Ny <<Begrep-frarådd-term>>
 ||Ny <<Begrep-definisjon-direkte-angivelse>>
+|Begrep – definisjon, skosno:definisjon | <<Begrep-definisjon-via-definisjonsobjekt>>
+|| <<Begrep-eksempel>>, flyttet fra tidligere Definisjon
+|Begrep – frarådetTerm, skosxl:hiddenLabel | <<Begrep-frarådd-term>>
+|Begrep – gyldig fra og med, schema:startDate | <<Begrep-dato-gyldig-fra-og-med>>
+|Begrep – gyldig til og med, schema:endDate |<<Begrep-dato-gyldig-til-og-med>>
+||<<Begrep-merknad>>, flyttet fra tidligere Definisjon
+|Begrep – tillattTerm, skosxl:altLabel | <<Begrep-tillatt-term>>
+||<<Begrep-verdiområde>>, flyttet fra tidligere Definisjon
 ||Ny <<Begrep-er-relatert-til>>
 ||Ny <<Begrep-generaliserer>>
 ||Ny <<Begrep-spesialiserer>>
@@ -97,12 +104,10 @@ Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-N
 ||Ny <<Begrep-har-eksakt-samsvar-med>>
 ||Ny <<Begrep-har-nært-samsvar-med>>
 ||Ny <<Begrep-inngår-i>>
-||Flyttet fra tidligere Definisjon, <<Begrep-merknad>>
-||Flyttet fra tidligere Definisjon, <<Begrep-eksempel>>
-||Flyttet fra tidligere Definisjon, <<Begrep-verdiområde>>
 |Begrep – assosiativ relasjon, skosno:assiciativRelasjon | <<Begrep-er-fra-begrep-i>>
 |Begrep – generisk relasjon, skosno:generiskRelasjon |<<Begrep-har-generisk-begrepsrelasjon>>
 |Begrep – partitiv relasjon, skosno:partitivRelasjon |<<Begrep-har-partitiv-begrepsrelasjon>>
+
 |*Klassen Term, skosxl:Label* | Utgår
 |*Klassen Definisjon, skosno:Definisjon* |*Klassen Definisjon, euvoc:XlNote*
 |Definisjon – tekst, rdfs:label |<<Definisjon-tekst>>

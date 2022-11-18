@@ -171,6 +171,20 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 ==== Anbefalte egenskaper for _Begrep_ [[Begrep-anbefalte-egenskaper]]
 
+===== Begrep – ansvarlig virksomhet (dct:creator) [[Begrep-ansvarlig-virksomhet]]
+
+[cols="30s,70d"]
+|===
+| English name | responsible organization
+| URI | dct:creator
+| Verdiområde / Range | org:Organization
+| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
+
+(English) This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>.
+| Multiplisitet |0..1
+| Kravnivå / Requirement level |Anbefalt / Recommended
+|===
+
 ===== Begrep – dato gyldig fra og med (euvoc:startDate) [[Begrep-dato-gyldig-fra-og-med]]
 
 [cols="30s,70d"]

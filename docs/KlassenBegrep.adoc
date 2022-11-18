@@ -213,12 +213,12 @@ Eksempel i RDF Turtle:
    .
 -----
 
-===== Begrep – dato opprettet (dcat:created) [[Begrep-dato-opprettet]]
+===== Begrep – dato opprettet (dct:created) [[Begrep-dato-opprettet]]
 
 [cols="30s,70d"]
 |===
 | English name |date created
-| URI |dct:modified
+| URI |dct:created
 | Verdiområde / Range |xsd:date
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi når begrepet ble opprettet.
 

@@ -7,7 +7,7 @@
 |*Obligatorisk* |*Regler og anbefalinger* |*I tillegg, hvis de finnes*
 |https://termbasen.standard.no/term/165575552506687/nob[anbefalt term] | én per skriftspråk; +
 skal oppgi hvilket skriftspråk termen er skrevet i; +
-bør finnes i begge norske skriftspråk
+skal finnes i begge norske skriftspråk
  |
 |https://termbasen.standard.no/term/165575612703717/nob[definisjon] | én per skriftspråk og målgruppe; +
 skal oppgi hvilket skriftspråk definisjon er skrevet i; +

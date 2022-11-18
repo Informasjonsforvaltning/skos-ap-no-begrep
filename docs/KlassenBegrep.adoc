@@ -28,23 +28,20 @@ Eksempel i RDF Turtle, for NAVs begrep 975:
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575552506687/nob[anbefalt term]. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
 
 (English) This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated when the term is in several languages.
-| Multiplisitet |1..n
+| Multiplisitet |2..n
 | Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad 1 / Note 1 |(norsk) Det skal være minimum én anbefalt term og maksimum én per skriftspråk.
+| Merknad 1 / Note 1 |(norsk) Anbefalt term skal finnes i begge norske skriftspråk. Det skal være maksimum én per skriftspråk.
 
-(English) There shall be minimum one preferred term and maximum one per language.
+(English) The preferred term shall be in both Norwegian written languages. There shall be maximum one per language.
 | Merknad 2 / Note 2 |(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
 
 (English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.
-| Merknad 3 / Note 3 |(norsk) Anbefalt term bør finnes i begge norske skriftspråk.
-
-(English) The preferred term should be in both Norwegian written languages.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
 <https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
-   skos:prefLabel "mødrekvote"@nb ; # anbefalt term
+   skos:prefLabel "mødrekvote"@nb, mødrekvote"@nn ; # anbefalt term
    .
 -----
 

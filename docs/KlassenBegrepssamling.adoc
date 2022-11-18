@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 |English name |Collection
-|Anvendelse / Usage note |(norsk) Egenskapen brukes til å representere en samling av https://termbasen.standard.no/term/165575653105429/nob[begreper].
+|Anvendelse / Usage note |(norsk) Klassen brukes til å representere en samling av https://termbasen.standard.no/term/165575653105429/nob[begreper].
 
-(English) This property is used to represent a collection of https://termbasen.standard.no/term/165575653105429/eng[concepts].
+(English) This class is used to represent a collection of https://termbasen.standard.no/term/165575653105429/eng[concepts].
 |URI |skos:Collection
 |Kravnivå / Requirement level |Valgfri / Optional
 |===

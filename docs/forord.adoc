@@ -1,10 +1,10 @@
 == Forord [[Forord]]
 
-IMPORTANT: Dette er en høringsversjon, som skal erstatte: +
+IMPORTANT: Dette er #redaktørens utkast#, til kommende v.2.0 av denne standarden som skal erstatte: +
 1. https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_ (v.2.0.2)] +
 2. https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_ (v.1.1.1)] +
  +
-*Vennligst bruk* link:files/Mal-tilbakemeldinger.docx[denne malen for detaljerte tilbakemeldinger (Word)].
+Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir håndtert av arbeidsgruppen.
 
 
 Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.

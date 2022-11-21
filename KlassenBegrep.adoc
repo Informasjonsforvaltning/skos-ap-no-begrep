@@ -30,9 +30,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975:
 (English) This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated when the term is in several languages.
 | Multiplisitet |2..n
 | Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad 1 / Note 1 |(norsk) Anbefalt term skal finnes i begge norske skriftspråk. Det skal være maksimum én per skriftspråk.
+| Merknad 1 / Note 1 |(norsk) Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
 
-(English) The preferred term shall be in both Norwegian written languages. There shall be maximum one per language.
+(English) The preferred term shall be in both Norwegian Bokmål and Norwegian Nynorsk. There shall be maximum one per language.
 | Merknad 2 / Note 2 |(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
 
 (English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.

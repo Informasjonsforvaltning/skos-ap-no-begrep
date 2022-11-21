@@ -20,7 +20,7 @@ include::shared/download.adoc[]
 *Status*: #under ferdigstilling# +
 *Versjon*: #utkast til v.2.0# +
 *Publisert*: #under publisering# +
-*Oppdatert*: 2022-11-18  +
+*Oppdatert*: 2022-11-21  +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
 

@@ -599,7 +599,7 @@ Dette dokumentet kan også lastes ned <a href="files/skos-ap-no-begrep.pdf">som 
 <p><strong>Status</strong>: <mark>under ferdigstilling</mark><br>
 <strong>Versjon</strong>: <mark>utkast til v.2.0</mark><br>
 <strong>Publisert</strong>: <mark>under publisering</mark><br>
-<strong>Oppdatert</strong>: 2022-11-21 <br>
+<strong>Oppdatert</strong>: 2022-11-23 <br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
 </div>
@@ -766,7 +766,7 @@ skal finnes på både bokmål og nynorsk</p></td>
 skal oppgi hvilket skriftspråk definisjon er skrevet i;<br>
 minst én kombinasjon av anbefalt term og definisjon skal være i samme skriftspråk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">forhold til kilde;<br>
-kilde;<br>
+kilde(r), ev. med den ønskede rekkefølgen eksplisitt oppgitt;<br>
 målgruppe</p></td>
 </tr>
 <tr>
@@ -3309,7 +3309,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource or rdf:List</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / Usage note</strong></p></td>
@@ -3324,6 +3324,11 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / Requirement level</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / Recommended</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / Note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(norsk) Bruk <code>rdf:List</code> når den ønskede rekkefølgen mellom kildene skal oppgis.</p>
+<p class="tableblock">(English) Use <code>rdf:List</code> when the preferred order between the sources need to be specified.</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -3335,6 +3340,24 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
    euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
       dct:source &lt;https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14&gt; ; ] ; # kilde
      .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Et fiktivt eksempel i RDF Turtle, der det er behov for å oppgi rekkefølge mellom to referanser:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aFictiveConcept&gt; a skos:Concept ; # et fiktivt begrep
+   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
+      dct:source [ a rdf:List ; # en liste av kilder
+         rdf:first &lt;https://example.org/ref1&gt; ; # ref. nr. 1
+         rdf:rest [ a rdf:List ;
+            rdf:first &lt;https://example.org/ref2&gt; ; # ref. nr. 2
+            rdf:rest rdf:nil ;
+            ] ;
+         ] ;
+      ] ;
+   .</pre>
 </div>
 </div>
 </div>
@@ -4791,7 +4814,33 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p>«ansvarlig virksomhet» er endret til «anbefalt» fra tidligere «obligatorisk». Dette fordi mange begrepsbeskrivelser har et uklart opphav, og selv om kilden er kjent er det ikke sikkert at denne virksomheten vil vedkjenne seg ansvaret for definisjonen. Se også den nye obligatoriske egenskapen «publisert av».</p>
 </li>
 <li>
-<p>«kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepet.</p>
+<p>«kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepsbeskrivelsen.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Følgende egenskaper har fått endret multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for «anbefalt term» er multiplisitet endret fra 1..n til 2..n, fordi anbefalt term skal finnes på både bokmål og nynorsk.</p>
+</li>
+<li>
+<p>som konsekvens av endret kravnivå nevnt ovenfor, er multiplisitet også endret for de berørte egenskapene.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Følgende egenskaper har fått utvidet verdiområde (range):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>vedrdiområde/range for «fagområde» er endret fra bare «tekst» til «tekst» eller «kodet verdi». Dette for å tilrettelegge for mest mulig bruk av strukturerte data fremfor fritekst.</p>
+</li>
+<li>
+<p>vedrdiområde/range for «verdiområde» (tidligere «omfang») er endret fra bare «kodet verdi» til «tekst» eller «kodet verdi». Dette for å tilrettelegge for å kunne oppgi verdiområde direkte.</p>
 </li>
 </ul>
 </div>
@@ -4840,7 +4889,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p>«merknad» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.</p>
 </li>
 <li>
-<p>«verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke en gitt definisjonstekst.</p>
+<p>«verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
 </li>
 </ul>
 </div>
@@ -4989,7 +5038,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="ulist">
 <ul>
 <li>
-<p>«Alternativ formulering» utgår, fordi behovet kan dekkes av «definisjon» + «målgruppe».</p>
+<p>«Alternativ formulering» utgår, fordi behovet kan dekkes av kombinasjonen «definisjon» og «målgruppe».</p>
 </li>
 <li>
 <p>«Betydningsbeskrivelse» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Behovet for denne klassen bortfaller når den ene subklassen «Alternativ formulering» utgår. I denne versjonen brukes kun klassen «Definisjon» som var den andre subklassen av «Betydningsbeskrivelse».</p>
@@ -5266,7 +5315,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-21 09:00:05 UTC
+Sist oppdatert 2022-11-23 11:49:59 UTC
 </div>
 </div>
 </body>

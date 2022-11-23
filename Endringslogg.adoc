@@ -16,7 +16,13 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 * *Begrep*:
 ** Følgende egenskaper har fått endret kravnivå:
 *** «ansvarlig virksomhet» er endret til «anbefalt» fra tidligere «obligatorisk». Dette fordi mange begrepsbeskrivelser har et uklart opphav, og selv om kilden er kjent er det ikke sikkert at denne virksomheten vil vedkjenne seg ansvaret for definisjonen. Se også den nye obligatoriske egenskapen «publisert av».
-*** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepet.
+*** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepsbeskrivelsen.
+** Følgende egenskaper har fått endret multiplisitet:
+*** for «anbefalt term» er multiplisitet endret fra 1..n til 2..n, fordi anbefalt term skal finnes på både bokmål og nynorsk.
+*** som konsekvens av endret kravnivå nevnt ovenfor, er multiplisitet også endret for de berørte egenskapene.
+** Følgende egenskaper har fått utvidet verdiområde (range):
+*** vedrdiområde/range for «fagområde» er endret fra bare «tekst» til «tekst» eller «kodet verdi». Dette for å tilrettelegge for mest mulig bruk av strukturerte data fremfor fritekst.
+*** vedrdiområde/range for «verdiområde» (tidligere «omfang») er endret fra bare «kodet verdi» til «tekst» eller «kodet verdi». Dette for å tilrettelegge for å kunne oppgi verdiområde direkte.
 ** Følgende egenskaper har fått endret norske navn:
 *** «sist oppdatert» er endret til «dato sist oppdatert» som er et mer presist navn.
 *** «betydningsbeskrivelse» er endret til «definisjon» som er et mer presist navn.
@@ -27,7 +33,7 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 ** Følgende egenskaper er flyttet til denne klassen:
 *** «eksempel» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.
 *** «merknad» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.
-*** «verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke en gitt definisjonstekst.
+*** «verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.
 ** Følgende nye egenskaper er lagt til:
 *** «dato opprettet» er lagt til, for å kunne oppgi dato når begrepet ble opprettet.
 *** «publisert av» er lagt til, for å kunne oppgi virksomheten som har publisert begrepsbeskrivelsen.
@@ -61,7 +67,7 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 *** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepssamlingen.
 
 * *Følgende klasser utgår*:
-** «Alternativ formulering» utgår, fordi behovet kan dekkes av «definisjon» + «målgruppe».
+** «Alternativ formulering» utgår, fordi behovet kan dekkes av kombinasjonen «definisjon» og «målgruppe».
 ** «Betydningsbeskrivelse» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Behovet for denne klassen bortfaller når den ene subklassen «Alternativ formulering» utgår. I denne versjonen brukes kun klassen «Definisjon» som var den andre subklassen av «Betydningsbeskrivelse».
 ** «Begrepsrelasjon» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Denne versjonen bruker de konkrete/spesialiserte klassene direkte. Det er derfor ikke lenger behov for denne abstrakte klassen.
 ** «Term» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Det er dessuten ikke lenger behov for egenskapene i klassen («(dato) sist oppdatert» og «målgruppe»).

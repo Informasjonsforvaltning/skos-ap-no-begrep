@@ -13,7 +13,7 @@ skal finnes på både bokmål og nynorsk
 skal oppgi hvilket skriftspråk definisjon er skrevet i; +
 minst én kombinasjon av anbefalt term og definisjon skal være i samme skriftspråk
  | forhold til kilde; +
-kilde; +
+kilde(r), ev. med den ønskede rekkefølgen eksplisitt oppgitt; +
 målgruppe
 |identifikator |identifikator skal være unik innen en gitt kontekst |
 |kontaktpunkt |maks. ett kontaktpunkt per språk, relevant hvis det er ulike kontaktpunkter for norske og utenlandske kontakter; +

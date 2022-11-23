@@ -68,12 +68,15 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 |===
 | English name |source
 | URI |dct:source
-| Verdiområde / Range  |rdfs:Resource
+| Verdiområde / Range  |rdfs:Resource or rdf:List
 | Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til kilde.
 
 (English) This property is used to refer to a source.
 | Multiplisitet  |0..n
 | Kravnivå / Requirement level |Anbefalt / Recommended
+| Merknad / Note | (norsk) Bruk `rdf:List` når den ønskede rekkefølgen mellom kildene skal oppgis.
+
+(English) Use `rdf:List` when the preferred order between the sources need to be specified.
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -82,6 +85,21 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
    euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
       dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; ] ; # kilde
      .
+-----
+
+Et fiktivt eksempel i RDF Turtle, der det er behov for å oppgi rekkefølge mellom to referanser:
+-----
+<aFictiveConcept> a skos:Concept ; # et fiktivt begrep
+   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
+      dct:source [ a rdf:List ; # en liste av kilder
+         rdf:first <https://example.org/ref1> ; # ref. nr. 1
+         rdf:rest [ a rdf:List ;
+            rdf:first <https://example.org/ref2> ; # ref. nr. 2
+            rdf:rest rdf:nil ;
+            ] ;
+         ] ;
+      ] ;
+   .
 -----
 
 ==== Valgfrie egenskaper for _Definisjon_ [[Definisjon-valgfrie-egenskaper]]

@@ -34,6 +34,10 @@ toc::[]
 
 include::forord.adoc[]
 
+// section number on
+:sectnums:
+:sectnumlevels: 5
+
 include::Om-denne-standarden.adoc[]
 
 include::Del1-med-normative-referanser.adoc[]
@@ -67,6 +71,9 @@ include::KlassenGeneriskBegrepsrelasjon.adoc[]
 include::KlassenPartitivBegrepsrelasjon.adoc[]
 
 include::KlassenBegrepssamling.adoc[]
+
+// section number off
+:sectnums!:
 
 include::navnerom.adoc[]
 

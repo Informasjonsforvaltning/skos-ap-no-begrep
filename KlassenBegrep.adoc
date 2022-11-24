@@ -279,9 +279,9 @@ Eksempel i RDF Turtle:
 (English) This property is used to specify a https://termbasen.standard.no/term/165575653105392/eng[domain] (subject field) under which the concept may be grouped/classified, either as a text with language code or as a coded value. When text is used and if the text is in several languages, the property should be repeated for each language.
 | Multiplisitet |0..n
 | Kravnivå / Requirement level |Anbefalt / Recommended
-| Merknad / Note | (norsk) Fagområde trenger ikke være det samme som akademisk disiplin.
+| Merknad / Note | (norsk) Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
 
-(English) A subject field does not need to be the same as an academic discipline.
+(English) A subject field may represent an academic discipline, an application area, a produkt, a service chain or suchlike.
 |===
 
 Eksempel i RDF Turtle:

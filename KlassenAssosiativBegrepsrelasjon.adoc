@@ -2,12 +2,12 @@
 
 [cols="30s,70d"]
 |===
-| English name  |Associative concept relation
-| Anvendelse / Usage note  |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon].
+| _English name_  | _Associative concept relation_
+| Anvendelse / _Usage note_  | Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon].
 
-(English) This class is used to represent an https://termbasen.standard.no/term/165575612703735/eng[associative concept relation].
+_This class is used to represent an https://termbasen.standard.no/term/165575612703735/eng[associative concept relation]._
 | URI  |skosno:AssociativeConceptRelation
-| Kravnivå / Requirement level  |Valgfri / Optional
+| Kravnivå / _Requirement level_  |Valgfri / _Optional_
 |===
 
 ==== Obligatoriske egenskaper for Assosiativ begrepsrelasjon [[Assosiativ-begrepsrelasjon-obligatoriske-egenskaper]]
@@ -16,14 +16,14 @@
 
 [cols="30s,70d"]
 |===
-| English name  |has to-concept
+| _English name_  | _has to-concept_
 | URI  |skosno:hasToConcept
-| Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å referere til et til-begrep i en assosiativ begrepsrelasjon.
+| Verdiområde / _Range_  |skos:Concept
+| Anvendelse / _Usage note_  | Egenskapen brukes til å referere til et til-begrep i en assosiativ begrepsrelasjon.
 
-(English) This property is used to refer to a to-concept in an associative concept relation.
-| Multiplisitet  |1..n
-| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+_This property is used to refer to a to-concept in an associative concept relation._
+| Multiplisitet / _Multiplicity_  |1..n
+| Kravnivå / _Requirement level_  |Obligatorisk / _Mandatory_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
@@ -38,14 +38,16 @@ Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
 
 [cols="30s,70d"]
 |===
-| English name  |relation role
+| _English name_  | _relation role_
 | URI  |skosno:relationRole
 | Verdiområde / Range  |skos:Concept or rdf:langString
-| Anvendelse / Usage note  |(norsk) Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verd valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er i flere språk.
+| Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verd valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er i flere språk.
 
-(English) This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated if the text is in parallel languages.
-| Multiplisitet  |1..1 når skos:Concept brukes, 1..n når rdf:langString brukes
-| Kravnivå / Requirement level  |Obligatorisk / Mandatory
+_This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated if the text is in parallel languages._
+| Multiplisitet / _Multiplicity_  |1..1 når skos:Concept brukes, 1..n når rdf:langString brukes
+
+_1..1 when skos:Concept is used, 1..n when rdf:langString is used_
+| Kravnivå / _Requirement level_  | Obligatorisk / _Mandatory_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:

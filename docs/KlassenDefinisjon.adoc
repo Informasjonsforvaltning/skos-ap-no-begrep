@@ -2,12 +2,12 @@
 
 [cols="30s,70d"]
 |===
-| English name |Definition
-| Anvendelse / Usage note |(norsk) Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703717/nob[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
+| _English name_ | _Definition_
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703717/nob[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-(English) This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need to describe more than the definition itself.
+_This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need to describe more than the definition itself._
 | URI |euvoc:XlNote
-| Kravnivå / Requirement level |Anbefalt / Recommended
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 ==== Obligatoriske egenskaper for _Definisjon_ [[Definisjon-obligatoriske-egenskaper]]
@@ -16,14 +16,14 @@
 
 [cols="30s,70d"]
 |===
-| English name |text
+| _English name_ | _text_
 | URI |rdf:value
-| Verdiområde / Range  |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi definisjonsteksten i et gitt skriftspråk.
+| Verdiområde / _Range_  |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi definisjonsteksten i et gitt skriftspråk.
 
-(English) This property is used to specify the definition text in a given language.
-| Multiplisitet  |1..1
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
+_This property is used to specify the definition text in a given language._
+| Multiplisitet / _Multiplicity_  |1..1
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -40,17 +40,17 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |relationship with source
+| _English name_ | _relationship with source_
 | URI |skosno:relationshipWithSource
-| Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi forhold til kilde, som kodet verdi valgt fra et kontrollert vokabular.
+| Verdiområde / _Range_  |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi forhold til kilde, som kodet verdi valgt fra et kontrollert vokabular.
 
-(English) This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary.
-| Multiplisitet  |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
-| Merknad / Note |(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] hvis verdien finnes på listen.
+_This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary._
+| Multiplisitet / _Multiplicity_  |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
+| Merknad / _Note_ | Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] hvis verdien finnes på listen.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], if the value is on the list.
+_The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], if the value is on the list._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -66,17 +66,17 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |source
+| _English name_ | _source_
 | URI |dct:source
-| Verdiområde / Range  |rdfs:Resource or rdf:List
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til kilde.
+| Verdiområde / _Range_  |rdfs:Resource or rdf:List
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kilde.
 
-(English) This property is used to refer to a source.
-| Multiplisitet  |0..n
-| Kravnivå / Requirement level |Anbefalt / Recommended
-| Merknad / Note | (norsk) Bruk `rdf:List` når den ønskede rekkefølgen mellom kildene skal oppgis.
+_This property is used to refer to a source._
+| Multiplisitet / _Multiplicity_  |0..n
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
+| Merknad / _Note_ | Bruk `rdf:List` når den ønskede rekkefølgen mellom kildene skal oppgis.
 
-(English) Use `rdf:List` when the preferred order between the sources need to be specified.
+_Use `rdf:List` when the preferred order between the sources need to be specified._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -108,17 +108,17 @@ Et fiktivt eksempel i RDF Turtle, der det er behov for å oppgi rekkefølge mell
 
 [cols="30s,70d"]
 |===
-| English name |audience
+| _English name_ | _audience_
 | URI |dct:audience
-| Verdiområde / Range  |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi målgruppen for definisjonen. Verdien velges fra et kontrollert vokabular.
+| Verdiområde / _Range_  |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi målgruppen for definisjonen. Verdien velges fra et kontrollert vokabular.
 
-(English) This property is used to specify the audience of the definition, as a coded value chosen from a controlled vocabulary.
-| Multiplisitet  |0..1
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] hvis verdien finnes på listen.
+_This property is used to specify the audience of the definition, as a coded value chosen from a controlled vocabulary._
+| Multiplisitet / _Multiplicity_  |0..1
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad / _Note_ | Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] hvis verdien finnes på listen.
 
-(English) The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] if the value is on the list.
+_The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] if the value is on the list._
 |===
 
 Eksempel i RDF Turtle:

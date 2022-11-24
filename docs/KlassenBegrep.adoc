@@ -2,12 +2,12 @@
 
 [cols="30s,70d"]
 |===
-| English name |Concept
-| Anvendelse / Usage note |(norsk) Klassen brukes til å representere et https://termbasen.standard.no/term/165575653105429/nob[begrep].
+| _English name_ | _Concept_
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et https://termbasen.standard.no/term/165575653105429/nob[begrep].
 
-(English) The class is used to represent a https://termbasen.standard.no/term/165575653105429/eng[concept].
+_The class is used to represent a https://termbasen.standard.no/term/165575653105429/eng[concept]._
 | URI |skos:Concept
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975:
@@ -22,20 +22,20 @@ Eksempel i RDF Turtle, for NAVs begrep 975:
 
 [cols="30s,70d"]
 |===
-| English name |preferred term
+| _English name_ | _preferred term_
 | URI |skos:prefLabel
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575552506687/nob[anbefalt term]. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575552506687/nob[anbefalt term]. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
 
-(English) This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated when the term is in several languages.
-| Multiplisitet |2..n
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad 1 / Note 1 |(norsk) Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
+_This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated when the term is in several languages._
+| Multiplisitet / _Multiplicity_ |2..n
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
 
-(English) The preferred term shall be in both Norwegian Bokmål and Norwegian Nynorsk. There shall be maximum one per language.
-| Merknad 2 / Note 2 |(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
+_The preferred term shall be in both Norwegian Bokmål and Norwegian Nynorsk. There shall be maximum one per language._
+| Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
 
-(English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -49,20 +49,20 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |definition (direct statement)
+| _English name_ | _definition (direct statement)_
 | URI |skos:definition
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes i flere skriftspråk.
 
-(English) This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] of a concept, when there is no need to specify more than the definition itself. This property should be repeated when the definition is in several languages.
-| Multiplisitet |1..n
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad 1 / Note 1 |(norsk) Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
+_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] of a concept, when there is no need to specify more than the definition itself. This property should be repeated when the definition is in several languages._
+| Multiplisitet / _Multiplicity_ |1..n
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
 
-(English) There shall be minimum one definition (direct statement or via definition object) and maximum one per language.
-| Merknad 2 / Note 2 |(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
+_There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
+| Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
 
-(English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -76,20 +76,20 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |definition (via definition object)
+| _English name_ | _definition (via definition object)_
 | URI |euvoc:xlDefinition
-| Verdiområde / Range |euvoc:XlNote
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes i flere skriftspråk.
+| Verdiområde / _Range_ |euvoc:XlNote
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes i flere skriftspråk.
 
-(English) This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] to a concept, when there is need to specify more than the definition. This property should be repeated when the definition is in several languages.
-| Multiplisitet |1..n
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad 1 / Note 1 |(norsk) Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
+_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] to a concept, when there is need to specify more than the definition. This property should be repeated when the definition is in several languages._
+| Multiplisitet / _Multiplicity_ |1..n
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
 
-(English) There shall be minimum one definition (direct statement or via definition object) and maximum one per language.
-| Merknad 2 / Note 2 |(norsk) Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
+_There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
+| Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er i samme skriftspråk.
 
-(English) There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language.
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
 |===
 
 Eksempel i RDF Turtle: Se under <<Definisjon>>.
@@ -98,15 +98,17 @@ Eksempel i RDF Turtle: Se under <<Definisjon>>.
 
 [cols="30s,70d"]
 |===
-| English name |identifier
+| _English name_ | _identifier_
 | URI |dct:identifier
-| Verdiområde / Range |xsd:anyURI
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi identifikator til begrepet.
+| Verdiområde / _Range_ |xsd:anyURI
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator til begrepet.
 
-(English) This property is used to specify an identifier to the concept.
-| Multiplisitet |1..n
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad  |(norsk) Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+_This property is used to specify an identifier to the concept._
+| Multiplisitet / _Multiplicity_ |1..n
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad  / _Note_ |  Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+
+_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -120,17 +122,17 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |contact point
+| _English name_ | _contact point_
 | URI |dcat:contactPoint
-| Verdiområde / Range |vcard:Organization or vcard:Group
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved f.eks. spørsmål vedrørende begrepet.
+| Verdiområde / _Range_ |vcard:Organization or vcard:Group
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved f.eks. spørsmål vedrørende begrepet.
 
-(English) This property is used to specify a contact point which may be reached in case of e.g. questions about the concept.
-| Multiplisitet |1..n
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad / Note |(norsk) Når det er ulike kontaktpunkter for ulike språk (f.eks. norske vs. internasjonale kontakter), skal det oppgis maks. ett kontaktpunkt per språk.
+_This property is used to specify a contact point which may be reached in case of e.g. questions about the concept._
+| Multiplisitet / _Multiplicity_ |1..n
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Når det er ulike kontaktpunkter for ulike språk (f.eks. norske vs. internasjonale kontakter), skal det oppgis maks. ett kontaktpunkt per språk.
 
-(English) When there are different contact points for different languages (e.g. Norwegian vs. international contacts), there shall be maximum one contact points per language.
+_When there are different contact points for different languages (e.g. Norwegian vs. international contacts), there shall be maximum one contact points per language._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -146,17 +148,17 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name | publisher
+| _English name_ | _publisher_
 | URI |dct:publisher
-| Verdiområde / Range |org:Organization
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som har publisert begrepet.
+| Verdiområde / _Range_ |org:Organization
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til virksomheten som har publisert begrepet.
 
-(English) This property is used to refer to the organisation responsible for publishing the concept.
-| Multiplisitet |1..1
-| Kravnivå / Requirement level |Obligatorisk / Mandatory
-| Merknad / Note |(norsk) Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+_This property is used to refer to the organisation responsible for publishing the concept._
+| Multiplisitet / _Multiplicity_ |1..1
+| Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
 
-(English) The organization’s identifier should be used, e.g. in accordance to the organization number registered in the Central Coordinating Register for Legal Entities (CCR).
+_The organization’s identifier should be used, e.g. in accordance to the organization number registered in the Central Coordinating Register for Legal Entities (CCR)._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -172,28 +174,28 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name | responsible organization
+| _English name_ | _responsible organization_
 | URI | dct:creator
-| Verdiområde / Range | org:Organization
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
+| Verdiområde / _Range_ | org:Organization
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <<Begrep-publisert-av>>.
 
-(English) This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <<Begrep-publisert-av>>._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 ===== Begrep – dato gyldig fra og med (euvoc:startDate) [[Begrep-dato-gyldig-fra-og-med]]
 
 [cols="30s,70d"]
 |===
-| English name |date valid from, inclusive
+| _English name_ | _date valid from, inclusive_
 | URI |euvoc:startDate
-| Verdiområde / Range |xsd:date
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi dato begrepet er gyldig fra og med.
+| Verdiområde / _Range_ |xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato begrepet er gyldig fra og med.
 
-(English) This property is used to specify the date (inclusive) from which the concept is valid.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify the date (inclusive) from which the concept is valid._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle:
@@ -207,14 +209,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |date valid through, inclusive
+| _English name_ | _date valid through, inclusive_
 | URI |euvoc:endDate
-| Verdiområde / Range |xsd:date
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi dato begrepet er gyldig til og med.
+| Verdiområde / _Range_ |xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato begrepet er gyldig til og med.
 
-(English) This property is used to specify the date (inclusively) through which the concept is valid.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify the date (inclusively) through which the concept is valid._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle:
@@ -228,14 +230,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |date created
+| _English name_ | _date created_
 | URI |dct:created
-| Verdiområde / Range |xsd:date
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi når begrepet ble opprettet.
+| Verdiområde / _Range_ |xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi når begrepet ble opprettet.
 
-(English) This property is used to specify the date when the concept was created.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify the date when the concept was created._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle:
@@ -249,14 +251,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name | date last modified
+| _English name_ | _date last modified_
 | URI |dct:modified
-| Verdiområde / Range |xsd:date
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi når begrepet ble sist oppdatert.
+| Verdiområde / _Range_ |xsd:date
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi når begrepet ble sist oppdatert.
 
-(English) This property is used to specify the date when the concept was last updated.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify the date when the concept was last updated._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle:
@@ -271,17 +273,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |subject field
+| _English name_ | _subject field_
 | URI |dct:subject
-| Verdiområde / Range |rdf:langString or skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575653105392/nob[fagområde] som begrepet kan grupperes/klassifiseres under, oppgis som enten tekst med språkkode eller kodet verdi. Hvis tekst, og når teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert skriftspråk.
+| Verdiområde / _Range_ |rdf:langString or skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575653105392/nob[fagområde] som begrepet kan grupperes/klassifiseres under, oppgis som enten tekst med språkkode eller kodet verdi. Hvis tekst, og når teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert skriftspråk.
 
-(English) This property is used to specify a https://termbasen.standard.no/term/165575653105392/eng[domain] (subject field) under which the concept may be grouped/classified, either as a text with language code or as a coded value. When text is used and if the text is in several languages, the property should be repeated for each language.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Anbefalt / Recommended
-| Merknad / Note | (norsk) Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
+_This property is used to specify a https://termbasen.standard.no/term/165575653105392/eng[domain] (subject field) under which the concept may be grouped/classified, either as a text with language code or as a coded value. When text is used and if the text is in several languages, the property should be repeated for each language._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
+| Merknad / _Note_ | Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
 
-(English) A subject field may represent an academic discipline, an application area, a produkt, a service chain or suchlike.
+_A subject field may represent an academic discipline, an application area, a produkt, a service chain or suchlike._
 |===
 
 Eksempel i RDF Turtle:
@@ -295,14 +297,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |note
+| _English name_ | _note_
 | URI |skos:scopeNote
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi merknad til begrepet. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi merknad til begrepet. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
 
-(English) This property is used to specify notes regarding the concept. The property should be repeated when the text is in several languages.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify notes regarding the concept. The property should be repeated when the text is in several languages._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -317,14 +319,14 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |admitted term
+| _English name_ | _admitted term_
 | URI |skos:altLabel
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575552506675/nob[tillatt term] til anbefalt term til begrepet. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575552506675/nob[tillatt term] til anbefalt term til begrepet. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
 
-(English) This property is used to specify an https://termbasen.standard.no/term/165575552506675/eng[admitted term] to a concept. This property should be repeated when the term is in several languages.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Anbefalt / Recommended
+_This property is used to specify an https://termbasen.standard.no/term/165575552506675/eng[admitted term] to a concept. This property should be repeated when the term is in several languages._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 1091 («autorisering»):
@@ -340,14 +342,14 @@ Eksempel i RDF Turtle, for NAVs begrep 1091 («autorisering»):
 
 [cols="30s,70d"]
 |===
-| English name |data structure label
+| _English name_ | _data structure label_
 | URI |skosno:dataStructureLabel
-| Verdiområde / Range |rdfs:Literal
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi datastrukturterm for begrepet.
+| Verdiområde / _Range_ |rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datastrukturterm for begrepet.
 
-(English) This property is used to specify a data structure label.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to specify a data structure label._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle, for Skatteetatens begrep «fysisk person»:
@@ -361,14 +363,14 @@ Eksempel i RDF Turtle, for Skatteetatens begrep «fysisk person»:
 
 [cols="30s,70d"]
 |===
-| English name |example
+| _English name_ | _example_
 | URI |skos:example
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi eksempel på begrepet. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi eksempel på begrepet. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
 
-(English) This property is used to specify examples of the concept. This property should be repeated when the text is in different languages.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to specify examples of the concept. This property should be repeated when the text is in different languages._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle, hentet fra https://termbasen.standard.no/term/165575653105391/nob[Termbasen til Standard Norge], for begrep «individualbegrep»:
@@ -382,23 +384,23 @@ Eksempel i RDF Turtle, hentet fra https://termbasen.standard.no/term/16557565310
 
 [cols="30s,70d"]
 |===
-| English name |is part of
+| _English name_ | _is part of_
 | URI |xkos:isPartOf
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termbasen.standard.no/term/165575551206237/nob[delbegrep] og det andre begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet], i en partitiv relasjon mellom disse.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termbasen.standard.no/term/165575551206237/nob[delbegrep] og det andre begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet], i en partitiv relasjon mellom disse.
 
-(English) To refer to the concept that this concept is a part of. This concept is a https://termbasen.standard.no/term/165575551206237/eng[partitive concept] and the other concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept], in a partitive concept relation between the two concepts.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
+_To refer to the concept that this concept is a part of. This concept is a https://termbasen.standard.no/term/165575551206237/eng[partitive concept] and the other concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept], in a partitive concept relation between the two concepts._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
 
-(English) This property/relation may also be read as “has comprehensive concept”.
-| Merknad 2 / Note 2 |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrep-inneholder>>.
+_This property/relation may also be read as “has comprehensive concept”._
+| Merknad 2 / _Note 2_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-inneholder>>.
 
-(English) This property/relation is the inverse of <<Begrep-inneholder>>.
-| Merknad 3 / Note 3 |(norsk) Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+_This property/relation is the inverse of <<Begrep-inneholder>>._
+| Merknad 3 / _Note 3_ | Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -412,17 +414,17 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |is replaced by
+| _English name_ | _is replaced by_
 | URI |dct:isReplacedBy
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet er erstattet av.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet er erstattet av.
 
-(English) This property is used to refer to a concept that this concept is replaced by.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrep-erstatter>>.
+_This property is used to refer to a concept that this concept is replaced by._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-erstatter>>.
 
-(English) This property/relation is the inverse of <<Begrep-erstatter>>.
+_This property/relation is the inverse of <<Begrep-erstatter>>._
 |===
 
 Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
@@ -436,14 +438,14 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 
 [cols="30s,70d"]
 |===
-| English name |is from-concept in
+| _English name_ | _is from-concept in_
 | URI |skosno:isFromConceptIn
-| Verdiområde / Range |skosno:AssociativeConceptRelation
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.
+| Verdiområde / _Range_ |skosno:AssociativeConceptRelation
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) This property is used to refer to an https://termbasen.standard.no/term/165575612703735/eng[associative relation] that this concept has with another concept, when there is need to describe the relation role of this concept.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to an https://termbasen.standard.no/term/165575612703735/eng[associative relation] that this concept has with another concept, when there is need to describe the relation role of this concept._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle: Se under <<Assosiativ-begrepsrelasjon>>.
@@ -452,23 +454,23 @@ Eksempel i RDF Turtle: Se under <<Assosiativ-begrepsrelasjon>>.
 
 [cols="30s,70d"]
 |===
-| English name |is related to
+| _English name_ | _is related to_
 | URI |skos:related
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som begrepet er relatert til, når det ikke er behov for å beskrive relasjonsrollen til dette begrepet.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som begrepet er relatert til, når det ikke er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) This property is used to refer to a concept which this concept is related to, when there is no need to describe the relation role of this concept.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har assosiert begrep».
+_This property is used to refer to a concept which this concept is related to, when there is no need to describe the relation role of this concept._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har assosiert begrep».
 
-(English) This property/relation may also be read as “has associated concept”.
-| Merknad 2 / Note 2 |(norsk) Bruk heller en av de andre semantisk mer presise assosiative begrepsrelasjonene.
+_This property/relation may also be read as “has associated concept”._
+| Merknad 2 / _Note 2_ | Bruk heller en av de andre semantisk mer presise assosiative begrepsrelasjonene.
 
-English) Use rather one of the other semantically more precise associative concept relations.
-| Merknad 3 / Note 3 |(norsk) Bruk <<Begrep-er-fra-begrep-i>> når det er behov for å beskrive relasjonsrollen til dette begrepet.
+_Use rather one of the other semantically more precise associative concept relations._
+| Merknad 3 / _Note 3_ | Bruk <<Begrep-er-fra-begrep-i>> når det er behov for å beskrive relasjonsrollen til dette begrepet.
 
-(English) Use <<Begrep-er-fra-begrep-i>> when there is need to describe the relation role of this concept.
+_Use <<Begrep-er-fra-begrep-i>> when there is need to describe the relation role of this concept._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
@@ -482,17 +484,17 @@ Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
 
 [cols="30s,70d"]
 |===
-| English name |replaces
+| _English name_ | _replaces_
 | URI |dct:replaces
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet erstatter.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet erstatter.
 
-(English) This property is used to refer to a concept that this concept replaces.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrep-er-erstattet-av>>.
+_This property is used to refer to a concept that this concept replaces._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-er-erstattet-av>>.
 
-(English) This property/relation is the inverse of <<Begrep-er-erstattet-av>>.
+_This property/relation is the inverse of <<Begrep-er-erstattet-av>>._
 |===
 
 Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
@@ -506,14 +508,14 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 
 [cols="30s,70d"]
 |===
-| English name |deprecated term
+| _English name_ | _deprecated term_
 | URI |skos:hiddenLabel
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575654205830/nob[frarådd term]. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575654205830/nob[frarådd term]. Egenskapen bør gjentas når termen finnes i flere skriftspråk.
 
-(English) This property is used to specify a https://termbasen.standard.no/term/165575654205830/eng[deprecated term]. This property should be repeated when the term is in several languages.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to specify a https://termbasen.standard.no/term/165575654205830/eng[deprecated term]. This property should be repeated when the term is in several languages._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
@@ -527,23 +529,23 @@ Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
 
 [cols="30s,70d"]
 |===
-| English name |generalizes
+| _English name_ | _generalizes_
 | URI |xkos:generalizes
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet er en generalisering av. Begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet], i en generisk relasjon mellom disse.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet er en generalisering av. Begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet], i en generisk relasjon mellom disse.
 
-(English) This property is used to refer to another concept that this concept is a generalization of. This concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept] and the other concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept], in a generic concept relation between the two concepts.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1 |(norsk) Egenskapen/relasjonen kan også leses som «har underbegrep».
+_This property is used to refer to another concept that this concept is a generalization of. This concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept] and the other concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept], in a generic concept relation between the two concepts._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har underbegrep».
 
-(English) This property/relation may also be read as “has specific concept”.
-| Merknad 2 / Note 2 |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer>>.
+_This property/relation may also be read as “has specific concept”._
+| Merknad 2 / _Note 2_ | Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer>>.
 
-(English) This property/relation is the inverse of <<Begrep-spesialiserer>>.
-| Merknad 3 / Note 3 |(norsk) Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+_This property/relation is the inverse of <<Begrep-spesialiserer>>._
+| Merknad 3 / _Note 3_ | Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
@@ -557,14 +559,14 @@ Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
 
 [cols="30s,70d"]
 |===
-| English name |has exact match with
+| _English name_ | _has exact match with_
 | URI |skos:exactMatch
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep der det er eksakt samsvar mellom disse begrepene.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep der det er eksakt samsvar mellom disse begrepene.
 
-(English) This property is used to refer to another concept where this is an exact match between this and the other concept.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to another concept where this is an exact match between this and the other concept._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:
@@ -578,14 +580,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |has generic concept relation
+| _English name_ | _has generic concept relation_
 | URI |skosno:hasGenericConceptRelation
-| Verdiområde / Range |skosno:GenericConceptRelation
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+| Verdiområde / _Range_ |skosno:GenericConceptRelation
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) This property is used to refer to a https://termbasen.standard.no/term/165575612703726/eng[generic concept relation] that this concept has with another concept, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to a https://termbasen.standard.no/term/165575612703726/eng[generic concept relation] that this concept has with another concept, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle: Se under <<Generisk-begrepsrelasjon>>.
@@ -594,14 +596,14 @@ Eksempel i RDF Turtle: Se under <<Generisk-begrepsrelasjon>>.
 
 [cols="30s,70d"]
 |===
-| English name |has close match with
+| _English name_ | _has close match with_
 | URI |skos:closeMatch
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep der det er nært samsvar mellom disse begrepene.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep der det er nært samsvar mellom disse begrepene.
 
-(English) This property is used to refer to another concept where there is a close match between this and the other concept.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to another concept where there is a close match between this and the other concept._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:
@@ -615,14 +617,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |has partitive concept relation
+| _English name_ | _has partitive concept relation_
 | URI |skosno:hasPartitiveConceptRelation
-| Verdiområde / Range |skosno:PartitiveConceptRelation
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+| Verdiområde / _Range_ |skosno:PartitiveConceptRelation
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] som begrepet har med et annet begrep, når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) This property is used to refer to a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation] that this concept has with another concept, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to a https://termbasen.standard.no/term/165575812309370/eng[partitive concept relation] that this concept has with another concept, when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle: Se under <<Partitiv-begrepsrelasjon>>.
@@ -631,23 +633,23 @@ Eksempel i RDF Turtle: Se under <<Partitiv-begrepsrelasjon>>.
 
 [cols="30s,70d"]
 |===
-| English name |has part
+| _English name_ | _has part_
 | URI |xkos:hasPart
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet] og det andre begrepet https://termbasen.standard.no/term/165575551206237/nob[delbegrepet], i en partitiv relasjon mellom disse.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet] og det andre begrepet https://termbasen.standard.no/term/165575551206237/nob[delbegrepet], i en partitiv relasjon mellom disse.
 
-(English) This property is used to refer to the concept that this concept has as a part. This concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept] and the other concept is the https://termbasen.standard.no/term/165575551206237/eng[partitive concept], in a partitive concept relation between the two concepts.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1  |(norsk) Egenskapen/relasjonen kan også leses som «har delbegrep».
+_This property is used to refer to the concept that this concept has as a part. This concept is the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept] and the other concept is the https://termbasen.standard.no/term/165575551206237/eng[partitive concept], in a partitive concept relation between the two concepts._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har delbegrep».
 
-(English) This property/relation may also be read as “has partitive concept”.
-| Merknad 2 / Note 2  |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrep-er-del-av>>.
+_This property/relation may also be read as “has partitive concept”._
+| Merknad 2 / _Note 2_  | Denne egenskapen/relasjonen er den inverse av <<Begrep-er-del-av>>.
 
-(English) This property/relation is the inverse of <<Begrep-er-del-av>>.
-| Merknad 3 / Note 3  |(norsk) Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+_This property/relation is the inverse of <<Begrep-er-del-av>>._
+| Merknad 3 / _Note 3_  | Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+_Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
@@ -661,17 +663,17 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 
 [cols="30s,70d"]
 |===
-| English name |member of
+| _English name_ | _member of_
 | URI |uneskos:memberOf
-| Verdiområde / Range |skos:Collection
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til en begrepssamling der begrepet inngår.
+| Verdiområde / _Range_ |skos:Collection
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en begrepssamling der begrepet inngår.
 
-(English) This property is used to refer to the collection that this concept is a member of.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Denne egenskapen/relasjonen er den inverse av <<Begrepssamling-inneholder-begrep>>.
+_This property is used to refer to the collection that this concept is a member of._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrepssamling-inneholder-begrep>>.
 
-(English) This property/relation is the inverse of <<Begrepssamling-inneholder-begrep>>.
+_This property/relation is the inverse of <<Begrepssamling-inneholder-begrep>>._
 |===
 
 Eksempel i RDF Turtle:
@@ -685,14 +687,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |see also
+| _English name_ | _see also_
 | URI |rdfs:seeAlso
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet har en «se også»-relasjon til.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet har en «se også»-relasjon til.
 
-(English) This property is used to refer to another concept that this concept has a “see also”-relation with.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to refer to another concept that this concept has a “see also”-relation with._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:
@@ -706,23 +708,23 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name |specializes
+| _English name_ | _specializes_
 | URI |xkos:specializes
-| Verdiområde / Range |skos:Concept
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å referere til et annet begrep som dette begrepet er en spesialisering av. Begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet], i en generisk relasjon mellom disse.
+| Verdiområde / _Range_ |skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet er en spesialisering av. Begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet], i en generisk relasjon mellom disse.
 
-(English) This property is used to refer to another concept that this concept is a specialization of. This concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept] and the other concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept], in a generic concept relation between the two concepts.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad 1 / Note 1  |(norsk) Egenskapen/relasjonen kan også leses som «har overbegrep».
+_This property is used to refer to another concept that this concept is a specialization of. This concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept] and the other concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept], in a generic concept relation between the two concepts._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har overbegrep».
 
-(English) This property/relation may also be read as “has generic concept”.
-| Merknad 2 / Note 2  |(norsk) Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer>>.
+_This property/relation may also be read as “has generic concept”._
+| Merknad 2 / _Note 2_  | Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer>>.
 
-(English) This property/relation is the inverse of <<Begrep-generaliserer>>.
-| Merknad 3 / Note 3  |(norsk) Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
+_This property/relation is the inverse of <<Begrep-generaliserer>>._
+| Merknad 3 / _Note 3_  | Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
 
-(English) Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision].
+_Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision]._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -736,17 +738,19 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |status
+| _English name_ | _status_
 | URI |adms:status
-| Verdiområde / Range |skos:Concept or rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi status til et begrep, som tekst med språkkode eller kodet verdi. Hvis tekst og når teksten finnes i flere språk, bør egenskapen gjentas for hvert språk. Hvis kodet verdi, skal egenskapen ha kun én verdi.
+| Verdiområde / _Range_ |skos:Concept or rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi status til et begrep, som tekst med språkkode eller kodet verdi. Hvis tekst og når teksten finnes i flere språk, bør egenskapen gjentas for hvert språk. Hvis kodet verdi, skal egenskapen ha kun én verdi.
 
-(English) This property is used to specify the status of the concept, as text with language code or coded value. If text is used and if the text is in several languages, this property should be repeated for each language. If coded value used, the property shall have only one value.
-| Multiplisitet |0..1 når skos:Concept brukes og 0..n når rdf:langString brukes
-| Kravnivå / Requirement level |Valgfri / Optional
-| Merknad / Note |(norsk) Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+_This property is used to specify the status of the concept, as text with language code or coded value. If text is used and if the text is in several languages, this property should be repeated for each language. If coded value used, the property shall have only one value._
+| Multiplisitet / _Multiplicity_ |0..1 når skos:Concept brukes og 0..n når rdf:langString brukes
 
-(English) The value should preferably be chosen from a controlled vocabulary, e.g. EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+_0..1 when skos:Concept is used and 0..n when rdf:langString is used_
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
+| Merknad / _Note_ | Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+
+_The value should preferably be chosen from a controlled vocabulary, e.g. EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status]._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -760,14 +764,14 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 
 [cols="30s,70d"]
 |===
-| English name |value range
+| _English name_ | _value range_
 | URI |skosno:valueRange
-| Verdiområde / Range |rdf:langString or xsd:anyURI
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi verdiområde, oppgitt som tekst og/eller referanse til der dette er spesifisert. Når tekst og hvis teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert språk.
+| Verdiområde / _Range_ |rdf:langString or xsd:anyURI
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi verdiområde, oppgitt som tekst og/eller referanse til der dette er spesifisert. Når tekst og hvis teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert språk.
 
-(English) This property is used to specify the value range of a concept, as text and/or as reference to where this is specified. When text is used and if the text is in several languages, this property should be repeated for each language.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to specify the value range of a concept, as text and/or as reference to where this is specified. When text is used and if the text is in several languages, this property should be repeated for each language._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle, for SSBs begrep «sivilstand»:
@@ -782,14 +786,14 @@ Eksempel i RDF Turtle, for SSBs begrep «sivilstand»:
 
 [cols="30s,70d"]
 |===
-| English name | version number
+| _English name_ | _version number_
 | URI | owl:versionInfo
-| Verdiområde / Range | rdfs:Literal
-| Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi versjonsnummer til et begrep.
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi versjonsnummer til et begrep.
 
-(English) This property is used to specify the version number of the concept.
-| Multiplisitet |0..1
-| Kravnivå / Requirement level | Valgfri / Optional
+_This property is used to specify the version number of the concept._
+| Multiplisitet / _Multiplicity_ |0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:
@@ -803,14 +807,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-| English name | version notes
+| _English name_ | _version notes_
 | URI | adms:versionNotes
-| Verdiområde / Range |rdf:langString
-| Anvendelse / Usage note |(norsk) Egenskapen brukes til å oppgi versjonsnoter til en versjon av et begrep. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
+| Verdiområde / _Range_ |rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi versjonsnoter til en versjon av et begrep. Egenskapen bør gjentas når teksten finnes i flere skriftspråk.
 
-(English) This property is used to specify version notes about the version. This property should be repeated if the notes are in several languages.
-| Multiplisitet |0..n
-| Kravnivå / Requirement level |Valgfri / Optional
+_This property is used to specify version notes about the version. This property should be repeated if the notes are in several languages._
+| Multiplisitet / _Multiplicity_ |0..n
+| Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
 Eksempel i RDF Turtle:

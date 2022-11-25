@@ -6,14 +6,14 @@ I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkl
 [[Figur-tre-partitive-relasjoner]]
 .Tre partitive relasjoner og den motsatte veien
 [link=images/RDF-eksempel-partitivrelasjon.png]
-image::images/RDF-eksempel-partitivrelasjon.png[]
+image::images/RDF-eksempel-partitivrelasjon.png[alt="To RDF-grafer, hver har fire noder og tre relasjoner. Innholdet er forklart i teksten."]
 
 Denne måten å uttrykke relasjoner på gir imidlertid ikke rom for å fortelle noe mer om selve relasjonen enn det som måtte ligge i selve predikatet. Når vi vil beskrive noe om selve relasjonen, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <<Figur-assosiativ-begrepsrelasjon>> nedenfor viser en assosiativ relasjon av typen «forutsetter – muliggjør». Selve relasjonen er her uttrykt som et objekt, for at vi skal kunne plassere relasjonsrollen. Spesielt for assosiative relasjoner via relasjonsobjekter, er det en fordel å uttrykke relasjonen begge veier i RDF.
 
 [[Figur-assosiativ-begrepsrelasjon]]
 .Assosiativ begrepsrelasjon uttrykt ved hjelp av relasjonsobjekt for at vi skal klare å uttrykke relasjonsrollen
 [link=images/RDF-eksempel-assosiativrelasjon.png]
-image::images/RDF-eksempel-assosiativrelasjon.png[]
+image::images/RDF-eksempel-assosiativrelasjon.png[alt="To RDF-grafer, hver har fire noder og tre relasjoner. Innholdet er forklart i teksten."]
 
 RDF gir muligheten til å bunte sammen begrepsrelasjoner som tar utgangspunktet i det samme begrepet og som har samme predikat. Hvis et begrep A inneholder flere andre begreper B, C og D, kan vi uttrykke dette på kortform slik:
 

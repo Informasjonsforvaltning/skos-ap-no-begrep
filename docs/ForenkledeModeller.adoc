@@ -12,7 +12,7 @@ UML-diagrammet nedenfor viser de obligatoriske klassene med deres obligatoriske 
 [Figur-UML-kun-obligatoriske]
 .Forenklet modell for SKOS-AP-NO-Begrep, med kun obligatoriske klasser og deres obligatoriske egenskaper. Se beskrivelse av den enkelte egenskapen for mer detaljert beskrivelse av restriksjonene.
 [link=images/SKOS-AP-NO-Begrep-kun-obligatoriske.png]
-image::images/SKOS-AP-NO-Begrep-kun-obligatoriske.png[]
+image::images/SKOS-AP-NO-Begrep-kun-obligatoriske.png[alt="UML-diagram med to klasser, en relasjon og tre restriksjonsnoter. Innholdet er forklart i teksten."]
 
 
 === Forenklet modell, uten begrepsrelasjoner
@@ -20,14 +20,14 @@ image::images/SKOS-AP-NO-Begrep-kun-obligatoriske.png[]
 [Figur-UML-uten-begrepsrelasjoner]
 .UML-modell for SKOS-AP-NO-Begrep, uten begrepsrelasjoner mellom begreper. Se beskrivelse av den enkelte egenskapen for mer detaljert beskrivelse av restriksjonene.
 [link=images/SKOS-AP-NO-Begrep-uten-relasjoner.png]
-image::images/SKOS-AP-NO-Begrep-uten-relasjoner.png[]
+image::images/SKOS-AP-NO-Begrep-uten-relasjoner.png[alt="UML-diagram med tre klasser, tre relasjoner og tre restriksjonsnoter. Innholdet er forklart i teksten."]
 
 === Forenklet modell, med kun begrepsrelasjoner
 
 [Figur-kun-med-begrepsrelasjoner]
 .UML-modell for SKOS-AP-NO-Begrep, kun med begrepsrelasjoner mellom begreper. Se beskrivelse av den enkelte egenskapen for mer detaljert beskrivelse av restriksjonene.
 [link=images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png]
-image::images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png[]
+image::images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png[alt="UML-diagram med fire klasser, atten relasjoner og fem restriksjonsnoter. Innholdet er forklart i teksten."]
 
 
 Det finnes andre typer assosiative begrepsrelasjoner i tillegg til dem som er vist i figuren, som også kan brukes.

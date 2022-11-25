@@ -111,10 +111,10 @@ a|*Eksempelet i RDF Turtle*:
 
 [stripes=even]
 |===
-a|*Eksempel på en assosiativ relasjon*, hentet fra NAV 2022-08-23, for begrepet 1169 https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb[«lovlig opphold»]:
+a|*Eksempel på en assosiativ relasjon*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb[«lovlig opphold»]:
 
 * *relasjonsrolle*: muliggjør
-* *til-begrep*: «medlem i folketrygden» (https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2[begrep 170])
+* *til-begrep*: https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2[«medlem i folketrygden»]
 
 a|*Eksempelet i RDF Turtle*:
 -----

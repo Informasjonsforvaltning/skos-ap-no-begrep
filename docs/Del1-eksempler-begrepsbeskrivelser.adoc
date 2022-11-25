@@ -1,11 +1,11 @@
 === Eksempler på begrepsbeskrivelser [[Del1-eksempler-på-begrepsbeskrivelser]]
 
 |===
-a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra NAV 2022-08-23, for begrepet https://data.nav.no/begrep/BEGREP-975[«mødrekvote»]:
+a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5[«mødrekvote»]:
 
 * *anbefalt term*: «mødrekvote» (bokmål)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
-* *identifikator*: BEGREP-975
+* *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *kontaktpunkt*: mailto:begrepskatalogen@nav.no[begrepskatalogen@nav.no]
 * *publisert av*: NAV
 |===
@@ -46,8 +46,8 @@ a|*Eksempel på en partitiv relasjon*, basert på https://data.norge.no/specific
 |===
 
 |===
-a|*Eksempel på en assosiativ relasjon*, hentet fra NAV 2022-08-23, for begrepet 1169 https://data.nav.no/begrep/BEGREP-1169[«lovlig opphold»]:
+a|*Eksempel på en assosiativ relasjon*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb[«lovlig opphold»]:
 
 * *relasjonsrolle*: muliggjør
-* *til-begrep*: «medlem i folketrygden»
+* *til-begrep*: https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2[«medlem i folketrygden»] 
 |===

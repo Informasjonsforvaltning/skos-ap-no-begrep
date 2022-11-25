@@ -48,9 +48,10 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 _This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary._
 | Multiplisitet / _Multiplicity_  |0..1
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] hvis verdien finnes på listen.
+| Merknad / _Note_ | 
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] passer til begrepets forhold til kilde, skal egenskapen referere til den aktuelle kategorien.
 
-_The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source], if the value is on the list._
+_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source] is suitable for the concept's relationship with source, this property shall refer to that category._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -116,9 +117,10 @@ Et fiktivt eksempel i RDF Turtle, der det er behov for å oppgi rekkefølge mell
 _This property is used to specify the audience of the definition, as a coded value chosen from a controlled vocabulary._
 | Multiplisitet / _Multiplicity_  |0..1
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Verdien skal velges fra det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] hvis verdien finnes på listen.
+| Merknad / _Note_ | 
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] passer til begrepets målgruppe, skal egenskapen referere til den aktuelle kategorien.
 
-_The value shall be chosen from the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] if the value is on the list._
+_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] is suitable for the audience of the concept, this property shall refer to that category._
 |===
 
 Eksempel i RDF Turtle:

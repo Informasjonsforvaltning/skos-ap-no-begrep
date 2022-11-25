@@ -748,9 +748,9 @@ _This property is used to specify the status of the concept, as text with langua
 
 _0..1 when skos:Concept is used and 0..n when rdf:langString is used_
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Verdien bør fortrinnsvis velges fra et kontrollert vokabular, f.eks. EUs https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status].
+| Merknad / _Note_ | Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[Concept status] passer til begrepets status, skal egenskapen referere til den aktuelle kategorien.
 
-_The value should preferably be chosen from a controlled vocabulary, e.g. EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[concept status]._
+_When making the concept description available outside the organization, and if one of the categories in EU’s https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/concept-status[Concept status] is suitable for the status of the concept, this property shall refer to that category._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:

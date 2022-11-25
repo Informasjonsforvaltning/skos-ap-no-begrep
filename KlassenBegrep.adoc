@@ -12,7 +12,7 @@ _The class is used to represent a https://termbasen.standard.no/term/16557565310
 
 Eksempel i RDF Turtle, for NAVs begrep 975:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ;
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ;
    .
 -----
 
@@ -40,7 +40,7 @@ _There shall be minimum one combination of preferred term and definition (direct
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    skos:prefLabel "mødrekvote"@nb, mødrekvote"@nn ; # anbefalt term
    .
 -----
@@ -67,7 +67,7 @@ _There shall be minimum one combination of preferred term and definition (direct
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # definisjon, bokmål
    .
 -----
@@ -113,8 +113,8 @@ _See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifika
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
-   dct:identifier "https://data.nav.no/begrep/BEGREP-975"^^xsd:anyURI ; # identifikator
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
+   dct:identifier "https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5"^^xsd:anyURI ; # identifikator
    .
 -----
 
@@ -137,7 +137,7 @@ _When there are different contact points for different languages (e.g. Norwegian
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
    vcard:hasOrganizationName "NAV"@nb ; # navn
    vcard:hasEmail <mailto:begrepskatalogen@nav.no> ; ] ; # e-post
@@ -163,7 +163,7 @@ _The organization’s identifier should be used, e.g. in accordance to the organ
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/889640782> ; # publisert av, med NAVs organisasjonsnummer
    .
 -----
@@ -309,7 +309,7 @@ _This property is used to specify notes regarding the concept. The property shou
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    skos:scopeNote "Deler av mødrekvoten er bundet i tid avhengig av når fødsel skjer."@en ; # merknad
    .
 -----
@@ -331,7 +331,7 @@ _This property is used to specify an https://termbasen.standard.no/term/16557555
 
 Eksempel i RDF Turtle, for NAVs begrep 1091 («autorisering»):
 -----
-<https://data.nav.no/begrep/BEGREP-1091> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/cc1482f9-0244-3008-88b7-a833e2c8f6e1> a skos:Concept ; # begrep
    skos:altLabel "autorisasjon"@nb ; # tillatt term
    .
 -----
@@ -405,8 +405,8 @@ _Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the 
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
-   xkos:isPartOf <https://data.nav.no/begrep/BEGREP-974> ; # er del av
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "mødrekvote"
+   xkos:isPartOf <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # er del av "foreldrepengeperiode"
      .
 -----
 
@@ -475,8 +475,8 @@ _Use <<Begrep-er-fra-begrep-i>> when there is need to describe the relation role
 
 Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
 -----
-<https://data.nav.no/begrep/BEGREP-170> a skos:Concept ; # begrep
-   skos:related <https://data.nav.no/begrep/BEGREP-1696> ; # er relatert til
+<https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> a skos:Concept ; # begrep "medlem i folketrygden"
+   skos:related <https://data.norge.no/concepts/d649801d-b47d-4d00-9470-35275c4ace00> ; # er relatert til "trygdeavgift"
    .
 -----
 
@@ -520,7 +520,7 @@ _This property is used to specify a https://termbasen.standard.no/term/165575654
 
 Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
 -----
-<https://data.nav.no/begrep/BEGREP-936> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/a9dc3c9c-df22-3cd4-a30b-b30b9de009ce> a skos:Concept ; # begrep "tiltakspenger"
    skos:hiddenLabel "individstønad"@nb ; # frarådd term
    .
 -----
@@ -550,8 +550,8 @@ _Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the 
 
 Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
 -----
-<https://data.nav.no/begrep/BEGREP-625> a skos:Concept ; # begrep
-   xkos:generalizes <https://data.nav.no/begrep/BEGREP-974> ; # generaliserer
+<https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1> a skos:Concept ; # begrep "ytelsesperiode"
+   xkos:generalizes <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # generaliserer "foreldrepengeperiode"
    .
 -----
 
@@ -654,8 +654,11 @@ _Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is need to describe the 
 
 Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 -----
-<https://data.nav.no/begrep/BEGREP-974> a skos:Concept ; # begrep
-   xkos:hasPart <https://data.nav.no/begrep/BEGREP-975> , <https://data.nav.no/begrep/BEGREP-976> , <https://data.nav.no/begrep/BEGREP-1467> ; # inneholder
+<https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> a skos:Concept ; # begrep "foreldrepengeperiode"
+   xkos:hasPart # inneholder
+      <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> , # "mødrekvote"
+      <https://data.norge.no/concepts/13a8697d-177b-499b-8d22-9cee6741c025> , # "fellesperiode"
+      <https://data.norge.no/concepts/32d18d0e-c9d4-4785-b1e8-3612ffca8fb7> ; # "fedrekvote"
      .
 -----
 
@@ -729,8 +732,8 @@ _Use <<Begrep-har-generisk-begrepsrelasjon>> when there is need to describe the 
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
-   xkos:specializes <https://data.nav.no/begrep/BEGREP-974> ; # spesialiserer
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "mødrekvote"
+   xkos:specializes <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # spesialiserer "foreldrepengeperiode"
    .
 -----
 
@@ -755,7 +758,7 @@ _When making the concept description available outside the organization, and if 
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
    .
 -----

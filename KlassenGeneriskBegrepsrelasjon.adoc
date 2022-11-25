@@ -32,9 +32,9 @@ _Either this property or the property <<Generisk-begrepsrelasjon-har-underbegrep
 
 Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 -----
-<https://data.nav.no/begrep/BEGREP-974> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> a skos:Concept ; # begrep "foreldrepengeperiode"
    skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har generisk relasjon
-      skosno:hasGenericConcept <https://data.nav.no/begrep/BEGREP-625> ; ] ; # som har overbegrep
+      skosno:hasGenericConcept <https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1> ; ] ; # som har overbegrep "ytelsesperiode"
      .
 -----
 
@@ -58,9 +58,9 @@ _Either this property or the property <<Generisk-begrepsrelasjon-har-overbegrep>
 
 Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
 -----
-<https://data.nav.no/begrep/BEGREP-625> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1> a skos:Concept ; # begrep "ytelsesperiode"
    skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har generisk relasjon
-      skosno:hasSpecificConcept <https://data.nav.no/begrep/BEGREP-974> ; ] ; # som har underbegrep
+      skosno:hasSpecificConcept <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; ] ; # som har underbegrep "foreldrepengeperiode"
      .
 -----
 

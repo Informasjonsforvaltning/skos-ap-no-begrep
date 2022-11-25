@@ -6,20 +6,20 @@ _Vedlegget er deskriptivt_.
 
 [stripes=even]
 |===
-a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra NAV 2022-08-23, for begrepet https://data.nav.no/begrep/BEGREP-975[«mødrekvote»]:
+a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5[«mødrekvote»]:
 
 * *anbefalt term*: «mødrekvote» (bokmål)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
-* *identifikator*: https://data.nav.no/begrep/BEGREP-975
+* *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *kontaktpunkt*: mailto:begrepskatalogen@nav.no[begrepskatalogen@nav.no]
 * *publisert av*: 889640782 (organisasjonsnummer til NAV)
 
 a| *Eksempelet i RDF Turtle*:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
    skos:prefLabel "mødrekvote"@nb ; # anbefalt term
    skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ;  # definisjon
-   dct:identifier "https://data.nav.no/begrep/BEGREP-975"^^xsd:anyURI ; # identifikator
+   dct:identifier "https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5"^^xsd:anyURI ; # identifikator
    dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
       vcard:hasEmail <mailto:begrepskatalogen@nav.no> ; ] ; # e-post
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/889640782> ; # publisert av
@@ -111,16 +111,16 @@ a|*Eksempelet i RDF Turtle*:
 
 [stripes=even]
 |===
-a|*Eksempel på en assosiativ relasjon*, hentet fra NAV 2022-08-23, for begrepet 1169 https://data.nav.no/begrep/BEGREP-1169[«lovlig opphold»]:
+a|*Eksempel på en assosiativ relasjon*, hentet fra NAV 2022-08-23, for begrepet 1169 https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb[«lovlig opphold»]:
 
 * *relasjonsrolle*: muliggjør
-* *til-begrep*: «medlem i folketrygden» (begrep 170)
+* *til-begrep*: «medlem i folketrygden» (https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2[begrep 170])
 
 a|*Eksempelet i RDF Turtle*:
 -----
-<BEGREP-1169> a skos:Concept ; # begrep
+<https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb> a skos:Concept ; # begrep
    skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ begrepsrelasjon
-      skosno:hasToConcept <BEGREP-170> ; # … som har til-begrep "170"
+      skosno:hasToConcept <https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> ; # … som har til-begrep "medlem i folketrygden"
       skosno:relationRole <muliggjør> ; # … og som har relasjonsrollen ‘muliggjør’
       ] ;
    .

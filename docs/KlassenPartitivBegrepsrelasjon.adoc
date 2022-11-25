@@ -32,9 +32,9 @@ _Either this property or the property <<Partitiv-begrepsrelasjon-har-helhetsbegr
 
 Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 -----
-<https://data.nav.no/begrep/BEGREP-974> a skos:Concept ; # begrep
-   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitive relasjon
-      skosno:hasPartitiveConcept <https://data.nav.no/begrep/BEGREP-975> ; ] ; # .. som har delbegrep
+<https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> a skos:Concept ; # begrep "foreldrepengeperiode"
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitiv relasjon
+      skosno:hasPartitiveConcept <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> ; ] ; # .. som har delbegrep "mødrekvote"
   .
 -----
 
@@ -57,9 +57,9 @@ _Either this property of the property <<Partitiv-begrepsrelasjon-har-delbegrep>>
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.nav.no/begrep/BEGREP-975> a skos:Concept ; # begrep
-   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har partitive relasjon
-      skosno:hasComprehensiveConcept <https://data.nav.no/begrep/BEGREP-974> ; ] ; # … som har helhetsbegrep
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "mødrekvote"
+   skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitiv relasjon
+      skosno:hasComprehensiveConcept <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; ] ; # … som har helhetsbegrep "foreldrepengeperiode"
   .
 -----
 

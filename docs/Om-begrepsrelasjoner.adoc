@@ -5,19 +5,7 @@ _Vedlegget er deskriptivt_.
 
 Et begrep kan ha relasjoner til andre begreper. En relasjon består av to begreper pluss en betydning som kan uttrykkes med tekst eller type. https://data.norge.no/specification/termlosen/#kap1.4[Omgrepssystem i Termlosen] nevner tre hovedgrupper av relasjoner: generiske, partitive og assosiative.
 
-En _generisk_ relasjon består et overbegrep og et underbegrep. Relasjonen har en iboende betydning som kan leses slik:
-
-[no-bullet]
-*   <overbegrep> _kan være_ <underbegrep>
-*   <underbegrep> _er_ _en slags_ <overbegrep>
-
-hvor spissparentes (< … >) angir at et reelt innhold skal erstatte parentestegnene og det som står inni parentesen. For eksempel, når det er snakk om dyreliv og gnagere, kan dette være meningsfulle erstatninger:
-
-[no-bullet]
-* smågnager _kan være_ husmus
-* husmus _er en slags_ smågnager
-
-Underbegrepet har de samme kjennetegnene som overbegrepet, og minst ett atskillende kjennetegn i tillegg. Et klassisk eksempel: begrepet «tre» kan ha et underbegrep «eviggrønt tre» og et annet underbegrep «sommergrønt tre». Her har vi altså to relasjoner. Valget av atskillende kjennetegn kalles _inndelingskriterium_. I dette eksemplet er inndelingskriteriet «bladfelling».
+En _generisk_ relasjon består et overbegrep og et underbegrep. Underbegrepet har de samme kjennetegnene som overbegrepet, og minst ett atskillende kjennetegn i tillegg. Et eksempel fra https://data.norge.no/specification/termlosen#kap1.4.1[Termlosen]: begrepet «tre» kan ha et underbegrep «eviggrønt tre» og et annet underbegrep «sommergrønt tre». Her har vi altså to relasjoner. Valget av atskillende kjennetegn kalles _inndelingskriterium_. I dette eksemplet er inndelingskriteriet «bladfelling».
 
 Generiske relasjoner danner ofte rene hierarkier, men i noen tilfeller kan det være aktuelt å gi et underbegrep flere overbegreper.
 

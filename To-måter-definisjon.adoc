@@ -8,7 +8,7 @@ Den enkleste og direkte måten å angi en definisjon på, er vist i <<Figur-den-
 [[Figur-den-enkle-måten-definisjon]]
 .Den enkle og direkte måten å angi en definisjon på
 [link=images/RDF-eksempel-definisjon-1.png]
-image::images/RDF-eksempel-definisjon-1.png[]
+image::images/RDF-eksempel-definisjon-1.png[alt="RDF-graf med to noder og en relasjon. Innholdet er forklart i teksten."]
 
 I RDF Turtle ser det slik ut:
 -----
@@ -20,7 +20,7 @@ Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle n
 [[Figur-definisjon-via-definisjonsobjekt]]
 .Definisjon via et definisjonsobjekt
 [link=images/RDF-eksempel-definisjon-2.png]
-image::images/RDF-eksempel-definisjon-2.png[]
+image::images/RDF-eksempel-definisjon-2.png[alt="RDF-graf med fem noder og fire relasjoner. Innholdet er forklart i teksten."]
 
 I RDF Turtle ser det slik ut:
 -----

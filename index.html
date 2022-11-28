@@ -724,10 +724,10 @@ Redaktørens utkast blir oppdatert etter hvert som høringsuttalelsene blir hån
 <div class="sect2">
 <h3 id="Hvordan-du-leser-denne-standarden"><a class="anchor" href="#Hvordan-du-leser-denne-standarden"></a>1.6. Hvordan du leser denne standarden</h3>
 <div class="paragraph">
-<p><a href="#Del1">Kapittel 2</a> er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.</p>
+<p><a href="#Del1">Kapittel 2, <em>Del 1 - Krav til beskrivelse av begreper og begrepssamlinger</em></a> er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.</p>
 </div>
 <div class="paragraph">
-<p><a href="#Del2">Kapittel 3</a> er ment for lesere som skal utvikle/tilpasse verktøystøtte for begrepsbeskrivelser. Den spesifiserer hvordan kravene beskrevet i del 1 skal implementeres iht. <a href="https://www.w3.org/RDF/"><em>Resource Description Framework (RDF)</em></a> og <a href="https://www.w3.org/TR/skos-reference/"><em>SKOS Simple Knowledge Organization System</em></a>.</p>
+<p><a href="#Del2">Kapittel 3, <em>Del 2 - Krav til RDF-representasjon av begreper og begrepssamlinger</em></a> er ment for lesere som skal utvikle/tilpasse verktøystøtte for begrepsbeskrivelser. Den spesifiserer hvordan kravene beskrevet i del 1 skal implementeres iht. <a href="https://www.w3.org/RDF/"><em>Resource Description Framework (RDF)</em></a> og <a href="https://www.w3.org/TR/skos-reference/"><em>SKOS Simple Knowledge Organization System</em></a>.</p>
 </div>
 <div class="paragraph">
 <p>Eksemplene i denne standarden er deskriptive. De kan inneholde fiktive data. Ikke alle eksemplene er komplette, dvs. at de kan mangle obligatoriske opplysninger.</p>
@@ -906,7 +906,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Et begrep kan ha relasjoner til andre begreper. Når et begreps relasjon til et annet begrep skal beskrives, skal det gjøres i henhold til en av radene i <a href="#Tabell-valgfrie-begrepsrelasjoner">Tabell 4</a> nedenfor.</p>
+<p>Et begrep kan ha relasjoner til andre begreper. Når et begreps relasjon til et annet begrep skal beskrives, skal det gjøres i henhold til en av radene i <a href="#Tabell-valgfrie-begrepsrelasjoner">Tabell 4, &#8220;Valgfrie begrepsrelasjoner som en begrepsbeskrivelse kan inneholde&#8221;</a> nedenfor.</p>
 </div>
 <table id="Tabell-valgfrie-begrepsrelasjoner" class="tableblock frame-all grid-all stripes-odd stretch">
 <caption class="title">Tabell 4. Valgfrie begrepsrelasjoner som en begrepsbeskrivelse kan inneholde</caption>
@@ -1270,7 +1270,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Kravnivåene-i-denne-standarden">Section 1.5</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Kravnivåene-i-denne-standarden"> 1.5, &#8220;Kravnivåene i denne standarden&#8221;</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -1284,7 +1284,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p>I RDF er alt uttrykt som «subjekt – predikat – objekt». «Subjektet» i denne sammenhengen er det begrepet som beskrives.</p>
 </div>
 <div class="paragraph">
-<p>Den enkleste og direkte måten å angi en definisjon på, er vist i <a href="#Figur-den-enkle-måten-definisjon">Figur 1</a>.</p>
+<p>Den enkleste og direkte måten å angi en definisjon på, er vist i <a href="#Figur-den-enkle-måten-definisjon">Figur 1, &#8220;Den enkle og direkte måten å angi en definisjon på&#8221;</a>.</p>
 </div>
 <div id="Figur-den-enkle-måten-definisjon" class="imageblock">
 <div class="content">
@@ -1301,7 +1301,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle noe mer enn selve definisjonsteksten. Når vi vil si noe mer, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <a href="#Figur-definisjon-via-definisjonsobjekt">Figur 2</a> nedenfor viser et eksempel på en definisjon som er angitt via et definisjonsobjekt som har med opplysninger om kilde i tillegg til definisjonsteksten.</p>
+<p>Denne måten å angi en definisjon på gir imidlertid ikke rom for å fortelle noe mer enn selve definisjonsteksten. Når vi vil si noe mer, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <a href="#Figur-definisjon-via-definisjonsobjekt">Figur 2, &#8220;Definisjon via et definisjonsobjekt&#8221;</a> nedenfor viser et eksempel på en definisjon som er angitt via et definisjonsobjekt som har med opplysninger om kilde i tillegg til definisjonsteksten.</p>
 </div>
 <div id="Figur-definisjon-via-definisjonsobjekt" class="imageblock">
 <div class="content">
@@ -1326,7 +1326,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="sect3">
 <h4 id="To-RDF-måter-begrepsrelasjon"><a class="anchor" href="#To-RDF-måter-begrepsrelasjon"></a>3.3.2. To måter i RDF å uttrykke en begrepsrelasjon på</h4>
 <div class="paragraph">
-<p>I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkleste måten å gjøre dette på, er en setning på formen «subjekt – predikat – objekt» der «predikat» er relasjonen. <a href="#Figur-tre-partitive-relasjoner">Figur 3</a> nedenfor viser tre partitive relasjoner som ‘foreldrepengeperiode’ har med tre andre begreper. Det kan være en fordel at de inverse relasjonene også uttrykkes eksplisitt, selv om en RDF-applikasjon skal kunne tolke den motsatte veien også.</p>
+<p>I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkleste måten å gjøre dette på, er en setning på formen «subjekt – predikat – objekt» der «predikat» er relasjonen. <a href="#Figur-tre-partitive-relasjoner">Figur 3, &#8220;Tre partitive relasjoner og den motsatte veien&#8221;</a> nedenfor viser tre partitive relasjoner som ‘foreldrepengeperiode’ har med tre andre begreper. Det kan være en fordel at de inverse relasjonene også uttrykkes eksplisitt, selv om en RDF-applikasjon skal kunne tolke den motsatte veien også.</p>
 </div>
 <div id="Figur-tre-partitive-relasjoner" class="imageblock">
 <div class="content">
@@ -1335,7 +1335,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <div class="title">Figur 3. Tre partitive relasjoner og den motsatte veien</div>
 </div>
 <div class="paragraph">
-<p>Denne måten å uttrykke relasjoner på gir imidlertid ikke rom for å fortelle noe mer om selve relasjonen enn det som måtte ligge i selve predikatet. Når vi vil beskrive noe om selve relasjonen, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <a href="#Figur-assosiativ-begrepsrelasjon">Figur 4</a> nedenfor viser en assosiativ relasjon av typen «forutsetter – muliggjør». Selve relasjonen er her uttrykt som et objekt, for at vi skal kunne plassere relasjonsrollen. Spesielt for assosiative relasjoner via relasjonsobjekter, er det en fordel å uttrykke relasjonen begge veier i RDF.</p>
+<p>Denne måten å uttrykke relasjoner på gir imidlertid ikke rom for å fortelle noe mer om selve relasjonen enn det som måtte ligge i selve predikatet. Når vi vil beskrive noe om selve relasjonen, må vi etablere den som et objekt, som vi utstyrer med den eller de egenskapene (attributtene) vi trenger å oppgi. Dette objektet blir da subjektet i neste setning. <a href="#Figur-assosiativ-begrepsrelasjon">Figur 4, &#8220;Assosiativ begrepsrelasjon uttrykt ved hjelp av relasjonsobjekt for at vi skal klare å uttrykke relasjonsrollen&#8221;</a> nedenfor viser en assosiativ relasjon av typen «forutsetter – muliggjør». Selve relasjonen er her uttrykt som et objekt, for at vi skal kunne plassere relasjonsrollen. Spesielt for assosiative relasjoner via relasjonsobjekter, er det en fordel å uttrykke relasjonen begge veier i RDF.</p>
 </div>
 <div id="Figur-assosiativ-begrepsrelasjon" class="imageblock">
 <div class="content">
@@ -1366,20 +1366,20 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Generisk begrepsrelasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-spesialiserer">Section 3.5.3.17</a> , eller<br>
-<a href="#Begrep-generaliserer">Section 3.5.3.9</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-spesialiserer"> 3.5.3.17, &#8220;Begrep – spesialiserer (xkos:specializes)&#8221;</a> , eller<br>
+<a href="#Begrep-generaliserer"> 3.5.3.9, &#8220;Begrep – generaliserer (xkos:generalizes)&#8221;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Partitiv begrepsrelasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-del-av">Section 3.5.3.3</a>, eller<br>
-<a href="#Begrep-inneholder">Section 3.5.3.14</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-del-av"> 3.5.3.3, &#8220;Begrep – er del av (xkos:isPartOf)&#8221;</a>, eller<br>
+<a href="#Begrep-inneholder"> 3.5.3.14, &#8220;Begrep – inneholder (xkos:hasPart)&#8221;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Assosiativ begrepsrelasjon</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-relatert-til">Section 3.5.3.6</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-fra-begrep-i">Section 3.5.3.5</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-relatert-til"> 3.5.3.6, &#8220;Begrep – er relatert til (skos:related)&#8221;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-fra-begrep-i"> 3.5.3.5, &#8220;Begrep – er fra-begrep i (skosno:isFromConceptIn)&#8221;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1603,7 +1603,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Definisjon">Section 3.6</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Definisjon"> 3.6, &#8220;Krav til RDF-representasjon av Definisjon&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1786,8 +1786,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <a href="#Begrep-publisert-av">Section 3.5.1.6</a>.</p>
-<p class="tableblock"><em>This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <a href="#Begrep-publisert-av">Section 3.5.1.6</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til virksomheten som er ansvarlig for beskrivelsen av begrepet, og som ikke er den samme som <a href="#Begrep-publisert-av"> 3.5.1.6, &#8220;Begrep – publisert av (dct:publisher)&#8221;</a>.</p>
+<p class="tableblock"><em>This property is used to refer to the organization which is responsible for the description of the concept and which is not the same as <a href="#Begrep-publisert-av"> 3.5.1.6, &#8220;Begrep – publisert av (dct:publisher)&#8221;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2262,13 +2262,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder">Section 3.5.3.14</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-inneholder">Section 3.5.3.14</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-inneholder"> 3.5.3.14, &#8220;Begrep – inneholder (xkos:hasPart)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-inneholder"> 3.5.3.14, &#8220;Begrep – inneholder (xkos:hasPart)&#8221;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock"><em>Use <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock"><em>Use <a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2318,8 +2318,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-erstatter">Section 3.5.3.7</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-erstatter">Section 3.5.3.7</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-erstatter"> 3.5.3.7, &#8220;Begrep – erstatter (dct:replaces)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-erstatter"> 3.5.3.7, &#8220;Begrep – erstatter (dct:replaces)&#8221;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2370,7 +2370,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Assosiativ-begrepsrelasjon">Section 3.7</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Assosiativ-begrepsrelasjon"> 3.7, &#8220;Krav til RDF-representasjon av Assosiativ begrepsrelasjon&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2418,8 +2418,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-er-fra-begrep-i">Section 3.5.3.5</a> når det er behov for å beskrive relasjonsrollen til dette begrepet.</p>
-<p class="tableblock"><em>Use <a href="#Begrep-er-fra-begrep-i">Section 3.5.3.5</a> when there is need to describe the relation role of this concept.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-er-fra-begrep-i"> 3.5.3.5, &#8220;Begrep – er fra-begrep i (skosno:isFromConceptIn)&#8221;</a> når det er behov for å beskrive relasjonsrollen til dette begrepet.</p>
+<p class="tableblock"><em>Use <a href="#Begrep-er-fra-begrep-i"> 3.5.3.5, &#8220;Begrep – er fra-begrep i (skosno:isFromConceptIn)&#8221;</a> when there is need to describe the relation role of this concept.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2469,8 +2469,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-erstattet-av">Section 3.5.3.4</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-er-erstattet-av">Section 3.5.3.4</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-erstattet-av"> 3.5.3.4, &#8220;Begrep – er erstattet av (dct:isReplacedBy)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-er-erstattet-av"> 3.5.3.4, &#8220;Begrep – er erstattet av (dct:isReplacedBy)&#8221;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2571,13 +2571,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer">Section 3.5.3.17</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-spesialiserer">Section 3.5.3.17</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen/relasjonen er den inverse av <a href="#Begrep-spesialiserer"> 3.5.3.17, &#8220;Begrep – spesialiserer (xkos:specializes)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-spesialiserer"> 3.5.3.17, &#8220;Begrep – spesialiserer (xkos:specializes)&#8221;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock"><em>Use <a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock"><em>Use <a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2674,7 +2674,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Generisk-begrepsrelasjon">Section 3.8</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Generisk-begrepsrelasjon"> 3.8, &#8220;Krav til RDF-representasjon av Generisk begrepsrelasjon&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2759,7 +2759,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under <a href="#Partitiv-begrepsrelasjon">Section 3.9</a>.</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Partitiv-begrepsrelasjon"> 3.9, &#8220;Krav til RDF-representasjon av Partitiv begrepsrelasjon&#8221;</a>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2802,13 +2802,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av">Section 3.5.3.3</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-er-del-av">Section 3.5.3.3</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrep-er-del-av"> 3.5.3.3, &#8220;Begrep – er del av (xkos:isPartOf)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-er-del-av"> 3.5.3.3, &#8220;Begrep – er del av (xkos:isPartOf)&#8221;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock"><em>Use <a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock"><em>Use <a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2861,8 +2861,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrepssamling-inneholder-begrep">Section 3.10.1.2</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrepssamling-inneholder-begrep">Section 3.10.1.2</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen/relasjonen er den inverse av <a href="#Begrepssamling-inneholder-begrep"> 3.10.1.2, &#8220;Begrepssamling – inneholder begrep (skos:member)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrepssamling-inneholder-begrep"> 3.10.1.2, &#8220;Begrepssamling – inneholder begrep (skos:member)&#8221;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2963,13 +2963,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer">Section 3.5.3.9</a>.</p>
-<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-generaliserer">Section 3.5.3.9</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen/relasjonen er den inverse av <a href="#Begrep-generaliserer"> 3.5.3.9, &#8220;Begrep – generaliserer (xkos:generalizes)&#8221;</a>.</p>
+<p class="tableblock"><em>This property/relation is the inverse of <a href="#Begrep-generaliserer"> 3.5.3.9, &#8220;Begrep – generaliserer (xkos:generalizes)&#8221;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
-<p class="tableblock"><em>Use <a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk <a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a> når det er behov for å beskrive <a href="https://termbasen.standard.no/term/165577770503947/nob">inndelingskriterium</a>.</p>
+<p class="tableblock"><em>Use <a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a> when there is need to describe the <a href="https://termbasen.standard.no/term/165577770503947/eng">criterion of subdivision</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -3627,8 +3627,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Generisk-begrepsrelasjon-har-underbegrep">Section 3.8.1.2</a> skal brukes, men ikke begge samtidig.</p>
-<p class="tableblock"><em>Either this property or the property <a href="#Generisk-begrepsrelasjon-har-underbegrep">Section 3.8.1.2</a> shall be used, not both at the same time.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Generisk-begrepsrelasjon-har-underbegrep"> 3.8.1.2, &#8220;Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept)&#8221;</a> skal brukes, men ikke begge samtidig.</p>
+<p class="tableblock"><em>Either this property or the property <a href="#Generisk-begrepsrelasjon-har-underbegrep"> 3.8.1.2, &#8220;Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept)&#8221;</a> shall be used, not both at the same time.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -3683,8 +3683,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Generisk-begrepsrelasjon-har-overbegrep">Section 3.8.1.1</a> skal brukes, ikke begge samtidig.</p>
-<p class="tableblock"><em>Either this property or the property <a href="#Generisk-begrepsrelasjon-har-overbegrep">Section 3.8.1.1</a> shall be used, not both at the same time.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Generisk-begrepsrelasjon-har-overbegrep"> 3.8.1.1, &#8220;Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept)&#8221;</a> skal brukes, ikke begge samtidig.</p>
+<p class="tableblock"><em>Either this property or the property <a href="#Generisk-begrepsrelasjon-har-overbegrep"> 3.8.1.1, &#8220;Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept)&#8221;</a> shall be used, not both at the same time.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
@@ -3821,8 +3821,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep">Section 3.9.1.2</a> skal brukes, ikke begge samtidig.</p>
-<p class="tableblock"><em>Either this property or the property <a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep">Section 3.9.1.2</a> shall be used, not both at the same time.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep"> 3.9.1.2, &#8220;Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept)&#8221;</a> skal brukes, ikke begge samtidig.</p>
+<p class="tableblock"><em>Either this property or the property <a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep"> 3.9.1.2, &#8220;Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept)&#8221;</a> shall be used, not both at the same time.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -3873,8 +3873,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Partitiv-begrepsrelasjon-har-delbegrep">Section 3.9.1.1</a> skal brukes, ikke begge samtidig.</p>
-<p class="tableblock"><em>Either this property of the property <a href="#Partitiv-begrepsrelasjon-har-delbegrep">Section 3.9.1.1</a> shall be used, not both at the same time.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enten denne eller egenskapen <a href="#Partitiv-begrepsrelasjon-har-delbegrep"> 3.9.1.1, &#8220;Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept)&#8221;</a> skal brukes, ikke begge samtidig.</p>
+<p class="tableblock"><em>Either this property of the property <a href="#Partitiv-begrepsrelasjon-har-delbegrep"> 3.9.1.1, &#8220;Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept)&#8221;</a> shall be used, not both at the same time.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -5078,7 +5078,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 <p><strong>Kravnivå</strong>: Denne versjonen spesifiserer eksplisitt kravnivå («obligatorisk», «anbefalt» og «valgfri») samt multiplisitet, mens forrige versjon henviste til kravene i tidligere <em>Forvaltningsstandard for begrepsbeskrivelser</em>.</p>
 </li>
 <li>
-<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se <a href="#Tabell-endringene-i-URIer">Tabell 7</a> nedenfor for oversikt over endinger av URIer.</p>
+<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se <a href="#Tabell-endringene-i-URIer">Tabell 7, &#8220;Oversikt over endringer av URIer til klasse- og egenskapsnavnene&#8221;</a> nedenfor for oversikt over endinger av URIer.</p>
 </li>
 <li>
 <p><strong>Interoperabilitet med resten av EU</strong>: Så langt det er mulig, gjenbruker denne versjonen EU-spesifikasjonen <a href="https://github.com/meaningfy-ws/SKOS-AP-EU">SKOS-AP-EU</a> som EUs Publications Office også bruker.</p>
@@ -5109,11 +5109,11 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – anbefaltTerm, skosxl:prefLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-anbefalt-term">Section 3.5.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-anbefalt-term"> 3.5.1.1, &#8220;Begrep – anbefalt term (skos:prefLabel)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – ansvarlig virksomhet, dct:publisher</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-ansvarlig-virksomhet">Section 3.5.2.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-ansvarlig-virksomhet"> 3.5.2.1, &#8220;Begrep – ansvarlig virksomhet (dct:creator)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – bruksområde, skosno:bruksområde</p></td>
@@ -5121,91 +5121,91 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – datastrukturterm, skosno:datastrukturTerm</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begep-datastrukturterm">Section 3.5.3.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begep-datastrukturterm"> 3.5.3.1, &#8220;Begrep – datastrukturterm (skosno:dataStructureLabel)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-dato-opprettet">Section 3.5.2.4</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-dato-opprettet"> 3.5.2.4, &#8220;Begrep – dato opprettet (dct:created)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-definisjon-direkte-angivelse">Section 3.5.1.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-definisjon-direkte-angivelse"> 3.5.1.2, &#8220;Begrep – definisjon (direkte angivelse) (skos:definition)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – definisjon, skosno:definisjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-definisjon-via-definisjonsobjekt">Section 3.5.1.3</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-definisjon-via-definisjonsobjekt"> 3.5.1.3, &#8220;Begrep – definisjon (via definisjonsobjekt) (euvoc:xlDefinition)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-eksempel">Section 3.5.3.2</a>, flyttet fra tidligere Definisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-eksempel"> 3.5.3.2, &#8220;Begrep – eksempel (skos:example)&#8221;</a>, flyttet fra tidligere Definisjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – frarådetTerm, skosxl:hiddenLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-frarådd-term">Section 3.5.3.8</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-frarådd-term"> 3.5.3.8, &#8220;Begrep – frarådd term (skos:hiddenLabel)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig fra og med, schema:startDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-fra-og-med">Section 3.5.2.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-fra-og-med"> 3.5.2.2, &#8220;Begrep – dato gyldig fra og med (euvoc:startDate)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – gyldig til og med, schema:endDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-til-og-med">Section 3.5.2.3</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-dato-gyldig-til-og-med"> 3.5.2.3, &#8220;Begrep – dato gyldig til og med (euvoc:endDate)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-merknad">Section 3.5.2.7</a>, flyttet fra tidligere Definisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-merknad"> 3.5.2.7, &#8220;Begrep – merknad (skos:scopeNote)&#8221;</a>, flyttet fra tidligere Definisjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – tillattTerm, skosxl:altLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-tillatt-term">Section 3.5.2.8</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-tillatt-term"> 3.5.2.8, &#8220;Begrep – tillatt term (skos:altLabel)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-verdiområde">Section 3.5.3.19</a>, flyttet fra tidligere Definisjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-verdiområde"> 3.5.3.19, &#8220;Begrep – verdiområde (skosno:valueRange)&#8221;</a>, flyttet fra tidligere Definisjon</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-er-relatert-til">Section 3.5.3.6</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-er-relatert-til"> 3.5.3.6, &#8220;Begrep – er relatert til (skos:related)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-generaliserer">Section 3.5.3.9</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-generaliserer"> 3.5.3.9, &#8220;Begrep – generaliserer (xkos:generalizes)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-spesialiserer">Section 3.5.3.17</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-spesialiserer"> 3.5.3.17, &#8220;Begrep – spesialiserer (xkos:specializes)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-er-del-av">Section 3.5.3.3</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-er-del-av"> 3.5.3.3, &#8220;Begrep – er del av (xkos:isPartOf)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-inneholder">Section 3.5.3.14</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-inneholder"> 3.5.3.14, &#8220;Begrep – inneholder (xkos:hasPart)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-har-eksakt-samsvar-med">Section 3.5.3.10</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-har-eksakt-samsvar-med"> 3.5.3.10, &#8220;Begrep – har eksakt samsvar med (skos:exactMatch)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-har-nært-samsvar-med">Section 3.5.3.12</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-har-nært-samsvar-med"> 3.5.3.12, &#8220;Begrep – har nært samsvar med (skos:closeMatch)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-inngår-i">Section 3.5.3.15</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Begrep-inngår-i"> 3.5.3.15, &#8220;Begrep – inngår i begrepssamling (uneskos:memberOf)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – assosiativ relasjon, skosno:assiciativRelasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-fra-begrep-i">Section 3.5.3.5</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-er-fra-begrep-i"> 3.5.3.5, &#8220;Begrep – er fra-begrep i (skosno:isFromConceptIn)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – generisk relasjon, skosno:generiskRelasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-generisk-begrepsrelasjon">Section 3.5.3.11</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-generisk-begrepsrelasjon"> 3.5.3.11, &#8220;Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrep – partitiv relasjon, skosno:partitivRelasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-partitiv-begrepsrelasjon">Section 3.5.3.13</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrep-har-partitiv-begrepsrelasjon"> 3.5.3.13, &#8220;Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klassen Term, skosxl:Label</strong></p></td>
@@ -5217,23 +5217,23 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon – tekst, rdfs:label</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Definisjon-tekst">Section 3.6.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Definisjon-tekst"> 3.6.1.1, &#8220;Definisjon – tekst (rdf:value)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon – kildebeskrivelse.forholdTilKilde, skosno:forholdTilKilde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Definisjon-forhold-til-kilde">Section 3.6.2.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Definisjon-forhold-til-kilde"> 3.6.2.1, &#8220;Definisjon – forhold til kilde (skosno:relationshipWithSource)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon – merknad, skos:scopeNote</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-merknad">Section 3.5.2.7</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-merknad"> 3.5.2.7, &#8220;Begrep – merknad (skos:scopeNote)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon – eksempel, skos:example</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-eksempel">Section 3.5.3.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-eksempel"> 3.5.3.2, &#8220;Begrep – eksempel (skos:example)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon – omfang, skosno:omfang</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-verdiområde">Section 3.5.3.19</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flyttet til klassen Begrep, <a href="#Begrep-verdiområde"> 3.5.3.19, &#8220;Begrep – verdiområde (skosno:valueRange)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition – sistOppdatert, dct:modified</p></td>
@@ -5249,7 +5249,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Assosiativ relasjon – assosiert begrep, skos:related</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Assosiativ-begrepsrelasjon-har-til-begrep">Section 3.7.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Assosiativ-begrepsrelasjon-har-til-begrep"> 3.7.1.1, &#8220;Assosiativ begrepsrelasjon – har til-begrep (skosno:hasToConcept)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Assosiativ relasjon – beskrivelse, dct:description</p></td>
@@ -5261,7 +5261,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Assosiativ-begrepsrelasjon-relasjonsrolle">Section 3.7.1.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny <a href="#Assosiativ-begrepsrelasjon-relasjonsrolle"> 3.7.1.2, &#8220;Assosiativ begrepsrelasjon – relasjonsrolle (skosno:relationRole)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klassen Generisk relasjon, skosno:GeneriskRelasjon</strong></p></td>
@@ -5269,11 +5269,11 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Generisk relasjon – overordnet begrep, xkos:specializes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Generisk-begrepsrelasjon-har-overbegrep">Section 3.8.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Generisk-begrepsrelasjon-har-overbegrep"> 3.8.1.1, &#8220;Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Generisk relasjon – underordnet begrep, xkos:generalizes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Generisk-begrepsrelasjon-har-underbegrep">Section 3.8.1.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Generisk-begrepsrelasjon-har-underbegrep"> 3.8.1.2, &#8220;Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Generisk relasjon – sistOppdatert, dct:modified</p></td>
@@ -5285,11 +5285,11 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Partitiv relasjon – overordnet begrep, dct:isPartOf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep">Section 3.9.1.2</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Partitiv-begrepsrelasjon-har-helhetsbegrep"> 3.9.1.2, &#8220;Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Partitiv relasjon – underordnet begrep, dct:hasPart</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Partitiv-begrepsrelasjon-har-delbegrep">Section 3.9.1.1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Partitiv-begrepsrelasjon-har-delbegrep"> 3.9.1.1, &#8220;Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept)&#8221;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Partitiv relasjon – sistOppdatert, dct:modified</p></td>
@@ -5301,7 +5301,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Begrepssamling – navn, rdfs:label</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrepssamling-navn">Section 3.10.1.4</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Begrepssamling-navn"> 3.10.1.4, &#8220;Begrepssamling – navn (dct:title)&#8221;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5321,7 +5321,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-11-28 06:51:26 UTC
+Sist oppdatert 2022-11-28 13:30:08 UTC
 </div>
 </div>
 </body>

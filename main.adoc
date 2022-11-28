@@ -10,7 +10,7 @@ ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
 :sectanchors:
 :table-stripes: odd
-:xrefstyle: short
+:xrefstyle: full
 :title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
 
 image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]

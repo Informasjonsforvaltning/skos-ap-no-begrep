@@ -12,14 +12,12 @@ Navnerom for denne standarden er `\https://data.norge.no/vocabulary/skosno#`
 |dcat| `\http://www.w3.org/ns/dcat#` | https://www.w3.org/TR/vocab-dcat-2/[Data Catalog Vocabulary]
 |dct| `\http://purl.org/dc/terms/` | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
 |euvoc| `\http://publications.europa.eu/ontology/euvoc#` | https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data[OP_EuVoc_Ontology]
-|locn| `\http://www.w3.org/ns/locn#` | https://www.w3.org/ns/locn[ISA Programme Location Core Vocabulary]
 |org| `\http://www.w3.org/ns/org#` | https://www.w3.org/TR/vocab-org/[The Organization Ontology]
 |owl| `\http://www.w3.org/2002/07/owl#` |https://www.w3.org/OWL/[Web Ontology Language (OWL)]
 |rdf| `\http://www.w3.org/1999/02/22-rdf-syntax-ns#` | https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
 |rdfs| `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
 |skos| `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
 |skosno| `\https://data.norge.no/vocabulary/skosno#` | Denne standard
-|skosxl| `\http://www.w3.org/2008/05/skos-xl#` | https://www.w3.org/TR/skos-reference/#xl[SKOS eXtension for Labels (SKOS-XL)]
 |uneskos| `\http://purl.org/umu/uneskos#` | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
 |vcard| `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations]
 |xkos| `\http://rdf-vocabulary.ddialliance.org/xkos#` | https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
@@ -32,14 +30,12 @@ Eksempel på prefiksene ovenfor uttrykt i RDF Turtle (_eksemplet er deskriptivt_
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix uneskos: <http://purl.org/umu/uneskos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .

@@ -47,7 +47,7 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 *** «merknad» er flyttet til «Begrep», fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.
 *** «verdiområde» (tidligere «omfang») er flyttet til «Begrep», fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.
 ** Følgende egenskaper har fått endret verdiområde/_range_:
-*** Vedrdiområde/range for «kilde» er endret fra kilde(r) til kilde(r) ev. med den ønskede rekkefølge eksplisitt oppgitt. Dette for å kunne oppgi rekkefølge mellom kildene.  
+*** Vedrdiområde/_range_ for «kilde» er endret fra «kilde(r)» til «kilde(r) ev. med den ønskede rekkefølge eksplisitt oppgitt». Dette for å kunne oppgi rekkefølge mellom kildene.  
 ** Følgende egenskaper utgår:
 *** «(dato) sist oppdatert» utgår, fordi det ikke lenger er behov for datostempling på dette nivået.
 

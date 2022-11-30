@@ -1,6 +1,6 @@
 include::locale/attributes.adoc[]
 = Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)
-Digitaliseringsdirektoratet (Digdir) / The Norwegian Digilitasation Agency
+Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 :description: Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)
 :doctype: book
 :docinfo: shared

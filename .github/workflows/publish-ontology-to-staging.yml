@@ -3,7 +3,7 @@ name: Publish ontology to staging.fellesdatakatalog.digdir.no/vocabulary
 on:
   push:
     branches:
-      - develop
+      - develop-deprecated
     paths:
       - ontology/**
   workflow_dispatch:

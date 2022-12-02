@@ -29,7 +29,9 @@ jobs:
         id: adocbuild_pdf
         uses: avattathil/asciidoctor-action@master
         with:
-          program: "asciidoctor-pdf -D docs -o files/skos-ap-no-begrep-v1.pdf -a lang=nb docs/main.adoc"
+
+          program: "asciidoctor-pdf -D docs -o files/skos-ap-no-begrep-v1xx.pdf -a lang=nb docs/main.adoc"
+
         continue-on-error: true
 
       - name: Upload rdf to static-rdf-server
@@ -41,7 +43,3 @@ jobs:
           version: "v1.1"
           host: "https://fellesdatakatalog.digdir.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-          files: |
-            docs/index.html text/html nb
-            docs/files/skos-ap-no-begrep.pdf application/pdf nb files/skos-ap-no-begrep.pdf
-            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png

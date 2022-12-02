@@ -43,3 +43,8 @@ jobs:
           version: "v1.1"
           host: "https://fellesdatakatalog.digdir.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+        files: |
+            docs/index.html text/html nb
+            docs/files/skos-ap-no-begrep.pdf application/pdf nb files/skos-ap-no-begrep.pdf
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
+

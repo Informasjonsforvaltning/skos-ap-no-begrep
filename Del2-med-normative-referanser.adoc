@@ -5,4 +5,4 @@
 
 * https://www.w3.org/TR/2009/REC-skos-reference-20090818/[_SKOS Simple Knowledge Organization System Reference_], W3C Recommendation 18 August 2009
 * https://www.w3.org/RDF/[_Resource Desciption Framework (RDF)_]
-* <<Del1, Del 1>> av denne standarden
+* <<Del1>> av denne standarden

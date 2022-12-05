@@ -11,7 +11,7 @@ Denne standarden skal erstatte følgende to standarder:
 Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] (v.2.0.2) til denne versjonen:
 
 * *Kravnivå*: Denne versjonen opererer med kravnivåene «obligatorisk» (opplysninger som skal beskrives med), «anbefalt» (opplysninger som bør beskrives med hvis de finnes) og «valgfri» (opplysninger som kan beskrives med), mens forrige har kun «obligatorisk» (representert med multiplisitet 1..1 eller 1..n) og ellers (ikke-obligatorisk).
-* *UML-diagram*: UML-diagrammene i denne versjonen brukes bare til del 2 og ikke del 1. De er dessuten deskriptive og ikke normative i denne versjonen (en praksis som også EU-standardene i dette området nå bruker), mens de var normative i forrige versjon.
+* *UML-diagram*: UML-diagrammene i denne versjonen brukes bare til <<Del2>> og ikke <<Del1>>. De er dessuten deskriptive og ikke normative i denne versjonen (en praksis som også EU-standardene i dette området nå bruker), mens de var normative i forrige versjon.
 
 * *Begrep*:
 ** Følgende egenskaper har fått endret kravnivå:
@@ -75,7 +75,7 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 ** «Term» utgår. Denne var en abstrakt klasse som ikke var ment å brukes i en konkret implementering. Det er dessuten ikke lenger behov for egenskapene i klassen («(dato) sist oppdatert» og «målgruppe»).
 ** «AnbefaltTerm», «TillattTerm», «FrarådetTerm» og «Datastrukturterm» utgår. Det er ikke lenger behov for egenskapene i disse klassene («(dato) sist oppdatert» og «målgruppe»).
 
-Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_] (v.1.1.1) til del 2 av denne versjonen:
+Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS_] (v.1.1.1) til <<Del2>> i denne versjonen:
 
 * *Endringene i krav til innhold* nevnt ovenfor, fra https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[_Forvaltningsstandard for begrepsbeskrivelser_] (v.2.0.2) til denne versjonen, gjelder også her.
 * *Måten å spesifisere krav til RDF-representasjon på*, er i denne versjonen samkjørt med de andre RDF-baserte spesifikasjoner for informasjonsforvaltning, og dermed betydelig endret fra forrige versjon.
@@ -87,7 +87,7 @@ Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/[_SKOS-AP-N
 [[Tabell-endringene-i-URIer]]
 .Oversikt over endringer av URIer til klasse- og egenskapsnavnene
 |===
-|*Klasse-/egenskapsURI i SKOS-AP-NO v.1.1.1*|*Klasse-/egenskapsURI i del 2 av denne versjon*
+|*Klasse-/egenskapsURI i SKOS-AP-NO v.1.1.1*|*Klasse-/egenskapsURI i Kapittel 3 av denne versjon*
 |*Klassen Begrep, skos:Concept*|*Klassen Begrep, skos:Concept*
 |Begrep – alternativ formulering, skosno:alternativFormulering |Utgår
 |Begrep – anbefaltTerm, skosxl:prefLabel | <<Begrep-anbefalt-term>>

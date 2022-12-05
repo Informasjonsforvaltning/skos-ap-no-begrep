@@ -19,9 +19,9 @@ kilde(r), ev. med den ønskede rekkefølgen eksplisitt oppgitt; +
 målgruppe
 |identifikator |identifikator skal være unik innen en gitt kontekst |
 |kontaktpunkt | det skal være maksimum ett kontaktpunkt per språk, relevant hvis det er ulike kontaktpunkter for norske og utenlandske kontakter; +
-bør unngå enkeltperson som kontaktpunkt
+kontaktpunkt bør ikke vise til en enkeltperson
  |
-|publisert av | skal oppgis som virksomhet og ikke enkeltperson |
+|publisert av | skal vise til en virksomhet og ikke en enkeltperson |
 |===
 
 [[Tabell-anbefalte-opplysninger]]
@@ -40,7 +40,7 @@ fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, 
 |gyldighetsperiode |
 oppgis som dato fra og med, og/eller dato til og med |
 |merknad | 
-for utfyllende forklaring; +
+utfyllende forklaring; +
 det skal oppgis hvilket skriftspråk merknaden er skrevet i
  |
 |https://termbasen.standard.no/term/165575552506675/nob[tillatt term] | 
@@ -53,11 +53,11 @@ det skal oppgis hvilket skriftspråk termen er skrevet i |
 |===
 |*Valgfri* |*Regler og anbefalinger for registrering* |*I tillegg, hvis de finnes*
 |datastrukturterm ||
-|eksempel | det skal oppgis hvilket skriftspråk eksempel er skrevet i |
+|eksempel | det skal oppgis hvilket skriftspråk eksemplet/eksemplene er skrevet i |
 |https://termbasen.standard.no/term/165575654205830/nob[frarådd term] | det skal oppgis hvilket skriftspråk termen er skrevet i |
-|status| det bør fortrinnsvis velges fra en kontrollert liste; +
+|status| bør fortrinnsvis velges fra en kontrollert liste; +
 når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i |
-|verdiområde | kan oppgis som tekst eller referanse til der verdiområdet er spesifisert; +
+|verdiområde | kan oppgis som tekst eller som referanse til der verdiområdet er spesifisert; +
 når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet i |
 |versjonsnummer ||
 |versjonsnote | det skal oppgis hvilket skriftspråk versjonsnoten er skrevet i |

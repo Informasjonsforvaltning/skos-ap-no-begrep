@@ -12,7 +12,7 @@ En begrepssamling skal inneholde minst ett begrep, og skal i tillegg alltid besk
 
 En begrepssamling bør beskrives med følgende anbefalte opplysninger hvis de finnes:
 
-* *beskrivelse* (og maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet i
+* *beskrivelse* (maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet i
 
 |===
 a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:

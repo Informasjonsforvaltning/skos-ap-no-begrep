@@ -1,4 +1,4 @@
-== Del 2 - Krav til RDF-representasjon av begreper og begrepssamlinger [[Del2]]
+== Krav til RDF-representasjon av begreper og begrepssamlinger [[Del2]]
 
 
 === Normative referanser [[Del2-normative-referanser]]

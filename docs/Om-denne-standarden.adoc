@@ -16,8 +16,8 @@ Standarden skal sikre at begreper som forvaltes av offentlig forvaltning, beskri
 
 Standarden spesifiserer
 
-* i <<Del1, del 1>>, hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives
-* i <<Del2, del 2>>, hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_]
+* i <<Del1>>, hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives
+* i <<Del2>>, hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_]
 
 Se ellers bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere, bl.a. https://fellesdatakatalog.digdir.no/specification/tbx-ap-no[TBX-AP-NO] som spesifiserer hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til TBX-rammeverket spesifisert i https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1035256[NS-ISO 30042:2019].
 
@@ -39,7 +39,7 @@ Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir s
 === Kravnivåene i denne standarden [[Kravnivåene-i-denne-standarden]]
 
 
-Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende https://data.norge.no/specification/dcat-ap-no/#Om-kravene[betydning i DCAT-AP-NO] og gjentas derfor ikke her.
+Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO], og forklaringene gjentas ikke her.
 
 === Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
 

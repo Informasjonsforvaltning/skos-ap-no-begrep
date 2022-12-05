@@ -1,4 +1,4 @@
-== Del 1 - Krav til beskrivelse av begreper og begrepssamlinger [[Del1]]
+== Krav til beskrivelse av begreper og begrepssamlinger [[Del1]]
 
 === Normative referanser [[Del1-normative-referanser]]
 

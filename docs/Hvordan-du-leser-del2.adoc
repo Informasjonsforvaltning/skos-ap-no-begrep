@@ -11,7 +11,7 @@ Alle krav i del 1 i denne standarden uttrykkes her i form av RDF. Hvert krav er 
 
 Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.
 
-Eksempel: `skos:Concept` er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i `skos` (se under <<Navnerom-brukt-i-standarden>> for hva `skos` står for).
+Eksempel: `skos:Concept` er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i `skos` (<<Navnerom-brukt-i-standarden>> viser hva `skos` står for).
 | Subklasse av / _Subclass of_ | Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klassen eventuelt er subklasse av.
 | Subegenskap av / _Subproperty of_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskapen eventuelt er subegenskap av.
 | Verdiområde / _Range_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.

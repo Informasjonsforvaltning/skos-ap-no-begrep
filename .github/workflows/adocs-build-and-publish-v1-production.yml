@@ -45,6 +45,6 @@ jobs:
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             docs/index.html text/html nb
-            docs/files/skos-ap-no-begrep-v1xx.pdf application/pdf nb v1.1/files/skos-ap-no-begrep-v1xx.pdf
-            docs/images/digitaliseringsdirektoratet.png image/png nb v1.1/images/digitaliseringsdirektoratet.png
+            docs/files/skos-ap-no-begrep-v1xx.pdf application/pdf nb files/skos-ap-no-begrep-v1xx.pdf
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
 

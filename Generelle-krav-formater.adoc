@@ -1,7 +1,7 @@
 === Generelle krav til bruk av standardiserte formater [[Generelle-krav-standard-frmater]]
 
 
-Det anbefales å bruke standardiserte formater til å representere enkeltypene, i intern lagring og maskinell tilgjengeliggjøring eksternt:
+Det anbefales å bruke standardiserte formater til å representere følgende datatyper, i intern lagring og maskinell tilgjengeliggjøring eksternt:
 
 * *Dato*: NS-ISO 8601 brukes for intern lagring og maskinell tilgjengeliggjøring eksternt, som `ÅÅÅÅ-MM-DD`.
 

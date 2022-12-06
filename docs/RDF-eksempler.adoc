@@ -85,7 +85,7 @@ a|*Eksempelet i RDF Turtle*:
 <tre> a skos:Concept ; # begrep
    skosno:hasGenericConceptRelation [ a skosno:GenericConceptRelation ; # har en generisk begrepsrelasjon
       skosno:hasSpecificConcept <eviggrnøt-tre> ; # … som har et underbegrep / spesifikt begrep
-      dct:description "bladfelling"@nn ; # … og med inndelingskriterium oppgitt i nynorsk
+      dct:description "bladfelling"@nn ; # … og med inndelingskriterium oppgitt på nynorsk
       ] ;
    .
 -----
@@ -103,7 +103,7 @@ a|*Eksempelet i RDF Turtle*:
 <rot> a skos:Concept ; # begrep
    skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har en partitiv begrepsrelasjon
       skosno:hasComprehensiveConcept <tre> ; # … som har et helhetsbegrep
-      dct:description "anatomi"@nn ; # … og med inndelingskriterium oppgitt i nynorsk
+      dct:description "anatomi"@nn ; # … og med inndelingskriterium oppgitt på nynorsk
       ] ;
    .
 -----
@@ -145,9 +145,9 @@ a|*Eksempelet i RDF Turtle*:
    dct:identifier "https://data.norge.no/concepts"^^xsd:anyURI ; # identifikator
    dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt
       vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ; ] ; # e-post
-   dct:title "Begrepsoversikt"@nb ; # navn i bokmål
+   dct:title "Begrepsoversikt"@nb ; # navn på bokmål
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # publisert av
-   dct:description "Oversikt over begreper som er forvaltet av offentlig forvaltning"@nb ; # beskrivelse i bokmål
+   dct:description "Oversikt over begreper som er forvaltet av offentlig forvaltning"@nb ; # beskrivelse på bokmål
    .
 -----
 |===

@@ -30,7 +30,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
 <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "«mødrekvote»"
    euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
-      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; ] ; # tekst i bokmål
+      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; ] ; # tekst på bokmål
      .
 -----
 
@@ -58,7 +58,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
 <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "«mødrekvote»"
   euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
-      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst i bokmål
+      rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst på bokmål
       skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ; ] ; # forhold til kilde ‘basert på kilde’
   .
 -----

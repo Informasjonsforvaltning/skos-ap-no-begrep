@@ -68,7 +68,7 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 | _English name_  | _title_
 |URI |dct:title
 |Verdiområde /  _Range_  |rdf:langString
-|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi navnet på begrepssamlingen. Egenskapen bør gjentas når navnet finnes i flere skriftspråk.
+|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi navnet på begrepssamlingen. Egenskapen bør gjentas når navnet finnes på flere skriftspråk.
 
 _This property is used to specify the title of the concept collection. This property should be repeated for each language when the title is in several languages._
 |Multiplisitet /  _Multiplicity_  |1..n
@@ -105,7 +105,7 @@ Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.
 | _English name_  | _description_
 |URI |dct:description
 |Verdiområde /  _Range_  |rdf:langString
-|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi beskrivelsen av begrepssamling. Egenskapen bør gjentas når beskrivelsen finnes i flere skriftspråk.
+|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi beskrivelsen av begrepssamling. Egenskapen bør gjentas når beskrivelsen finnes på flere skriftspråk.
 
 _This property is used to provide a description of the concept collection. This property should be repeated for each language when the description is in several languages._
 |Multiplisitet /  _Multiplicity_  |0..n

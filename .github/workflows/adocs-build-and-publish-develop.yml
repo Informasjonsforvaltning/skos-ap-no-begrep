@@ -6,6 +6,7 @@ on:
       - develop
     paths:
       - docs/**
+  workflow_dispatch:
 
 jobs:
   adoc_build:

@@ -32,7 +32,7 @@ _This property is used to specify a https://termbasen.standard.no/term/165575552
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
 
-_The preferred term shall be in both Norwegian Bokmål and Norwegian Nynorsk. There shall be maximum one per language._
+_The preferred term shall be in both Norwegian bokmål and Norwegian nynorsk. There shall be maximum one per language._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
 _There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._

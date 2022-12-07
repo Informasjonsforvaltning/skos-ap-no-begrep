@@ -52,7 +52,7 @@ _This property is used to refer to concepts which are members of the concept col
 | _English name_  | _contact point_
 |URI |dcat:contactPoint
 |Verdiområde /  _Range_  |vcard:Organization or vcard:Group
-|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål vedrørende begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
+|Anvendelse /  _Usage note_  | Egenskapen brukes til å oppgi kontaktpunkt som kan nås ved spørsmål om begrepssamlingen. Det skal være maks. ett kontaktpunkt per språk, hvis det er ulike kontaktpunkter for f.eks. norske vs. internasjonale kontakter.
 
 _This property is used to specify contact point which may be reached regarding the concept collection. There shall be maximum one contact point per language, when there are different contact points for e.g. Norwegian vs. international contacts._
 |Multiplisitet /  _Multiplicity_  |1..n

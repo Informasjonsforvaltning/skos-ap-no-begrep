@@ -1,7 +1,7 @@
 ==== To måter i RDF å uttrykke en begrepsrelasjon på [[To-RDF-måter-begrepsrelasjon]]
 
 
-I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkleste måten å gjøre dette på, er en setning på formen «subjekt – predikat – objekt» der «predikat» er relasjonen. <<Figur-tre-partitive-relasjoner>> nedenfor viser tre partitive relasjoner som ‘foreldrepengeperiode’ har med tre andre begreper. Det kan være en fordel at de inverse relasjonene også uttrykkes eksplisitt, selv om en RDF-applikasjon skal kunne tolke den motsatte veien også.
+I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkleste måten å gjøre dette på, er en setning på formen «subjekt – predikat – objekt» der «predikat» er relasjonen. <<Figur-tre-partitive-relasjoner>> nedenfor viser tre partitive relasjoner som ‘foreldrepengeperiode’ har med tre andre begreper. Det kan være en fordel at de motsatte relasjonene også uttrykkes eksplisitt, selv om en RDF-applikasjon skal kunne tolke den motsatte veien også.
 
 [[Figur-tre-partitive-relasjoner]]
 .Tre partitive relasjoner og den motsatte veien

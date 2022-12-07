@@ -28,9 +28,9 @@ _This property is used to refer to a to-concept in an associative concept relati
 
 Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
 -----
-<https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb> a skos:Concept ; # begrep "lovlig opphold"
+<https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb> a skos:Concept ; # begrep «lovlig opphold»
    skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ relasjon
-      skosno:hasToConcept <https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> ; ] ; # … som har til-begrep "medlem i folketrygden"
+      skosno:hasToConcept <https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> ; ] ; # … som har til-begrep «medlem i folketrygden»
      .
 -----
 
@@ -41,7 +41,7 @@ Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
 | _English name_  | _relation role_
 | URI  |skosno:relationRole
 | Verdiområde / Range  |skos:Concept or rdf:langString
-| Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verd valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er på flere språk.
+| Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verdi valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er på flere skriftspråk.
 
 _This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_  |1..1 når skos:Concept brukes, 1..n når rdf:langString brukes
@@ -52,9 +52,9 @@ _1..1 when skos:Concept is used, 1..n when rdf:langString is used_
 
 Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
 -----
-<https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb> a skos:Concept ; # begrep "medlem i folketrygden"
+<https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb> a skos:Concept ; # begrep «medlem i folketrygden»
    skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ relasjon
-      skosno:hasToConcept <https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> ;  # … som har til-begrep "medlem i folketrygden"
-      skosno:relationRole <muliggjør> ; ] ; # ... med relasjonsrolle "muliggjør"
+      skosno:hasToConcept <https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> ;  # … som har til-begrep «medlem i folketrygden»
+      skosno:relationRole <muliggjør> ; ] ; # ... med relasjonsrolle «muliggjør»
      .
 -----

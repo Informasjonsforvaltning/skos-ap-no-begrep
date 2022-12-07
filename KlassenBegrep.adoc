@@ -395,7 +395,7 @@ _This property is used to refer to the concept that this concept is a part of. T
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
 
 _This property/relation may also be read as “has comprehensive concept”._
-| Merknad 2 / _Note 2_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-inneholder>>.
+| Merknad 2 / _Note 2_ | Denne egenskapen/relasjonen er den motsatte av <<Begrep-inneholder>>.
 
 _This property/relation is the inverse of <<Begrep-inneholder>>._
 | Merknad 3 / _Note 3_ | Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
@@ -422,7 +422,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 _This property is used to refer to a concept that this concept is replaced by._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-erstatter>>.
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den motsatte av <<Begrep-erstatter>>.
 
 _This property/relation is the inverse of <<Begrep-erstatter>>._
 |===
@@ -492,7 +492,7 @@ Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
 _This property is used to refer to a concept that this concept replaces._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrep-er-erstattet-av>>.
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den motsatte av <<Begrep-er-erstattet-av>>.
 
 _This property/relation is the inverse of <<Begrep-er-erstattet-av>>._
 |===
@@ -540,7 +540,7 @@ _This property is used to refer to another concept which this concept generalize
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har underbegrep».
 
 _This property/relation may also be read as “has specific concept”._
-| Merknad 2 / _Note 2_ | Egenskapen/relasjonen er den inverse av <<Begrep-spesialiserer>>.
+| Merknad 2 / _Note 2_ | Egenskapen/relasjonen er den motsatte av <<Begrep-spesialiserer>>.
 
 _This property/relation is the inverse of <<Begrep-spesialiserer>>._
 | Merknad 3 / _Note 3_ | Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
@@ -644,7 +644,7 @@ _This property is used to refer to the concept that this concept has as a part. 
 | Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har delbegrep».
 
 _This property/relation may also be read as “has partitive concept”._
-| Merknad 2 / _Note 2_  | Denne egenskapen/relasjonen er den inverse av <<Begrep-er-del-av>>.
+| Merknad 2 / _Note 2_  | Denne egenskapen/relasjonen er den motsatte av <<Begrep-er-del-av>>.
 
 _This property/relation is the inverse of <<Begrep-er-del-av>>._
 | Merknad 3 / _Note 3_  | Bruk <<Begrep-har-partitiv-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].
@@ -674,7 +674,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 _This property is used to refer to the collection that this concept is a member of._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
-| Merknad / _Note_ | Denne egenskapen/relasjonen er den inverse av <<Begrepssamling-inneholder-begrep>>.
+| Merknad / _Note_ | Denne egenskapen/relasjonen er den motsatte av <<Begrepssamling-inneholder-begrep>>.
 
 _This property/relation is the inverse of <<Begrepssamling-inneholder-begrep>>._
 |===
@@ -722,7 +722,7 @@ _This property is used to refer to another concept that this concept specializes
 | Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har overbegrep».
 
 _This property/relation may also be read as “has generic concept”._
-| Merknad 2 / _Note 2_  | Egenskapen/relasjonen er den inverse av <<Begrep-generaliserer>>.
+| Merknad 2 / _Note 2_  | Egenskapen/relasjonen er den motsatte av <<Begrep-generaliserer>>.
 
 _This property/relation is the inverse of <<Begrep-generaliserer>>._
 | Merknad 3 / _Note 3_  | Bruk <<Begrep-har-generisk-begrepsrelasjon>> når det er behov for å beskrive https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium].

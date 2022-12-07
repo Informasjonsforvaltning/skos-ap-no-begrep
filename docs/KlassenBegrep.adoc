@@ -41,7 +41,7 @@ _There shall be minimum one combination of preferred term and definition (direct
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
 <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
-   skos:prefLabel "mødrekvote"@nb, mødrekvote"@nn ; # anbefalt term
+   skos:prefLabel "mødrekvote"@nb, "mødrekvote"@nn ; # anbefalt term
    .
 -----
 

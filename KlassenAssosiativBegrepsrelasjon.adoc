@@ -43,7 +43,7 @@ Eksempel i RDF Turtle, for NAVs begrep 1169 «lovlig opphold»:
 | Verdiområde / Range  |skos:Concept or rdf:langString
 | Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verd valgt fra et kontrollert vokabular, eller som tekst. Når tekst er brukt, bør egenskapen gjentas hvis teksten er på flere språk.
 
-_This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated if the text is in parallel languages._
+_This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text. When text is used, this property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_  |1..1 når skos:Concept brukes, 1..n når rdf:langString brukes
 
 _1..1 when skos:Concept is used, 1..n when rdf:langString is used_

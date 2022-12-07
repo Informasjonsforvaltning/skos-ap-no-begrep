@@ -75,7 +75,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 |Verdiområde / _Range_ |rdf:langString
 |Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er på flere språk.
 
-_This property is used to specify the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision] for the concept relation. This property should be repeated when the text is in several languages._
+_This property is used to specify the https://termbasen.standard.no/term/165577770503947/eng[criterion of subdivision] for the concept relation. This property should be repeated for parallel language versions of the text._
 |Multiplisitet / _Multiplicity_ |0..n
 |Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===

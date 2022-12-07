@@ -27,7 +27,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575552506687/nob[anbefalt term]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-_This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated when the term is in several languages._
+_This property is used to specify a https://termbasen.standard.no/term/165575552506687/eng[preferred term]. This property should be repeated for parallel language versions of the term._
 | Multiplisitet / _Multiplicity_ |2..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
@@ -54,7 +54,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
 
-_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] of a concept, when there is no need to specify more than the definition itself. This property should be repeated when the definition is in several languages._
+_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
@@ -81,7 +81,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Verdiområde / _Range_ |euvoc:XlNote
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575612703717/nob[definisjon] til et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
 
-_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] to a concept, when there is need to specify more than the definition. This property should be repeated when the definition is in several languages._
+_This property is used to specify the https://termbasen.standard.no/term/165575612703717/eng[definition] to a concept, when there is need to specify more than the definition. This property should be repeated for parallel language versions of the definition._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
@@ -278,7 +278,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ |rdf:langString or skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575653105392/nob[fagområde] som begrepet kan grupperes/klassifiseres under, oppgis som enten tekst med språkkode eller kodet verdi. Hvis tekst, og når teksten finnes på flere skriftspråk, bør egenskapen gjentas for hvert skriftspråk.
 
-_This property is used to specify a https://termbasen.standard.no/term/165575653105392/eng[domain] (subject field) under which the concept may be grouped/classified, either as a text with language code or as a coded value. When text is used and if the text is in several languages, the property should be repeated for each language._
+_This property is used to specify a https://termbasen.standard.no/term/165575653105392/eng[domain] (subject field) under which the concept may be grouped/classified, either as a text with language code or as a coded value. When text is used, the property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 | Merknad / _Note_ | Fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende.
@@ -302,7 +302,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi merknad til begrepet. Egenskapen bør gjentas når teksten finnes på flere skriftspråk.
 
-_This property is used to specify notes regarding the concept. The property should be repeated when the text is in several languages._
+_This property is used to specify notes regarding the concept. The property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -324,7 +324,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/165575552506675/nob[tillatt term] til anbefalt term til begrepet. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-_This property is used to specify an https://termbasen.standard.no/term/165575552506675/eng[admitted term] to a concept. This property should be repeated when the term is in several languages._
+_This property is used to specify an https://termbasen.standard.no/term/165575552506675/eng[admitted term] to a concept. This property should be repeated for parallel language versions of the term._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -368,7 +368,7 @@ Eksempel i RDF Turtle, for Skatteetatens begrep «fysisk person»:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi eksempel på begrepet. Egenskapen bør gjentas når teksten finnes på flere skriftspråk.
 
-_This property is used to specify examples of the concept. This property should be repeated when the text is in different languages._
+_This property is used to specify examples of the concept. This property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -513,7 +513,7 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termbasen.standard.no/term/165575654205830/nob[frarådd term]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-_This property is used to specify a https://termbasen.standard.no/term/165575654205830/eng[deprecated term]. This property should be repeated when the term is in several languages._
+_This property is used to specify a https://termbasen.standard.no/term/165575654205830/eng[deprecated term]. This property should be repeated for parallel language versions of the term._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -746,7 +746,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Verdiområde / _Range_ |skos:Concept or rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi status til et begrep, som tekst med språkkode eller kodet verdi. Hvis tekst og når teksten finnes på flere språk, bør egenskapen gjentas for hvert språk. Hvis kodet verdi, skal egenskapen ha kun én verdi.
 
-_This property is used to specify the status of the concept, as text with language code or coded value. If text is used and if the text is in several languages, this property should be repeated for each language. If coded value used, the property shall have only one value._
+_This property is used to specify the status of the concept, as text with language code or coded value. If text is used, this property should be repeated for parallel language versions of the text. If coded value used, the property shall have only one value._
 | Multiplisitet / _Multiplicity_ |0..1 når skos:Concept brukes og 0..n når rdf:langString brukes
 
 _0..1 when skos:Concept is used and 0..n when rdf:langString is used_
@@ -772,7 +772,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | Verdiområde / _Range_ |rdf:langString or xsd:anyURI
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi verdiområde, oppgitt som tekst og/eller referanse til der dette er spesifisert. Når tekst og hvis teksten finnes på flere skriftspråk, bør egenskapen gjentas for hvert språk.
 
-_This property is used to specify the value range of a concept, as text and/or as reference to where this is specified. When text is used and if the text is in several languages, this property should be repeated for each language._
+_This property is used to specify the value range of a concept, as text and/or as reference to where this is specified. When text is used, this property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -815,7 +815,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi versjonsnoter til en versjon av et begrep. Egenskapen bør gjentas når teksten finnes på flere skriftspråk.
 
-_This property is used to specify version notes about the version. This property should be repeated if the notes are in several languages._
+_This property is used to specify version notes about the version. This property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===

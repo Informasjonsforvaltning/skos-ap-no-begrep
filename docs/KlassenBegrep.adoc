@@ -405,8 +405,8 @@ _Use <<Begrep-har-partitiv-begrepsrelasjon>> when there is a need to describe th
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep "mødrekvote"
-   xkos:isPartOf <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # er del av "foreldrepengeperiode"
+<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep  «mødrekvote»
+   xkos:isPartOf <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # er del av «foreldrepengeperiode»
      .
 -----
 
@@ -475,8 +475,8 @@ _Use <<Begrep-er-fra-begrep-i>> when there is need to describe the relation role
 
 Eksempel i RDF Turtle, for NAVs begrep 170 «medlem i folketrygden»:
 -----
-<https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> a skos:Concept ; # begrep "medlem i folketrygden"
-   skos:related <https://data.norge.no/concepts/d649801d-b47d-4d00-9470-35275c4ace00> ; # er relatert til "trygdeavgift"
+<https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2> a skos:Concept ; # begrep «medlem i folketrygden»
+   skos:related <https://data.norge.no/concepts/d649801d-b47d-4d00-9470-35275c4ace00> ; # er relatert til «trygdeavgift»
    .
 -----
 
@@ -520,7 +520,7 @@ _This property is used to specify a https://termbasen.standard.no/term/165575654
 
 Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
 -----
-<https://data.norge.no/concepts/a9dc3c9c-df22-3cd4-a30b-b30b9de009ce> a skos:Concept ; # begrep "tiltakspenger"
+<https://data.norge.no/concepts/a9dc3c9c-df22-3cd4-a30b-b30b9de009ce> a skos:Concept ; # begrep «tiltakspenger»
    skos:hiddenLabel "individstønad"@nb ; # frarådd term
    .
 -----
@@ -550,8 +550,8 @@ _Use <<Begrep-har-generisk-begrepsrelasjon>> when there is a need to describe th
 
 Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
 -----
-<https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1> a skos:Concept ; # begrep "ytelsesperiode"
-   xkos:generalizes <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # generaliserer "foreldrepengeperiode"
+<https://data.norge.no/concepts/680b83b6-46f5-30f2-96f7-e36c4e5cf3d1> a skos:Concept ; # begrep «ytelsesperiode»
+   xkos:generalizes <https://data.norge.no/concepts/4729eca4-f145-4518-8309-3e02a84dfc55> ; # generaliserer «foreldrepengeperiode»
    .
 -----
 

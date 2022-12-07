@@ -85,6 +85,6 @@ Eksempel i RDF Turtle:
 <tre> a skos:Concept ; # begrep ‘tre’
    skosno:hasPartitiveConceptRelation [ a skosno:PartitiveConceptRelation ; # har partitiv relasjon
       <skosno:hasPartitiveConcept> <stamme>, <rot>, <grein> # … som har delbegrep
-      dct:description "anatomi"@nb ; ] ; # med inndelingskriterium “anatomi” (bokmål)
+      dct:description "anatomi"@nb ; ] ; # med inndelingskriterium «anatomi» (bokmål)
   .
 -----

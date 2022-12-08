@@ -8,7 +8,7 @@ _Vedlegget er deskriptivt_.
 |===
 a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5[«mødrekvote»]:
 
-* *anbefalt term*: «mødrekvote» (bokmål)
+* *anbefalt term*: «mødrekvote» (bokmål), «mødrekvote» (nynorsk)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
 * *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *kontaktpunkt*: mailto:begrepskatalogen@nav.no[begrepskatalogen@nav.no]
@@ -17,7 +17,7 @@ a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hente
 a| *Eksempelet i RDF Turtle*:
 -----
 <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
-   skos:prefLabel "mødrekvote"@nb ; # anbefalt term
+   skos:prefLabel "mødrekvote"@nb , "mødrekvote"@nn ; # anbefalt term
    skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ;  # definisjon
    dct:identifier "https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5"^^xsd:anyURI ; # identifikator
    dcat:contactPoint [ a vcard:Organization ; # kontaktpunkt

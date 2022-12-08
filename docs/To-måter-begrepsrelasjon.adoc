@@ -21,14 +21,15 @@ RDF gir muligheten til å bunte sammen begrepsrelasjoner som tar utgangspunktet 
 <begrepA> xkos:hasPart <begrepB> , <begrepC> , <begrepD> ; .
 -----
 
-[[Tabell-to-måter-begrepsrelasjon]]
-.To ulike måter i RDF å relatere til et annet begrep på
-[cols="20s,40,40"]
-|===
-| Relasjon | *Enten direkte relasjon*, ved å bruke | *eller via et relasjonsobjekt*, ved å bruke
-| Generisk begrepsrelasjon | <<Begrep-spesialiserer>> , eller +
-<<Begrep-generaliserer>> |<<Begrep-har-generisk-begrepsrelasjon>>
-| Partitiv begrepsrelasjon |<<Begrep-er-del-av>>, eller +
-<<Begrep-inneholder>> | <<Begrep-har-partitiv-begrepsrelasjon>>
-| Assosiativ begrepsrelasjon |<<Begrep-er-relatert-til>> | <<Begrep-er-fra-begrep-i>>
-|===
+//
+// [[Tabell-to-måter-begrepsrelasjon]]
+// .To ulike måter i RDF å relatere til et annet begrep på
+// [cols="20s,40,40"]
+// |===
+// | Relasjon | *Enten direkte relasjon*, ved å bruke | *eller via et relasjonsobjekt*, ved å bruke
+// | Generisk begrepsrelasjon | <<Begrep-spesialiserer>> , eller +
+// <<Begrep-generaliserer>> |<<Begrep-har-generisk-begrepsrelasjon>>
+// | Partitiv begrepsrelasjon |<<Begrep-er-del-av>>, eller +
+// <<Begrep-inneholder>> | <<Begrep-har-partitiv-begrepsrelasjon>>
+// | Assosiativ begrepsrelasjon |<<Begrep-er-relatert-til>> | <<Begrep-er-fra-begrep-i>>
+// |===

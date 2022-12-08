@@ -2,3 +2,4 @@ index.html
 *.pdf
 *.epub
 !ontology/index.html
+.idea/

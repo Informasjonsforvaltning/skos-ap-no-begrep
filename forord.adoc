@@ -2,7 +2,7 @@
 
 Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
 
-Denne standarden er utarbeidet i henhold til arbeidsmetodikken til Arkitektur- og standardiseringsrådet, av en arbeidsgruppe ledet av Digitaliseringsdirektoratet.
+Standarden er utarbeidet i henhold til arbeidsmetodikken til Arkitektur- og standardiseringsrådet, av en arbeidsgruppe ledet av Digitaliseringsdirektoratet.
 
 
 Denne standarden erstatter følgende standarder: 

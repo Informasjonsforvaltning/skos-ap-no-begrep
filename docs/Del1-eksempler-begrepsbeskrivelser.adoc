@@ -3,7 +3,7 @@
 |===
 a|*Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger*, hentet fra Felles datakatalog 2022-11-25, for begrepet https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5[«mødrekvote»]:
 
-* *anbefalt term*: «mødrekvote» (bokmål)
+* *anbefalt term*: «mødrekvote» (bokmål), «mødrekvote» (nynorsk)
 * *definisjon*: «den delen av foreldrepengeperioden som er forbeholdt mor» (bokmål)
 * *identifikator*: https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5
 * *kontaktpunkt*: mailto:begrepskatalogen@nav.no[begrepskatalogen@nav.no]

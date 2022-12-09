@@ -1,4 +1,4 @@
-# SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS
+# Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)
 
 For forvaltning av SKOS-AP-NO-Begrep, med tilhørende ontologi, eksempler og valideringsregler.
 

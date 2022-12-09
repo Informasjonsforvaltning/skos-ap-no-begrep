@@ -12,13 +12,11 @@ Alle krav i <<Del1>> i denne standarden uttrykkes her i form av RDF. Hvert krav 
 Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.
 
 Eksempel: `skos:Concept` er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i `skos` (<<Navnerom-brukt-i-standarden>> viser hva `skos` står for).
-| Subklasse av / _Subclass of_ | Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klassen eventuelt er subklasse av.
-| Subegenskap av / _Subproperty of_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskapen eventuelt er subegenskap av.
 | Verdiområde / _Range_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.
 
 Eksempel: Verdiområde `skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
-|Anvendelse / _Usage note_ | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet i engelsk (_Usage note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
+|Anvendelse / _Usage note_ | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet på engelsk (_Usage note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
 | Multiplisitet / _Multiplicity_ | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.
 | Kravnivå / _Requirement level_ | Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<Kravnivåene-i-denne-standarden>>.
-| Merknad / _Note_ | Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet i engelsk (_Note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
+| Merknad / _Note_ | Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet på engelsk (_Note_, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.
 |===

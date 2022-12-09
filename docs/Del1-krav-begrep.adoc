@@ -34,14 +34,14 @@ kontaktpunkt bør ikke vise til en enkeltperson
 |dato sist oppdatert ||
 |https://termbasen.standard.no/term/165575653105392/nob[fagområde] | 
 det bør fortrinnsvis velges fra en kontrollert liste; +
-når fagområde oppgis som tekst, skal det oppgis hvilket skriftspråk teksten er skrevet i; +
+når fagområde oppgis som tekst, skal det oppgis hvilket skriftspråk teksten er skrevet på; +
 fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende
  |
 |gyldighetsperiode |
 oppgis som dato fra og med, og/eller dato til og med |
 |merknad | 
 utfyllende forklaring; +
-det skal oppgis hvilket skriftspråk merknaden er skrevet i
+det skal oppgis hvilket skriftspråk merknaden er skrevet på
  |
 |https://termbasen.standard.no/term/165575552506675/nob[tillatt term] | 
 det skal oppgis hvilket skriftspråk termen er skrevet på |

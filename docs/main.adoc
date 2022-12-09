@@ -17,10 +17,10 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
 
-*Status*: #under ferdigstilling# +
-*Versjon*: #utkast til v.2.0# +
-*Publisert*: #under publisering# +
-*Oppdatert*: 2022-12-08  +
+*Status*: Gjeldende +
+*Versjon*: 2.0.0 +
+*Publisert*: 2022-12-09 +
+*Oppdatert*: 2022-12-09 +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Forrige versjon*: https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser og https://data.norge.no/specification/skos-ap-no-begrep/v1.1 +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
@@ -73,7 +73,7 @@ include::KlassenPartitivBegrepsrelasjon.adoc[]
 
 include::KlassenBegrepssamling.adoc[]
 
-// section number off
+// Appendix, section number off
 :sectnums!:
 
 include::navnerom.adoc[]

@@ -5,7 +5,7 @@
 | _English name_ | _Definition_
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/165575612703717/nob[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-_This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is need to describe more than the definition itself._
+_This class is used to represent a https://termbasen.standard.no/term/165575612703717/eng[definition] when there is a need to describe more than the definition itself._
 | URI |euvoc:XlNote
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -19,7 +19,7 @@ _This class is used to represent a https://termbasen.standard.no/term/1655756127
 | _English name_ | _text_
 | URI |rdf:value
 | Verdiområde / _Range_  |rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi definisjonsteksten i et gitt skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi definisjonsteksten på et gitt skriftspråk.
 
 _This property is used to specify the definition text in a given language._
 | Multiplisitet / _Multiplicity_  |1..1
@@ -77,7 +77,7 @@ _This property is used to refer to a source._
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 | Merknad / _Note_ | Bruk `rdf:List` når den ønskede rekkefølgen mellom kildene skal oppgis.
 
-_Use `rdf:List` when the preferred order between the sources need to be specified._
+_Use `rdf:List` when the preferred order between the sources needs to be specified._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:

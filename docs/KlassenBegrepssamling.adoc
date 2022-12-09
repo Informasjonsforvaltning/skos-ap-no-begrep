@@ -89,9 +89,9 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 _This property is used to refer to the publisher of the concept collection._
 |Multiplisitet /  _Multiplicity_  |1..1
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-|Merknad / _Note_ | Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer].
+|Merknad / _Note_ | Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[Enhetsregisterets organisasjonsnummer].
 
-_The organization’s identifier should be used, e.g. in accordance to the organization number registered in the Central Coordinating Register for Legal Entities (CCR)._
+_The organization’s identifier should be used, e.g. the organization number registered in the Central Coordinating Register for Legal Entities (CCR)._
 |===
 
 Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.

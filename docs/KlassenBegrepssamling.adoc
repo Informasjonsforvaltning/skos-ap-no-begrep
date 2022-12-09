@@ -40,7 +40,7 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 |Verdiområde /  _Range_  |skos:Concept
 |Anvendelse /  _Usage note_  | Egenskapen brukes til å referere til begrep som inngår i begrepssamlingen.
 
-_This property is used to refer to concepts which are members of the concept collection._
+_This property is used to refer to concepts that are members of the concept collection._
 |Multiplisitet /  _Multiplicity_  |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===

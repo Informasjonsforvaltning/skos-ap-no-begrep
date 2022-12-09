@@ -22,7 +22,7 @@ _This class is used to represent a https://termbasen.standard.no/term/1655758123
 |Verdiområde / _Range_ |skos:Concept
 |Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551206237/nob[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-_This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551206237/eng[partitive concept]) which is part of this concept, in a partitive concept relation between the two concepts._
+_This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551206237/eng[partitive concept]) that is part of this concept, in a partitive concept relation between the two concepts._
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-helhetsbegrep>> skal brukes, ikke begge samtidig.
@@ -47,7 +47,7 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 |Verdiområde / _Range_ |skos:Concept
 |Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/165575551106220/nob[helhetsbegrepet]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-_This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept]) which contains this concept, in a partitive concept relation between the two concepts._
+_This property is used to refer to another concept (the https://termbasen.standard.no/term/165575551106220/eng[comprehensive concept]) that contains this concept, in a partitive concept relation between the two concepts._
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-delbegrep>> skal brukes, ikke begge samtidig.

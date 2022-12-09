@@ -302,7 +302,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ |rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi utfyllende forklaring til begrepet. Egenskapen bør gjentas når teksten finnes på flere skriftspråk.
 
-_This property is used to specify notes regarding the concept. The property should be repeated for parallel language versions of the text._
+_This property is used to specify notes about the concept. The property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===

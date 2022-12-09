@@ -30,4 +30,4 @@ image::images/SKOS-AP-NO-Begrep-uten-relasjoner.png[alt="UML-diagram med tre kla
 image::images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png[alt="UML-diagram med fire klasser, atten relasjoner og fem restriksjonsnoter. Innholdet er forklart i teksten."]
 
 
-Det finnes andre typer assosiative begrepsrelasjoner i tillegg til dem som er vist i figuren, som også kan brukes.
+Det finnes andre typer assosiative begrepsrelasjoner i tillegg til de som er vist i figuren, som også kan brukes.

@@ -4126,8 +4126,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Virksomhetens identifikasjonsnummer bør brukes, for eksempel <a href="https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c">organisasjonsnummer i henhold til Enhetsregisterets organisasjonsnummer</a>.</p>
-<p class="tableblock"><em>The organization’s identifier should be used, e.g. in accordance to the organization number registered in the Central Coordinating Register for Legal Entities (CCR).</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virksomhetens identifikasjonsnummer bør brukes, for eksempel <a href="https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c">Enhetsregisterets organisasjonsnummer</a>.</p>
+<p class="tableblock"><em>The organization’s identifier should be used, e.g. the organization number registered in the Central Coordinating Register for Legal Entities (CCR).</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -4335,7 +4335,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <div class="title">Figur 7. UML-modell for SKOS-AP-NO-Begrep, kun med begrepsrelasjoner mellom begreper. Se beskrivelse av den enkelte egenskapen for mer detaljert beskrivelse av restriksjonene.</div>
 </div>
 <div class="paragraph">
-<p>Det finnes andre typer assosiative begrepsrelasjoner i tillegg til dem som er vist i figuren, som også kan brukes.</p>
+<p>Det finnes andre typer assosiative begrepsrelasjoner i tillegg til de som er vist i figuren, som også kan brukes.</p>
 </div>
 </div>
 </div>
@@ -4742,7 +4742,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p><a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/"><em>Forvaltningsstandard for begrepsbeskrivelser</em></a> (v.2.0.2)</p>
 </li>
 <li>
-<p><a href="https://data.norge.no/specification/skos-ap-no-begrep/"><em>SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS</em></a> (v.1.1.1)</p>
+<p><a href="https://data.norge.no/specification/skos-ap-no-begrep/v1.1"><em>SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS</em></a> (v.1.1.1)</p>
 </li>
 </ul>
 </div>
@@ -4752,10 +4752,10 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Kravnivå</strong>: Denne versjonen opererer med kravnivåene «obligatorisk» (opplysninger som skal beskrives med), «anbefalt» (opplysninger som bør beskrives med hvis de finnes) og «valgfri» (opplysninger som kan beskrives med), mens forrige har kun «obligatorisk» (representert med multiplisitet 1..1 eller 1..n) og ellers (ikke-obligatorisk).</p>
+<p><strong>Kravnivå</strong>: Denne versjonen opererer med kravnivåene «obligatorisk» (opplysninger som skal tas med), «anbefalt» (opplysninger som bør tas med hvis de finnes) og «valgfri» (opplysninger som kan tas med), mens forrige versjon har kun «obligatorisk» (uttrykt ved multiplisitet 1..1 eller 1..n) og ellers (ikke-obligatorisk).</p>
 </li>
 <li>
-<p><strong>UML-diagram</strong>: UML-diagrammene i denne versjonen brukes bare til <a href="#Del2">Kapittel 3, <em>Krav til RDF-representasjon av begreper og begrepssamlinger</em></a> og ikke <a href="#Del1">Kapittel 2, <em>Krav til beskrivelse av begreper og begrepssamlinger</em></a>. De er dessuten deskriptive og ikke normative i denne versjonen (en praksis som også EU-standardene i dette området nå bruker), mens de var normative i forrige versjon.</p>
+<p><strong>UML-diagram</strong>: UML-diagrammene i denne versjonen brukes bare til <a href="#Del2">Kapittel 3, <em>Krav til RDF-representasjon av begreper og begrepssamlinger</em></a> og ikke <a href="#Del1">Kapittel 2, <em>Krav til beskrivelse av begreper og begrepssamlinger</em></a>. De er dessuten deskriptive og ikke normative i denne versjonen, mens de var normative i forrige versjon.</p>
 </li>
 <li>
 <p><strong>Begrep</strong>:</p>
@@ -4841,7 +4841,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p>«eksempel» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
 </li>
 <li>
-<p>«merknad» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.</p>
+<p>«merknad» er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «merknad» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
 </li>
 <li>
 <p>«verdiområde» (tidligere «omfang») er flyttet hit fra «Definisjon» (tidligere «Betydningsbeskrivelse»), fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
@@ -4854,19 +4854,19 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <div class="ulist">
 <ul>
 <li>
-<p>«dato opprettet» er lagt til, for å kunne oppgi dato når begrepet ble opprettet.</p>
+<p>obligatorisk egenskap «publisert av» er lagt til, for å kunne oppgi virksomheten som har publisert begrepsbeskrivelsen.</p>
 </li>
 <li>
-<p>«publisert av» er lagt til, for å kunne oppgi virksomheten som har publisert begrepsbeskrivelsen.</p>
+<p>anbefalt egenskap «dato opprettet» er lagt til, for å kunne oppgi datoen da begrepet ble opprettet.</p>
 </li>
 <li>
-<p>«status» er lagt til, for å kunne oppgi status på et begrep.</p>
+<p>valgfri egenskap «status» er lagt til, for å kunne oppgi status på et begrep.</p>
 </li>
 <li>
-<p>«versjonsnummer» er lagt til, for å kunne referere til en gitt versjon av et begrep.</p>
+<p>valgfri egenskap «versjonsnummer» er lagt til, for å kunne referere til en gitt versjon av et begrep.</p>
 </li>
 <li>
-<p>«versjonsnote» er lagt til, for å kunne beskrive en gitt versjon av et begrep.</p>
+<p>valgfri egenskap «versjonsnote» er lagt til, for å kunne beskrive en gitt versjon av et begrep.</p>
 </li>
 </ul>
 </div>
@@ -4886,7 +4886,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p>«eksempel» er flyttet til «Begrep», fordi «eksempel» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
 </li>
 <li>
-<p>«merknad» er flyttet til «Begrep», fordi «merknad» er som regel om hele begrepet og ikke om en gitt definisjonstekst.</p>
+<p>«merknad» er flyttet til «Begrep», fordi «merknad» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
 </li>
 <li>
 <p>«verdiområde» (tidligere «omfang») er flyttet til «Begrep», fordi «verdiområde» er for hele begrepet og ikke for en gitt definisjonstekst.</p>
@@ -5023,7 +5023,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </ul>
 </div>
 <div class="paragraph">
-<p>Endringene fra <a href="https://data.norge.no/specification/skos-ap-no-begrep/"><em>SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS</em></a> (v.1.1.1) til <a href="#Del2">Kapittel 3, <em>Krav til RDF-representasjon av begreper og begrepssamlinger</em></a> i denne versjonen:</p>
+<p>Endringene fra <a href="https://data.norge.no/specification/skos-ap-no-begrep/v1.1"><em>SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS</em></a> (v.1.1.1) til <a href="#Del2">Kapittel 3, <em>Krav til RDF-representasjon av begreper og begrepssamlinger</em></a> i denne versjonen:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5037,7 +5037,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p><strong>Kravnivå</strong>: Denne versjonen spesifiserer eksplisitt kravnivå («obligatorisk», «anbefalt» og «valgfri») samt multiplisitet, mens forrige versjon henviste til kravene i tidligere <em>Forvaltningsstandard for begrepsbeskrivelser</em>.</p>
 </li>
 <li>
-<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se <a href="#Tabell-endringene-i-URIer">Tabell 6, &#8220;Oversikt over endringer av URIer til klasse- og egenskapsnavnene&#8221;</a> nedenfor for oversikt over endinger av URIer.</p>
+<p><strong>URIer for klasser og egenskaper i RDF-representasjon</strong>: URIer for egendefinerte klasser og egenskaper bruker nå engelske ord og uttrykk istedenfor norske i forrige versjon. Selv om URIene ikke er språkavhengige, men fordi standarden gjenbruker SKOS og andre internasjonale vokabularer som bruker engelske ord og uttrykk i URIene sine, er det hensiktsmessig at alle URIer bruker bare engelske ord og uttrykk. Se ellers <a href="#Tabell-endringene-i-URIer">Tabell 6, &#8220;Oversikt over endringer av URIer til klasser og egenskaper&#8221;</a>.</p>
 </li>
 <li>
 <p><strong>Interoperabilitet med resten av EU</strong>: Så langt det er mulig, gjenbruker denne versjonen EU-spesifikasjonen <a href="https://github.com/meaningfy-ws/SKOS-AP-EU">SKOS-AP-EU</a> som EUs Publications Office også bruker.</p>
@@ -5048,7 +5048,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </ul>
 </div>
 <table id="Tabell-endringene-i-URIer" class="tableblock frame-all grid-all stripes-odd stretch">
-<caption class="title">Tabell 6. Oversikt over endringer av URIer til klasse- og egenskapsnavnene</caption>
+<caption class="title">Tabell 6. Oversikt over endringer av URIer til klasser og egenskaper</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5280,7 +5280,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-12-09 08:29:07 UTC
+Sist oppdatert 2022-12-09 10:01:35 UTC
 </div>
 </div>
 </body>

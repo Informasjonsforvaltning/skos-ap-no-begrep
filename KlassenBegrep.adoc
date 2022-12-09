@@ -35,7 +35,7 @@ _This property is used to specify a https://termbasen.standard.no/term/165575552
 _The preferred term shall be in both Norwegian bokmål and Norwegian nynorsk. There shall be maximum one per language._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
-_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) that are in the same language._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -62,7 +62,7 @@ _This property is used to specify the https://termbasen.standard.no/term/1655756
 _There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
-_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) that are in the same language._
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -89,7 +89,7 @@ _This property is used to specify the https://termbasen.standard.no/term/1655756
 _There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
-_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) which are in the same language._
+_There shall be minimum one combination of preferred term and definition (direct statement or via definition object) that are in the same language._
 |===
 
 Eksempel i RDF Turtle: Se under <<Definisjon>>.
@@ -459,7 +459,7 @@ Eksempel i RDF Turtle: Se under <<Assosiativ-begrepsrelasjon>>.
 | Verdiområde / _Range_ |skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som begrepet er relatert til, når det ikke er behov for å beskrive relasjonsrollen til dette begrepet.
 
-_This property is used to refer to a concept which this concept is related to, when there is no need to describe the relation role of this concept._
+_This property is used to refer to a concept that this concept is related to, when there is no need to describe the relation role of this concept._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har assosiert begrep».
@@ -534,7 +534,7 @@ Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
 | Verdiområde / _Range_ |skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet er en generalisering av. Begrepet er https://termbasen.standard.no/term/165575654205842/nob[det generiske begrepet] og det andre begrepet er https://termbasen.standard.no/term/165575654205860/nob[det spesifikke begrepet], i en generisk relasjon mellom disse.
 
-_This property is used to refer to another concept which this concept generalizes. This concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept] and the other concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept], in a generic concept relation between the two concepts._
+_This property is used to refer to another concept that this concept generalizes. This concept is the https://termbasen.standard.no/term/165575654205842/eng[generic concept] and the other concept is the https://termbasen.standard.no/term/165575654205860/eng[specific concept], in a generic concept relation between the two concepts._
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har underbegrep».

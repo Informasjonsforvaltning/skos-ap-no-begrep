@@ -7,12 +7,12 @@ En begrepssamling skal inneholde minst ett begrep, og skal i tillegg alltid besk
 
 * *identifikator* som skal være unik innen en gitt kontekst
 * *kontaktpunkt* som ikke bør være til enkeltpersoner, og som bør være maks. ett for hvert språk (relevant hvis det er ulike kontaktpunkter for norske og utenlandske kontakter)
-* *navn* (maks. ett per skriftspråk), og det skal oppgis hvilket skriftspråk navnet er skrevet i
+* *navn* (maks. ett per skriftspråk), og det skal oppgis hvilket skriftspråk navnet er skrevet på
 * *publisert av* som skal oppgis som virksomhet og ikke enkeltperson
 
 En begrepssamling bør beskrives med følgende anbefalte opplysninger hvis de finnes:
 
-* *beskrivelse* (maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet i
+* *beskrivelse* (maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet på
 
 |===
 a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:

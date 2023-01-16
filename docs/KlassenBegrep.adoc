@@ -247,7 +247,7 @@ Eksempel i RDF Turtle:
    .
 -----
 
-===== Begrep – dato sist oppdatert (dcat:modified) [[Begrep-dato-sist-oppdatert]]
+===== Begrep – dato sist oppdatert (dct:modified) [[Begrep-dato-sist-oppdatert]]
 
 [cols="30s,70d"]
 |===

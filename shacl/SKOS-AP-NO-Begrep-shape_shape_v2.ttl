@@ -17,7 +17,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix uneskos: <http://purl.org/umu/uneskos#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix : <https://data.norge.no/vocabulary/skosno#> .
+@prefix : <https://data.norge.no/vocabulary/skosno/shacl#> .
 
 # about this SHACL:
 <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/SKOS-AP-NO-Begrep-shape_shape_v2_utkast.ttl>
@@ -36,16 +36,17 @@
         foaf:page <https://www.digdir.no> ;
         ] ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2023-01-20"^^xsd:date ;
+    dct:modified "2023-01-23"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in SKOS-AP-NO-Begrep v.2, expressed in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "2.001" ;
+    owl:versionInfo "2.0002" ;
+    adms:versionNotes "Bortsett fra språksjekk på tvers av egenskaper/klasser, f.eks. 'min. 1 kombinasjon av anbefalt term og definisjon skal være på samme språk', skal alle reglene være med nå."@nb ; 
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     .
 
-##### -------------------- Class shapes
+##### -------------------- Class shapes, with some special property shapes
 
 ### Klassen Begrep (skos:Concept)
 :Concept_Shape a sh:NodeShape;
@@ -59,6 +60,7 @@
       # definition
          sh:property :UniqueLangShape-skosDefinition; # definisjon, maks. 1 per språk (skos:definition)
          sh:property :Min1MaxNShape-EitherSkosDefinitionOrEuvocXlDefinition; # min. 1 definisjon, enten skos:definition eller euvoc:xlDefinition
+         sh:property :hasMin0MaxNShape-euvocXlDefinition; # definisjon (euvoc:xlDefinition), sjekk klassetilhørighet
       # other mandatory
          sh:property :hasMin1MaxNShape-dctIdentifier; # identifikator (dct:identifier)
          sh:property :hasMin1MaxNShape-dcatContactPoint; # kontaktpunkt (dcat:contactPoint)
@@ -73,34 +75,29 @@
          sh:property :hasMin0MaxNShape-skosScopeNote; # merknad (skos:scopeNote)
          sh:property :hasMin0MaxNShape-skosAltLabel; # tillatt term (skos:altLabel)
    # optional:
-      sh:property
-         :hasMin0MaxNShape-skosnoDataStructureLabel, # datastrukturterm (skosno:dataStructureLabel)
-         :hasMin0MaxNShape-skosExample, # eksempel (skos:example)
-         :hasMin0MaxNShape-xkosIsPartOf, # er del av (xkos:isPartOf)
-         :hasMin0MaxNShape-dctIsReplacedBy, # er erstattet av (dct:isReplacedBy)
-         :hasMin0MaxNShape-skosnoIsFromConceptIn, # er fra-begrep i (skosno:isFromConceptIn)
-         :hasMin0MaxNShape-skosRelated, # Begrep – er relatert til (skos:related)
-         :hasMin0MaxNShape-dctReplaces, # erstatter (dct:replaces)
-         :hasMin0MaxNShape-skosHiddenLabel, # frarådd term (skos:hiddenLabel)
-         :hasMin0MaxNShape-xkosGeneralizes, # generaliserer (xkos:generalizes)
-         :hasMin0MaxNShape-skosExactMatch, # har eksakt samsvar med (skos:exactMatch)
-         :hasMin0MaxNShape-skosnoHasGenericConceptRelation, # har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)
-         :hasMin0MaxNShape-skosCloseMatch, # har nært samsvar med (skos:closeMatch)
-         :hasMin0MaxNShape-skosnoHasPartitiveConceptRelation, # har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)
-         :hasMin0MaxNShape-xkosHasPart, # inneholder (xkos:hasPart)
-         :hasMin0MaxNShape-uneskosMemberOf, # inngår i begrepssamling (uneskos:memberOf)
-         :hasMin0MaxNShape-rdfsSeeAlso, # se også (rdfs:seeAlso)
-         :hasMin0MaxNShape-xkosSpecializes; # spesialiserer (xkos:specializes)
-      sh:or ( [sh:property :hasMin0Max1Shape-admsStatusCodedValue] # status (adms:status), som kodet verdi
-            [sh:property :hasMin0MaxNShape-admsStatusText] # status (adms:status), som tekst
-               );
-      sh:property
-         :hasMin0MaxNShape-skosnoValueRange, # verdiområde (skosno:valueRange)
-         :hasMin0Max1Shape-owlVersionInfo, # versjonsnummer (owl:versionInfo)
-         :hasMin0MaxNShape-admsVersionNotes # versjonsnote (adms:versionNotes)
+         sh:property :hasMin0MaxNShape-skosnoDataStructureLabel; # datastrukturterm (skosno:dataStructureLabel)
+         sh:property :hasMin0MaxNShape-skosExample; # eksempel (skos:example)
+         sh:property :hasMin0MaxNShape-xkosIsPartOf; # er del av (xkos:isPartOf)
+         sh:property :hasMin0MaxNShape-dctIsReplacedBy; # er erstattet av (dct:isReplacedBy)
+         sh:property :hasMin0MaxNShape-skosnoIsFromConceptIn; # er fra-begrep i (skosno:isFromConceptIn)
+         sh:property :hasMin0MaxNShape-skosRelated; # Begrep – er relatert til (skos:related)
+         sh:property :hasMin0MaxNShape-dctReplaces; # erstatter (dct:replaces)
+         sh:property :hasMin0MaxNShape-skosHiddenLabel; # frarådd term (skos:hiddenLabel)
+         sh:property :hasMin0MaxNShape-xkosGeneralizes; # generaliserer (xkos:generalizes)
+         sh:property :hasMin0MaxNShape-skosExactMatch; # har eksakt samsvar med (skos:exactMatch)
+         sh:property :hasMin0MaxNShape-skosnoHasGenericConceptRelation; # har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)
+         sh:property :hasMin0MaxNShape-skosCloseMatch; # har nært samsvar med (skos:closeMatch)
+         sh:property :hasMin0MaxNShape-skosnoHasPartitiveConceptRelation; # har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)
+         sh:property :hasMin0MaxNShape-xkosHasPart; # inneholder (xkos:hasPart)
+         sh:property :hasMin0MaxNShape-uneskosMemberOf; # inngår i begrepssamling (uneskos:memberOf)
+         sh:property :hasMin0MaxNShape-rdfsSeeAlso; # se også (rdfs:seeAlso)
+         sh:property :hasMin0MaxNShape-xkosSpecializes; # spesialiserer (xkos:specializes)
+         sh:property :hasMin0MaxNShape-admsStatusEitherCodedValueOrText; # status (adms:status), enten kodet verdi eller tekst
+         sh:property :hasMin0MaxNShape-skosnoValueRange; # verdiområde (skosno:valueRange)
+         sh:property :hasMin0Max1Shape-owlVersionInfo; # versjonsnummer (owl:versionInfo)
+         sh:property :hasMin0MaxNShape-admsVersionNotes; # versjonsnote (adms:versionNotes)
          ;
-      sh:targetClass skos:Concept ;
-   .
+      sh:targetClass skos:Concept ; .
 
 # --- PropertyShapes specific for skos:prefLabel 
 
@@ -171,88 +168,149 @@
          :hasMin0Max1Shape-dctAudience, # målgruppe (dct:audience)
          :CVShape-dctAudience # målgruppe (dct:audience) kontrollert vokabular
       ;
-   sh:targetClass euvoc:XlNote .
+   sh:targetClass euvoc:XlNote ; .
 
 ### Klassen Assosiativ begrepsrelasjon (skosno:AssociativeConceptRelation)
-:AssociativeConceptRelation-Shape1 a sh:NodeShape;
+:AssociativeConceptRelation-Shape1 a sh:NodeShape; # til-begrep
    rdfs:label "Associative concept relation"@en, "Assosiativ begrepsrelasjon"@nb;
    # mandatory
       sh:property :hasMin1MaxNShape-skosnoHasToConcept; # har til-begrep (skosno:hasToConcep)
    sh:targetClass skosno:AssociativeConceptRelation .
 
-:AssociativeConceptRelation-Shape2 a sh:NodeShape;
+:AssociativeConceptRelation-Shape2 a sh:NodeShape; # relasjonsrolle - min 1, enten eller
    rdfs:label "Associative concept relation"@en, "Assosiativ begrepsrelasjon"@nb;
    # mandatory
-      sh:xone (
-         [sh:property [
+      sh:xone ( [sh:property [
             sh:name "relation role - as coded value"@en, "relasjonsrolle - som kodet verdi"@nb;
             sh:path skosno:relationRole;
-            sh:class skos:Concept;
-            sh:minCount 1;
-            sh:maxCount 1; ]
+            sh:class skos:Concept; 
+            sh:minCount 1; ]
             ]
          [sh:property [
             sh:name "relation role - as text"@en, "relasjonsrolle - som tekst"@nb;
             sh:path skosno:relationRole;
             sh:datatype rdf:langString;
             sh:minCount 1; 
-            sh:uniqueLang true; ] 
+#            sh:uniqueLang true; 
+            ] 
             ]
       );
-      sh:message "The property skosno:relationRole SHALL: either have min. 1 value (max. 1 per language) of datatype rdf:langString, or have min. 1 and max. 1 value which SHALL refer an instance of skos:Concept, not both"@en,
-         "Egenskapen skosno:relationRole skal: enten ha min. 1 verdi (maks. 1 per språk) av datatype rdf:langString, eller ha min. 1 og maks. 1 verdi som SKAL referere til en instans av skos:Concept, IKKE begge"@nb;
+      sh:message "The property skosno:relationRole SHALL have min. 1 value, which is of datatype rdf:langString or which refers to an instance of skos:Concept, not both"@en,
+         "Egenskapen skosno:relationRole skal ha min. 1 verdi, som enten er av datatype rdf:langString eller refererer til en instans av skos:Concept, ikke begge"@nb;
       sh:severity sh:Violation;
    sh:targetClass skosno:AssociativeConceptRelation .
 
+:AssociativeConceptRelation-Shape3 a sh:NodeShape; # relasjonsrolle - som kodet verdi
+   rdfs:label "Associative concept relation"@en, "Assosiativ begrepsrelasjon"@nb;
+   sh:property [
+      sh:path skosno:relationRole;
+      sh:qualifiedValueShape [sh:class skos:Concept;] ;
+      sh:qualifiedValueShapesDisjoint true ;
+      sh:qualifiedMinCount 1 ;
+      sh:qualifiedMaxCount 1 ;
+      sh:message "The property skosno:relationRole, as coded value, may have max. 1 value which SHALL refer to an instance of skos:Concept"@en,
+         "Egenskapen skosno:relationRole, som kodet verdi, kan ha ha maks. 1 verdi som referere til en instans av skos:Concept, ikke begge"@nb;
+      ];
+   sh:severity sh:Violation;
+   sh:targetClass skosno:AssociativeConceptRelation .
+
+:AssociativeConceptRelation-Shape3 a sh:NodeShape; # relasjonsrolle - som tekst
+   rdfs:label "Associative concept relation"@en, "Assosiativ begrepsrelasjon"@nb;
+   sh:property [
+      sh:path skosno:relationRole;
+      sh:qualifiedValueShape [sh:datatype rdf:langString;] ;
+      sh:uniqueLang true;
+      sh:qualifiedValueShapesDisjoint true ;
+      sh:qualifiedMinCount 0 ;
+      sh:message "The property skosno:relationRole, as text, may have max. 1 value per language"@en,
+         "Egenskapen skosno:relationRole, som tekst, kan ha ha maks. 1 verdi per språk"@nb;
+      ];
+   sh:severity sh:Violation;
+   sh:targetClass skosno:AssociativeConceptRelation .
+
 ### Klassen Generisk begrepsrelasjon (skosno:GenericConceptRelation)
-:GenericConceptRelation-Shape1 a sh:NodeShape;
+:GenericConceptRelation-Shape1 a sh:NodeShape; # inndelingskriterium
    rdfs:label "Generic concept relation"@en, "Generisk begrepsrelasjon"@nb;
    # recommended
       sh:property :hasMin0MaxNShape-dctDescriptionCriterionOfSubdivision; # inndelingskriterium (dct:description)
       sh:property :uniqueLangShape-dctDescriptionCriterionOfSubdivision; # inndelingskriterieum (dct:description), maks. 1 per språk
    sh:targetClass skosno:GenericConceptRelation .
 
-:GenericConceptRelation-Shape2 a sh:NodeShape;
+:GenericConceptRelation-Shape2 a sh:NodeShape; # enten Generic eller Specific
    rdfs:label "Generic concept relation"@en, "Generisk begrepsrelasjon"@nb;
    # mandatory
-      sh:xone (
-         [sh:property [
-            sh:path skosno:hasGenericConcept;
-            sh:class skos:Concept;
-            sh:minCount 1; ] ]
-         [sh:property [
-            sh:path skosno:hasSpecificConcept;
-            sh:class skos:Concept;
-            sh:minCount 1; ] ]
-         );
-   sh:message "Either skosno:hasGenericConcept or skosno:hasSpecificConcept, not both, SHALL have min. 1 value which SHALL refer to an instance of skos:Concept"@en,
-      "Enten skosno:hasGenericConcept eller skosno:hasSpecificConcept, ikke begge, SKAL ha min. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
+   sh:xone (
+      [sh:property [
+         sh:path skosno:hasGenericConcept;
+         sh:minCount 1; ] ]
+      [sh:property [
+         sh:path skosno:hasSpecificConcept;
+         sh:minCount 1; ] ]
+      );
+   sh:message "Either skosno:hasGenericConcept or skosno:hasSpecificConcept, not both, SHALL have min. 1 value"@en,
+      "Enten skosno:hasGenericConcept eller skosno:hasSpecificConcept, ikke begge, SKAL ha min. 1 verdi"@nb;
    sh:severity sh:Violation ;
    sh:targetClass skosno:GenericConceptRelation .
 
+:GenericConceptRelation-Shape3 a sh:NodeShape; # klassetilhørighet
+   rdfs:label "Generic concept relation"@en, "Generisk begrepsrelasjon"@nb;
+   # mandatory
+   sh:property [
+      sh:path skosno:hasGenericConcept;
+      sh:class skos:Concept;
+      sh:message "The property skosno:hasGenericConcept SHALL refer to an instance of skos:Concept"@en, 
+         "Egenskapen skosno:hasGenericConcept SKAL referere til en instans av skos:Concept"@nb; 
+      ] ;
+   sh:property [
+      sh:path skosno:hasSpecificConcept;
+      sh:class skos:Concept;
+      sh:message "The property skosno:hasSpecificConcept SHALL refer to an instance of skos:Concept"@en, 
+         "Egenskapen skosno:hasSpecificConcept SKAL referere til en instans av skos:Concept"@nb; 
+      ] ;
+   sh:severity sh:Violation ;
+   sh:targetClass skosno:GenericConceptRelation .
+
+   
+
 ### Klassen Partitiv begrepsrelasjon (skosno:PartitiveConceptRelation)
-:PartitiveConceptRelation-Shape1 a sh:NodeShape;
+:PartitiveConceptRelation-Shape1 a sh:NodeShape; # inndelingskriterium
    rdfs:label "Partitive concept relation"@en, "Partitiv begrepsrelasjon"@nb;
    # recommended
       sh:property :hasMin0MaxNShape-dctDescriptionCriterionOfSubdivision; # inndelingskriterium (dct:description)
       sh:property :uniqueLangShape-dctDescriptionCriterionOfSubdivision; # inndelingskriterieum (dct:description), maks. 1 per språk
    sh:targetClass skosno:PartitiveConceptRelation .
 
-:PartitiveConceptRelation-Shape2 a sh:NodeShape;
+:PartitiveConceptRelation-Shape2 a sh:NodeShape; # enten Comprehensive eller Partitive
    rdfs:label "Partitive concept relation"@en, "Partitiv begrepsrelasjon"@nb;
    # mandatory
       sh:xone (
          [sh:property [
             sh:path skosno:hasPartitiveConcept;
-            sh:class skos:Concept;
             sh:minCount 1; ] ]
          [sh:property [
             sh:path skosno:hasComprehensiveConcept;
-            sh:class skos:Concept;
             sh:minCount 1; ] ]
          );
-   sh:message "Either skosno:hasComprehensiveConcept or skosno:hasPartitiveConcept, not both, SHALL have min. 1 value which SHALL refer to an instance of skos:Concept"@en,
-      "Enten skosno:hasComprehensiveConcept eller skosno:hasPartitiveConcept, ikke begge, SKAL ha min. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
+   sh:message "Either skosno:hasComprehensiveConcept or skosno:hasPartitiveConcept, not both, SHALL have min. 1 value"@en,
+      "Enten skosno:hasComprehensiveConcept eller skosno:hasPartitiveConcept, ikke begge, SKAL ha min. 1 verdi"@nb;
+   sh:severity sh:Violation ;
+   sh:targetClass skosno:PartitiveConceptRelation .
+
+:PartitiveConceptRelation-Shape3 a sh:NodeShape; # klassetilhørighet
+   rdfs:label "Partitive concept relation"@en, "Partitiv begrepsrelasjon"@nb;
+   # mandatory
+   sh:property [
+      sh:path skosno:hasPartitiveConcept;
+      sh:class skos:Concept;
+      sh:message "The property skosno:hasPartitiveConcept SHALL refer to an instance of skos:Concept"@en, 
+         "Egenskapen skosno:hasPartitiveConcept SKAL referere til en instans av skos:Concept"@nb; 
+      ] ;
+   sh:property [
+      sh:path skosno:hasComprehensiveConcept;
+      sh:class skos:Concept;
+      sh:message "The property skosno:hasComprehensiveConcept SHALL refer to an instance of skos:Concept"@en, 
+         "Egenskapen skosno:hasComprehensiveConcept SKAL referere til en instans av skos:Concept"@nb; 
+      ] ;
    sh:severity sh:Violation ;
    sh:targetClass skosno:PartitiveConceptRelation .
 
@@ -269,24 +327,36 @@
       sh:property :hasMin0MaxNShape-dctDescription; # beskrivelse (dct:description)
    sh:targetClass skos:Collection .
 
-##### -------------------- gereral/resuable property shapes
+##### -------------------- general/reusable property shapes
 
 ##### adms-properties
+
+:hasMin0MaxNShape-admsStatusEitherCodedValueOrText a sh:PropertyShape;
+   sh:name "status (as coded value or text)"@en, "status (som kodet verdi eller tekst)"@nb;
+   sh:path adms:status;
+   sh:or ( [sh:class skos:Concept] [sh:datatype rdf:langString]);
+   sh:message "The property adms:status SHALL either refer to an instance of skos:Concept or be of datatype rdf:langString"@en, 
+      "Egenskapen adms:status skal enten referere til en instans av skos:Concept eller være av datatype rdf:langSting"@nb; 
+   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-admsStatusCodedValue a sh:PropertyShape;
    sh:name "status (as coded value)"@en, "status (som kodet verdi)"@nb;
    sh:path adms:status;
-   sh:class skos:Concept;
-   sh:maxCount 1;
+   sh:qualifiedValueShape [sh:class skos:Concept;];
+   sh:qualifiedValueShapesDisjoint true ;
+   sh:qualifiedMinCount 0 ;
+   sh:qualifiedMaxCount 1 ;
    sh:message "The property adms:status, as coded value, may have max. 1 value which SHALL refer to an instance of skos:Concept"@en,
       "Egenskapen adms:status, som kodet verdi, kan ha maks. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Violation .
 
-:hasMin0MaxNShape-admsStatusText a sh:PropertyShape;
+:hasMin0MaxNShape-admsStatusTextUnigueLang a sh:PropertyShape;
    sh:name "status (as text)"@en, "status (som tekst)"@nb;
    sh:path adms:status;
-   sh:datatype rdf:langString;
+   sh:qualifiedValueShape [sh:datatype rdf:langString;];
    sh:uniqueLang true;
+   sh:qualifiedValueShapesDisjoint true ;
+   sh:qualifiedMinCount 0 ;
    sh:message "The property adms:status, as text, SHALL be of datatype rdf:langString, and may have max. 1 per language"@en,
       "Egenskapen adms:status, som tekst, SKAL være av datatype rdf:langString, og kan ha maks. 1 per språk"@nb;
    sh:severity sh:Violation .
@@ -470,7 +540,7 @@
       "Egenskapen euvoc:startDate kan ha maks. 1 verdi som SKAL være av datatype xsd:date"@nb;
    sh:severity sh:Violation .
 
-:euvocXlDefinition a sh:PropertyShape;
+:hasMin0MaxNShape-euvocXlDefinition a sh:PropertyShape;
    sh:name "definition (via definition object)"@en, "definisjon (via definisjonsobjekt)"@nb;
    sh:path euvoc:xlDefinition;
    sh:class euvoc:XlNote;
@@ -521,14 +591,6 @@
       "Egenskapen skos:closeMatch SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Violation .
 
-:skosDefinition a sh:PropertyShape;
-   sh:name "definition (direct statement)"@en, "definisjon (direkte angivelse)"@nb;
-   sh:path skos:definition;
-   sh:datatype rdf:langString;
-   sh:message "The property skos:definition SHALL be of datatype rdf:langString"@en,
-      "Egenskapen skos:definition SKAL være av datatype rdf:langString"@nb;
-   sh:severity sh:Violation .
-
 :hasMin0MaxNShape-skosExactMatch a sh:PropertyShape;
    sh:name "has exact match with"@en, "har eksakt samsvar med"@nb;
    sh:path skos:exactMatch;
@@ -567,8 +629,8 @@
    sh:path skos:prefLabel;
    sh:datatype rdf:langString;
    sh:minCount 2;
-   sh:message "The property skos:prefLabel SHALL have min. 2 values which SHALL be of datatype rdf:langString"@en,
-      "Egenskapen skos:prefLabel SKAL ha min. 2 verdier som SKAL være av datatype rdf:langString"@nb;
+   sh:message "The property skos:prefLabel SHALL have min. 2 values which SHALL be of datatype rdf:langString, en på nynorsk og en bokmål"@en,
+      "Egenskapen skos:prefLabel SKAL ha min. 2 verdier som SKAL være av datatype rdf:langString, one in Norwegian nynorsk and one in Norweigan Bokmål"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-skosRelated a sh:PropertyShape;
@@ -598,6 +660,7 @@
       "Egenskapen skosno:dataStructureLabel SKAL være Literal"@nb;
    sh:severity sh:Violation .
 
+# følgende brukes ikke?
 :hasMin1MaxNShape-skosnoHasComprehensiveConcept a sh:PropertyShape;
    sh:name "has comprehensive concept"@en, "har helhetsbegrep"@nb;
    sh:path skosno:hasComprehensiveConcept;
@@ -607,6 +670,7 @@
       "Egenskapen skosno:hasComprehensiveConcept SKAL ha min. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Violation .
 
+# følgende brukes ikke?
 :hasMin1MaxNShape-skosnoHasGenericConcept a sh:PropertyShape;
    sh:name "has generic concept"@en, "har overbegrep"@nb;
    sh:path skosno:hasGenericConcept;
@@ -624,6 +688,7 @@
       "Egenskapen skosno:hasGenericConceptRelation SKAL referere til en instans av skosno:GenericConceptRelation"@nb;
    sh:severity sh:Violation .
 
+# følgende brukes ikke?
 :hasMin1MaxNShape-skosnoHasPartitiveConcept a sh:PropertyShape;
    sh:name "has partitive concept"@en, "har delbegrep"@nb;
    sh:path skosno:hasPartitiveConcept;
@@ -641,6 +706,7 @@
       "Egenskapen skosno:hasPartitiveConceptRelation SKAL referere til en instans av skosno:PartitiveConceptRelation"@nb;
    sh:severity sh:Violation .
 
+# følgende brukes ikke?
 :hasMin1MaxNShape-skosnoHasSpecificConcept a sh:PropertyShape;
    sh:name "has specific concept"@en, "har underbegrep"@nb;
    sh:path skosno:hasSpecificConcept;

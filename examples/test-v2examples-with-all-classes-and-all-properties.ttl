@@ -1,0 +1,153 @@
+####### ---------
+# This file contains examples in RDF Turtle, showing how SKOS-AP-NO-Begrep v.2 should be used
+# Alle classes and properties are included in the examples, with dummy data.
+#
+# Except for external graphs (e.g. instances of skos:Concept etc.) which may raise sh:Violation,
+# the examples in this file should conform to SKOS-AP-NO-Begrep v.2.
+####### ---------
+
+# Status: Shacl-validert ok, bortsett fra feil på eksterne grafer. 
+
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uneskos: <http://purl.org/umu/uneskos#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
+@prefix : <https://example.org/> .
+
+### Eksempel på klassen Begrep (skos:Concept)
+
+:tstCpt1 a skos:Concept ;
+   #--- mandatory properties:
+      skos:prefLabel "testbegrep"@nb , "testomgrep"@nn, "test concept"@en ; # anbefalt term
+      # skos:prefLabel "anbefalt term 2 på bokmål"@nb ; # denne skal gi feil, på sh:uniqueLang
+      skos:definition "begrep som kun er ment for test"@nb ; # definisjon
+      # skos:definition "definisjonstekst 2 på bokmål"@nb ; # denne skal gi feil, på sh:uniqueLang
+      dct:identifier "https://example.org/tstCpt1"^^xsd:anyURI ; # identifikator
+      dcat:contactPoint [ a vcard:Organization ; vcard:hasEmail <mailto:contact@example.org> ; ] ; # kontaktpunkt
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276> ; # publisert av, med fiktivt org.nr.
+
+   #--- eksempel på bruk av klassen Definision (euvoc:XlNote)
+      euvoc:xlDefinition [a euvoc:XlNote; # definisjon (via definisjonsobjekt)
+         #--- mandatory:
+            rdf:value "concept only meant to illustrate SKOS-AP-NO-Begrep in RDF/Turtle"@en ; # tekst
+         #--- recommended:
+            skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#self-composed> ; # forhold til kilde
+            dct:source <https://example.org/exSource> ; # kilde
+         #--- optional:
+            dct:audience <https://data.norge.no/vocabulary/audience-type#specialist> ; # målgruppe
+         ];
+
+   #--- recommended properties:
+      euvoc:startDate "2022-10-01"^^xsd:date ; # dato gyldig fra og med
+      euvoc:endDate "2030-12-31"^^xsd:date ; # dato gyldig til og med
+      dct:created "2022-10-01"^^xsd:date ; # dato opprettet
+      dct:modified "2023-01-24"^^xsd:date ; # dato sist oppdatert
+      dct:subject "standardisering"@nb, "standardization"@en , :tstCpt2 ; # fagområde, både som tekst og kodet verdi
+      skos:scopeNote "NB! dette er et fiktivt begrep"@nb , "Note: this is a fictive concept"@en ; # merknad
+      skos:altLabel "fiktivt begrep"@nb , "fiktive concept"@en ; # tillatt term
+
+   #--- optional properties:
+      skosno:dataStructureLabel "tstCpt1" ; # datastrukturterm
+      skos:example "eksempel1"@nb , "example 1"@en ; # eksempel
+      skos:hiddenLabel "test konsept"@nb , "fiktivt konsept"@nb ; # frarådd term
+      adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
+      adms:status :tstCpt2 ; # status
+      skosno:valueRange "gyldige koder for testbegreper"@nb ; # verdiområde, som tekst
+      skosno:valueRange <https://example.org/tstValueRange> ; # verdiområde, som dummy URI
+      owl:versionInfo "1.0.1" ; # versjonsnummer
+      adms:versionNotes "liten justering av den engelske definisjonsteksten"@nb ; # versjonsnote
+
+   #--- (optional) properties
+      uneskos:memberOf :tstCat ; # inngår i begrepssamling
+   #--- relations - direct between two concepts, with dummy
+      dct:isReplacedBy :tstCpt2 ; # er erstattet av
+      dct:replaces :tstCpt3 ; # erstatter
+      xkos:generalizes :tstCpt2 ; # generaliserer
+      xkos:specializes :tstCpt3 ; # spesialiserer
+      xkos:hasPart :tstCpt2 ; # inneholder
+      xkos:isPartOf :tstCpt3 ; # er del av
+      skos:related :tstCpt2 ; # er relatert til
+      skos:exactMatch :tstCpt2 ; # har eksakt samsvar med
+      skos:closeMatch :tstCpt3 ; # har nært samsvar med
+      rdfs:seeAlso :tstCpt2 ; # se også
+   #--- relations - via instances of relation classes
+      skosno:isFromConceptIn [a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ relasjon
+         skosno:hasToConcept :tstCpt2 ; # har til-begrep
+         skosno:relationRole :tstCpt3 ; # relasjonsrulle, som kodet verdi
+        ] ;
+      skosno:isFromConceptIn [a skosno:AssociativeConceptRelation ; # er fra-begrep i en annen assosiativ relasjon
+         skosno:hasToConcept :tstCpt3 ; # har til-begrep
+         skosno:relationRole "en rolle"@nb , "a role"@en ; # relasjonsrole, som tekst
+        ] ;
+      skos:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
+         skosno:hasGenericConcept :tstCpt2 ; # har overbegrep
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+      skos:hasGenericConceptRelation [a skosno:GenericConceptRelation; #  har generisk begrepsrelasjon
+         skosno:hasSpecificConcept :tstCpt3 ; # har underbegrep
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+      skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
+         skosno:hasComprehensiveConcept :tstCpt2 ; 
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+      skosno:hasPartitiveConceptRelation [a skosno:PartitiveConceptRelation; # har partitiv begrepsrelasjon
+         skosno:hasPartitiveConcept :tstCpt3 ; # har delbegrep
+         dct:description "inndelingskriterium"@nb ; # inndelingskriterium
+         ];
+   .
+
+### Eksempel på Begrepssamling (skos:Collection)
+
+:tstCat a skos:Collection;
+   #--- mandatory:
+      dct:identifier "https://example.org/tstCat"^^xsd:anyURI ; # identifikator
+      skos:member :tstCpt1 , :tstCpt2 , :tstCpt3 , :tstCpt4 ; # inneholder begrep
+      dcat:contactPoint [ a vcard:Organization ; vcard:hasEmail <mailto:contact@example.org> ; ] ; # kontaktpunkt
+      dct:title "testkatalog av begreper"@nb, "text catalog of concepts"@en ; # navn
+      dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/1656923949276> ; # publisert av, med fiktivt org.nr.
+
+   #--- recommended:
+      dct:description "katalogen inneholder kun testbegreper"@nb ; # beskrivelse
+   .
+
+
+### resten av instansene bare for å ha noe å referere til, noe som ikke skal gi valideringsfeil
+
+:tstCpt2 a skos:Concept ;
+   #--- mandatory:
+      skos:prefLabel "testbegrep 2"@nb, "testomgrep 2"@nn, "test concept 2"@en ; # anbefalt term
+      skos:definition "begrep 2 som kun er ment for test"@nb, "concept 2 which is only meant for test"@en; # definisjon
+      dct:identifier "https://example.org/tstCpt2"^^xsd:anyURI ; # identifikator
+      dcat:contactPoint [ a vcard:Organization ; vcard:hasEmail <mailto:contact@example.org> ; ] ; # kontaktpunkt
+      dct:publisher [ a org:Organization ]; 
+   .
+
+:tstCpt3 a skos:Concept ;
+   #--- mandatory:
+      skos:prefLabel "testbegrep 3"@nb, "testomgrep 3"@nn, "test concept 3"@en ; # anbefalt term
+      skos:definition "begrep 3 som kun er ment for test"@nb, "concept 3 which is only meant for test"@en; # definisjon
+      dct:identifier "https://example.org/tstCpt3"^^xsd:anyURI ; # identifikator
+      dcat:contactPoint [ a vcard:Organization ; vcard:hasEmail <mailto:contact@example.org> ; ] ; # kontaktpunkt
+      dct:publisher [ a org:Organization ]; 
+   .
+
+:tstCpt4 a skos:Concept ;
+   #--- mandatory:
+      skos:prefLabel "testbegrep 4"@nb, "testomgrep 4"@nn, "test concept 4"@en ; # anbefalt term
+      skos:definition "begrep 4 som kun er ment for test"@nb, "concept 4 which is only meant for test"@en; # definisjon
+      dct:identifier "https://example.org/tstCpt4"^^xsd:anyURI ; # identifikator
+      dcat:contactPoint [ a vcard:Organization ; vcard:hasEmail <mailto:contact@example.org> ; ] ; # kontaktpunkt
+      dct:publisher [ a org:Organization ]; 
+   .

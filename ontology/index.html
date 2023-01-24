@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title></title>
-    <meta name="generator" content="LibreOffice 7.4.1.2 (Linux)" />
-    <meta name="created" content="00:00:00" />
-    <meta name="changed" content="00:00:00" />
-    <style type="text/css">
-        @page {
-            size: 8.27in 11.69in;
-            margin: 0.79in
-        }
-
-        p {
-            line-height: 115%;
-            margin-bottom: 0.1in;
-            background: transparent
-        }
-
-        pre {
-            background: transparent
-        }
-
-        pre.western {
-            font-family: "Liberation Mono", monospace;
-            font-size: 10pt
-        }
-
-        pre.cjk {
-            font-family: "Noto Sans Mono CJK SC", monospace;
-            font-size: 10pt
-        }
-
-        pre.ctl {
-            font-family: "Liberation Mono", monospace;
-            font-size: 10pt
-        }
-
-    </style>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.0.3 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
 </head>
-
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
-    <pre class="western">@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
 @prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix euvoc: &lt;http://publications.europa.eu/ontology/euvoc#&gt; .
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
@@ -74,10 +48,11 @@
     dct:license &lt;http://publications.europa.eu/resource/authority/licence/CC_BY_4_0&gt; ;
     dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
     dct:description &quot;This is the ontology for SKOS-AP-NO-Begrep.&quot;@en ;
-    dct:title &quot;Ontology for SKOS-AP-NO-Begrep v.1.x&quot;@en , &quot;Ontologi for SKOS-AP-NO-Begrep v.1.x&quot;@nb ;
-    dct:modified &quot;2021-08-26&quot;^^xsd:date ;
-    owl:versionInfo &quot;0.2&quot; ;
-    owl:versionNotes &quot;Only the classes, properties and controlled vocabularies that are defined in SKOS-AP-NO-Begrep are defined in this ontology. Properties, classes etc. that are defined elsewhere and used in SKOS-AP-NO-Begrep without modification, are not (re)defined here - but with modifications documented here.&quot;@en ;
+    dct:title &quot;Ontology for SKOS-AP-NO-Begrep v.2&quot;@en , &quot;Ontologi for SKOS-AP-NO-Begrep v.2&quot;@nb ;
+    dct:modified &quot;2023-01-24&quot;^^xsd:date ;
+    owl:versionInfo &quot;2.001&quot; ;
+    owl:versionNotes &quot;Only the classes and properties that are defined in SKOS-AP-NO-Begrep v.2 are defined in this ontology. Classes and properties that are defined in other vocabularies are not included here.&quot;@en ,
+      &quot;Bare klasser og egenskaper som er definert i SKOS-AP-NO-Begrepv v.2 er inkludert i denne ontologien. Klasser og egenskaper som er definert i andre vokabularer er ikke inkludert her.&quot;@nb ;
     foaf:homepage &lt;https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/&gt; ;
     foaf:maker [
         foaf:mbox &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
@@ -86,60 +61,208 @@
         ] ;
     .
 
-###
-### Classes defined in SKOS-AP-NO-Begrep:
-###
+### ---------------------------------------------------------------------------------
+### Classes defined in SKOS-AP-NO-Begrep v.2
+### ---------------------------------------------------------------------------------
+
+skosno:AssociativeConceptRelation a owl:Class ;
+  owl:disjointWith skosno:GenericConceptRelation , skosno:PartitiveConceptRelation ;   
+  rdfs:label &quot;Associative concept relation&quot;@en , &quot;Assosiativ begrepsrelasjon&quot;@nb ;
+  rdfs:comment &quot;This class is used to represent an associative concept relation.&quot;@en ,
+      &quot;Klassen brukes til &aring; representere en assosiativ begrepsrelasjon.&quot;@nb ;
+  rdfs:seeAlso &lt;https://termbasen.standard.no/term/165575612703735/eng&gt; ;
+  .
+
+skosno:GenericConceptRelation a owl:Class ;
+  owl:disjointWith skosno:AssociativeConceptRelation , skosno:PartitiveConceptRelation ;   
+  rdfs:label &quot;Generic concept relation&quot;@en , &quot;Generisk begrepsrelasjon&quot;@nb ;
+  rdfs:comment &quot;This class is used to represent a generic concept relation.&quot;@en ,
+      &quot;Klassen brukes til &aring; representere en generisk begrepsrelasjon.&quot;@nb ;
+  rdfs:seeAlso &lt;https://termbasen.standard.no/term/165575612703726/eng&gt; ;
+  .
+
+skosno:PartitiveConceptRelation a owl:Class ;
+  owl:disjointWith skosno:AssociativeConceptRelation, skosno:GenericConceptRelation  ;   
+  rdfs:label &quot;Partitive concept relation&quot;@en , &quot;Partitiv begrepsrelasjon&quot;@nb ;
+  rdfs:comment &quot;This class is used to represent a partitive concept relation.&quot;@en ,
+      &quot;Klassen brukes til &aring; representere en partitiv begrepsrelasjon.&quot;@nb ;
+  rdfs:seeAlso &lt;https://termbasen.standard.no/term/165575812309370/eng&gt; ;
+  .
+
+
+### ---------------------------------------------------------------------------------
+### Properties defined in SKOS-AP-NO-Begrep v.2
+### ---------------------------------------------------------------------------------
+
+skosno:dataStructureLabel a owl:DatatypeProperty ;
+  rdfs:domain skos:Concept ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label &quot;data structure label&quot;@en , &quot;datastrukturterm&quot;@nb ;
+  rdfs:comment &quot;This property is used to specify a data structure label.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi datastrukturterm for begrepet.&quot;@nb ;
+  .
+
+skosno:isFromConceptIn a owl:ObjectProperty ;
+  rdfs:domain skos:Concept ;
+  rdfs:range skosno:AssociativeConceptRelation ;
+  rdfs:label &quot;is from-concept in&quot;@en , &quot;er fra-begrep i&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to an associative relation that this concept has with another concept, when there is a need to describe the relation role of this concept.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi en assosiativ begrepsrelasjon som begrepet har med et annet begrep, n&aring;r det er behov for &aring; beskrive relasjonsrollen til dette begrepet.&quot;@nb ;
+  .
+
+skosno:hasGenericConceptRelation a owl:ObjectProperty ;
+  rdfs:domain skos:Concept ;
+  rdfs:range 	skosno:GenericConceptRelation ;
+  rdfs:label &quot;has generic concept relation&quot;@en , &quot;har generisk begrepsrelasjon&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to a generic concept relation that this concept has with another concept, when there is a need to specify the criterion of subdivision.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi en generisk begrepsrelasjon som begrepet har med et annet begrep, n&aring;r det er behov for &aring; oppgi inndelingskriterium.&quot;@nb ;
+  .
+
+skosno:hasPartitiveConceptRelation a owl:ObjectProperty ;
+  rdfs:domain skos:Concept ;
+  rdfs:range skosno:PartitiveConceptRelation ;
+  rdfs:label &quot;has partitive concept relation&quot;@en , &quot;har partitiv begrepsrelasjon&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to a partitive concept relation that this concept has with another concept, when there is a need to specify the criterion of subdivision.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi en partitiv begrepsrelasjon som begrepet har med et annet begrep, n&aring;r det er behov for &aring; oppgi inndelingskriterium.&quot;@nb ;
+  .
+
+skosno:valueRange a owl:DatatypeProperty ;
+  rdfs:domain skos:Concept ;
+  rdfs:range [ rdf:type rdfs:Datatype ;
+    owl:unionOf ( rdf:langString
+                  xsd:anyURI
+      )
+    ] ;
+  rdfs:label &quot;value range&quot;@en , &quot;verdiomr&aring;de&quot;@nb ;
+  rdfs:comment &quot;This property is used to specify the value range of a concept, as text and/or as reference to where this is specified.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi verdiomr&aring;de, oppgitt som tekst og/eller referanse til der dette er spesifisert.&quot;@nb ;
+  .
+
+skosno:relationshipWithSource a owl:ObjectProperty ;
+  rdfs:domain euvoc:XlNote ;
+  rdfs:range skos:Concept ; 
+  rdfs:label &quot;relationship with source&quot;@en , &quot;forhold til kilde&quot;@nb ;
+  rdfs:comment &quot;This property is used to specify the relationship between the definition and the source, as coded value chosen from a controlled vocabulary.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi forhold til kilde, som kodet verdi valgt fra et kontrollert vokabular.&quot;@nb ;
+  .
+
+skosno:hasToConcept a owl:ObjectProperty ;
+  rdfs:domain skosno:AssociativeConceptRelation ;
+  rdfs:range skos:Concept ;
+  rdfs:label &quot;has to-concept&quot;@en , &quot;har til-begrep&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to a to-concept in an associative concept relation.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til et til-begrep i en assosiativ begrepsrelasjon.&quot;@nb ;
+  .
+
+skosno:relationRole a owl:ObjectProperty ;
+  rdfs:domain skosno:AssociativeConceptRelation ;
+  rdfs:range [ rdf:type rdfs:Datatype ;
+    owl:unionOf ( rdf:langString
+                  xsd:anyURI
+      )
+    ] ;
+  rdfs:label &quot;relation role&quot;@en , &quot;relasjonsrolle&quot;@nb ;
+  rdfs:comment &quot;This property is used to specify the relation role the concept has towards the other concept in the associative relation. The value shall be either a coded value chosen from a controlled vocabulary, or text.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; oppgi relasjonsrollen begrepet har overfor det andre begrepet i den assosiative relasjonen. Verdien skal oppgis enten som kodet verdi valgt fra et kontrollert vokabular, eller som tekst.&quot;@nb ;
+  .
+
+skosno:hasGenericConcept a owl:ObjectProperty ;
+  rdfs:domain skosno:GenericConceptRelation ;
+  rdfs:range skos:Concept ;
+  rdfs:label &quot;has generic concept&quot;@en , &quot;har overbegrep&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to the generic concept in a generic concept relation.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til det generiske begrepet i en generisk begrepsrelasjon.&quot;@nb ;
+  .
+
+skosno:hasSpecificConcept a owl:ObjectProperty ;
+  rdfs:domain skosno:GenericConceptRelation ;
+  rdfs:range skos:Concept ;
+  rdfs:label &quot;has specific concept&quot;@en , &quot;har underbegrep&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to the specific concept in a generic concept relation.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til det spesifikke begrepet i en generisk begrepsrelasjon.&quot;@nb ;
+  .
+
+skosno:hasPartitiveConcept a owl:ObjectProperty ;
+  rdfs:domain skosno:PartitiveConceptRelation ;
+  rdfs:range skos:Concept ;
+  rdfs:label &quot;has partitive concept&quot;@en , &quot;har delbegrep&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to another concept (the partitive concept) that is part of this concept, in a partitive concept relation between the two concepts.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til et annet begrep (delbegrepet) som inng&aring;r i dette begrepet, i en partitiv begrepsrelasjon mellom disse.&quot;@nb ;
+  .
+
+skosno:hasComprehensiveConcept a owl:ObjectProperty ;
+  rdfs:domain skosno:PartitiveConceptRelation ;
+  rdfs:range skos:Concept ;
+  rdfs:label &quot;has comprehensive concept&quot;@en , &quot;har helhetsbegrep&quot;@nb ;
+  rdfs:comment &quot;This property is used to refer to another concept (the comprehensive concept) that contains this concept, in a partitive concept relation between the two concepts.&quot;@en ,
+      &quot;Egenskapen brukes til &aring; referere til et annet begrep (helhetsbegrepet) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.&quot;@nb ;
+  .
+
+
+### ---------------------------------------------------------------------------------
+### ---------------------------------------------------------------------------------
+### 
+### The following classes, properties and named individuals from v.1 are deprecated
+### 
+### ---------------------------------------------------------------------------------
+### ---------------------------------------------------------------------------------
+
+### Deprecated classes that were defined in SKOS-AP-NO-Begrep v.1:
 
 skosno:AlternativFormulering a owl:Class ;
   owl:disjointWith skosno:Definisjon ;
   rdfs:label &quot;Reworded definition&quot;@en , &quot;Alternativ formulering&quot;@nb ;
   rdfs:comment &quot;To represent a reworded definition of a concept.&quot;@en ,
-      &quot;For å representere en alternativt formulert definisjon til et begrep.&quot;@nb ;
+      &quot;For &aring; representere en alternativt formulert definisjon til et begrep.&quot;@nb ;
   rdfs:seeAlso &lt;https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/#AlternativFormulering&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:AssosiativRelasjon a owl:Class ;
   owl:disjointWith skosno:GeneriskRelasjon , skosno:PartitivRelasjon ;
   rdfs:label &quot;Associative relation&quot;@en , &quot;Assosiativ relasjon&quot;@nb ;
   rdfs:comment &quot;To represent an associative relation between two concepts.&quot;@en ,
-      &quot;For å representere en assosiativ relasjon mellom to begreper.&quot;@nb ;
+      &quot;For &aring; representere en assosiativ relasjon mellom to begreper.&quot;@nb ;
   rdfs:seeAlso &lt;https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36171&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:Definisjon a owl:Class ;
   owl:disjointWith skosno:AlternativFormulering ;
   rdfs:label &quot;Definition&quot;@en , &quot;Definisjon&quot;@nb ;
   rdfs:comment &quot;To represent a definition of a concept.&quot;@en ,
-      &quot;For å representere en definisjon til et begrep.&quot;@nb ;
+      &quot;For &aring; representere en definisjon til et begrep.&quot;@nb ;
   rdfs:seeAlso &lt;https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36175&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:GeneriskRelasjon a owl:Class ;
   owl:disjointWith skosno:AssosiativRelasjon , skosno:PartitivRelasjon ;
   rdfs:label &quot;Generic relation&quot;@en , &quot;Generisk relasjon&quot;@nb ;
   rdfs:comment &quot;To represent a generic relation between two concepts.&quot;@en ,
-      &quot;For å representere en generisk relasjon mellom to begreper.&quot;@nb ;
+      &quot;For &aring; representere en generisk relasjon mellom to begreper.&quot;@nb ;
   rdfs:seeAlso &lt;https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=36169&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:PartitivRelasjon a owl:Class ;
   owl:disjointWith skosno:AssosiativRelasjon , skosno:GeneriskRelasjon ;
   rdfs:label &quot;Partitive relation&quot;@en , &quot;Partitiv relasjon&quot;@nb ;
   rdfs:comment &quot;To represent a partitive relation between two concepts.&quot;@en ,
-      &quot;For å representere en partitiv relasjon mellom to begreper.&quot;@nb ;
+      &quot;For &aring; representere en partitiv relasjon mellom to begreper.&quot;@nb ;
   rdfs:seeAlso &lt;https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=38612&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
-###
-### Properties defined in SKOS-AP-NO-Begrep:
-###
+### Deprecated properties that were defined in SKOS-AP-NO-Begrep v.1:
 
 skosno:alternativFormulering a owl:ObjectProperty ;
   rdfs:domain skos:Concept ;
   rdfs:range skosno:AlternativFormulering ;
   rdfs:label &quot;reworded definition&quot;@en , &quot;alternativ formulering&quot;@nb ;
   rdfs:comment &quot;To refer to a reworded definition of the concept.&quot;@en ,
-      &quot;For å referere til en alternativt forumlert definisjon til begrepet.&quot;@nb ;
+      &quot;For &aring; referere til en alternativt forumlert definisjon til begrepet.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:assisiativRelasjon a owl:ObjectProperty ;
@@ -147,14 +270,16 @@ skosno:assisiativRelasjon a owl:ObjectProperty ;
   rdfs:range skosno:AssosiativRelasjon ;
   rdfs:label &quot;associative relation&quot;@en , &quot;assosiativ relasjon&quot;@nb ;
   rdfs:comment &quot;To refer to an associative relation between concepts.&quot;@en ,
-      &quot;For å referere til en assosiativ relasjon mellom begreper.&quot;@nb ;
+      &quot;For &aring; referere til en assosiativ relasjon mellom begreper.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
-skosno:bruksområde a owl:DatatypeProperty ;
+skosno:bruksomr&aring;de a owl:DatatypeProperty ;
   rdfs:domain skos:Concept ;
   rdfs:range rdfs:Literal ;
-  rdfs:label &quot;bruksområde&quot;@nb ;
-  rdfs:comment &quot;For å referere til bruksområde til begrepet.&quot;@nb ;
+  rdfs:label &quot;bruksomr&aring;de&quot;@nb ;
+  rdfs:comment &quot;For &aring; referere til bruksomr&aring;de til begrepet.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:datasktrukturterm a owl:ObjectProperty ;
@@ -164,7 +289,8 @@ skosno:datasktrukturterm a owl:ObjectProperty ;
   rdfs:range skosxl:Label ;
   rdfs:label &quot;data structure term&quot;@en , &quot;datastrukturterm&quot;@nb ;
   rdfs:comment &quot;To refer to a data structure term of the concept.&quot;@en,
-      &quot;For å referere til en datastrukturterm til begrepet.&quot;@nb ;
+      &quot;For &aring; referere til en datastrukturterm til begrepet.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:definisjon a owl:ObjectProperty ;
@@ -172,7 +298,8 @@ skosno:definisjon a owl:ObjectProperty ;
   rdfs:range skosno:Definisjon ;
   rdfs:label &quot;definition&quot;@en , &quot;definisjon&quot;@nb ;
   rdfs:comment &quot;To refer to the definition of the concept.&quot;@en ,
-      &quot;For å referere til definisjonen til begrepet.&quot;@nb ;
+      &quot;For &aring; referere til definisjonen til begrepet.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:forholdTilKilde a owl:ObjectProperty ;
@@ -181,7 +308,7 @@ skosno:forholdTilKilde a owl:ObjectProperty ;
        owl:unionOf (
           [ rdf:type rdfs:Datatype ;
               owl:oneOf [ rdf:type rdf:List ;
-                  rdf:first skosno:basertPåKilde ;
+                  rdf:first skosno:basertP&aring;Kilde ;
                   rdf:rest rdf:nil ;
                   ]
               ]
@@ -200,7 +327,8 @@ skosno:forholdTilKilde a owl:ObjectProperty ;
           ) ;
        ] ;
  rdfs:label &quot;forhold til kilde&quot;@nb ;
- rdfs:comment &quot;For å oppgi sammenheng mellom (den alternativt formulerte) definisjonen og kilden(e).&quot;@nb ;
+ rdfs:comment &quot;For &aring; oppgi sammenheng mellom (den alternativt formulerte) definisjonen og kilden(e).&quot;@nb ;
+ adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
  .
 
 skosno:generiskRelasjon a owl:ObjectProperty ;
@@ -208,7 +336,8 @@ skosno:generiskRelasjon a owl:ObjectProperty ;
   rdfs:range skosno:GeneriskRelasjon ;
   rdfs:label &quot;generic relation&quot;@en , &quot;generisk relasjon&quot;@nb ;
   rdfs:comment &quot;To refer to a generic relation between concepts.&quot;@en ,
-     &quot;For å referere til en generisk relasjon mellom begreper.&quot;@nb ;
+     &quot;For &aring; referere til en generisk relasjon mellom begreper.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:inndelingskriterium a owl:DatatypeProperty ;
@@ -216,15 +345,17 @@ skosno:inndelingskriterium a owl:DatatypeProperty ;
   rdfs:range rdfs:Literal ;
   rdfs:label &quot;criterion of subdivision&quot;@en , &quot;inndelingskriterium&quot;@nb ;
   rdfs:comment &quot;To refer to a criterion of subdivision of the generic or partitive relation.&quot;@en ,
-      &quot;For å oppgi et inndelingskriterium til en generisk eller partitiv relasjon.&quot;@nb ;
+      &quot;For &aring; oppgi et inndelingskriterium til en generisk eller partitiv relasjon.&quot;@nb ;
   rdfs:seeAlso &lt;https://www.standard.no/toppvalg/termbasen/Termpost/?TermPostId=66217&gt; ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:omfang a owl:DatatypeProperty ;
   rdfs:domain skos:Concept ;
   rdfs:range rdfs:Literal ;
   rdfs:label &quot;omfang&quot;@nb ;
-  rdfs:comment &quot;For å oppgi omfang til begrepet.&quot;@nb ;
+  rdfs:comment &quot;For &aring; oppgi omfang til begrepet.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
 skosno:partitivRelasjon a owl:ObjectProperty ;
@@ -232,169 +363,55 @@ skosno:partitivRelasjon a owl:ObjectProperty ;
   rdfs:range skosno:PartitivRelasjon ;
   rdfs:label &quot;partitive relation&quot;@en , &quot;partitiv relasjon&quot;@nb ;
   rdfs:comment &quot;To refer to a partitiv relation between concepts.&quot;@en ,
-     &quot;For å referere til en partitiv relasjon mellom begreper.&quot;@nb ;
+     &quot;For &aring; referere til en partitiv relasjon mellom begreper.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
   .
 
-###
-### Controlled vocabularies defined in SKOS-AP-NO-Begrep:
-###
+### Deprecatd controlled vocabularies (named individuals) that were defined in SKOS-AP-NO-Begrep v.1:
 
 skosno:allmennheten a owl:NamedIndividual , foaf:Agent , skos:Concept ;
   rdfs:label &quot;allmennheten&quot;@nb ;
-  rdfs:comment &quot;En av lovlige verdier for målgruppe (dct:audience). Denne brukes når det ikke forutsettes noe forkunnskap i det aktuelle fagområdet for begrepet.&quot;@nb ;
+  rdfs:comment &quot;En av lovlige verdier for m&aring;lgruppe (dct:audience). Denne brukes n&aring;r det ikke forutsettes noe forkunnskap i det aktuelle fagomr&aring;det for begrepet.&quot;@nb ;
   skos:prefLabel &quot;allmennheten&quot;@nb ;
-  skos:definition &quot;målgruppe av hvilken det ikke forutsettes noe forkunnskap i det aktuelle fagområdet&quot;@nb ;
+  skos:definition &quot;m&aring;lgruppe av hvilken det ikke forutsettes noe forkunnskap i det aktuelle fagomr&aring;det&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/audience-type#public&gt; ;
   .
 
 skosno:fagspesialist a owl:NamedIndividual , foaf:Agent , skos:Concept ;
   rdfs:label &quot;fagspesialist&quot;@nb ;
-  rdfs:commet &quot;En av lovlige verdier for målgruppe (dct:audience). Denne brukes når det forutsettes et visst kunnskapsnivå i det aktuelle fagområdet for begrepet.&quot;@nb ;
+  rdfs:commet &quot;En av lovlige verdier for m&aring;lgruppe (dct:audience). Denne brukes n&aring;r det forutsettes et visst kunnskapsniv&aring; i det aktuelle fagomr&aring;det for begrepet.&quot;@nb ;
   skos:prefLabel &quot;fagspesialist&quot;@nb ;
-  skos:definition &quot;målgruppe av hvilken det forutsettes et visst kunnskapsnivå i det aktuelle fagområdet&quot;@nb ;
+  skos:definition &quot;m&aring;lgruppe av hvilken det forutsettes et visst kunnskapsniv&aring; i det aktuelle fagomr&aring;det&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/audience-type#specialist&gt; ;
   .
 
-skosno:basertPåKilde a owl:NamedIndividual , skos:Concept ;
-  skos:prefLabel &quot;basert på kilde&quot;@nb ;
-  skos:definition &quot;beskrivelse av forholdet mellom en (alternativt formulert) definisjon til et begrep og dens kilde(r) der definisjonen ikke er direkte sitat fra, men er basert på, kilden(e)&quot;@nb ;
+skosno:basertP&aring;Kilde a owl:NamedIndividual , skos:Concept ;
+  skos:prefLabel &quot;basert p&aring; kilde&quot;@nb ;
+  skos:definition &quot;beskrivelse av forholdet mellom en (alternativt formulert) definisjon til et begrep og dens kilde(r) der definisjonen ikke er direkte sitat fra, men er basert p&aring;, kilden(e)&quot;@nb ;
   dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
-  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes når ‘definisjon’ eller ‘alternativ formulering’ ikke er ordrett sitat fra, men basert på, en eller flere gitte kilder.&quot;@nb ;
+  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes n&aring;r &lsquo;definisjon&rsquo; eller &lsquo;alternativ formulering&rsquo; ikke er ordrett sitat fra, men basert p&aring;, en eller flere gitte kilder.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source&gt; ;
   .
 
 skosno:egendefinert a owl:NamedIndividual , skos:Concept ;
   skos:prefLabel &quot;egendefinert&quot;@nb ;
-  skos:definition &quot;beskrivelse av opphav av en (alternativt forumlert) definisjon av et begrep, der definisjonen ikke er sitat fra eller basert på noen kilde&quot;@nb ;
+  skos:definition &quot;beskrivelse av opphav av en (alternativt forumlert) definisjon av et begrep, der definisjonen ikke er sitat fra eller basert p&aring; noen kilde&quot;@nb ;
   dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
-  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes når ‘definisjon’ eller ‘alternativ formulering’ ikke er sitat fra eller basert på noen kilde.&quot;@nb ;
+  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes n&aring;r &lsquo;definisjon&rsquo; eller &lsquo;alternativ formulering&rsquo; ikke er sitat fra eller basert p&aring; noen kilde.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/relationship-with-source-type#self-composed&gt; ;
   .
 
 skosno:sitatFraKilde a owl:NamedIndividual , skos:Concept ;
   skos:prefLabel &quot;sitat fra kilde&quot;@nb ;
   skos:definition &quot;beskrivelse av forholdet mellom en (alternativt formulert) definisjon og kilden der definisjonen er direkte sitat fra kilden&quot;@nb ;
   dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
-  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes når ‘definisjon’ eller ‘alternativ formulering’ er ordrett sitat fra en gitt kilde.&quot;@nb ;
-  .
-
-###
-### Properties defined elsewhere, with modified usages in SKOS-AP-NO-Begrep:
-###
-
-dct:audience a owl:ObjectProperty ;
-  rdfs:label &quot;audience&quot;@en , &quot;målgruppe&quot;@nb ;
-  rdfs:comment &quot;To refer to the audience of a (reworded) definition or a term.&quot;@en ,
-       &quot;For å oppgi målgruppe for en (alternativt formulert) definsjon eller en term.&quot;@nb ;
-  rdfs:domain [ rdf:type owl:Class ;
-                owl:unionOf ( skosno:AlternativFormulering
-                              skosno:Definisjon
-                              skosxl:Label
-                                       )
-                         ] ;
-  rdfs:range [ rdf:type rdfs:Datatype ;
-       owl:unionOf (
-          [ rdf:type rdfs:Datatype ;
-              owl:oneOf [ rdf:type rdf:List ;
-                  rdf:first skosno:allmennheten ;
-                  rdf:rest rdf:nil ;
-                  ]
-              ]
-          [ rdf:type rdfs:Datatype ;
-                  owl:oneOf [ rdf:type rdf:List ;
-                  rdf:first skosno:fagspesialist ;
-                  rdf:rest rdf:nil ;
-                  ]
-              ]
-          ) ;
-       ] ;
-.
-
-###
-### Classes from other vocabularies that are used in SKOS-AP-NO-Begrep,
-### without modified usage, only with Norwegian labels:
-###
-
-skos:Collection a owl:Class ;
-  rdfs:label &quot;Begrepssamling&quot;@nb .
-
-skos:Concept a owl:Class ;
-  rdfs:label &quot;Begrep&quot;@nb .
-
-skosxl:Label a owl:Class ;
-  rdfs:label &quot;Term&quot;@nb .
-
-###
-### Properties from other vocabularies that are used in SKOS-AP-NO-Begrep,
-### with Norwegian labels, and/or range/domain specified:
-###
-
-skos:related a owl:ObjectProperty ;
-  rdfs:label &quot;assosiert begrep&quot;@nb , &quot;related concept&quot;@en ;
-  rdfs:domain skosno:AssosiativRelasjon ;
-  rdfs:range skos:Concept ;
- .
-
-xkos:generalizes a owl:ObjectProperty ;
-  rdfs:label &quot;underordnet begrep (i en generisk relasjon)&quot;@nb , &quot;spesifikt begrep&quot;@nb ,
-    &quot;subordinate concept (in a generic relation)&quot;@en , &quot;specific concept&quot;@en ;
-  rdfs:domain skosno:GeneriskRelasjon ;
-  rdfs:range skos:Concept ;
-  .
-
-xkos:specializes a owl:ObjectProperty ;
-  rdfs:label &quot;overordnet begrep (i en generisk relasjon)&quot;@nb , &quot;generisk begrep&quot;@nb ,
-    &quot;superordinate concept (in a generic relation)&quot;@en , &quot;generic concept&quot;@en ;
-  rdfs:domain skosno:GeneriskRelasjon ;
-  rdfs:range skos:Concept ;
-  .
-
-xkos:hasPart a owl:ObjectProperty ;
-  rdfs:label &quot;underordnet begrep (i en partitiv relasjon)&quot;@nb , &quot;delbegrep&quot;@nb ,
-    &quot;subordinate concept (in a partitive relation)&quot;@en , &quot;partitive concept&quot;@en ;
-  rdfs:domain skosno:PartitivRelasjon ;
-  rdfs:range skos:Concept ;
-  .
-
-xkos:isPartOf a owl:ObjectProperty ;
-  rdfs:label &quot;overordnet begrep (i en partitiv relasjon)&quot;@nb , &quot;helhetsbegrep&quot;@nb ,
-    &quot;superordinate concept (in a partitive relation)&quot;@en , &quot;comprehensive concept&quot;@en ;
-  rdfs:domain skosno:PartitivRelasjon ;
-  rdfs:range skos:Concept ;
-  .
-
-skosxl:prefLabel a owl:DatatypeProperty ;
-  rdfs:label &quot;anbefalt term&quot;@nb .
-
-skosxl:altLabel a owl:DatatypeProperty ;
-  rdfs:label &quot;tillatt term&quot;@nb .
-
-skosxl:hiddenLabel a owl:DatatypeProperty ;
-  rdfs:label &quot;frarådet term&quot;@nb .
-
-dct:description a owl:DatatypeProperty ;
-  rdfs:label &quot;beskrivelse&quot;@nb .
-
-dct:identifier a owl:DatatypeProperty ;
-  rdfs:label &quot;identifikator&quot;@nb  .
-
-dct:isReplacedBy a owl:ObjectProperty ;
-  rdfs:label &quot;erstattes av&quot;@nb ;
-  owl:inverseOf dct:replaces .
-
-dct:modified a owl:DatatypeProperty ;
-  rdfs:label &quot;sist oppdatert&quot;@nb .
-
-dct:publisher a owl:ObjectProperty ;
-  rdfs:label &quot;ansvarlig virksomhet&quot;@nb .
-
-dct:replaces a owl:ObjectProperty ;
-  rdfs:label &quot;erstatter&quot;@nb .
-
-dct:source a owl:DatatypeProperty ;
-  rdfs:label &quot;kilde&quot;@nb .
-
-dct:subject a owl:DatatypeProperty ;
-  rdfs:label &quot;fagområde&quot;@nb .
-
-dct:temporal a owl:DatatypeProperty ;
-  rdfs:label &quot;gyldighetsperoide&quot;@nb .</pre>
+  rdfs:comment &quot;En av lovlige verdier for forholdTilKilde (skosno:forholdTilKilde). Denne brukes n&aring;r &lsquo;definisjon&rsquo; eller &lsquo;alternativ formulering&rsquo; er ordrett sitat fra en gitt kilde.&quot;@nb ;
+  adms:status &lt;http://publications.europa.eu/resource/authority/dataset-status/DEPRECATED&gt; ;
+  dct:isReplacedBy &lt;https://data.norge.no/vocabulary/relationship-with-source-type#direct-from-source&gt; ;
+  .</pre>
 </body>
-
 </html>

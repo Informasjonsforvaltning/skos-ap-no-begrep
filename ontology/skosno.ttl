@@ -34,8 +34,8 @@
     dct:title "Ontology for SKOS-AP-NO-Begrep v.2"@en , "Ontologi for SKOS-AP-NO-Begrep v.2"@nb ;
     dct:modified "2023-01-24"^^xsd:date ;
     owl:versionInfo "2.001" ;
-    owl:versionNotes "Only the classes and properties that are defined in SKOS-AP-NO-Begrep v.2 are defined in this ontology. Classes and properties that are defined in other vocabularies are not included here."@en ;
-      "Bare klasser og egenskaper som er definert i SKOS-AP-NO-Begrepv v.2 er inkludert i denne ontologien. Klasser og egenskaper som er definert i andre vokabularer er ikke inkludert her."
+    owl:versionNotes "Only the classes and properties that are defined in SKOS-AP-NO-Begrep v.2 are defined in this ontology. Classes and properties that are defined in other vocabularies are not included here."@en ,
+      "Bare klasser og egenskaper som er definert i SKOS-AP-NO-Begrepv v.2 er inkludert i denne ontologien. Klasser og egenskaper som er definert i andre vokabularer er ikke inkludert her."@nb ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;

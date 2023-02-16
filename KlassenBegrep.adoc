@@ -737,12 +737,12 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
    .
 -----
 
-===== Begrep – status (adms:status) [[Begrep-status]]
+===== Begrep – status euvoc:status) [[Begrep-status]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _status_
-| URI |adms:status
+| URI |euvoc:status
 | Verdiområde / _Range_ |skos:Concept or rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi status til et begrep, enten som kodet verdi eller som tekst med språkkode. Hvis tekst brukes, og hvis teksten finnes i flere skriftspråk, bør egenskapen gjentas for hvert språk. Hvis kodet verdi brukes, skal egenskapen ha kun én verdi.
 
@@ -759,7 +759,7 @@ _When making the concept description available outside the organization, if one 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
 <https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
+   euvoc:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
    .
 -----
 

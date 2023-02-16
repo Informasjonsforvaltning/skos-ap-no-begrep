@@ -64,7 +64,7 @@ a|*Eksempelet i RDF Turtle*:
    skosno:dataStructureLabel "aFictiveConcept" ; # datastrukturterm
    skos:example "eksempelbegrep, testbegrep"@nb ; # eksempel
    skos:hiddenLabel "fiktivt konsept"@nb ; # frarådd term
-   adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
+   euvoc:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
    skosno:valueRange <https://example.org/aFictiveCodeList/> ; # verdiområde
    owl:versionInfo "1.1" ; # versjonsnummer
    adms:versionsNote "Nå med «tullebegrep» også som en lovlig verdi"@nb ; # versjonsnote

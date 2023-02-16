@@ -61,8 +61,8 @@
       skosno:dataStructureLabel "tstCpt1" ; # datastrukturterm
       skos:example "eksempel1"@nb , "example 1"@en ; # eksempel
       skos:hiddenLabel "test konsept"@nb , "fiktivt konsept"@nb ; # frarådd term
-      adms:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
-      adms:status :tstCpt2 ; # status
+      euvoc:status <http://publications.europa.eu/resource/authority/concept-status/CURRENT> ; # status
+      euvoc:status :tstCpt2 ; # status
       skosno:valueRange "gyldige koder for testbegreper"@nb ; # verdiområde, som tekst
       skosno:valueRange <https://example.org/tstValueRange> ; # verdiområde, som dummy URI
       owl:versionInfo "1.0.1" ; # versjonsnummer

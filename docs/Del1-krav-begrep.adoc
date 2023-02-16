@@ -5,12 +5,12 @@
 [cols="25,50,25"]
 |===
 |*Obligatorisk* |*Regler og anbefalinger for registrering* |*I tillegg, hvis de finnes*
-|https://termbasen.standard.no/term/165575552506687/nob[anbefalt term] | 
+|https://termbasen.standard.no/term/167505078703413/nb?origin=%2Fsearch-results%3FsearchText%3Danbefalt%2Bterm%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[anbefalt term] | 
 anbefalt term skal finnes på både bokmål og nynorsk; +
 det skal være maksimum én anbefalt term per skriftspråk; +
 det skal oppgis hvilket skriftspråk termen er skrevet på
  |
-|https://termbasen.standard.no/term/165575612703717/nob[definisjon] | 
+|https://termbasen.standard.no/term/167505060009870/nb?origin=%2Fsearch-results%3FsearchText%3Ddefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[definisjon] | 
 det skal være minimum én definisjon, og maksimum én per skriftspråk og målgruppe; +
 det skal oppgis hvilket skriftspråk definisjon er skrevet på; +
 minst én kombinasjon av anbefalt term og definisjon skal være på samme skriftspråk
@@ -32,7 +32,7 @@ kontaktpunkt bør ikke vise til en enkeltperson
 |ansvarlig virksomhet ||
 |dato opprettet  ||
 |dato sist oppdatert ||
-|https://termbasen.standard.no/term/165575653105392/nob[fagområde] | 
+|https://termbasen.standard.no/term/167505060700241/nb?origin=%2Fsearch-results%3FsearchText%3Dfagomr%25C3%25A5de%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[fagområde] | 
 det bør fortrinnsvis velges fra en kontrollert liste; +
 når fagområde oppgis som tekst, skal det oppgis hvilket skriftspråk teksten er skrevet på; +
 fagområde kan representere en akademisk disiplin, et bruksområde, et produkt, en tjenestekjede eller lignende
@@ -43,7 +43,7 @@ oppgis som dato fra og med, og/eller dato til og med |
 utfyllende forklaring; +
 det skal oppgis hvilket skriftspråk merknaden er skrevet på
  |
-|https://termbasen.standard.no/term/165575552506675/nob[tillatt term] | 
+|https://termbasen.standard.no/term/167505073502479/nb?origin=%2Fsearch-results%3FsearchText%3Dtillatt%2Bterm%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[tillatt term] | 
 det skal oppgis hvilket skriftspråk termen er skrevet på |
 |===
 
@@ -54,7 +54,7 @@ det skal oppgis hvilket skriftspråk termen er skrevet på |
 |*Valgfri* |*Regler og anbefalinger for registrering* |*I tillegg, hvis de finnes*
 |datastrukturterm ||
 |eksempel | det skal oppgis hvilket skriftspråk eksemplet/eksemplene er skrevet på |
-|https://termbasen.standard.no/term/165575654205830/nob[frarådd term] | det skal oppgis hvilket skriftspråk termen er skrevet på |
+|https://termbasen.standard.no/term/167505072601390/nb?origin=%2Fsearch-results%3FsearchText%3Dfrar%25C3%25A5dd%2Bterm%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[frarådd term] | det skal oppgis hvilket skriftspråk termen er skrevet på |
 |status| bør fortrinnsvis velges fra en kontrollert liste; +
 når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på |
 |verdiområde | kan oppgis som tekst eller som referanse til der verdiområdet er spesifisert; +
@@ -70,9 +70,9 @@ Et begrep kan ha relasjoner til andre begreper. Når et begreps relasjon til et 
 [cols="25,50,25"]
 |===
 |*Type relasjon til det andre begrepet* |*Regler og anbefalinger for registrering* |*I tillegg, hvis de finnes*
-|https://termbasen.standard.no/term/165575612703726/nob[generisk begrepsrelasjon] | enten det begrepet som dette begrepet *spesialiserer*, eller det begrepet som dette begrepet *generaliserer* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
-|https://termbasen.standard.no/term/165575812309370/nob[partitiv begrepsrelasjon] | enten det begrepet som dette begrepet *er del av*, eller det begrepet som dette begrepet *inneholder* | https://termbasen.standard.no/term/165577770503947/nob[inndelingskriterium]
-|https://termbasen.standard.no/term/165575612703735/nob[assosiativ begrepsrelasjon] | det begrepet som dette begrepet *er relatert til*, og med *relasjonstype*, eventuelt uttrykt som begrepets *relasjonsrolle* overfor det andre begrepet |
+|https://termbasen.standard.no/term/167505058307926/nb?origin=%2Fsearch-results%3FsearchText%3Dgenerisk%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[generisk begrepsrelasjon] | enten det begrepet som dette begrepet *spesialiserer*, eller det begrepet som dette begrepet *generaliserer* | https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[inndelingskriterium]
+|https://termbasen.standard.no/term/167505058808598/nb?origin=%2Fsearch-results%3FsearchText%3Dpartitiv%2Bbegrepsrelasjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitiv begrepsrelasjon] | enten det begrepet som dette begrepet *er del av*, eller det begrepet som dette begrepet *inneholder* | https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[inndelingskriterium]
+|https://termbasen.standard.no/term/167505058508115/nb?origin=%2Fsearch-results%3FsearchText%3Dassosiativ%2Bbegrepsrelasjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[assosiativ begrepsrelasjon] | det begrepet som dette begrepet *er relatert til*, og med *relasjonstype*, eventuelt uttrykt som begrepets *relasjonsrolle* overfor det andre begrepet |
 |===
 
 Dersom en begrepsrelasjon skal være kjent begge veier, bør den beskrives begge veier.

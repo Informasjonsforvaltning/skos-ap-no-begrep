@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Collection_
-|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termbasen.standard.no/term/165575653105429/nob[begreper].
+|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termbasen.standard.no/term/167505058608413/nb?origin=%2Fsearch-results%3FsearchText%3Dbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[begreper].
 
-_This class is used to represent a collection of https://termbasen.standard.no/term/165575653105429/eng[concepts]._
+_This class is used to represent a collection of https://termbasen.standard.no/term/167505058608413/nb?origin=%2Fsearch-results%3FsearchText%3Dbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[concepts]._
 |URI |skos:Collection
 |Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===

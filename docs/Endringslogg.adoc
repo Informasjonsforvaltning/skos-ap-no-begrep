@@ -3,7 +3,7 @@
 
 _Vedlegget er deskriptivt_.
 
-=== Endringer fra v.2.0.1 til v.2.0.2
+=== Endringer fra v.2.0.1 til v.2.0.3
 
 Kun redaksjonelle justeringer, hovedsakelig for å ta med ting fra veilederen slik at veilederen kan overflødiggjøres. 
 

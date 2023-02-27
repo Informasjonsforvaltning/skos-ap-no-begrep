@@ -18,9 +18,9 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 include::shared/download.adoc[]
 
 *Status*: Gjeldende +
-*Versjon*: 2.0.2 (se <<Endringslogg, endringslogg>>) +
+*Versjon*: 2.0.3 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2023-02-16 (v.2.0.2) +
+*Oppdatert*: 2023-02-27 (v.2.0.3) +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Gjeldende versjon av ontologi*: https://data.norge.no/vocabulary/skosno +
 *Forrige versjon*: https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser og https://data.norge.no/specification/skos-ap-no-begrep/v1.1 +

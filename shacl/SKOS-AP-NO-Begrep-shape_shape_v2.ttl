@@ -36,12 +36,12 @@
         foaf:page <https://www.digdir.no> ;
         ] ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2023-01-24"^^xsd:date ;
+    dct:modified "2023-02-27"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in SKOS-AP-NO-Begrep v.2, expressed in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "2.0003" ;
+    owl:versionInfo "2.0004" ;
     adms:versionNotes "Bortsett fra språksjekk på tvers av egenskaper/klasser, f.eks. 'min. 1 kombinasjon av anbefalt term og definisjon skal være på samme språk', skal alle reglene være med nå."@nb ; 
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     .
@@ -92,7 +92,7 @@
          sh:property :hasMin0MaxNShape-uneskosMemberOf; # inngår i begrepssamling (uneskos:memberOf)
          sh:property :hasMin0MaxNShape-rdfsSeeAlso; # se også (rdfs:seeAlso)
          sh:property :hasMin0MaxNShape-xkosSpecializes; # spesialiserer (xkos:specializes)
-         sh:property :hasMin0MaxNShape-admsStatusEitherCodedValueOrText; # status (adms:status), enten kodet verdi eller tekst
+         sh:property :hasMin0MaxNShape-euvocStatusEitherCodedValueOrText; # status (euvoc:status), enten kodet verdi eller tekst
          sh:property :hasMin0MaxNShape-skosnoValueRange; # verdiområde (skosno:valueRange)
          sh:property :hasMin0Max1Shape-owlVersionInfo; # versjonsnummer (owl:versionInfo)
          sh:property :hasMin0MaxNShape-admsVersionNotes; # versjonsnote (adms:versionNotes)
@@ -331,34 +331,34 @@
 
 ##### adms-properties
 
-:hasMin0MaxNShape-admsStatusEitherCodedValueOrText a sh:PropertyShape;
+:hasMin0MaxNShape-euvocStatusEitherCodedValueOrText a sh:PropertyShape;
    sh:name "status (as coded value or text)"@en, "status (som kodet verdi eller tekst)"@nb;
-   sh:path adms:status;
+   sh:path euvoc:status;
    sh:or ( [sh:class skos:Concept] [sh:datatype rdf:langString]);
-   sh:message "The property adms:status SHALL either refer to an instance of skos:Concept or be of datatype rdf:langString"@en, 
-      "Egenskapen adms:status skal enten referere til en instans av skos:Concept eller være av datatype rdf:langSting"@nb; 
+   sh:message "The property euvoc:status SHALL either refer to an instance of skos:Concept or be of datatype rdf:langString"@en, 
+      "Egenskapen euvoc:status skal enten referere til en instans av skos:Concept eller være av datatype rdf:langSting"@nb; 
    sh:severity sh:Violation .
 
-:hasMin0Max1Shape-admsStatusCodedValue a sh:PropertyShape;
+:hasMin0Max1Shape-euvocStatusCodedValue a sh:PropertyShape;
    sh:name "status (as coded value)"@en, "status (som kodet verdi)"@nb;
-   sh:path adms:status;
+   sh:path euvoc:status;
    sh:qualifiedValueShape [sh:class skos:Concept;];
    sh:qualifiedValueShapesDisjoint true ;
    sh:qualifiedMinCount 0 ;
    sh:qualifiedMaxCount 1 ;
-   sh:message "The property adms:status, as coded value, may have max. 1 value which SHALL refer to an instance of skos:Concept"@en,
-      "Egenskapen adms:status, som kodet verdi, kan ha maks. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
+   sh:message "The property euvoc:status, as coded value, may have max. 1 value which SHALL refer to an instance of skos:Concept"@en,
+      "Egenskapen euvoc:status, som kodet verdi, kan ha maks. 1 verdi som SKAL referere til en instans av skos:Concept"@nb;
    sh:severity sh:Violation .
 
-:hasMin0MaxNShape-admsStatusTextUnigueLang a sh:PropertyShape;
+:hasMin0MaxNShape-euvocStatusTextUnigueLang a sh:PropertyShape;
    sh:name "status (as text)"@en, "status (som tekst)"@nb;
-   sh:path adms:status;
+   sh:path euvoc:status;
    sh:qualifiedValueShape [sh:datatype rdf:langString;];
    sh:uniqueLang true;
    sh:qualifiedValueShapesDisjoint true ;
    sh:qualifiedMinCount 0 ;
-   sh:message "The property adms:status, as text, SHALL be of datatype rdf:langString, and may have max. 1 per language"@en,
-      "Egenskapen adms:status, som tekst, SKAL være av datatype rdf:langString, og kan ha maks. 1 per språk"@nb;
+   sh:message "The property euvoc:status, as text, SHALL be of datatype rdf:langString, and may have max. 1 per language"@en,
+      "Egenskapen euvoc:status, som tekst, SKAL være av datatype rdf:langString, og kan ha maks. 1 per språk"@nb;
    sh:severity sh:Violation .
 
 :hasMin0MaxNShape-admsVersionNotes a sh:PropertyShape;

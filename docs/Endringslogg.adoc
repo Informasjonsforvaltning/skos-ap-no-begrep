@@ -3,6 +3,10 @@
 
 _Vedlegget er deskriptivt_.
 
+=== Endringer fra v.2.0.1 til v.2.0.3
+
+Kun redaksjonelle justeringer, hovedsakelig for å ta med ting fra veilederen slik at veilederen kan overflødiggjøres. 
+
 === Endringer fra v.2.0.0 til v.2.0.1
 
 Kun redaksjonelle justeringer, bl.a. at `adms:status` er rettet til `euvoc:status` (fordi RDF-delen av standarden var ment å følge SKOS-AP-EU som EUs Publications Office også bruker, og der er `euvoc:status` brukt).  

@@ -15,15 +15,17 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
-include::shared/download.adoc[]
-
 *Status*: Gjeldende +
-*Versjon*: 2.0.1 +
+*Versjon*: 2.0.3 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2023-02-16 (v.2.0.1) +
+*Oppdatert*: 2023-02-27 (v.2.0.3) +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
+*Gjeldende versjon av ontologi*: https://data.norge.no/vocabulary/skosno +
 *Forrige versjon*: https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser og https://data.norge.no/specification/skos-ap-no-begrep/v1.1 +
-*Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/ 
+
+
+include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.

@@ -737,7 +737,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
    .
 -----
 
-===== Begrep – status euvoc:status) [[Begrep-status]]
+===== Begrep – status (euvoc:status) [[Begrep-status]]
 
 [cols="30s,70d"]
 |===

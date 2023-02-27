@@ -36,12 +36,12 @@
         foaf:page <https://www.digdir.no> ;
         ] ;
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2023-01-24"^^xsd:date ;
+    dct:modified "2023-02-27"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes in SKOS-AP-NO-Begrep v.2, expressed in SHACL."@en ;
     dct:title "The constraints of SKOS-AP-NO-Begrep"@en ;
-    owl:versionInfo "2.0003" ;
+    owl:versionInfo "2.0004" ;
     adms:versionNotes "Bortsett fra språksjekk på tvers av egenskaper/klasser, f.eks. 'min. 1 kombinasjon av anbefalt term og definisjon skal være på samme språk', skal alle reglene være med nå."@nb ; 
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/shacl/> ;
     .

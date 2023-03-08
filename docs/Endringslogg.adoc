@@ -3,6 +3,10 @@
 
 _Vedlegget er deskriptivt_.
 
+=== Endringer fra v.2.0.3 v.2.0.4
+
+Kun redaksjonelle justeringer, for å rette opp skrivefeil og mangler i endringsloggen (endringer ved publiserng av v.2.0.0). 
+
 === Endringer fra v.2.0.1 til v.2.0.3
 
 Kun redaksjonelle justeringer, hovedsakelig for å ta med ting fra veilederen slik at veilederen kan overflødiggjøres. 
@@ -77,6 +81,8 @@ Endringene fra https://data.norge.no/specification/forvaltningsstandard-begrepsb
 * *Begrepssamling*:
 ** Følgende egenskaper har fått endret kravnivå:
 *** «kontaktpunkt» er endret til «obligatorisk» fra tidligere «ikke-obligatorisk», for at det alltid skal være mulig å ta kontakt med den som har publisert begrepssamlingen.
+** Følgende egenskaper har fått endret norske navn:
+*** «ansvarlig virksomhet» er endret til «publisert av» som er et mer presist navn.
 
 * *Følgende klasser utgår*:
 ** «Alternativ formulering» utgår, fordi behovet kan dekkes av kombinasjonen «definisjon» og «målgruppe».
@@ -122,7 +128,8 @@ Endringene fra https://data.norge.no/specification/skos-ap-no-begrep/v1.1[_SKOS-
 ||Ny <<Begrep-har-eksakt-samsvar-med>>
 ||Ny <<Begrep-har-nært-samsvar-med>>
 ||Ny <<Begrep-inngår-i>>
-|Begrep – assosiativ relasjon, skosno:assiciativRelasjon | <<Begrep-er-fra-begrep-i>>
+||Ny <<Begrep-publisert-av>>
+|Begrep – assosiativ relasjon, skosno:assosiativRelasjon | <<Begrep-er-fra-begrep-i>>
 |Begrep – generisk relasjon, skosno:generiskRelasjon |<<Begrep-har-generisk-begrepsrelasjon>>
 |Begrep – partitiv relasjon, skosno:partitivRelasjon |<<Begrep-har-partitiv-begrepsrelasjon>>
 

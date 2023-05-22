@@ -3,9 +3,9 @@
 
 _Vedlegget er deskriptivt_.
 
-=== Endringer fra v.2.0.3 v.2.0.4
+=== Endringer fra v.2.0.3 v.2.0.5
 
-Kun redaksjonelle justeringer, for å rette opp skrivefeil og mangler i endringsloggen (endringer ved publiserng av v.2.0.0). 
+Kun redaksjonelle justeringer, for å rette opp skrivefeil og mangler i endringsloggen (endringer ved publisering av v.2.0.0). 
 
 === Endringer fra v.2.0.1 til v.2.0.3
 
@@ -15,7 +15,7 @@ Kun redaksjonelle justeringer, hovedsakelig for å ta med ting fra veilederen sl
 
 Kun redaksjonelle justeringer, bl.a. at `adms:status` er rettet til `euvoc:status` (fordi RDF-delen av standarden var ment å følge SKOS-AP-EU som EUs Publications Office også bruker, og der er `euvoc:status` brukt).  
 
-=== Endringer ved publiserng av v.2.0.0
+=== Endringer ved publisering av v.2.0.0
 
 Denne standarden skal erstatte følgende to standarder:
 

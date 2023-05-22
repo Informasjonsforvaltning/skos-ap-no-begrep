@@ -24,9 +24,9 @@ _This class is used to represent a collection of https://termbasen.standard.no/t
 _This property is used to specify the identifier of the concept collection._
 |Multiplisitet /  _Multiplicity_  |1..1
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-|Merknad / _Note_ | Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+|Merknad / _Note_ | Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 
-_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]_
+_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]_
 |===
 
 Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.

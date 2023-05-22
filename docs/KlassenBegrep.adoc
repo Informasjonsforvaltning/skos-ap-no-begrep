@@ -106,9 +106,9 @@ Eksempel i RDF Turtle: Se under <<Definisjon>>.
 _This property is used to specify an identifier to the concept._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-| Merknad  / _Note_ |  Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+| Merknad  / _Note_ |  Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
 
-_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]_
+_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]_
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:

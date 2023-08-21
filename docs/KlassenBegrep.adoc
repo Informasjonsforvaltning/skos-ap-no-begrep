@@ -57,9 +57,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 _This property is used to specify the https://termbasen.standard.no/term/167505060009870/nb?origin=%2Fsearch-results%3FsearchText%3Ddefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[definition] of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
+| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk og målgruppe.
 
-_There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
+_There shall be minimum one definition (direct statement or via definition object) and maximum one per language and audience._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
 _There shall be minimum one combination of preferred term and definition (direct statement or via definition object) that are in the same language._
@@ -84,9 +84,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 _This property is used to specify the https://termbasen.standard.no/term/167505060009870/nb?origin=%2Fsearch-results%3FsearchText%3Ddefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[definition] to a concept, when there is a need to specify more than the definition. This property should be repeated for parallel language versions of the definition._
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk.
+| Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk og målgruppe.
 
-_There shall be minimum one definition (direct statement or via definition object) and maximum one per language._
+_There shall be minimum one definition (direct statement or via definition object) and maximum one per language and audience._
 | Merknad 2 / _Note 2_ | Det skal være minst én kombinasjon av anbefalt term og definisjon (direkte angivelse eller via definisjonsobjekt) som er på samme skriftspråk.
 
 _There shall be minimum one combination of preferred term and definition (direct statement or via definition object) that are in the same language._

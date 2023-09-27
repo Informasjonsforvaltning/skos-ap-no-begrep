@@ -780,8 +780,8 @@ _This property is used to specify the value range of a concept, as text and/or a
 Eksempel i RDF Turtle, for SSBs begrep «sivilstand»:
 -----
 <sivilstand> a skos:Concept ; # begrep
-   skosno:range "Standard for sivilstand"@nb , "Standard for sivilstand"@nn , "Classification of marital status"@en ; # verdiområde, som tekst
-   skosno:range <https://www.ssb.no/klass/klassifikasjoner/19> ; # verdiområde, som lenke
+   skosno:valueRange "Standard for sivilstand"@nb , "Standard for sivilstand"@nn , "Classification of marital status"@en ; # verdiområde, som tekst
+   skosno:valueRange <https://www.ssb.no/klass/klassifikasjoner/19> ; # verdiområde, som lenke
      .
 -----
 

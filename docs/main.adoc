@@ -16,9 +16,9 @@ ifdef::backend-pdf[:toc: macro]
 image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 *Status*: Gjeldende +
-*Versjon*: 2.0.6 (se <<Endringslogg, endringslogg>>) +
+*Versjon*: 2.0.7 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2023-09-15 (v.2.0.x) +
+*Oppdatert*: 2023-09-27 (v.2.0.x) +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Gjeldende versjon av ontologi*: https://data.norge.no/vocabulary/skosno +
 *Forrige versjon*: https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser og https://data.norge.no/specification/skos-ap-no-begrep/v1.1 +

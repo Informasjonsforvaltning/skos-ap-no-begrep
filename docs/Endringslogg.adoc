@@ -3,7 +3,7 @@
 
 _Vedlegget er deskriptivt_.
 
-=== Endringer fra v.2.0.3 til v.2.0.7
+=== Endringer fra v.2.0.3 til v.2.0.8
 
 Kun redaksjonelle justeringer, for å rette opp upresise formuleringer, skrivefeil og mangler i endringsloggen (endringer ved publisering av v.2.0.0). 
 

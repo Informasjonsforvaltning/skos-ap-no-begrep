@@ -4,9 +4,9 @@
 [cols="30s,70d"]
 |===
 |_English name_ | _Partitive concept relation_
-|Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/167505058808598/nb?origin=%2Fsearch-results%3FsearchText%3Dpartitiv%2Bbegrepsrelasjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitiv begrepsrelasjon].
+|Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/168204529503414/nb[partitiv begrepsrelasjon].
 
-_This class is used to represent a https://termbasen.standard.no/term/167505058808598/nb?origin=%2Fsearch-results%3FsearchText%3Dpartitiv%2Bbegrepsrelasjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitive concept relation]._
+_This class is used to represent a https://termbasen.standard.no/term/168204529503414/en[partitive concept relation]._
 |URI |skosno:PartitiveConceptRelation
 |Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -20,9 +20,9 @@ _This class is used to represent a https://termbasen.standard.no/term/1675050588
 |_English name_ | _has partitive concept_
 |URI |skosno:hasPartitiveConcept
 |Verdiområde / _Range_ |skos:Concept
-|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/167505058207722/nb?origin=%2Fsearch-results%3FsearchText%3Ddelbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/168204378306478/nb[delbegrepet]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-_This property is used to refer to another concept (the https://termbasen.standard.no/term/167505058207722/nb?origin=%2Fsearch-results%3FsearchText%3Ddelbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[partitive concept]) that is part of this concept, in a partitive concept relation between the two concepts._
+_This property is used to refer to another concept (the https://termbasen.standard.no/term/168204378306478/en[partitive concept]) that is part of this concept, in a partitive concept relation between the two concepts._
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-helhetsbegrep>> skal brukes, ikke begge samtidig.
@@ -45,9 +45,9 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 |_English name_ | _has comprehensive concept_
 |URI |skosno:hasComprehensiveConcept
 |Verdiområde / _Range_ |skos:Concept
-|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/167505059008991/nb?origin=%2Fsearch-results%3FsearchText%3Dhelhetsbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[helhetsbegrepet]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termbasen.standard.no/term/168204367709913/nb[helhetsbegrepet]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-_This property is used to refer to another concept (the https://termbasen.standard.no/term/167505059008991/nb?origin=%2Fsearch-results%3FsearchText%3Dhelhetsbegrep%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[comprehensive concept]) that contains this concept, in a partitive concept relation between the two concepts._
+_This property is used to refer to another concept (the https://termbasen.standard.no/term/168204367709913/en[comprehensive concept]) that contains this concept, in a partitive concept relation between the two concepts._
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-delbegrep>> skal brukes, ikke begge samtidig.
@@ -73,9 +73,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 |_English name_ | _criterion of subdivision_
 |URI |dct:description
 |Verdiområde / _Range_ |rdf:langString
-|Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er på flere språk.
+|Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/168204529703821/nb[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er på flere språk.
 
-_This property is used to specify the https://termbasen.standard.no/term/167505058508031/nb?origin=%2Fsearch-results%3FsearchText%3Dinndelingskriterium%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[criterion of subdivision] for the concept relation. This property should be repeated for parallel language versions of the text._
+_This property is used to specify the https://termbasen.standard.no/term/168204529703821/en[criterion of subdivision] for the concept relation. This property should be repeated for parallel language versions of the text._
 |Multiplisitet / _Multiplicity_ |0..n
 |Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===

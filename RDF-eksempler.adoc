@@ -29,7 +29,7 @@ a| *Eksempelet i RDF Turtle*:
 
 [stripes=even]
 |===
-a|*Eksempel på noen anbefalte opplysninger*, hentet fra Termbasen til Standard Norge 2022-08-30, for begrepet https://termbasen.standard.no/term/167505059109122/nb?origin=%2Fsearch-results%3FsearchText%3Dinnholdsdefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[«innholdsdefinisjon»]:
+a|*Eksempel på noen anbefalte opplysninger*, hentet fra Termbasen til Standard Norge 2022-08-30, for begrepet https://termbasen.standard.no/term/168204378607009/nb[«innholdsdefinisjon»]:
 
 * *fagområde*: «terminologi» (bokmål)
 * *merknad*: «Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner (3.3.1) fordi de tydelig avdekker kjennetegnene (3.2.1) til et begrep (3.2.7) i et begrepssystem (3.2.28): de bør brukes når det er mulig.» (bokmål)

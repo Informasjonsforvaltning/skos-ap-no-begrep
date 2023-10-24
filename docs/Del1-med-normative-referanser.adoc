@@ -2,6 +2,6 @@
 
 === Normative referanser [[Del1-normative-referanser]]
 
-* https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1131185[NS-ISO 1087:2019 _Terminologiarbeid og terminologivitenskap — Ordliste_]
+* https://online.standard.no/ns-iso-1087-2019[NS-ISO 1087:2019 _Terminology work and terminology science - Vocabulary_]
 
-* https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1428687[NS-ISO 704:2022  _Terminologiarbeid — Prinsipper og metoder_]
+* https://online.standard.no/ns-iso-704-2022[NS-ISO 704:2022  _Terminology work - Principles and methods_]

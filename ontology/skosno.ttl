@@ -53,7 +53,7 @@ skosno:AssociativeConceptRelation a owl:Class ;
   rdfs:label "Associative concept relation"@en , "Assosiativ begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent an associative concept relation."@en ,
       "Klassen brukes til å representere en assosiativ begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/165575612703735/eng> ;
+  rdfs:seeAlso <https://termbasen.standard.no/term/168204375104789/en> ;
   .
 
 skosno:GenericConceptRelation a owl:Class ;
@@ -61,7 +61,7 @@ skosno:GenericConceptRelation a owl:Class ;
   rdfs:label "Generic concept relation"@en , "Generisk begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent a generic concept relation."@en ,
       "Klassen brukes til å representere en generisk begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/165575612703726/eng> ;
+  rdfs:seeAlso <https://termbasen.standard.no/term/168204371002565/en> ;
   .
 
 skosno:PartitiveConceptRelation a owl:Class ;
@@ -69,7 +69,7 @@ skosno:PartitiveConceptRelation a owl:Class ;
   rdfs:label "Partitive concept relation"@en , "Partitiv begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent a partitive concept relation."@en ,
       "Klassen brukes til å representere en partitiv begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/165575812309370/eng> ;
+  rdfs:seeAlso <https://termbasen.standard.no/term/168204529503414/en> ;
   .
 
 

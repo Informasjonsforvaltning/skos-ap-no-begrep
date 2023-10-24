@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_ | _Definition_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/167505060009870/nb?origin=%2Fsearch-results%3FsearchText%3Ddefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/168204365109319/nb[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-_This class is used to represent a https://termbasen.standard.no/term/167505060009870/nb?origin=%2Fsearch-results%3FsearchText%3Ddefinisjon%26icsCodes%3D%26sources%3D%26start%3D0%26range%3D100[definition] when there is a need to describe more than the definition itself._
+_This class is used to represent a https://termbasen.standard.no/term/168204365109319/en[definition] when there is a need to describe more than the definition itself._
 | URI |euvoc:XlNote
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===

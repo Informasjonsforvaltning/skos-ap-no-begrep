@@ -30,4 +30,4 @@ Det er opp til begrepsforfatterne å velge hvilke typer assosiative relasjoner d
 * «har nært samsvar med – har nært samsvar med»
 * «erstatter – er erstattet av»
 
-Merk at noen relasjonstyper er symmetriske; de leses likt begge veier. Dette gjelder blant andre relasjonstypene «har nært samsvar med» og «er relatert til». Det finnes ingen endelig liste over assosiative relasjonstyper, men https://standard.no/no/Nettbutikk/produktkatalogen/Produktpresentasjon/?ProductID=1428687[NS-ISO 704:2022  _Terminologiarbeid — Prinsipper og metoder_] gir mange gode forslag.
+Merk at noen relasjonstyper er symmetriske; de leses likt begge veier. Dette gjelder blant andre relasjonstypene «har nært samsvar med» og «er relatert til». Det finnes ingen endelig liste over assosiative relasjonstyper, men https://online.standard.no/ns-iso-704-2022[NS-ISO 704:2022  _Terminology work - Principles and methods_] gir mange gode forslag.

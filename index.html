@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="description" content="Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency">
 <title>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</title>
@@ -142,7 +142,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -164,6 +164,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -329,7 +330,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -626,7 +627,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Forord"><a class="anchor" href="#Forord"></a>Forord</h2>
+<h2 id="Forord"><a class="link" href="#Forord">Forord</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Som en anbefalt standard inngår denne standarden i bruksområdet <a href="https://www.digdir.no/1483">Omgrepsanalyse og definisjonsarbeid</a> i <em>Referansekatalogen</em>. <a href="https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480"><em>Referansekatalogen</em></a> er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.</p>
@@ -650,10 +651,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om-denne-standarden"><a class="anchor" href="#Om-denne-standarden"></a>1. Om denne standarden</h2>
+<h2 id="Om-denne-standarden"><a class="link" href="#Om-denne-standarden">1. Om denne standarden</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Formål"><a class="anchor" href="#Formål"></a>1.1. Formål</h3>
+<h3 id="Formål"><a class="link" href="#Formål">1.1. Formål</a></h3>
 <div class="paragraph">
 <p>Det er et uttrykt ønske, både fra regjeringshold og fra offentlig sektor, at ulike deler av forvaltningen skal kunne gjenbruke hverandres informasjon i større grad. I <a href="https://www.regjeringen.no/no/dokumenter/en-digital-offentlig-sektor/id2653874/?ch=4">regjeringens digitaliseringsstrategi for offentlig sektor 2019–2025</a> leser vi:</p>
 </div>
@@ -672,7 +673,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Omfang-og-avgrensninger"><a class="anchor" href="#Omfang-og-avgrensninger"></a>1.2. Omfang og avgrensinger</h3>
+<h3 id="Omfang-og-avgrensninger"><a class="link" href="#Omfang-og-avgrensninger">1.2. Omfang og avgrensinger</a></h3>
 <div class="paragraph">
 <p>Standarden spesifiserer</p>
 </div>
@@ -691,7 +692,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Målgrupper"><a class="anchor" href="#Målgrupper"></a>1.3. Målgrupper</h3>
+<h3 id="Målgrupper"><a class="link" href="#Målgrupper">1.3. Målgrupper</a></h3>
 <div class="paragraph">
 <p>Standarden er primært for</p>
 </div>
@@ -710,7 +711,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Forvaltningsregime"><a class="anchor" href="#Forvaltningsregime"></a>1.4. Forvaltningsregime</h3>
+<h3 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">1.4. Forvaltningsregime</a></h3>
 <div class="paragraph">
 <p>Standarden forvaltes av <a href="https://digdir.no/">Digitaliseringsdirektoratet (Digdir)</a>.</p>
 </div>
@@ -719,13 +720,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kravnivåene-i-denne-standarden"><a class="anchor" href="#Kravnivåene-i-denne-standarden"></a>1.5. Kravnivåene i denne standarden</h3>
+<h3 id="Kravnivåene-i-denne-standarden"><a class="link" href="#Kravnivåene-i-denne-standarden">1.5. Kravnivåene i denne standarden</a></h3>
 <div class="paragraph">
 <p>Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a>, og forklaringene gjentas ikke her.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Hvordan-du-leser-denne-standarden"><a class="anchor" href="#Hvordan-du-leser-denne-standarden"></a>1.6. Hvordan du leser denne standarden</h3>
+<h3 id="Hvordan-du-leser-denne-standarden"><a class="link" href="#Hvordan-du-leser-denne-standarden">1.6. Hvordan du leser denne standarden</a></h3>
 <div class="paragraph">
 <p><a href="#Del1">Kapittel 2, <em>Krav til beskrivelse av begreper og begrepssamlinger</em></a> er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.</p>
 </div>
@@ -742,10 +743,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Del1"><a class="anchor" href="#Del1"></a>2. Krav til beskrivelse av begreper og begrepssamlinger</h2>
+<h2 id="Del1"><a class="link" href="#Del1">2. Krav til beskrivelse av begreper og begrepssamlinger</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Del1-normative-referanser"><a class="anchor" href="#Del1-normative-referanser"></a>2.1. Normative referanser</h3>
+<h3 id="Del1-normative-referanser"><a class="link" href="#Del1-normative-referanser">2.1. Normative referanser</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -758,7 +759,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Del1-krav-til-beskrivelse-av-et-begrep"><a class="anchor" href="#Del1-krav-til-beskrivelse-av-et-begrep"></a>2.2. Krav til beskrivelse av et begrep</h3>
+<h3 id="Del1-krav-til-beskrivelse-av-et-begrep"><a class="link" href="#Del1-krav-til-beskrivelse-av-et-begrep">2.2. Krav til beskrivelse av et begrep</a></h3>
 <table id="Tabell-obligatoriske-opplysninger" class="tableblock frame-all grid-all stripes-odd stretch">
 <caption class="title">Tabell 1. Obligatoriske opplysninger som en begrepsbeskrivelse skal inneholde</caption>
 <colgroup>
@@ -973,7 +974,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Del1-eksempler-på-begrepsbeskrivelser"><a class="anchor" href="#Del1-eksempler-på-begrepsbeskrivelser"></a>2.3. Eksempler på begrepsbeskrivelser</h3>
+<h3 id="Del1-eksempler-på-begrepsbeskrivelser"><a class="link" href="#Del1-eksempler-på-begrepsbeskrivelser">2.3. Eksempler på begrepsbeskrivelser</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -1138,7 +1139,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </table>
 </div>
 <div class="sect2">
-<h3 id="Krav-begrepssamling-med-eksempler"><a class="anchor" href="#Krav-begrepssamling-med-eksempler"></a>2.4. Krav til beskrivelse av en begrepssamling, med eksempel</h3>
+<h3 id="Krav-begrepssamling-med-eksempler"><a class="link" href="#Krav-begrepssamling-med-eksempler">2.4. Krav til beskrivelse av en begrepssamling, med eksempel</a></h3>
 <div class="paragraph">
 <p>Begreper kan samles i en begrepssamling.</p>
 </div>
@@ -1206,10 +1207,10 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Del2"><a class="anchor" href="#Del2"></a>3. Krav til RDF-representasjon av begreper og begrepssamlinger</h2>
+<h2 id="Del2"><a class="link" href="#Del2">3. Krav til RDF-representasjon av begreper og begrepssamlinger</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Del2-normative-referanser"><a class="anchor" href="#Del2-normative-referanser"></a>3.1. Normative referanser</h3>
+<h3 id="Del2-normative-referanser"><a class="link" href="#Del2-normative-referanser">3.1. Normative referanser</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1225,7 +1226,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-del2"><a class="anchor" href="#Om-del2"></a>3.2. Om dette kapittelet</h3>
+<h3 id="Om-del2"><a class="link" href="#Om-del2">3.2. Om dette kapittelet</a></h3>
 <div class="paragraph">
 <p>Dette kapittelet spesifiserer hvordan begrepsbeskrivelsene i <a href="#Del1">Kapittel 2, <em>Krav til beskrivelse av begreper og begrepssamlinger</em></a> skal uttrykkes på en form som er i henhold til <a href="https://www.w3.org/RDF/"><em>Resource Desciption Framework (RDF)</em></a>. RDF gir struktur og syntaks. Innholdet skal uttrykkes i henhold til <a href="https://www.w3.org/TR/skos-reference/"><em>SKOS Simple Knowledge Organization System Reference</em></a>. SKOS er et vokabular (en metamodell) for de mest sentrale klassene og egenskapene vi behøver når vi beskriver begreper. Det vi trenger i tillegg til SKOS, for å oppgi datoer, kontaktpunkter m.m., må vi hente fra andre vokabularer. <a href="#Navnerom-brukt-i-standarden"><em>Vedlegg A - Navnerom som er brukt i denne standard</em></a> gir en oversikt over de vokabularene som er brukt. Denne standarden er dermed en norsk applikasjonsprofil av SKOS (SKOS-AP-NO-Begrep).</p>
 </div>
@@ -1234,7 +1235,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Hvordan-du-leser-del2"><a class="anchor" href="#Hvordan-du-leser-del2"></a>3.3. Hvordan du leser denne delen av standarden</h3>
+<h3 id="Hvordan-du-leser-del2"><a class="link" href="#Hvordan-du-leser-del2">3.3. Hvordan du leser denne delen av standarden</a></h3>
 <div class="paragraph">
 <p>Alle krav i <a href="#Del1">Kapittel 2, <em>Krav til beskrivelse av begreper og begrepssamlinger</em></a> i denne standarden uttrykkes her i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
 </div>
@@ -1282,7 +1283,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="To-RDF-måter-definisjon"><a class="anchor" href="#To-RDF-måter-definisjon"></a>3.3.1. To måter i RDF å angi en definisjon på</h4>
+<h4 id="To-RDF-måter-definisjon"><a class="link" href="#To-RDF-måter-definisjon">3.3.1. To måter i RDF å angi en definisjon på</a></h4>
 <div class="paragraph">
 <p>I RDF er alt uttrykt som «subjekt – predikat – objekt». «Subjektet» i denne sammenhengen er det begrepet som beskrives.</p>
 </div>
@@ -1327,7 +1328,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="To-RDF-måter-begrepsrelasjon"><a class="anchor" href="#To-RDF-måter-begrepsrelasjon"></a>3.3.2. To måter i RDF å uttrykke en begrepsrelasjon på</h4>
+<h4 id="To-RDF-måter-begrepsrelasjon"><a class="link" href="#To-RDF-måter-begrepsrelasjon">3.3.2. To måter i RDF å uttrykke en begrepsrelasjon på</a></h4>
 <div class="paragraph">
 <p>I RDF kan vi uttrykke at et begrep har en relasjon til et annet begrep. Den enkleste måten å gjøre dette på, er en setning på formen «subjekt – predikat – objekt» der «predikat» er relasjonen. <a href="#Figur-tre-partitive-relasjoner">Figur 3, &#8220;Tre partitive relasjoner og den motsatte veien&#8221;</a> nedenfor viser tre partitive relasjoner som ‘foreldrepengeperiode’ har med tre andre begreper. Det kan være en fordel at de motsatte relasjonene også uttrykkes eksplisitt, selv om en RDF-applikasjon skal kunne tolke den motsatte veien også.</p>
 </div>
@@ -1357,7 +1358,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Generelle-krav-standard-frmater"><a class="anchor" href="#Generelle-krav-standard-frmater"></a>3.4. Generelle krav til bruk av standardiserte formater</h3>
+<h3 id="Generelle-krav-standard-frmater"><a class="link" href="#Generelle-krav-standard-frmater">3.4. Generelle krav til bruk av standardiserte formater</a></h3>
 <div class="paragraph">
 <p>Det anbefales å bruke standardiserte formater til å representere følgende datatyper, i intern lagring og maskinell tilgjengeliggjøring eksternt:</p>
 </div>
@@ -1379,7 +1380,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Begrep"><a class="anchor" href="#Begrep"></a>3.5. Krav til RDF-representasjon av Begrep</h3>
+<h3 id="Begrep"><a class="link" href="#Begrep">3.5. Krav til RDF-representasjon av Begrep</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1415,9 +1416,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-obligatoriske-egenskaper"><a class="anchor" href="#Begrep-obligatoriske-egenskaper"></a>3.5.1. Obligatoriske egenskaper for <em>Begrep</em></h4>
+<h4 id="Begrep-obligatoriske-egenskaper"><a class="link" href="#Begrep-obligatoriske-egenskaper">3.5.1. Obligatoriske egenskaper for <em>Begrep</em></a></h4>
 <div class="sect4">
-<h5 id="Begrep-anbefalt-term"><a class="anchor" href="#Begrep-anbefalt-term"></a>3.5.1.1. Begrep – anbefalt term (skos:prefLabel)</h5>
+<h5 id="Begrep-anbefalt-term"><a class="link" href="#Begrep-anbefalt-term">3.5.1.1. Begrep – anbefalt term (skos:prefLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1473,7 +1474,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-definisjon-direkte-angivelse"><a class="anchor" href="#Begrep-definisjon-direkte-angivelse"></a>3.5.1.2. Begrep – definisjon (direkte angivelse) (skos:definition)</h5>
+<h5 id="Begrep-definisjon-direkte-angivelse"><a class="link" href="#Begrep-definisjon-direkte-angivelse">3.5.1.2. Begrep – definisjon (direkte angivelse) (skos:definition)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1529,7 +1530,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-definisjon-via-definisjonsobjekt"><a class="anchor" href="#Begrep-definisjon-via-definisjonsobjekt"></a>3.5.1.3. Begrep – definisjon (via definisjonsobjekt) (euvoc:xlDefinition)</h5>
+<h5 id="Begrep-definisjon-via-definisjonsobjekt"><a class="link" href="#Begrep-definisjon-via-definisjonsobjekt">3.5.1.3. Begrep – definisjon (via definisjonsobjekt) (euvoc:xlDefinition)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1578,7 +1579,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-identifikator"><a class="anchor" href="#Begrep-identifikator"></a>3.5.1.4. Begrep – identifikator (dct:identifier)</h5>
+<h5 id="Begrep-identifikator"><a class="link" href="#Begrep-identifikator">3.5.1.4. Begrep – identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1629,7 +1630,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-kontaktpunkt"><a class="anchor" href="#Begrep-kontaktpunkt"></a>3.5.1.5. Begrep – kontaktpunkt (dcat:contactPoint)</h5>
+<h5 id="Begrep-kontaktpunkt"><a class="link" href="#Begrep-kontaktpunkt">3.5.1.5. Begrep – kontaktpunkt (dcat:contactPoint)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1682,7 +1683,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-publisert-av"><a class="anchor" href="#Begrep-publisert-av"></a>3.5.1.6. Begrep – publisert av (dct:publisher)</h5>
+<h5 id="Begrep-publisert-av"><a class="link" href="#Begrep-publisert-av">3.5.1.6. Begrep – publisert av (dct:publisher)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1734,9 +1735,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-anbefalte-egenskaper"><a class="anchor" href="#Begrep-anbefalte-egenskaper"></a>3.5.2. Anbefalte egenskaper for <em>Begrep</em></h4>
+<h4 id="Begrep-anbefalte-egenskaper"><a class="link" href="#Begrep-anbefalte-egenskaper">3.5.2. Anbefalte egenskaper for <em>Begrep</em></a></h4>
 <div class="sect4">
-<h5 id="Begrep-ansvarlig-virksomhet"><a class="anchor" href="#Begrep-ansvarlig-virksomhet"></a>3.5.2.1. Begrep – ansvarlig virksomhet (dct:creator)</h5>
+<h5 id="Begrep-ansvarlig-virksomhet"><a class="link" href="#Begrep-ansvarlig-virksomhet">3.5.2.1. Begrep – ansvarlig virksomhet (dct:creator)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1772,7 +1773,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </table>
 </div>
 <div class="sect4">
-<h5 id="Begrep-dato-gyldig-fra-og-med"><a class="anchor" href="#Begrep-dato-gyldig-fra-og-med"></a>3.5.2.2. Begrep – dato gyldig fra og med (euvoc:startDate)</h5>
+<h5 id="Begrep-dato-gyldig-fra-og-med"><a class="link" href="#Begrep-dato-gyldig-fra-og-med">3.5.2.2. Begrep – dato gyldig fra og med (euvoc:startDate)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1818,7 +1819,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-dato-gyldig-til-og-med"><a class="anchor" href="#Begrep-dato-gyldig-til-og-med"></a>3.5.2.3. Begrep – dato gyldig til og med (euvoc:endDate)</h5>
+<h5 id="Begrep-dato-gyldig-til-og-med"><a class="link" href="#Begrep-dato-gyldig-til-og-med">3.5.2.3. Begrep – dato gyldig til og med (euvoc:endDate)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1864,7 +1865,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-dato-opprettet"><a class="anchor" href="#Begrep-dato-opprettet"></a>3.5.2.4. Begrep – dato opprettet (dct:created)</h5>
+<h5 id="Begrep-dato-opprettet"><a class="link" href="#Begrep-dato-opprettet">3.5.2.4. Begrep – dato opprettet (dct:created)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1910,7 +1911,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-dato-sist-oppdatert"><a class="anchor" href="#Begrep-dato-sist-oppdatert"></a>3.5.2.5. Begrep – dato sist oppdatert (dct:modified)</h5>
+<h5 id="Begrep-dato-sist-oppdatert"><a class="link" href="#Begrep-dato-sist-oppdatert">3.5.2.5. Begrep – dato sist oppdatert (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1956,7 +1957,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-fagområde"><a class="anchor" href="#Begrep-fagområde"></a>3.5.2.6. Begrep – fagområde (dct:subject)</h5>
+<h5 id="Begrep-fagområde"><a class="link" href="#Begrep-fagområde">3.5.2.6. Begrep – fagområde (dct:subject)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2007,7 +2008,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-merknad"><a class="anchor" href="#Begrep-merknad"></a>3.5.2.7. Begrep – merknad (skos:scopeNote)</h5>
+<h5 id="Begrep-merknad"><a class="link" href="#Begrep-merknad">3.5.2.7. Begrep – merknad (skos:scopeNote)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2053,7 +2054,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-tillatt-term"><a class="anchor" href="#Begrep-tillatt-term"></a>3.5.2.8. Begrep – tillatt term (skos:altLabel)</h5>
+<h5 id="Begrep-tillatt-term"><a class="link" href="#Begrep-tillatt-term">3.5.2.8. Begrep – tillatt term (skos:altLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2100,9 +2101,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Begrep-valgfrie-egenskaper"><a class="anchor" href="#Begrep-valgfrie-egenskaper"></a>3.5.3. Valgfrie egenskaper for <em>Begrep</em></h4>
+<h4 id="Begrep-valgfrie-egenskaper"><a class="link" href="#Begrep-valgfrie-egenskaper">3.5.3. Valgfrie egenskaper for <em>Begrep</em></a></h4>
 <div class="sect4">
-<h5 id="Begep-datastrukturterm"><a class="anchor" href="#Begep-datastrukturterm"></a>3.5.3.1. Begrep – datastrukturterm (skosno:dataStructureLabel)</h5>
+<h5 id="Begep-datastrukturterm"><a class="link" href="#Begep-datastrukturterm">3.5.3.1. Begrep – datastrukturterm (skosno:dataStructureLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2148,7 +2149,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-eksempel"><a class="anchor" href="#Begrep-eksempel"></a>3.5.3.2. Begrep – eksempel (skos:example)</h5>
+<h5 id="Begrep-eksempel"><a class="link" href="#Begrep-eksempel">3.5.3.2. Begrep – eksempel (skos:example)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2194,7 +2195,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-er-del-av"><a class="anchor" href="#Begrep-er-del-av"></a>3.5.3.3. Begrep – er del av (xkos:isPartOf)</h5>
+<h5 id="Begrep-er-del-av"><a class="link" href="#Begrep-er-del-av">3.5.3.3. Begrep – er del av (xkos:isPartOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2255,7 +2256,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-er-erstattet-av"><a class="anchor" href="#Begrep-er-erstattet-av"></a>3.5.3.4. Begrep – er erstattet av (dct:isReplacedBy)</h5>
+<h5 id="Begrep-er-erstattet-av"><a class="link" href="#Begrep-er-erstattet-av">3.5.3.4. Begrep – er erstattet av (dct:isReplacedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2306,7 +2307,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-er-fra-begrep-i"><a class="anchor" href="#Begrep-er-fra-begrep-i"></a>3.5.3.5. Begrep – er fra-begrep i (skosno:isFromConceptIn)</h5>
+<h5 id="Begrep-er-fra-begrep-i"><a class="link" href="#Begrep-er-fra-begrep-i">3.5.3.5. Begrep – er fra-begrep i (skosno:isFromConceptIn)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2345,7 +2346,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-er-relatert-til"><a class="anchor" href="#Begrep-er-relatert-til"></a>3.5.3.6. Begrep – er relatert til (skos:related)</h5>
+<h5 id="Begrep-er-relatert-til"><a class="link" href="#Begrep-er-relatert-til">3.5.3.6. Begrep – er relatert til (skos:related)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2406,7 +2407,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-erstatter"><a class="anchor" href="#Begrep-erstatter"></a>3.5.3.7. Begrep – erstatter (dct:replaces)</h5>
+<h5 id="Begrep-erstatter"><a class="link" href="#Begrep-erstatter">3.5.3.7. Begrep – erstatter (dct:replaces)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2457,7 +2458,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-frarådd-term"><a class="anchor" href="#Begrep-frarådd-term"></a>3.5.3.8. Begrep – frarådd term (skos:hiddenLabel)</h5>
+<h5 id="Begrep-frarådd-term"><a class="link" href="#Begrep-frarådd-term">3.5.3.8. Begrep – frarådd term (skos:hiddenLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2503,7 +2504,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-generaliserer"><a class="anchor" href="#Begrep-generaliserer"></a>3.5.3.9. Begrep – generaliserer (xkos:generalizes)</h5>
+<h5 id="Begrep-generaliserer"><a class="link" href="#Begrep-generaliserer">3.5.3.9. Begrep – generaliserer (xkos:generalizes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2564,7 +2565,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-har-eksakt-samsvar-med"><a class="anchor" href="#Begrep-har-eksakt-samsvar-med"></a>3.5.3.10. Begrep – har eksakt samsvar med (skos:exactMatch)</h5>
+<h5 id="Begrep-har-eksakt-samsvar-med"><a class="link" href="#Begrep-har-eksakt-samsvar-med">3.5.3.10. Begrep – har eksakt samsvar med (skos:exactMatch)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2610,7 +2611,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-har-generisk-begrepsrelasjon"><a class="anchor" href="#Begrep-har-generisk-begrepsrelasjon"></a>3.5.3.11. Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)</h5>
+<h5 id="Begrep-har-generisk-begrepsrelasjon"><a class="link" href="#Begrep-har-generisk-begrepsrelasjon">3.5.3.11. Begrep – har generisk begrepsrelasjon (skosno:hasGenericConceptRelation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2649,7 +2650,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-har-nært-samsvar-med"><a class="anchor" href="#Begrep-har-nært-samsvar-med"></a>3.5.3.12. Begrep – har nært samsvar med (skos:closeMatch)</h5>
+<h5 id="Begrep-har-nært-samsvar-med"><a class="link" href="#Begrep-har-nært-samsvar-med">3.5.3.12. Begrep – har nært samsvar med (skos:closeMatch)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2695,7 +2696,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-har-partitiv-begrepsrelasjon"><a class="anchor" href="#Begrep-har-partitiv-begrepsrelasjon"></a>3.5.3.13. Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)</h5>
+<h5 id="Begrep-har-partitiv-begrepsrelasjon"><a class="link" href="#Begrep-har-partitiv-begrepsrelasjon">3.5.3.13. Begrep – har partitiv begrepsrelasjon (skosno:hasPartitiveConceptRelation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2734,7 +2735,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-inneholder"><a class="anchor" href="#Begrep-inneholder"></a>3.5.3.14. Begrep – inneholder (xkos:hasPart)</h5>
+<h5 id="Begrep-inneholder"><a class="link" href="#Begrep-inneholder">3.5.3.14. Begrep – inneholder (xkos:hasPart)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2798,7 +2799,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-inngår-i"><a class="anchor" href="#Begrep-inngår-i"></a>3.5.3.15. Begrep – inngår i begrepssamling (uneskos:memberOf)</h5>
+<h5 id="Begrep-inngår-i"><a class="link" href="#Begrep-inngår-i">3.5.3.15. Begrep – inngår i begrepssamling (uneskos:memberOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2849,7 +2850,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-se-også"><a class="anchor" href="#Begrep-se-også"></a>3.5.3.16. Begrep – se også (rdfs:seeAlso)</h5>
+<h5 id="Begrep-se-også"><a class="link" href="#Begrep-se-også">3.5.3.16. Begrep – se også (rdfs:seeAlso)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2895,7 +2896,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-spesialiserer"><a class="anchor" href="#Begrep-spesialiserer"></a>3.5.3.17. Begrep – spesialiserer (xkos:specializes)</h5>
+<h5 id="Begrep-spesialiserer"><a class="link" href="#Begrep-spesialiserer">3.5.3.17. Begrep – spesialiserer (xkos:specializes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2956,7 +2957,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-status"><a class="anchor" href="#Begrep-status"></a>3.5.3.18. Begrep – status (euvoc:status)</h5>
+<h5 id="Begrep-status"><a class="link" href="#Begrep-status">3.5.3.18. Begrep – status (euvoc:status)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3008,7 +3009,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-verdiområde"><a class="anchor" href="#Begrep-verdiområde"></a>3.5.3.19. Begrep – verdiområde (skosno:valueRange)</h5>
+<h5 id="Begrep-verdiområde"><a class="link" href="#Begrep-verdiområde">3.5.3.19. Begrep – verdiområde (skosno:valueRange)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3055,7 +3056,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-versjonsnummer"><a class="anchor" href="#Begrep-versjonsnummer"></a>3.5.3.20. Begrep – versjonsnummer (owl:versionInfo)</h5>
+<h5 id="Begrep-versjonsnummer"><a class="link" href="#Begrep-versjonsnummer">3.5.3.20. Begrep – versjonsnummer (owl:versionInfo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3101,7 +3102,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrep-versjonsnote"><a class="anchor" href="#Begrep-versjonsnote"></a>3.5.3.21. Begrep – versjonsnote (adms:versionNotes)</h5>
+<h5 id="Begrep-versjonsnote"><a class="link" href="#Begrep-versjonsnote">3.5.3.21. Begrep – versjonsnote (adms:versionNotes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3149,7 +3150,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Definisjon"><a class="anchor" href="#Definisjon"></a>3.6. Krav til RDF-representasjon av Definisjon</h3>
+<h3 id="Definisjon"><a class="link" href="#Definisjon">3.6. Krav til RDF-representasjon av Definisjon</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3176,9 +3177,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Definisjon-obligatoriske-egenskaper"><a class="anchor" href="#Definisjon-obligatoriske-egenskaper"></a>3.6.1. Obligatoriske egenskaper for <em>Definisjon</em></h4>
+<h4 id="Definisjon-obligatoriske-egenskaper"><a class="link" href="#Definisjon-obligatoriske-egenskaper">3.6.1. Obligatoriske egenskaper for <em>Definisjon</em></a></h4>
 <div class="sect4">
-<h5 id="Definisjon-tekst"><a class="anchor" href="#Definisjon-tekst"></a>3.6.1.1. Definisjon – tekst (rdf:value)</h5>
+<h5 id="Definisjon-tekst"><a class="link" href="#Definisjon-tekst">3.6.1.1. Definisjon – tekst (rdf:value)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3226,9 +3227,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Definisjon-anbefalte-egenskaper"><a class="anchor" href="#Definisjon-anbefalte-egenskaper"></a>3.6.2. Anbefalte egenskaper for <em>Definisjon</em></h4>
+<h4 id="Definisjon-anbefalte-egenskaper"><a class="link" href="#Definisjon-anbefalte-egenskaper">3.6.2. Anbefalte egenskaper for <em>Definisjon</em></a></h4>
 <div class="sect4">
-<h5 id="Definisjon-forhold-til-kilde"><a class="anchor" href="#Definisjon-forhold-til-kilde"></a>3.6.2.1. Definisjon – forhold til kilde (skosno:relationshipWithSource)</h5>
+<h5 id="Definisjon-forhold-til-kilde"><a class="link" href="#Definisjon-forhold-til-kilde">3.6.2.1. Definisjon – forhold til kilde (skosno:relationshipWithSource)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3281,7 +3282,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Definisjon-kilde"><a class="anchor" href="#Definisjon-kilde"></a>3.6.2.2. Definisjon – kilde (dct:source)</h5>
+<h5 id="Definisjon-kilde"><a class="link" href="#Definisjon-kilde">3.6.2.2. Definisjon – kilde (dct:source)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3352,9 +3353,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Definisjon-valgfrie-egenskaper"><a class="anchor" href="#Definisjon-valgfrie-egenskaper"></a>3.6.3. Valgfrie egenskaper for <em>Definisjon</em></h4>
+<h4 id="Definisjon-valgfrie-egenskaper"><a class="link" href="#Definisjon-valgfrie-egenskaper">3.6.3. Valgfrie egenskaper for <em>Definisjon</em></a></h4>
 <div class="sect4">
-<h5 id="Definisjon-målgruppe"><a class="anchor" href="#Definisjon-målgruppe"></a>3.6.3.1. Definisjon – målgruppe (dct:audience)</h5>
+<h5 id="Definisjon-målgruppe"><a class="link" href="#Definisjon-målgruppe">3.6.3.1. Definisjon – målgruppe (dct:audience)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3408,7 +3409,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Assosiativ-begrepsrelasjon"><a class="anchor" href="#Assosiativ-begrepsrelasjon"></a>3.7. Krav til RDF-representasjon av Assosiativ begrepsrelasjon</h3>
+<h3 id="Assosiativ-begrepsrelasjon"><a class="link" href="#Assosiativ-begrepsrelasjon">3.7. Krav til RDF-representasjon av Assosiativ begrepsrelasjon</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3435,9 +3436,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Assosiativ-begrepsrelasjon-obligatoriske-egenskaper"><a class="anchor" href="#Assosiativ-begrepsrelasjon-obligatoriske-egenskaper"></a>3.7.1. Obligatoriske egenskaper for Assosiativ begrepsrelasjon</h4>
+<h4 id="Assosiativ-begrepsrelasjon-obligatoriske-egenskaper"><a class="link" href="#Assosiativ-begrepsrelasjon-obligatoriske-egenskaper">3.7.1. Obligatoriske egenskaper for Assosiativ begrepsrelasjon</a></h4>
 <div class="sect4">
-<h5 id="Assosiativ-begrepsrelasjon-har-til-begrep"><a class="anchor" href="#Assosiativ-begrepsrelasjon-har-til-begrep"></a>3.7.1.1. Assosiativ begrepsrelasjon – har til-begrep (skosno:hasToConcept)</h5>
+<h5 id="Assosiativ-begrepsrelasjon-har-til-begrep"><a class="link" href="#Assosiativ-begrepsrelasjon-har-til-begrep">3.7.1.1. Assosiativ begrepsrelasjon – har til-begrep (skosno:hasToConcept)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3484,7 +3485,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Assosiativ-begrepsrelasjon-relasjonsrolle"><a class="anchor" href="#Assosiativ-begrepsrelasjon-relasjonsrolle"></a>3.7.1.2. Assosiativ begrepsrelasjon – relasjonsrolle (skosno:relationRole)</h5>
+<h5 id="Assosiativ-begrepsrelasjon-relasjonsrolle"><a class="link" href="#Assosiativ-begrepsrelasjon-relasjonsrolle">3.7.1.2. Assosiativ begrepsrelasjon – relasjonsrolle (skosno:relationRole)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3535,7 +3536,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Generisk-begrepsrelasjon"><a class="anchor" href="#Generisk-begrepsrelasjon"></a>3.8. Krav til RDF-representasjon av Generisk begrepsrelasjon</h3>
+<h3 id="Generisk-begrepsrelasjon"><a class="link" href="#Generisk-begrepsrelasjon">3.8. Krav til RDF-representasjon av Generisk begrepsrelasjon</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3562,9 +3563,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Generisk-begrepsrelasjon-obligatoriske-egenskaper"><a class="anchor" href="#Generisk-begrepsrelasjon-obligatoriske-egenskaper"></a>3.8.1. Obligatoriske egenskaper for Generisk begrepsrelasjon</h4>
+<h4 id="Generisk-begrepsrelasjon-obligatoriske-egenskaper"><a class="link" href="#Generisk-begrepsrelasjon-obligatoriske-egenskaper">3.8.1. Obligatoriske egenskaper for Generisk begrepsrelasjon</a></h4>
 <div class="sect4">
-<h5 id="Generisk-begrepsrelasjon-har-overbegrep"><a class="anchor" href="#Generisk-begrepsrelasjon-har-overbegrep"></a>3.8.1.1. Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept)</h5>
+<h5 id="Generisk-begrepsrelasjon-har-overbegrep"><a class="link" href="#Generisk-begrepsrelasjon-har-overbegrep">3.8.1.1. Generisk begrepsrelasjon – har overbegrep (skosno:hasGenericConcept)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3620,7 +3621,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Generisk-begrepsrelasjon-har-underbegrep"><a class="anchor" href="#Generisk-begrepsrelasjon-har-underbegrep"></a>3.8.1.2. Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept)</h5>
+<h5 id="Generisk-begrepsrelasjon-har-underbegrep"><a class="link" href="#Generisk-begrepsrelasjon-har-underbegrep">3.8.1.2. Generisk begrepsrelasjon – har underbegrep (skosno:hasSpecificConcept)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3677,9 +3678,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Generisk-begrepsrelasjon-anbefalte-egenskaper"><a class="anchor" href="#Generisk-begrepsrelasjon-anbefalte-egenskaper"></a>3.8.2. Anbefalte egenskaper for Generisk begrepsrelasjon</h4>
+<h4 id="Generisk-begrepsrelasjon-anbefalte-egenskaper"><a class="link" href="#Generisk-begrepsrelasjon-anbefalte-egenskaper">3.8.2. Anbefalte egenskaper for Generisk begrepsrelasjon</a></h4>
 <div class="sect4">
-<h5 id="Generisk-begrepsrelasjon-inndelingskriterium"><a class="anchor" href="#Generisk-begrepsrelasjon-inndelingskriterium"></a>3.8.2.1. Generisk begrepsrelasjon – inndelingskriterium (dct:description)</h5>
+<h5 id="Generisk-begrepsrelasjon-inndelingskriterium"><a class="link" href="#Generisk-begrepsrelasjon-inndelingskriterium">3.8.2.1. Generisk begrepsrelasjon – inndelingskriterium (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3729,7 +3730,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Partitiv-begrepsrelasjon"><a class="anchor" href="#Partitiv-begrepsrelasjon"></a>3.9. Krav til RDF-representasjon av Partitiv begrepsrelasjon</h3>
+<h3 id="Partitiv-begrepsrelasjon"><a class="link" href="#Partitiv-begrepsrelasjon">3.9. Krav til RDF-representasjon av Partitiv begrepsrelasjon</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3756,9 +3757,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Partitiv-begrepsrelasjon-obligatoriske-egenskaper"><a class="anchor" href="#Partitiv-begrepsrelasjon-obligatoriske-egenskaper"></a>3.9.1. Obligatoriske egenskaper for <em>Partitiv begrepsrelasjon</em></h4>
+<h4 id="Partitiv-begrepsrelasjon-obligatoriske-egenskaper"><a class="link" href="#Partitiv-begrepsrelasjon-obligatoriske-egenskaper">3.9.1. Obligatoriske egenskaper for <em>Partitiv begrepsrelasjon</em></a></h4>
 <div class="sect4">
-<h5 id="Partitiv-begrepsrelasjon-har-delbegrep"><a class="anchor" href="#Partitiv-begrepsrelasjon-har-delbegrep"></a>3.9.1.1. Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept)</h5>
+<h5 id="Partitiv-begrepsrelasjon-har-delbegrep"><a class="link" href="#Partitiv-begrepsrelasjon-har-delbegrep">3.9.1.1. Partitiv begrepsrelasjon – har delbegrep (skosno:hasPartitiveConcept)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3810,7 +3811,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Partitiv-begrepsrelasjon-har-helhetsbegrep"><a class="anchor" href="#Partitiv-begrepsrelasjon-har-helhetsbegrep"></a>3.9.1.2. Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept)</h5>
+<h5 id="Partitiv-begrepsrelasjon-har-helhetsbegrep"><a class="link" href="#Partitiv-begrepsrelasjon-har-helhetsbegrep">3.9.1.2. Partitiv begrepsrelasjon – har helhetsbegrep (skosno:hasComprehensiveConcept)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -3863,9 +3864,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="Partitiv-begrepsrelasjon-anbefalte-egenskaper"><a class="anchor" href="#Partitiv-begrepsrelasjon-anbefalte-egenskaper"></a>3.9.2. Anbefalte egenskaper for <em>Partitiv begrepsrelasjon</em></h4>
+<h4 id="Partitiv-begrepsrelasjon-anbefalte-egenskaper"><a class="link" href="#Partitiv-begrepsrelasjon-anbefalte-egenskaper">3.9.2. Anbefalte egenskaper for <em>Partitiv begrepsrelasjon</em></a></h4>
 <div class="sect4">
-<h5 id="Partitiv-begrepsrelasjon-inndelingskriterium"><a class="anchor" href="#Partitiv-begrepsrelasjon-inndelingskriterium"></a>3.9.2.1. Partitiv begrepsrelasjon – inndelingskriterium (dct:description)</h5>
+<h5 id="Partitiv-begrepsrelasjon-inndelingskriterium"><a class="link" href="#Partitiv-begrepsrelasjon-inndelingskriterium">3.9.2.1. Partitiv begrepsrelasjon – inndelingskriterium (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3915,7 +3916,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="Begrepssamling"><a class="anchor" href="#Begrepssamling"></a>3.10. Krav til RDF-representasjon av Begrepssamling</h3>
+<h3 id="Begrepssamling"><a class="link" href="#Begrepssamling">3.10. Krav til RDF-representasjon av Begrepssamling</a></h3>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3942,9 +3943,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Begrepssamling-obligatoriske-egenskaper"><a class="anchor" href="#Begrepssamling-obligatoriske-egenskaper"></a>3.10.1. Obligatoriske egenskaper for <em>Begrepssamling</em></h4>
+<h4 id="Begrepssamling-obligatoriske-egenskaper"><a class="link" href="#Begrepssamling-obligatoriske-egenskaper">3.10.1. Obligatoriske egenskaper for <em>Begrepssamling</em></a></h4>
 <div class="sect4">
-<h5 id="Begrepssamling-identifikator"><a class="anchor" href="#Begrepssamling-identifikator"></a>3.10.1.1. Begrepssamling – identifikator (dct:identifier)</h5>
+<h5 id="Begrepssamling-identifikator"><a class="link" href="#Begrepssamling-identifikator">3.10.1.1. Begrepssamling – identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3988,7 +3989,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrepssamling-inneholder-begrep"><a class="anchor" href="#Begrepssamling-inneholder-begrep"></a>3.10.1.2. Begrepssamling – inneholder begrep (skos:member)</h5>
+<h5 id="Begrepssamling-inneholder-begrep"><a class="link" href="#Begrepssamling-inneholder-begrep">3.10.1.2. Begrepssamling – inneholder begrep (skos:member)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4024,7 +4025,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </table>
 </div>
 <div class="sect4">
-<h5 id="Begrepssamling-kontaktpunkt"><a class="anchor" href="#Begrepssamling-kontaktpunkt"></a>3.10.1.3. Begrepssamling – kontaktpunkt (dcat:contactPoint)</h5>
+<h5 id="Begrepssamling-kontaktpunkt"><a class="link" href="#Begrepssamling-kontaktpunkt">3.10.1.3. Begrepssamling – kontaktpunkt (dcat:contactPoint)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4063,7 +4064,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrepssamling-navn"><a class="anchor" href="#Begrepssamling-navn"></a>3.10.1.4. Begrepssamling – navn (dct:title)</h5>
+<h5 id="Begrepssamling-navn"><a class="link" href="#Begrepssamling-navn">3.10.1.4. Begrepssamling – navn (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4102,7 +4103,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect4">
-<h5 id="Begrepssamling-publisert-av"><a class="anchor" href="#Begrepssamling-publisert-av"></a>3.10.1.5. Begrepssamling – publisert av (dct:publisher)</h5>
+<h5 id="Begrepssamling-publisert-av"><a class="link" href="#Begrepssamling-publisert-av">3.10.1.5. Begrepssamling – publisert av (dct:publisher)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4147,9 +4148,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect3">
-<h4 id="_anbefalte_egenskaper_for_begrepssamling"><a class="anchor" href="#_anbefalte_egenskaper_for_begrepssamling"></a>3.10.2. Anbefalte egenskaper for <em>Begrepssamling</em></h4>
+<h4 id="_anbefalte_egenskaper_for_begrepssamling"><a class="link" href="#_anbefalte_egenskaper_for_begrepssamling">3.10.2. Anbefalte egenskaper for <em>Begrepssamling</em></a></h4>
 <div class="sect4">
-<h5 id="Begrepssamling-beskrivelse"><a class="anchor" href="#Begrepssamling-beskrivelse"></a>3.10.2.1. Begrepssamling – beskrivelse (dct:description)</h5>
+<h5 id="Begrepssamling-beskrivelse"><a class="link" href="#Begrepssamling-beskrivelse">3.10.2.1. Begrepssamling – beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-odd stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4192,7 +4193,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Navnerom-brukt-i-standarden"><a class="anchor" href="#Navnerom-brukt-i-standarden"></a>Vedlegg A - Navnerom som er brukt i denne standard</h2>
+<h2 id="Navnerom-brukt-i-standarden"><a class="link" href="#Navnerom-brukt-i-standarden">Vedlegg A - Navnerom som er brukt i denne standard</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Navnerom for denne standarden er <code>https://data.norge.no/vocabulary/skosno#</code></p>
@@ -4307,7 +4308,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Forenklet-modell"><a class="anchor" href="#Forenklet-modell"></a>Vedlegg B - Forenklet modell for SKOS-AP-NO-Begrep</h2>
+<h2 id="Forenklet-modell"><a class="link" href="#Forenklet-modell">Vedlegg B - Forenklet modell for SKOS-AP-NO-Begrep</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er deskriptivt</em>.</p>
@@ -4316,7 +4317,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p>Ved eventuelle avvik mellom UML-diagrammene og prosatekst-beskrivelsene av kravene har prosatekst-beskrivelsene forrang.</p>
 </div>
 <div class="sect2">
-<h3 id="_forenklet_modell_med_kun_obligatoriske_klasser_og_deres_obligatoriske_egenskaper"><a class="anchor" href="#_forenklet_modell_med_kun_obligatoriske_klasser_og_deres_obligatoriske_egenskaper"></a>Forenklet modell, med kun obligatoriske klasser og deres obligatoriske egenskaper</h3>
+<h3 id="_forenklet_modell_med_kun_obligatoriske_klasser_og_deres_obligatoriske_egenskaper"><a class="link" href="#_forenklet_modell_med_kun_obligatoriske_klasser_og_deres_obligatoriske_egenskaper">Forenklet modell, med kun obligatoriske klasser og deres obligatoriske egenskaper</a></h3>
 <div class="paragraph">
 <p>UML-diagrammet nedenfor viser de obligatoriske klassene med deres obligatoriske egenskaper, og relasjoner mellom disse.</p>
 </div>
@@ -4328,7 +4329,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="_forenklet_modell_uten_begrepsrelasjoner"><a class="anchor" href="#_forenklet_modell_uten_begrepsrelasjoner"></a>Forenklet modell, uten begrepsrelasjoner</h3>
+<h3 id="_forenklet_modell_uten_begrepsrelasjoner"><a class="link" href="#_forenklet_modell_uten_begrepsrelasjoner">Forenklet modell, uten begrepsrelasjoner</a></h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/SKOS-AP-NO-Begrep-uten-relasjoner.png"><img src="images/SKOS-AP-NO-Begrep-uten-relasjoner.png" alt="UML-diagram med tre klasser, tre relasjoner og tre restriksjonsnoter. Innholdet er forklart i teksten."></a>
@@ -4337,7 +4338,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect2">
-<h3 id="_forenklet_modell_med_kun_begrepsrelasjoner"><a class="anchor" href="#_forenklet_modell_med_kun_begrepsrelasjoner"></a>Forenklet modell, med kun begrepsrelasjoner</h3>
+<h3 id="_forenklet_modell_med_kun_begrepsrelasjoner"><a class="link" href="#_forenklet_modell_med_kun_begrepsrelasjoner">Forenklet modell, med kun begrepsrelasjoner</a></h3>
 <div class="imageblock">
 <div class="content">
 <a class="image" href="images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png"><img src="images/SKOS-AP-NO-Begrep-kun-med-begrepsrelasjoner.png" alt="UML-diagram med fire klasser, atten relasjoner og fem restriksjonsnoter. Innholdet er forklart i teksten."></a>
@@ -4351,7 +4352,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om-begrepsrelasjoner"><a class="anchor" href="#Om-begrepsrelasjoner"></a>Vedlegg C – Om begrepsrelasjoner</h2>
+<h2 id="Om-begrepsrelasjoner"><a class="link" href="#Om-begrepsrelasjoner">Vedlegg C – Om begrepsrelasjoner</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er deskriptivt</em>.</p>
@@ -4419,13 +4420,13 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Eksempler-i-RDF-Turtle"><a class="anchor" href="#Eksempler-i-RDF-Turtle"></a>Vedlegg D – Eksempler i RDF Turtle</h2>
+<h2 id="Eksempler-i-RDF-Turtle"><a class="link" href="#Eksempler-i-RDF-Turtle">Vedlegg D – Eksempler i RDF Turtle</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er deskriptivt</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="RDF-eksempler-begreper"><a class="anchor" href="#RDF-eksempler-begreper"></a>Eksempler på begrepsbeskrivelser representert i RDF Turtle</h3>
+<h3 id="RDF-eksempler-begreper"><a class="link" href="#RDF-eksempler-begreper">Eksempler på begrepsbeskrivelser representert i RDF Turtle</a></h3>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -4685,7 +4686,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </table>
 </div>
 <div class="sect2">
-<h3 id="RDF-eksempel-Begrepssamling"><a class="anchor" href="#RDF-eksempel-Begrepssamling"></a>Eksempel på en begrepssamling representert i RDF Turtle</h3>
+<h3 id="RDF-eksempel-Begrepssamling"><a class="link" href="#RDF-eksempel-Begrepssamling">Eksempel på en begrepssamling representert i RDF Turtle</a></h3>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -4738,31 +4739,31 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 </div>
 <div class="sect1">
-<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Vedlegg E – Endringslogg</h2>
+<h2 id="Endringslogg"><a class="link" href="#Endringslogg">Vedlegg E – Endringslogg</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er deskriptivt</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_v_2_0_3_til_v_2_0_x"><a class="anchor" href="#_endringer_fra_v_2_0_3_til_v_2_0_x"></a>Endringer fra v.2.0.3 til v.2.0.x</h3>
+<h3 id="_endringer_fra_v_2_0_3_til_v_2_0_x"><a class="link" href="#_endringer_fra_v_2_0_3_til_v_2_0_x">Endringer fra v.2.0.3 til v.2.0.x</a></h3>
 <div class="paragraph">
 <p>Kun redaksjonelle oppdateringer, for å rette opp skrivefeil, lenkefeil, uoverensstemmelser mellom tekst og tegning, upresise formuleringer og lignende.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_v_2_0_1_til_v_2_0_3"><a class="anchor" href="#_endringer_fra_v_2_0_1_til_v_2_0_3"></a>Endringer fra v.2.0.1 til v.2.0.3</h3>
+<h3 id="_endringer_fra_v_2_0_1_til_v_2_0_3"><a class="link" href="#_endringer_fra_v_2_0_1_til_v_2_0_3">Endringer fra v.2.0.1 til v.2.0.3</a></h3>
 <div class="paragraph">
 <p>Kun redaksjonelle justeringer, hovedsakelig for å ta med ting fra veilederen slik at veilederen kan overflødiggjøres.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_v_2_0_0_til_v_2_0_1"><a class="anchor" href="#_endringer_fra_v_2_0_0_til_v_2_0_1"></a>Endringer fra v.2.0.0 til v.2.0.1</h3>
+<h3 id="_endringer_fra_v_2_0_0_til_v_2_0_1"><a class="link" href="#_endringer_fra_v_2_0_0_til_v_2_0_1">Endringer fra v.2.0.0 til v.2.0.1</a></h3>
 <div class="paragraph">
 <p>Kun redaksjonelle justeringer, bl.a. at <code>adms:status</code> er rettet til <code>euvoc:status</code> (fordi RDF-delen av standarden var ment å følge SKOS-AP-EU som EUs Publications Office også bruker, og der er <code>euvoc:status</code> brukt).</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_endringer_ved_publisering_av_v_2_0_0"><a class="anchor" href="#_endringer_ved_publisering_av_v_2_0_0"></a>Endringer ved publisering av v.2.0.0</h3>
+<h3 id="_endringer_ved_publisering_av_v_2_0_0"><a class="link" href="#_endringer_ved_publisering_av_v_2_0_0">Endringer ved publisering av v.2.0.0</a></h3>
 <div class="paragraph">
 <p>Denne standarden skal erstatte følgende to standarder:</p>
 </div>
@@ -5325,7 +5326,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2023-10-24 12:41:32 UTC
+Sist oppdatert 2024-08-08 12:35:09 UTC
 </div>
 </div>
 </body>

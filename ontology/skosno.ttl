@@ -32,8 +32,8 @@
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This is the ontology for SKOS-AP-NO-Begrep."@en ;
     dct:title "Ontology for SKOS-AP-NO-Begrep v.2"@en , "Ontologi for SKOS-AP-NO-Begrep v.2"@nb ;
-    dct:modified "2023-01-24"^^xsd:date ;
-    owl:versionInfo "2.001" ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    owl:versionInfo "2.002" ;
     owl:versionNotes "Only the classes and properties that are defined in SKOS-AP-NO-Begrep v.2 are defined in this ontology. Classes and properties that are defined in other vocabularies are not included here."@en ,
       "Bare klasser og egenskaper som er definert i SKOS-AP-NO-Begrepv v.2 er inkludert i denne ontologien. Klasser og egenskaper som er definert i andre vokabularer er ikke inkludert her."@nb ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/ontology/> ;
@@ -53,7 +53,7 @@ skosno:AssociativeConceptRelation a owl:Class ;
   rdfs:label "Associative concept relation"@en , "Assosiativ begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent an associative concept relation."@en ,
       "Klassen brukes til å representere en assosiativ begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/168204375104789/en> ;
+  rdfs:seeAlso <https://termlex.no/term/171137526104694/en> ;
   .
 
 skosno:GenericConceptRelation a owl:Class ;
@@ -61,7 +61,7 @@ skosno:GenericConceptRelation a owl:Class ;
   rdfs:label "Generic concept relation"@en , "Generisk begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent a generic concept relation."@en ,
       "Klassen brukes til å representere en generisk begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/168204371002565/en> ;
+  rdfs:seeAlso <https://termlex.no/term/171137526403399/en> ;
   .
 
 skosno:PartitiveConceptRelation a owl:Class ;
@@ -69,7 +69,7 @@ skosno:PartitiveConceptRelation a owl:Class ;
   rdfs:label "Partitive concept relation"@en , "Partitiv begrepsrelasjon"@nb ;
   rdfs:comment "This class is used to represent a partitive concept relation."@en ,
       "Klassen brukes til å representere en partitiv begrepsrelasjon."@nb ;
-  rdfs:seeAlso <https://termbasen.standard.no/term/168204529503414/en> ;
+  rdfs:seeAlso <https://termlex.no/term/171137529308815/en> ;
   .
 
 

@@ -38,7 +38,7 @@ jobs:
         with:
           ontology-type: "specification"
           ontology: "skos-ap-no-begrep"
-          host: "https://fellesdatakatalog.digdir.no"
+          host: "https://data.norge.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             docs/index.html text/html nb

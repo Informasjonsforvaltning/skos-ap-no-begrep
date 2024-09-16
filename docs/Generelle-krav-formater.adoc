@@ -3,10 +3,10 @@
 
 Det anbefales å bruke standardiserte formater til å representere følgende datatyper, i intern lagring og maskinell tilgjengeliggjøring eksternt:
 
-* *Dato*: NS-ISO 8601 brukes for intern lagring og maskinell tilgjengeliggjøring eksternt, som `ÅÅÅÅ-MM-DD`.
+* *Dato*: NS-ISO 8601  brukes for intern lagring og maskinell tilgjengeliggjøring eksternt, som `ÅÅÅÅ-MM-DD`.
 
-* *URI*: Se kravene i https://www.digdir.no/1492[bruksområdet «Peikarar til offentlege ressursar på nett» i _Referansekatalogen for IT-standardar_].
+* *URI*: Se kravene i https://www.digdir.no/1492[bruksområdet «Peikarar til offentlege ressursar på nett» i __Referansekatalogen for IT-standardar__ &#x29C9;, window="_blank", role="ext-link"].
 
-* *Kontaktpunkt* (vcard): Se spesifikasjon fra W3C, https://www.w3.org/TR/vcard-rdf/[_vCard Ontology - for describing People and Organizations_].
+* *Kontaktpunkt* (vcard): Se spesifikasjon fra W3C, https://www.w3.org/TR/vcard-rdf/[__vCard Ontology - for describing People and Organizations__ &#x29C9;, window="_blank", role="ext-link"].
 
-* *Tekst*: Se kravene i https://www.digdir.no/1494[bruksområdet «Publisering av tekstdokumenter» i _Referansekatalogen for IT-standardar_].
+* *Tekst*: Se kravene i https://www.digdir.no/1494[bruksområdet «Publisering av tekstdokumenter» i __Referansekatalogen for IT-standardar__ &#x29C9;, window="_blank", role="ext-link"].

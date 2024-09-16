@@ -1,11 +1,12 @@
 == Forord [[Forord]]
 
-Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_. https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480[_Referansekatalogen_] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
+Som en anbefalt standard inngår denne standarden i bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid &#x29C9;, window="_blank", role="ext-link"] i __Referansekatalogen__. https://www.digdir.no/standarder/referansekatalogen-it-standardar/1480[__Referansekatalogen__ &#x29C9;, window="_blank", role="ext-link"] er en oversikt over obligatoriske og anbefalte IT-standarder i forvaltningen. Obligatoriske standarder skal følges av alle virksomheter. Anbefalte standarder skal følges hvis virksomhetene ikke har en god grunn til å la være å følge dem.
 
 Standarden er utarbeidet i henhold til arbeidsmetodikken til Arkitektur- og standardiseringsrådet, av en arbeidsgruppe ledet av Digitaliseringsdirektoratet.
 
 
 Denne standarden erstatter følgende standarder: 
  
-. Forvaltningsstandard for begrepsbeskrivelser (v.2.0.2), https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser
-. SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (v.1.1.1), https://data.norge.no/specification/skos-ap-no-begrep/v1.1
+. Forvaltningsstandard for begrepsbeskrivelser (v.2.0.2), https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser[https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser &#x29C9;, window="_blank", role="ext-link"]
+
+. SKOS-AP-NO-Begrep – Forvaltningsstandard for tilgjengeliggjøring av begrepsbeskrivelser basert på SKOS (v.1.1.1), https://data.norge.no/specification/skos-ap-no-begrep/v1.1[https://data.norge.no/specification/skos-ap-no-begrep/v1.1 &#x29C9;, window="_blank", role="ext-link"]

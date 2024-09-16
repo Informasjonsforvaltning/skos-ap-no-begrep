@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Generic concept relation_
-| Anvendelse / _Usage note_  | Klassen brukes til å representere en https://termbasen.standard.no/term/168204371002565/nb[generisk begrepsrelasjon].
+| Anvendelse / _Usage note_  | Klassen brukes til å representere en  https://termlex.no/term/171137526403399/nb[generisk begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
 
-_This class is used to represent a https://termbasen.standard.no/term/168204371002565/en[generic concept relation]._
+__This class is used to represent a https://termlex.no/term/171137526403399/en[generic concept relation &#x29C9;, window="_blank", role="ext-link"].__
 | URI  |skosno:GenericConceptRelation
 | Kravnivå / _Requirement level_  |Valgfri / _Optional_
 |===
@@ -19,9 +19,9 @@ _This class is used to represent a https://termbasen.standard.no/term/1682043710
 | _English name_  | _has generic concept_
 | URI  |skosno:hasGenericConcept
 | Verdiområde / _Range_  |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til https://termbasen.standard.no/term/168204529303200/nb[det generiske begrepet] i en generisk begrepsrelasjon.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til https://termlex.no/term/171137526104769/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
 
-_This property is used to specify the https://termbasen.standard.no/term/168204529303200/en[generic concept] in a generic concept relation._
+__This property is used to specify the https://termlex.no/term/171137526104769/en[generic concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_  |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-underbegrep>> skal brukes, men ikke begge samtidig.
@@ -45,9 +45,9 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | _English name_  | _has specific concept_
 | URI  |skosno:hasSpecificConcept
 | Verdiområde / _Range_  |skos:Concept
-| Anvendelse / _Usage note_  | Egenskapen brukes til å referere til https://termbasen.standard.no/term/168204379908017/nb[det spesifikke begrepet] i en generisk begrepsrelasjon.
+| Anvendelse / _Usage note_  | Egenskapen brukes til å referere til https://termlex.no/term/171137527605260/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
 
-_This property is used to refer to the https://termbasen.standard.no/term/168204379908017/en[specific concept] in a generic concept relation._
+__This property is used to refer to https://termlex.no/term/171137527605260/en[specific concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_  |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-overbegrep>> skal brukes, ikke begge samtidig.
@@ -74,9 +74,9 @@ Eksempel i RDF Turtle, for NAVs begrep 625 «ytelsesperiode»:
 | _English name_  | _criterion of subdivision_
 | URI  |dct:description
 | Verdiområde / _Range_  |rdf:langString
-| Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi https://termbasen.standard.no/term/168204529703821/nb[inndelingskriterium] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er på flere språk.
+| Anvendelse / _Usage note_  | Egenskapen brukes til å oppgi https://termlex.no/term/171137526103099/nb[inndelingskriterium &#x29C9;, window="_blank", role="ext-link"] for begrepsrelasjonen. Egenskapen bør gjentas når teksten er på flere språk.
 
-_This property is used to specify the https://termbasen.standard.no/term/168204529703821/en[criterion of subdivision] for the concept relation. This property should be repeated for parallel language versions of the text._
+__This property is used to specify the https://termlex.no/term/171137526103099/en[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"] for the concept relation. This property should be repeated for parallel language versions of the text.__
 | Multiplisitet / _Multiplicity_  |0..n
 | Kravnivå / _Requirement level_  |Anbefalt / _Recommended_
 |===

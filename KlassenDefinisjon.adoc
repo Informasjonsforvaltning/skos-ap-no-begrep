@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_ | _Definition_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termbasen.standard.no/term/168204365109319/nb[definisjon], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termlex.no/term/171137526903743/nb[definisjon &#x29C9;, window="_blank", role="ext-link"], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-_This class is used to represent a https://termbasen.standard.no/term/168204365109319/en[definition] when there is a need to describe more than the definition itself._
+__This class is used to represent a https://termlex.no/term/171137526903743/en[definition &#x29C9;, window="_blank", role="ext-link"] when there is a need to describe more than the definition itself.__
 | URI |euvoc:XlNote
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -49,9 +49,9 @@ _This property is used to specify the relationship between the definition and th
 | Multiplisitet / _Multiplicity_  |0..1
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 | Merknad / _Note_ | 
-Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde] passer til begrepets forhold til kilde, skal egenskapen referere til den aktuelle kategorien.
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/relationship-with-source-type[Typer forhold til kilde &#x29C9;, window="_blank", role="ext-link"] passer til begrepets forhold til kilde, skal egenskapen referere til den aktuelle kategorien.
 
-_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source] is suitable for the concept's relationship with source, this property shall refer to that category._
+__When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/relationship-with-source-type[Types of relationship with source &#x29C9;, window="_blank", role="ext-link"] is suitable for the concept's relationship with source, this property shall refer to that category.__
 |===
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
@@ -118,9 +118,9 @@ _This property is used to specify the audience of the definition, as a coded val
 | Multiplisitet / _Multiplicity_  |0..1
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad / _Note_ | 
-Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype] passer til begrepets målgruppe, skal egenskapen referere til den aktuelle kategorien.
+Når begrepsbeskrivelsen gjøres tilgjengelig utenfor virksomheten, og hvis en av kategoriene i det kontrollerte vokabularet https://data.norge.no/vocabulary/audience-type[Målgruppetype &#x29C9;, window="_blank", role="ext-link"] passer til begrepets målgruppe, skal egenskapen referere til den aktuelle kategorien.
 
-_When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type] is suitable for the audience of the concept, this property shall refer to that category._
+__When making the concept description available outside the organization, and if one of the categories in the controlled vocabulary https://data.norge.no/vocabulary/audience-type[Audience type &#x29C9;, window="_blank", role="ext-link"] is suitable for the audience of the concept, this property shall refer to that category.__
 |===
 
 Eksempel i RDF Turtle:

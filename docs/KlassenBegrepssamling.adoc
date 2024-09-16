@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Collection_
-|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termbasen.standard.no/term/168204379707882/nb[begreper].
+|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termlex.no/term/171137529705724/nb[begreper &#x29C9;, window="_blank", role="ext-link"].
 
-_This class is used to represent a collection of https://termbasen.standard.no/term/168204379707882/en[concepts]._
+__This class is used to represent a collection of https://termlex.no/term/171137529705724/en[concepts &#x29C9;, window="_blank", role="ext-link"].__
 |URI |skos:Collection
 |Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -24,9 +24,9 @@ _This class is used to represent a collection of https://termbasen.standard.no/t
 _This property is used to specify the identifier of the concept collection._
 |Multiplisitet /  _Multiplicity_  |1..1
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-|Merknad / _Note_ | Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]
+|Merknad / _Note_ | Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv. &#x29C9;, window="_blank", role="ext-link"]
 
-_See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv.]_
+__See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifier) i Veileder for beskrivelse av datasett osv. (in Norwegian only) &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
 Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
@@ -89,9 +89,9 @@ Eksempel i RDF Turtle: Se under <<RDF-eksempel-Begrepssamling>>.
 _This property is used to refer to the publisher of the concept collection._
 |Multiplisitet /  _Multiplicity_  |1..1
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
-|Merknad / _Note_ | Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[Enhetsregisterets organisasjonsnummer].
+|Merknad / _Note_ | Virksomhetens identifikasjonsnummer bør brukes, for eksempel https://data.norge.no/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c[Enhetsregisterets organisasjonsnummer &#x29C9;, window="_blank", role="ext-link"].
 
-_The organization’s identifier should be used, e.g. the organization number registered in the Central Coordinating Register for Legal Entities (CCR)._
+__The organization’s identifier should be used, e.g. the organization number registered in the Central Coordinating Register for Legal Entities (CCR).__
 |===
 
 Eksempel i RDF Turtle: se under <<RDF-eksempel-Begrepssamling>>.

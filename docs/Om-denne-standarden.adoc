@@ -2,7 +2,7 @@
 
 === Formål [[Formål]]
 
-Det er et uttrykt ønske, både fra regjeringshold og fra offentlig sektor, at ulike deler av forvaltningen skal kunne gjenbruke hverandres informasjon i større grad. I https://www.regjeringen.no/no/dokumenter/en-digital-offentlig-sektor/id2653874/?ch=4[regjeringens digitaliseringsstrategi for offentlig sektor 2019–2025] leser vi:
+Det er et uttrykt ønske, både fra regjeringshold og fra offentlig sektor, at ulike deler av forvaltningen skal kunne gjenbruke hverandres informasjon i større grad. I https://www.regjeringen.no/no/dokumenter/en-digital-offentlig-sektor/id2653874/?ch=4[regjeringens digitaliseringsstrategi for offentlig sektor 2019–2025 &#x29C9;, window="_blank", role="ext-link"] leser vi:
 
 [no-bullet]
 ** _Brukerne skal unngå å oppgi informasjon som det offentlige allerede har innhentet. Økt deling av data er også en forutsetning for utvikling av sammenhengende tjenester på tvers av sektorer og forvaltningsnivåer. Offentlig sektor skal dele data når den kan og skjerme data når den må. Åpne offentlige data skal gjøres tilgjengelig for viderebruk til utvikling av nye tjenester og verdiskaping i næringslivet._
@@ -17,9 +17,9 @@ Standarden skal sikre at begreper som forvaltes av offentlig forvaltning, beskri
 Standarden spesifiserer
 
 * i <<Del1>>, hva som skal/bør/kan tas med når et begrep eller en begrepssamling beskrives
-* i <<Del2>>, hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_]
+* i <<Del2>>, hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_ &#x29C9;, window="_blank", role="ext-link"]
 
-Se ellers bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid] i _Referansekatalogen_ for andre aktuelle standarder og veiledere, bl.a. https://data.norge.no/specification/tbx-ap-no[TBX-AP-NO] som spesifiserer hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til TBX-rammeverket spesifisert i https://online.standard.no/ns-iso-30042-2019[NS-ISO 30042:2019].
+Se ellers bruksområdet https://www.digdir.no/1483[Omgrepsanalyse og definisjonsarbeid &#x29C9;, window="_blank", role="ext-link"] i __Referansekatalogen__ for andre aktuelle standarder og veiledere, bl.a. https://data.norge.no/specification/tbx-ap-no[TBX-AP-NO &#x29C9;, window="_blank", role="ext-link"] som spesifiserer hvordan beskrivelser av begreper og begrepssamlinger gjøres tilgjengelige i maskinlesbare formater i henhold til TBX-rammeverket spesifisert i https://online.standard.no/ns-iso-30042-2019[NS-ISO 30042:2019 &#x29C9;, window="_blank", role="ext-link"].
 
 === Målgrupper [[Målgrupper]]
 
@@ -32,21 +32,21 @@ Du kan også ha nytte av å lese standarden hvis hensikten er å forstå andres 
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
-Standarden forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir)].
+Standarden forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir) &#x29C9;, window="_blank", role="ext-link"].
 
 Digdir håndterer mindre endringer. Ved behov for større endringer vil Digdir sette sammen en arbeidsgruppe med representanter fra aktuelle virksomheter. Arbeidsgruppen utarbeider forslag til den reviderte versjonen som sendes ut på åpen høring før fastsetting.
 
 === Kravnivåene i denne standarden [[Kravnivåene-i-denne-standarden]]
 
 
-Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO], og forklaringene gjentas ikke her.
+Standarden bruker ordene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"], og forklaringene gjentas ikke her.
 
 === Hvordan du leser denne standarden [[Hvordan-du-leser-denne-standarden]]
 
 
 <<Del1>> er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.
 
-<<Del2>> er ment for lesere som skal utvikle/tilpasse verktøystøtte for begrepsbeskrivelser. Kapittelet spesifiserer hvordan kravene beskrevet i <<Del1>> skal implementeres iht. https://www.w3.org/RDF/[_Resource Description Framework (RDF)_] og https://www.w3.org/TR/skos-reference/[_SKOS Simple Knowledge Organization System_].
+<<Del2>> er ment for lesere som skal utvikle/tilpasse verktøystøtte for begrepsbeskrivelser. Kapittelet spesifiserer hvordan kravene beskrevet i <<Del1>> skal implementeres iht. https://www.w3.org/RDF/[__Resource Description Framework (RDF)__ &#x29C9;, window="_blank", role="ext-link"] og https://www.w3.org/TR/skos-reference/[__SKOS Simple Knowledge Organization System__ &#x29C9;, window="_blank", role="ext-link"].
 
 Standarden bruker ordet «skriftspråk». Norsk har to skriftspråk: bokmål og nynorsk. Disse skriftspråkene er likeverdige, og i offentlig sektor er de likestilte. 
 

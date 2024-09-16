@@ -15,7 +15,7 @@ En begrepssamling bør beskrives med følgende anbefalte opplysninger hvis de fi
 * *beskrivelse* (maks. én per skriftspråk), og det skal oppgis hvilket skriftspråk beskrivelsen er skrevet på
 
 |===
-a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog]:
+a|*Eksempel på en begrepssamling*, https://data.norge.no/concepts[begrepsoversikten i Felles datakatalog &#x29C9;, window="_blank", role="ext-link"]:
 
 * *identifikator*: https://data.norge.no/concepts
 * *kontaktpunkt*: fellesdatakatalog@digdir.no

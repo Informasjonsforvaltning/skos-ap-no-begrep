@@ -2,6 +2,6 @@
 
 === Normative referanser [[Del1-normative-referanser]]
 
-* https://online.standard.no/ns-iso-1087-2019[NS-ISO 1087:2019 _Terminology work and terminology science - Vocabulary_]
+* https://online.standard.no/ns-iso-1087-2019[NS-ISO 1087:2019 _Terminology work and terminology science - Vocabulary_ &#x29C9;, window="_blank", role="ext-link"]
 
-* https://online.standard.no/ns-iso-704-2022[NS-ISO 704:2022  _Terminology work - Principles and methods_]
+* https://online.standard.no/ns-iso-704-2022[NS-ISO 704:2022  _Terminology work - Principles and methods_ &#x29C9;, window="_blank", role="ext-link"]

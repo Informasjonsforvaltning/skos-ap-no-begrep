@@ -1,5 +1,6 @@
 {
    "githubPullRequests.ignoredPullRequestBranches": [
       "develop"
-   ]
+   ],
+   "asciidoc.antora.enableAntoraSupport": false
 }

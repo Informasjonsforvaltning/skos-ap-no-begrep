@@ -8,7 +8,7 @@ Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 :toc: left
 ifdef::backend-pdf[:toc: macro]
 :toclevels: 2
-:sectanchors:
+:sectlinks:
 :imagesdir: images
 :title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
 

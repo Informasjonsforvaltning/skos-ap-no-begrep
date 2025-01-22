@@ -34,7 +34,7 @@ toc::[]
 // markere denne versjonen som "utfaset" med fixed textbox her kodet direkte i html
 ++++
 <div style="position: fixed; top: 40%; left: 50%; transform: translateX(-50%); background-color: #ffffff; border: 1px solid black; padding: 15px; box-shadow: 15px 15px 15px red; opacity: 0.85">
-  <p> <b>NB! Denne versjonen av standarden er utfaset og erstattet av <a href=https://data.norge.no/specification/skos-ap-no-begrep>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</a>.</b> </p>
+  <p> <strong>NB! Denne versjonen av standarden er utfaset og erstattet av <a href=https://data.norge.no/specification/skos-ap-no-begrep>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</a>.</strong> </p>
 </div>
 ++++
 

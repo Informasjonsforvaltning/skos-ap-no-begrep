@@ -9,18 +9,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  test_uploading_of_file:
-    name: Upload vocabulary to static-rdf-server
+  adoc_build_and_upload:
+    name: Adoc-build html and Upload vocabulary to static-rdf-server
     runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: v2
 
-      - name: Upload rdf to static-rdf-server
+      - name: Build html
+        id: adocbuild_html
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D ontology -o index.html -a lang=nb ontology/main.adoc"
+
+      - name: Upload files to static-rdf-server
         uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-        id: upload-rdf
+        id: upload-files
         with:
           ontology-type: "vocabulary"
           ontology: "skosno"

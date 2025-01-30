@@ -769,7 +769,7 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 |===
 | _English name_ | _value range_
 | URI |skosno:valueRange
-| Verdiområde / _Range_ |rdf:langString or xsd:anyURI
+| Verdiområde / _Range_ |rdf:langString and/or xsd:anyURI
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi verdiområde, oppgitt som tekst og/eller referanse til der dette er spesifisert. Hvis tekst brukes, og hvis teksten finnes på flere skriftspråk, bør egenskapen gjentas for hvert språk.
 
 _This property is used to specify the value range of a concept, as text and/or as reference to where this is specified. If text is used, this property should be repeated for parallel language versions of the text._

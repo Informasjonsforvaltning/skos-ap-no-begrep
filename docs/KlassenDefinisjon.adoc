@@ -82,9 +82,9 @@ _Use `rdf:List` when the preferred order between the sources needs to be specifi
 
 Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 -----
-<https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5> a skos:Concept ; # begrep «mødrekvote»
+<975> a skos:Concept ; # begrep «mødrekvote»
    euvoc:xlDefinition [ a euvoc:XlNote ; # definisjon
-      dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; ] ; # kilde
+      dct:source <https://lovdata.no/eli/lov/1997/02/28/19/chapter/14> ; ] ; # kilde
      .
 -----
 

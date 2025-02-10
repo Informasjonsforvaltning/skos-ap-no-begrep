@@ -27,7 +27,7 @@ I RDF Turtle ser det slik ut:
 <975> euvoc:xlDefinition [ a euvoc:XlNote ; # definisjonsobjekt
    rdf:value "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ; # tekst på bokmål
    skosno:relationshipWithSource <https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source> ; # forhold til kilde ‘basert på kilde’
-   dct:source <https://lovdata.no/dokument/NL/lov/1997-02-28-19/kap14#kap14> ; # kilde
+   dct:source <https://lovdata.no/eli/lov/1997/02/28/19/chapter/14> ; # kilde
    ] ;
    .
 -----

@@ -23,7 +23,7 @@ jobs:
         id: adocbuild_html
         uses: tonynv/asciidoctor-action@master
         with:
-          program: "asciidoctor -D ontology -o index.html -a lang=nb ontology/main.adoc"
+          program: "asciidoctor -a data-uri -D ontology -o index.html -a lang=nb ontology/main.adoc"
 
       - name: Upload files to static-rdf-server
         uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0

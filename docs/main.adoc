@@ -61,4 +61,5 @@ include::vedlegg-a.adoc[]
 
 include::vedlegg-b.adoc[]
 
-//include::shared/stats.adoc[]
+// Analytics
+include::shared/analytics.adoc[]

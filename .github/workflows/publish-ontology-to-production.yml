@@ -27,13 +27,13 @@ jobs:
           git submodule foreach --recursive git checkout origin/main
 
       - name: Build html nb
-        id: adocbuild_html
+        id: adocbuild_html_nb
         uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor -a data-uri -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc"
 
       - name: Build html en
-        id: adocbuild_html
+        id: adocbuild_html_en
         uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor -a data-uri -D ontology -o index-en.html -a lang=en ontology/main-en.adoc"

@@ -26,7 +26,7 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/skos-ap-no-begrep/ 
 
 
-include::shared/download.adoc[]
+include::download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
@@ -89,4 +89,4 @@ include::RDF-eksempler.adoc[]
 
 include::Endringslogg.adoc[]
 
-include::shared/stats.adoc[]
+//include::shared/stats.adoc[]

@@ -1,0 +1,26 @@
+= skosno
+The Norwegian Digitalisation Agency (Digdir)
+:description: Ontology defining classes and properties specified in SKOS-AP-NO-begrep
+:doctype: article
+:docinfo: shared
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toclevels: 2
+:sectlinks:
+:table-stripes: odd
+:xrefstyle: full
+:title-logo-image: image:../docs/images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
+
+image::../docs/images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
+
+NOTE: The following is an HTML-view of the ontology `skosno` expressed in RDF Turtle, which defines classes and properties specified in https://data.norge.no/specification/skos-ap-no-begrep[SKOS-AP-NO-begrep &#x29C9;, window="_blank", role="ext-link"]. +
+ +
+Please use https://github.com/Informasjonsforvaltning/skos-ap-no-begrep/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"] to give us your feedback, if any.
+
+-----
+include::skosno.ttl[]
+-----
+
+// Analytics
+include::../docs/shared/analytics.adoc[]

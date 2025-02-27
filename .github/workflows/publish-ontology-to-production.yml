@@ -18,12 +18,25 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: v2
+          submodules: true
+          fetch-depth: 0
 
-      - name: Build html
-        id: adocbuild_html
+      - name: Update submodules to latest main
+        run: |
+          git submodule foreach --recursive git fetch origin
+          git submodule foreach --recursive git checkout origin/main
+
+      - name: Build html nb
+        id: adocbuild_html_nb
         uses: tonynv/asciidoctor-action@master
         with:
-          program: "asciidoctor -a data-uri -D ontology -o index.html -a lang=nb ontology/main.adoc"
+          program: "asciidoctor -a data-uri -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc"
+
+      - name: Build html en
+        id: adocbuild_html_en
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -a data-uri -D ontology -o index-en.html -a lang=en ontology/main-en.adoc"
 
       - name: Upload files to static-rdf-server
         uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
@@ -35,4 +48,5 @@ jobs:
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             ontology/skosno.ttl text/turtle en
-            ontology/index.html text/html nb
+            ontology/index-en.html text/html en
+            ontology/index-nb.html text/html nb

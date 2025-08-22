@@ -18,7 +18,7 @@ Navnerom for denne standarden er `\https://data.norge.no/vocabulary/skosno#`
 |rdfs| `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1 &#x29C9;, window="_blank", role="ext-link"]
 |skos| `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System &#x29C9;, window="_blank", role="ext-link"]
 |skosno| `\https://data.norge.no/vocabulary/skosno#` | Denne standard
-|uneskos| `\http://purl.org/umu/uneskos#` | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+|uneskos| `\http://purl.org/umu/uneskos#` | UNESKOS Vocabulary
 |vcard| `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations &#x29C9;, window="_blank", role="ext-link"]
 |xkos| `\http://rdf-vocabulary.ddialliance.org/xkos#` | https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]
 |xsd| `\http://www.w3.org/2001/XMLSchema#` | https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition &#x29C9;, window="_blank", role="ext-link"]

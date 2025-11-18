@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Collection_
-|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termlex.no/term/171137529705724/nb[begreper &#x29C9;, window="_blank", role="ext-link"].
+|Anvendelse /  _Usage note_  | Klassen brukes til å representere en samling av https://termlex.no/term/174124357008750/nb[begreper &#x29C9;, window="_blank", role="ext-link"].
 
-__This class is used to represent a collection of https://termlex.no/term/171137529705724/en[concepts &#x29C9;, window="_blank", role="ext-link"].__
+__This class is used to represent a collection of https://termlex.no/term/174124357008750/en[concepts &#x29C9;, window="_blank", role="ext-link"].__
 |URI |skos:Collection
 |Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===

@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_ | _Concept_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere et https://termlex.no/term/171137529705724/nb[begrep &#x29C9;, window="_blank", role="ext-link"].
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et https://termlex.no/term/174124357008750/nb[begrep &#x29C9;, window="_blank", role="ext-link"].
 
-__The class is used to represent a https://termlex.no/term/171137529705724/en[concept &#x29C9;, window="_blank", role="ext-link"].__
+__The class is used to represent a https://termlex.no/term/174124357008750/en[concept &#x29C9;, window="_blank", role="ext-link"].__
 | URI |skos:Concept
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |===
@@ -25,9 +25,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975:
 | _English name_ | _preferred term_
 | URI |skos:prefLabel
 | Verdiområde / _Range_ |rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/171137522902468/nb[anbefalt term &#x29C9;, window="_blank", role="ext-link"]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/174124356901123/nb[anbefalt term &#x29C9;, window="_blank", role="ext-link"]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-__This property is used to specify a https://termlex.no/term/171137522902468/en[preferred term &#x29C9;, window="_blank", role="ext-link"]. This property should be repeated for parallel language versions of the term.__
+__This property is used to specify a https://termlex.no/term/174124356901123/en[preferred term &#x29C9;, window="_blank", role="ext-link"]. This property should be repeated for parallel language versions of the term.__
 | Multiplisitet / _Multiplicity_ |2..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Anbefalt term skal finnes på både bokmål og nynorsk. Det skal være maksimum én per skriftspråk.
@@ -52,9 +52,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | _English name_ | _definition (direct statement)_
 | URI |skos:definition
 | Verdiområde / _Range_ |rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/171137526903743/nb[definisjon &#x29C9;, window="_blank", role="ext-link"] av et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/174124356008331/nb[definisjon &#x29C9;, window="_blank", role="ext-link"] av et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
 
-__This property is used to specify the https://termlex.no/term/171137526903743/en[definition &#x29C9;, window="_blank", role="ext-link"] of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition.__
+__This property is used to specify the https://termlex.no/term/174124356008331/en[definition &#x29C9;, window="_blank", role="ext-link"] of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition.__
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk og målgruppe.
@@ -79,9 +79,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | _English name_ | _definition (via definition object)_
 | URI |euvoc:xlDefinition
 | Verdiområde / _Range_ |euvoc:XlNote
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/171137526903743/nb[definisjon &#x29C9;, window="_blank", role="ext-link"] av et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/174124356008331/nb[definisjon &#x29C9;, window="_blank", role="ext-link"] av et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.
 
-__This property is used to specify the https://termlex.no/term/171137526903743/en[definition &#x29C9;, window="_blank", role="ext-link"] to a concept, when there is a need to specify more than the definition. This property should be repeated for parallel language versions of the definition.__
+__This property is used to specify the https://termlex.no/term/174124356008331/en[definition &#x29C9;, window="_blank", role="ext-link"] to a concept, when there is a need to specify more than the definition. This property should be repeated for parallel language versions of the definition.__
 | Multiplisitet / _Multiplicity_ |1..n
 | Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Det skal være minimum én definisjon (direkte angivelse eller via definisjonsobjekt) og maksimum én per skriftspråk og målgruppe.
@@ -322,9 +322,9 @@ Eksempel i RDF Turtle, for NAVs begrep 975 «mødrekvote»:
 | _English name_ | _admitted term_
 | URI |skos:altLabel
 | Verdiområde / _Range_ |rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/171137525006547/nb[tillatt term &#x29C9;, window="_blank", role="ext-link"] til begrepet. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi https://termlex.no/term/174124356801025/nb[tillatt term &#x29C9;, window="_blank", role="ext-link"] til begrepet. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-__This property is used to specify an https://termlex.no/term/171137525006547/en[admitted term &#x29C9;, window="_blank", role="ext-link"] to a concept. This property should be repeated for parallel language versions of the term.__
+__This property is used to specify an https://termlex.no/term/174124356801025/en[admitted term &#x29C9;, window="_blank", role="ext-link"] to a concept. This property should be repeated for parallel language versions of the term.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===
@@ -373,7 +373,7 @@ _This property is used to specify examples of the concept. This property should 
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
 
-Eksempel i RDF Turtle, hentet 2022-12-09 fra Termlex til Standard Norge, for begrep https://termlex.no/term/171137527404105/nb[«individualbegrep» &#x29C9;, window="_blank", role="ext-link"]:
+Eksempel i RDF Turtle, hentet 2022-12-09 fra Termlex til Standard Norge, for begrep https://termlex.no/term/174124357609175/nb[«individualbegrep» &#x29C9;, window="_blank", role="ext-link"]:
 -----
 <hentetFraSNORRE> a skos:Concept ;
    skos:example "‘Saturn’, ‘Eiffeltårnet’, ‘Månen’, ‘serienummer FRHR603928’, ‘Nobelpris i fysikk 2016’."@nb ;
@@ -387,9 +387,9 @@ Eksempel i RDF Turtle, hentet 2022-12-09 fra Termlex til Standard Norge, for beg
 | _English name_ | _is part of_
 | URI |xkos:isPartOf
 | Verdiområde / _Range_ |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termlex.no/term/171137529405477/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"], og det andre begrepet er https://termlex.no/term/171137529905841/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"], i en partitiv relasjon mellom disse.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et https://termlex.no/term/174124359000395/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"], og det andre begrepet er https://termlex.no/term/174124355708604/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"], i en partitiv relasjon mellom disse.
 
-__This property is used to refer to the concept that this concept is a part of. This concept is a https://termlex.no/term/171137529405477/en[partitive concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/171137529905841/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"], in a partitive concept relation between the two concepts.__
+__This property is used to refer to the concept that this concept is a part of. This concept is a https://termlex.no/term/174124359000395/en[partitive concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/174124355708604/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"], in a partitive concept relation between the two concepts.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har helhetsbegrep».
@@ -441,9 +441,9 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 | _English name_ | _is from-concept in_
 | URI |skosno:isFromConceptIn
 | Verdiområde / _Range_ |skosno:AssociativeConceptRelation
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/171137526104694/nb[assosiativ begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/174124357601677/nb[assosiativ begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.
 
-__This property is used to refer to an https://termlex.no/term/171137526104694/en[associative relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, when there is a need to describe the relation role of this concept.__
+__This property is used to refer to an https://termlex.no/term/174124357601677/en[associative relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, when there is a need to describe the relation role of this concept.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -511,9 +511,9 @@ Eksempel i RDF Turtle, for SSBs begrep «landbakgrunn»:
 | _English name_ | _deprecated term_
 | URI |skos:hiddenLabel
 | Verdiområde / _Range_ |rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/171137522602191/nb[frarådd term &#x29C9;, window="_blank", role="ext-link"]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/174124357308930/nb[frarådd term &#x29C9;, window="_blank", role="ext-link"]. Egenskapen bør gjentas når termen finnes på flere skriftspråk.
 
-__This property is used to specify a https://termlex.no/term/171137522602191/en[deprecated term &#x29C9;, window="_blank", role="ext-link"]. This property should be repeated for parallel language versions of the term.__
+__This property is used to specify a https://termlex.no/term/174124357308930/en[deprecated term &#x29C9;, window="_blank", role="ext-link"]. This property should be repeated for parallel language versions of the term.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -532,9 +532,9 @@ Eksempel i RDF Turtle, for NAVs begrep 936 «tiltakspenger»:
 | _English name_ | _generalizes_
 | URI |xkos:generalizes
 | Verdiområde / _Range_ |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er https://termlex.no/term/171137526104769/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet er https://termlex.no/term/171137527605260/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"], i en generisk relasjon mellom disse.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er https://termlex.no/term/174124355808089/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet er https://termlex.no/term/174124355707950/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"], i en generisk relasjon mellom disse.
 
-__This property is used to refer to another concept that this concept generalizes. This concept is the https://termlex.no/term/171137526104769/en[generic concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/171137527605260/en[specific concept &#x29C9;, window="_blank", role="ext-link"], in a generic concept relation between the two concepts.__
+__This property is used to refer to another concept that this concept generalizes. This concept is the https://termlex.no/term/174124355808089/en[generic concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/174124355707950/en[specific concept &#x29C9;, window="_blank", role="ext-link"], in a generic concept relation between the two concepts.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Egenskapen/relasjonen kan også leses som «har underbegrep».
@@ -583,9 +583,9 @@ Eksempel i RDF Turtle:
 | _English name_ | _has generic concept relation_
 | URI |skosno:hasGenericConceptRelation
 | Verdiområde / _Range_ |skosno:GenericConceptRelation
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/171137526403399/nb[generisk begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å oppgi https://termlex.no/term/171137526103099/nb[inndelingskriterium &#x29C9;, window="_blank", role="ext-link"].
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/174124356208619/nb[generisk begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å oppgi https://termlex.no/term/171137526103099/nb[inndelingskriterium &#x29C9;, window="_blank", role="ext-link"].
 
-__This property is used to refer to a https://termlex.no/term/171137526403399/en[generic concept relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, in order to specify the https://termlex.no/term/171137526103099/en[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"].__
+__This property is used to refer to a https://termlex.no/term/174124356208619/en[generic concept relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, in order to specify the https://termlex.no/term/171137526103099/en[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"].__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -620,9 +620,9 @@ Eksempel i RDF Turtle:
 | _English name_ | _has partitive concept relation_
 | URI |skosno:hasPartitiveConceptRelation
 | Verdiområde / _Range_ |skosno:PartitiveConceptRelation
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/171137529308815/nb[partitiv begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å oppgi https://termlex.no/term/171137526103099/nb[inndelingskriterium &#x29C9;, window="_blank", role="ext-link"].
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en https://termlex.no/term/174124356408986/nb[partitiv begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"] som begrepet har med et annet begrep, når det er behov for å oppgi https://termlex.no/term/171137526103099/nb[inndelingskriterium &#x29C9;, window="_blank", role="ext-link"].
 
-__This property is used to refer to a https://termlex.no/term/171137529308815/en[partitive concept relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, when there is a need to specify the https://termlex.no/term/171137526103099/en[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"].__
+__This property is used to refer to a https://termlex.no/term/174124356408986/en[partitive concept relation &#x29C9;, window="_blank", role="ext-link"] that this concept has with another concept, when there is a need to specify the https://termlex.no/term/171137526103099/en[criterion of subdivision &#x29C9;, window="_blank", role="ext-link"].__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -636,9 +636,9 @@ Eksempel i RDF Turtle: Se under <<Partitiv-begrepsrelasjon>>.
 | _English name_ | _has part_
 | URI |xkos:hasPart
 | Verdiområde / _Range_ |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termlex.no/term/171137529905841/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet https://termlex.no/term/171137529405477/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"], i en partitiv relasjon mellom disse.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er https://termlex.no/term/174124355708604/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet https://termlex.no/term/174124359000395/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"], i en partitiv relasjon mellom disse.
 
-__This property is used to refer to the concept that this concept has as a part. This concept is the https://termlex.no/term/171137529905841/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/171137529405477/en[partitive concept &#x29C9;, window="_blank", role="ext-link"], in a partitive concept relation between the two concepts.__
+__This property is used to refer to the concept that this concept has as a part. This concept is the https://termlex.no/term/174124355708604/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/174124359000395/en[partitive concept &#x29C9;, window="_blank", role="ext-link"], in a partitive concept relation between the two concepts.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har delbegrep».
@@ -714,9 +714,9 @@ Eksempel i RDF Turtle:
 | _English name_ | _specializes_
 | URI |xkos:specializes
 | Verdiområde / _Range_ |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er https://termlex.no/term/171137527605260/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet er https://termlex.no/term/171137526104769/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"], i en generisk relasjon mellom disse.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er https://termlex.no/term/174124355707950/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"] og det andre begrepet er https://termlex.no/term/174124355808089/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"], i en generisk relasjon mellom disse.
 
-__This property is used to refer to another concept that this concept specializes. This concept is the https://termlex.no/term/171137527605260/en[specific concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/171137526104769/en[generic concept &#x29C9;, window="_blank", role="ext-link"], in a generic concept relation between the two concepts.__
+__This property is used to refer to another concept that this concept specializes. This concept is the https://termlex.no/term/174124355707950/en[specific concept &#x29C9;, window="_blank", role="ext-link"] and the other concept is the https://termlex.no/term/174124355808089/en[generic concept &#x29C9;, window="_blank", role="ext-link"], in a generic concept relation between the two concepts.__
 | Multiplisitet / _Multiplicity_ |0..n
 | Kravnivå / _Requirement level_ |Valgfri / _Optional_
 | Merknad 1 / _Note 1_  | Egenskapen/relasjonen kan også leses som «har overbegrep».

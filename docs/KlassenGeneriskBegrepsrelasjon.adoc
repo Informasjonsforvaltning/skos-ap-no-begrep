@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Generic concept relation_
-| Anvendelse / _Usage note_  | Klassen brukes til å representere en  https://termlex.no/term/171137526403399/nb[generisk begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
+| Anvendelse / _Usage note_  | Klassen brukes til å representere en https://termlex.no/term/174124356208619/nb[generisk begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
 
-__This class is used to represent a https://termlex.no/term/171137526403399/en[generic concept relation &#x29C9;, window="_blank", role="ext-link"].__
+__This class is used to represent a https://termlex.no/term/174124356208619/en[generic concept relation &#x29C9;, window="_blank", role="ext-link"].__
 | URI  |skosno:GenericConceptRelation
 | Kravnivå / _Requirement level_  |Valgfri / _Optional_
 |===
@@ -19,9 +19,9 @@ __This class is used to represent a https://termlex.no/term/171137526403399/en[g
 | _English name_  | _has generic concept_
 | URI  |skosno:hasGenericConcept
 | Verdiområde / _Range_  |skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til https://termlex.no/term/171137526104769/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til https://termlex.no/term/174124355808089/nb[det generiske begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
 
-__This property is used to specify the https://termlex.no/term/171137526104769/en[generic concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
+__This property is used to specify the https://termlex.no/term/174124355808089/en[generic concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_  |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-underbegrep>> skal brukes, men ikke begge samtidig.
@@ -45,9 +45,9 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 | _English name_  | _has specific concept_
 | URI  |skosno:hasSpecificConcept
 | Verdiområde / _Range_  |skos:Concept
-| Anvendelse / _Usage note_  | Egenskapen brukes til å referere til https://termlex.no/term/171137527605260/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
+| Anvendelse / _Usage note_  | Egenskapen brukes til å referere til https://termlex.no/term/174124355707950/nb[det spesifikke begrepet &#x29C9;, window="_blank", role="ext-link"] i en generisk begrepsrelasjon.
 
-__This property is used to refer to https://termlex.no/term/171137527605260/en[specific concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
+__This property is used to refer to https://termlex.no/term/174124355707950/en[specific concept &#x29C9;, window="_blank", role="ext-link"] in a generic concept relation.__
 | Multiplisitet / _Multiplicity_  |1..n
 | Kravnivå / _Requirement level_  |Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Enten denne eller egenskapen <<Generisk-begrepsrelasjon-har-overbegrep>> skal brukes, ikke begge samtidig.

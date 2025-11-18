@@ -4,9 +4,9 @@
 [cols="30s,70d"]
 |===
 |_English name_ | _Partitive concept relation_
-|Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termlex.no/term/171137529308815/nb[partitiv begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
+|Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termlex.no/term/174124356408986/nb[partitiv begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
 
-__This class is used to represent a https://termlex.no/term/171137529308815/en[partitive concept relation &#x29C9;, window="_blank", role="ext-link"].__
+__This class is used to represent a https://termlex.no/term/174124356408986/en[partitive concept relation &#x29C9;, window="_blank", role="ext-link"].__
 |URI |skosno:PartitiveConceptRelation
 |Kravnivå / _Requirement level_ |Valgfri / _Optional_
 |===
@@ -20,9 +20,9 @@ __This class is used to represent a https://termlex.no/term/171137529308815/en[p
 |_English name_ | _has partitive concept_
 |URI |skosno:hasPartitiveConcept
 |Verdiområde / _Range_ |skos:Concept
-|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termlex.no/term/171137529405477/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termlex.no/term/174124359000395/nb[delbegrep &#x29C9;, window="_blank", role="ext-link"]) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-__This property is used to refer to another concept (the https://termlex.no/term/171137529405477/en[partitive concept &#x29C9;, window="_blank", role="ext-link"]) that is part of this concept, in a partitive concept relation between the two concepts.__
+__This property is used to refer to another concept (the https://termlex.no/term/174124359000395/en[partitive concept &#x29C9;, window="_blank", role="ext-link"]) that is part of this concept, in a partitive concept relation between the two concepts.__
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-helhetsbegrep>> skal brukes, ikke begge samtidig.
@@ -45,9 +45,9 @@ Eksempel i RDF Turtle, for NAVs begrep 974 «foreldrepengeperiode»:
 |_English name_ | _has comprehensive concept_
 |URI |skosno:hasComprehensiveConcept
 |Verdiområde / _Range_ |skos:Concept
-|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termlex.no/term/171137529905841/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
+|Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet begrep (https://termlex.no/term/174124355708604/nb[helhetsbegrepet &#x29C9;, window="_blank", role="ext-link"]) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.
 
-__This property is used to refer to another concept (the https://termlex.no/term/171137529905841/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"]) that contains this concept, in a partitive concept relation between the two concepts.__
+__This property is used to refer to another concept (the https://termlex.no/term/174124355708604/en[comprehensive concept &#x29C9;, window="_blank", role="ext-link"]) that contains this concept, in a partitive concept relation between the two concepts.__
 |Multiplisitet / _Multiplicity_ |1..n
 |Kravnivå / _Requirement level_ |Obligatorisk / _Mandatory_
 |Merknad / _Note_ | Enten denne eller egenskapen <<Partitiv-begrepsrelasjon-har-delbegrep>> skal brukes, ikke begge samtidig.

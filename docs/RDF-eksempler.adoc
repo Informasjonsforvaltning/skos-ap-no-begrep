@@ -111,7 +111,7 @@ a|*Eksempelet i RDF Turtle*:
 
 [stripes=even]
 |===
-a|*Eksempel på en assosiativ relasjon*, basert på begrepet https://data.norge.no/concepts/8bea51a9-23e9-3177-9900-850d18d33f97[«lovlig opphold» &#x29C9;, window="_blank", role="ext-link"], hentet fra Felles datakatalog, 2025-11-18:
+a|*Eksempel på en assosiativ relasjon*, basert på begrepet https://data.norge.no/concepts/8bea51a9-23e9-3177-9900-850d18d33f97[«lovlig opphold» &#x29C9;, window="_blank", role="ext-link"], hentet fra Data.norge.no, 2025-11-18:
 
 * *relasjonsrolle*: muliggjør
 * *til-begrep*: https://data.norge.no/concepts/9b4023a0-99b6-3352-9e4e-cc0944e66f40[«medlem i folketrygden» &#x29C9;, window="_blank", role="ext-link"]

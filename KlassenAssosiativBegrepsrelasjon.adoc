@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_  | _Associative concept relation_
-| Anvendelse / _Usage note_  | Klassen brukes til å representere en https://termlex.no/term/171137526104694/nb[assosiativ begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
+| Anvendelse / _Usage note_  | Klassen brukes til å representere en https://termlex.no/term/174124357601677/nb[assosiativ begrepsrelasjon &#x29C9;, window="_blank", role="ext-link"].
 
-__This class is used to represent an https://termlex.no/term/171137526104694/en[associative concept relation &#x29C9;, window="_blank", role="ext-link"].__
+__This class is used to represent an https://termlex.no/term/174124357601677/en[associative concept relation &#x29C9;, window="_blank", role="ext-link"].__
 | URI  |skosno:AssociativeConceptRelation
 | Kravnivå / _Requirement level_  |Valgfri / _Optional_
 |===

@@ -3,9 +3,9 @@
 [cols="30s,70d"]
 |===
 | _English name_ | _Definition_
-| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termlex.no/term/171137526903743/nb[definisjon &#x29C9;, window="_blank", role="ext-link"], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en https://termlex.no/term/174124356008331/nb[definisjon &#x29C9;, window="_blank", role="ext-link"], når det er behov for å beskrive noe mer enn selve definisjonsteksten.
 
-__This class is used to represent a https://termlex.no/term/171137526903743/en[definition &#x29C9;, window="_blank", role="ext-link"] when there is a need to describe more than the definition itself.__
+__This class is used to represent a https://termlex.no/term/174124356008331/en[definition &#x29C9;, window="_blank", role="ext-link"] when there is a need to describe more than the definition itself.__
 | URI |euvoc:XlNote
 | Kravnivå / _Requirement level_ |Anbefalt / _Recommended_
 |===

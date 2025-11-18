@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.23">
+<meta name="generator" content="Asciidoctor 2.0.26">
 <meta name="description" content="Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)">
 <meta name="author" content="Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency">
 <title>Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</title>
@@ -118,7 +118,6 @@ h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title str
 :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
-pre>code{display:block}
 pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
 em em{font-style:normal}
 strong strong{font-weight:400}
@@ -221,6 +220,7 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
 .listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
 .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
@@ -637,13 +637,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
 <strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 2.0.13 (se <a href="#Endringslogg">endringslogg</a>)<br>
+<strong>Versjon</strong>: 2.0.14 (se <a href="#Endringslogg">endringslogg</a>)<br>
 <strong>Publisert</strong>: 2022-12-09 (v.2.0.0)<br>
-<strong>Oppdatert</strong>: 2025-08-22 (v.2.0.x)<br>
+<strong>Oppdatert</strong>: 2025-11-18 (v.2.0.x)<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/skos-ap-no-begrep/" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/</a><br>
-<strong>Gjeldende versjon av ontologi</strong>: <a href="https://data.norge.no/vocabulary/skosno" class="bare">https://data.norge.no/vocabulary/skosno</a><br>
-<strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser" class="bare">https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser</a> og <a href="https://data.norge.no/specification/skos-ap-no-begrep/v1.1" class="bare">https://data.norge.no/specification/skos-ap-no-begrep/v1.1</a><br>
-<strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="bare">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/</a></p>
+<strong>Gjeldende versjon av ontologi</strong>: <a href="https://data.norge.no/vocabulary/skosno" class="ext-link" target="_blank" rel="noopener">https://data.norge.no/vocabulary/skosno  &#x29C9;</a><br>
+<strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser" class="ext-link" target="_blank" rel="noopener">https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser &#x29C9;</a> og <a href="https://data.norge.no/specification/skos-ap-no-begrep/v1.1" class="ext-link" target="_blank" rel="noopener">https://data.norge.no/specification/skos-ap-no-begrep/v1.1 &#x29C9;</a><br>
+<strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/skos-ap-no-begrep/" class="ext-link" target="_blank" rel="noopener">https://informasjonsforvaltning.github.io/skos-ap-no-begrep/ &#x29C9;</a></p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -821,7 +821,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>I tillegg, hvis de finnes</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137522902468/nb" class="ext-link" target="_blank" rel="noopener">anbefalt term &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124356901123/nb" class="ext-link" target="_blank" rel="noopener">anbefalt term &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">se <a href="https://data.norge.no/specification/termlosen#kap3.3" class="ext-link" target="_blank" rel="noopener">kap. 3.3 i Termlosen, om anbefalt term, tillatt term og frarådd term &#x29C9;</a>;<br>
 anbefalt term skal finnes på både bokmål og nynorsk;<br>
 det skal være maksimum én anbefalt term per skriftspråk;<br>
@@ -829,7 +829,7 @@ det skal oppgis hvilket skriftspråk termen er skrevet på</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137526903743/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124356008331/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">det skal være minimum én definisjon, og maksimum én per skriftspråk og målgruppe;<br>
 det skal oppgis hvilket skriftspråk definisjon er skrevet på;<br>
 minst én kombinasjon av anbefalt term og definisjon skal være på samme skriftspråk</p></td>
@@ -902,7 +902,7 @@ det skal oppgis hvilket skriftspråk merknaden er skrevet på</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137525006547/nb" class="ext-link" target="_blank" rel="noopener">tillatt term &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124356801025/nb" class="ext-link" target="_blank" rel="noopener">tillatt term &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">se
 <a href="https://data.norge.no/specification/termlosen#kap3.3" class="ext-link" target="_blank" rel="noopener">kap. 3.3 i Termlosen, om anbefalt term, tillatt term og frarådd term &#x29C9;</a>;<br>
 det skal oppgis hvilket skriftspråk termen er skrevet på</p></td>
@@ -934,7 +934,7 @@ det skal oppgis hvilket skriftspråk termen er skrevet på</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137522602191/nb" class="ext-link" target="_blank" rel="noopener">frarådd term &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124357308930/nb" class="ext-link" target="_blank" rel="noopener">frarådd term &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">se
 <a href="https://data.norge.no/specification/termlosen#kap3.3" class="ext-link" target="_blank" rel="noopener">kap. 3.3 i Termlosen, om anbefalt term, tillatt term og frarådd term &#x29C9;</a>;<br>
 det skal oppgis hvilket skriftspråk termen er skrevet på</p></td>
@@ -981,17 +981,17 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>I tillegg, hvis de finnes</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137526403399/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124356208619/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">enten det begrepet som dette begrepet <strong>spesialiserer</strong>, eller det begrepet som dette begrepet <strong>generaliserer</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137529308815/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124356408986/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">enten det begrepet som dette begrepet <strong>er del av</strong>, eller det begrepet som dette begrepet <strong>inneholder</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/171137526104694/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://termlex.no/term/174124357601677/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">det begrepet som dette begrepet <strong>er relatert til</strong>, og med <strong>relasjonstype</strong>, eventuelt uttrykt som begrepets <strong>relasjonsrolle</strong> overfor det andre begrepet</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -1029,7 +1029,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger</strong>, hentet fra Felles datakatalog, 2022-11-25, for begrepet <a href="https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5" class="ext-link" target="_blank" rel="noopener">«mødrekvote» &#x29C9;</a>:</p>
+<p><strong>Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger</strong>, basert på begrepet <a href="https://data.norge.no/concepts/798f7000-6e16-3bb2-9b84-66d37a5523a1" class="ext-link" target="_blank" rel="noopener">«mødrekvote» &#x29C9;</a>, hentet fra Felles datakatalog, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1060,7 +1060,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på noen anbefalte opplysninger</strong>, hentet fra Termlex til Standard Norge, 2024-09-16, for begrepet <a href="https://termlex.no/term/171137531106903/nb" class="ext-link" target="_blank" rel="noopener">«innholdsdefinisjon» &#x29C9;</a>:</p>
+<p><strong>Eksempel på noen anbefalte opplysninger</strong>, basert på begrepet <a href="https://termlex.no/term/174124355709972/nb" class="ext-link" target="_blank" rel="noopener">«innholdsdefinisjon» &#x29C9;</a>, hentet fra Termlex til Standard Norge, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1169,7 +1169,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på en assosiativ relasjon</strong>, hentet fra Felles datakatalog, 2022-11-25, for begrepet <a href="https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb" class="ext-link" target="_blank" rel="noopener">«lovlig opphold» &#x29C9;</a>:</p>
+<p><strong>Eksempel på en assosiativ relasjon</strong>, basert på begrepet <a href="https://data.norge.no/concepts/8bea51a9-23e9-3177-9900-850d18d33f97" class="ext-link" target="_blank" rel="noopener">«lovlig opphold» &#x29C9;</a>, hentet fra Felles datakatalog, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1177,7 +1177,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p><strong>relasjonsrolle</strong>: muliggjør</p>
 </li>
 <li>
-<p><strong>til-begrep</strong>: <a href="https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2" class="ext-link" target="_blank" rel="noopener">«medlem i folketrygden» &#x29C9;</a></p>
+<p><strong>til-begrep</strong>: <a href="https://data.norge.no/concepts/9b4023a0-99b6-3352-9e4e-cc0944e66f40" class="ext-link" target="_blank" rel="noopener">«medlem i folketrygden» &#x29C9;</a></p>
 </li>
 </ul>
 </div></div></td>
@@ -1440,8 +1440,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et <a href="https://termlex.no/term/171137529705724/nb" class="ext-link" target="_blank" rel="noopener">begrep &#x29C9;</a>.</p>
-<p class="tableblock"><em>The class is used to represent a <a href="https://termlex.no/term/171137529705724/en" class="ext-link" target="_blank" rel="noopener">concept &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et <a href="https://termlex.no/term/174124357008750/nb" class="ext-link" target="_blank" rel="noopener">begrep &#x29C9;</a>.</p>
+<p class="tableblock"><em>The class is used to represent a <a href="https://termlex.no/term/174124357008750/en" class="ext-link" target="_blank" rel="noopener">concept &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1486,8 +1486,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/171137522902468/nb" class="ext-link" target="_blank" rel="noopener">anbefalt term &#x29C9;</a>. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
-<p class="tableblock"><em>This property is used to specify a <a href="https://termlex.no/term/171137522902468/en" class="ext-link" target="_blank" rel="noopener">preferred term &#x29C9;</a>. This property should be repeated for parallel language versions of the term.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/174124356901123/nb" class="ext-link" target="_blank" rel="noopener">anbefalt term &#x29C9;</a>. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
+<p class="tableblock"><em>This property is used to specify a <a href="https://termlex.no/term/174124356901123/en" class="ext-link" target="_blank" rel="noopener">preferred term &#x29C9;</a>. This property should be repeated for parallel language versions of the term.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -1542,8 +1542,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/171137526903743/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a> av et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.</p>
-<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/171137526903743/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/174124356008331/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a> av et begrep, når det ikke er behov for å oppgi mer enn selve definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.</p>
+<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/174124356008331/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> of a concept, when there is no need to specify more than the definition itself. This property should be repeated for parallel language versions of the definition.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -1598,8 +1598,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/171137526903743/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a> av et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.</p>
-<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/171137526903743/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> to a concept, when there is a need to specify more than the definition. This property should be repeated for parallel language versions of the definition.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/174124356008331/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a> av et begrep, når det er behov for å oppgi mer enn definisjonsteksten. Egenskapen bør gjentas når definisjonen finnes på flere skriftspråk.</p>
+<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/174124356008331/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> to a concept, when there is a need to specify more than the definition. This property should be repeated for parallel language versions of the definition.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2122,8 +2122,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/171137525006547/nb" class="ext-link" target="_blank" rel="noopener">tillatt term &#x29C9;</a> til begrepet. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
-<p class="tableblock"><em>This property is used to specify an <a href="https://termlex.no/term/171137525006547/en" class="ext-link" target="_blank" rel="noopener">admitted term &#x29C9;</a> to a concept. This property should be repeated for parallel language versions of the term.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi <a href="https://termlex.no/term/174124356801025/nb" class="ext-link" target="_blank" rel="noopener">tillatt term &#x29C9;</a> til begrepet. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
+<p class="tableblock"><em>This property is used to specify an <a href="https://termlex.no/term/174124356801025/en" class="ext-link" target="_blank" rel="noopener">admitted term &#x29C9;</a> to a concept. This property should be repeated for parallel language versions of the term.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2231,7 +2231,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle, hentet 2022-12-09 fra Termlex til Standard Norge, for begrep <a href="https://termlex.no/term/171137527404105/nb" class="ext-link" target="_blank" rel="noopener">«individualbegrep» &#x29C9;</a>:</p>
+<p>Eksempel i RDF Turtle, hentet 2022-12-09 fra Termlex til Standard Norge, for begrep <a href="https://termlex.no/term/174124357609175/nb" class="ext-link" target="_blank" rel="noopener">«individualbegrep» &#x29C9;</a>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2263,8 +2263,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et <a href="https://termlex.no/term/171137529405477/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>, og det andre begrepet er <a href="https://termlex.no/term/171137529905841/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a>, i en partitiv relasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to the concept that this concept is a part of. This concept is a <a href="https://termlex.no/term/171137529405477/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/171137529905841/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a>, in a partitive concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å knytte begrepet til et annet begrep som dette begrepet er del av. Begrepet er et <a href="https://termlex.no/term/174124359000395/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>, og det andre begrepet er <a href="https://termlex.no/term/174124355708604/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a>, i en partitiv relasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to the concept that this concept is a part of. This concept is a <a href="https://termlex.no/term/174124359000395/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/174124355708604/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a>, in a partitive concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2375,8 +2375,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/171137526104694/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.</p>
-<p class="tableblock"><em>This property is used to refer to an <a href="https://termlex.no/term/171137526104694/en" class="ext-link" target="_blank" rel="noopener">associative relation &#x29C9;</a> that this concept has with another concept, when there is a need to describe the relation role of this concept.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/174124357601677/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å beskrive relasjonsrollen til dette begrepet.</p>
+<p class="tableblock"><em>This property is used to refer to an <a href="https://termlex.no/term/174124357601677/en" class="ext-link" target="_blank" rel="noopener">associative relation &#x29C9;</a> that this concept has with another concept, when there is a need to describe the relation role of this concept.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2526,8 +2526,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/171137522602191/nb" class="ext-link" target="_blank" rel="noopener">frarådd term &#x29C9;</a>. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
-<p class="tableblock"><em>This property is used to specify a <a href="https://termlex.no/term/171137522602191/en" class="ext-link" target="_blank" rel="noopener">deprecated term &#x29C9;</a>. This property should be repeated for parallel language versions of the term.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/174124357308930/nb" class="ext-link" target="_blank" rel="noopener">frarådd term &#x29C9;</a>. Egenskapen bør gjentas når termen finnes på flere skriftspråk.</p>
+<p class="tableblock"><em>This property is used to specify a <a href="https://termlex.no/term/174124357308930/en" class="ext-link" target="_blank" rel="noopener">deprecated term &#x29C9;</a>. This property should be repeated for parallel language versions of the term.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2572,8 +2572,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er <a href="https://termlex.no/term/171137526104769/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a> og det andre begrepet er <a href="https://termlex.no/term/171137527605260/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a>, i en generisk relasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to another concept that this concept generalizes. This concept is the <a href="https://termlex.no/term/171137526104769/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/171137527605260/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a>, in a generic concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet generaliserer. Begrepet er <a href="https://termlex.no/term/174124355808089/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a> og det andre begrepet er <a href="https://termlex.no/term/174124355707950/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a>, i en generisk relasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to another concept that this concept generalizes. This concept is the <a href="https://termlex.no/term/174124355808089/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/174124355707950/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a>, in a generic concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2679,8 +2679,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/171137526403399/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å oppgi <a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a>.</p>
-<p class="tableblock"><em>This property is used to refer to a <a href="https://termlex.no/term/171137526403399/en" class="ext-link" target="_blank" rel="noopener">generic concept relation &#x29C9;</a> that this concept has with another concept, in order to specify the <a href="https://termlex.no/term/171137526103099/en" class="ext-link" target="_blank" rel="noopener">criterion of subdivision &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/174124356208619/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å oppgi <a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a>.</p>
+<p class="tableblock"><em>This property is used to refer to a <a href="https://termlex.no/term/174124356208619/en" class="ext-link" target="_blank" rel="noopener">generic concept relation &#x29C9;</a> that this concept has with another concept, in order to specify the <a href="https://termlex.no/term/171137526103099/en" class="ext-link" target="_blank" rel="noopener">criterion of subdivision &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2764,8 +2764,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/171137529308815/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å oppgi <a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a>.</p>
-<p class="tableblock"><em>This property is used to refer to a <a href="https://termlex.no/term/171137529308815/en" class="ext-link" target="_blank" rel="noopener">partitive concept relation &#x29C9;</a> that this concept has with another concept, when there is a need to specify the <a href="https://termlex.no/term/171137526103099/en" class="ext-link" target="_blank" rel="noopener">criterion of subdivision &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en <a href="https://termlex.no/term/174124356408986/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a> som begrepet har med et annet begrep, når det er behov for å oppgi <a href="https://termlex.no/term/171137526103099/nb" class="ext-link" target="_blank" rel="noopener">inndelingskriterium &#x29C9;</a>.</p>
+<p class="tableblock"><em>This property is used to refer to a <a href="https://termlex.no/term/174124356408986/en" class="ext-link" target="_blank" rel="noopener">partitive concept relation &#x29C9;</a> that this concept has with another concept, when there is a need to specify the <a href="https://termlex.no/term/171137526103099/en" class="ext-link" target="_blank" rel="noopener">criterion of subdivision &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2803,8 +2803,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er <a href="https://termlex.no/term/171137529905841/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a> og det andre begrepet <a href="https://termlex.no/term/171137529405477/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>, i en partitiv relasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to the concept that this concept has as a part. This concept is the <a href="https://termlex.no/term/171137529905841/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/171137529405477/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a>, in a partitive concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet inneholder. Begrepet er <a href="https://termlex.no/term/174124355708604/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a> og det andre begrepet <a href="https://termlex.no/term/174124359000395/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>, i en partitiv relasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to the concept that this concept has as a part. This concept is the <a href="https://termlex.no/term/174124355708604/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/174124359000395/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a>, in a partitive concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -2964,8 +2964,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er <a href="https://termlex.no/term/171137527605260/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a> og det andre begrepet er <a href="https://termlex.no/term/171137526104769/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a>, i en generisk relasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to another concept that this concept specializes. This concept is the <a href="https://termlex.no/term/171137527605260/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/171137526104769/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a>, in a generic concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep som dette begrepet spesialiserer. Begrepet er <a href="https://termlex.no/term/174124355707950/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a> og det andre begrepet er <a href="https://termlex.no/term/174124355808089/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a>, i en generisk relasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to another concept that this concept specializes. This concept is the <a href="https://termlex.no/term/174124355707950/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a> and the other concept is the <a href="https://termlex.no/term/174124355808089/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a>, in a generic concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -3210,8 +3210,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/171137526903743/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a>, når det er behov for å beskrive noe mer enn selve definisjonsteksten.</p>
-<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/171137526903743/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> when there is a need to describe more than the definition itself.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/174124356008331/nb" class="ext-link" target="_blank" rel="noopener">definisjon &#x29C9;</a>, når det er behov for å beskrive noe mer enn selve definisjonsteksten.</p>
+<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/174124356008331/en" class="ext-link" target="_blank" rel="noopener">definition &#x29C9;</a> when there is a need to describe more than the definition itself.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -3469,8 +3469,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/171137526104694/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a>.</p>
-<p class="tableblock"><em>This class is used to represent an <a href="https://termlex.no/term/171137526104694/en" class="ext-link" target="_blank" rel="noopener">associative concept relation &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/174124357601677/nb" class="ext-link" target="_blank" rel="noopener">assosiativ begrepsrelasjon &#x29C9;</a>.</p>
+<p class="tableblock"><em>This class is used to represent an <a href="https://termlex.no/term/174124357601677/en" class="ext-link" target="_blank" rel="noopener">associative concept relation &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -3596,8 +3596,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en  <a href="https://termlex.no/term/171137526403399/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a>.</p>
-<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/171137526403399/en" class="ext-link" target="_blank" rel="noopener">generic concept relation &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/174124356208619/nb" class="ext-link" target="_blank" rel="noopener">generisk begrepsrelasjon &#x29C9;</a>.</p>
+<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/174124356208619/en" class="ext-link" target="_blank" rel="noopener">generic concept relation &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -3633,8 +3633,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til <a href="https://termlex.no/term/171137526104769/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a> i en generisk begrepsrelasjon.</p>
-<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/171137526104769/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a> in a generic concept relation.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til <a href="https://termlex.no/term/174124355808089/nb" class="ext-link" target="_blank" rel="noopener">det generiske begrepet &#x29C9;</a> i en generisk begrepsrelasjon.</p>
+<p class="tableblock"><em>This property is used to specify the <a href="https://termlex.no/term/174124355808089/en" class="ext-link" target="_blank" rel="noopener">generic concept &#x29C9;</a> in a generic concept relation.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -3689,8 +3689,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til <a href="https://termlex.no/term/171137527605260/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a> i en generisk begrepsrelasjon.</p>
-<p class="tableblock"><em>This property is used to refer to <a href="https://termlex.no/term/171137527605260/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a> in a generic concept relation.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til <a href="https://termlex.no/term/174124355707950/nb" class="ext-link" target="_blank" rel="noopener">det spesifikke begrepet &#x29C9;</a> i en generisk begrepsrelasjon.</p>
+<p class="tableblock"><em>This property is used to refer to <a href="https://termlex.no/term/174124355707950/en" class="ext-link" target="_blank" rel="noopener">specific concept &#x29C9;</a> in a generic concept relation.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -3790,8 +3790,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/171137529308815/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a>.</p>
-<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/171137529308815/en" class="ext-link" target="_blank" rel="noopener">partitive concept relation &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en <a href="https://termlex.no/term/174124356408986/nb" class="ext-link" target="_blank" rel="noopener">partitiv begrepsrelasjon &#x29C9;</a>.</p>
+<p class="tableblock"><em>This class is used to represent a <a href="https://termlex.no/term/174124356408986/en" class="ext-link" target="_blank" rel="noopener">partitive concept relation &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -3827,8 +3827,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep (<a href="https://termlex.no/term/171137529405477/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to another concept (the <a href="https://termlex.no/term/171137529405477/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a>) that is part of this concept, in a partitive concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep (<a href="https://termlex.no/term/174124359000395/nb" class="ext-link" target="_blank" rel="noopener">delbegrep &#x29C9;</a>) som inngår i dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to another concept (the <a href="https://termlex.no/term/174124359000395/en" class="ext-link" target="_blank" rel="noopener">partitive concept &#x29C9;</a>) that is part of this concept, in a partitive concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -3879,8 +3879,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anvendelse / <em>Usage note</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep (<a href="https://termlex.no/term/171137529905841/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a>) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
-<p class="tableblock"><em>This property is used to refer to another concept (the <a href="https://termlex.no/term/171137529905841/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a>) that contains this concept, in a partitive concept relation between the two concepts.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet begrep (<a href="https://termlex.no/term/174124355708604/nb" class="ext-link" target="_blank" rel="noopener">helhetsbegrepet &#x29C9;</a>) som inneholder dette begrepet, i en partitiv begrepsrelasjon mellom disse.</p>
+<p class="tableblock"><em>This property is used to refer to another concept (the <a href="https://termlex.no/term/174124355708604/en" class="ext-link" target="_blank" rel="noopener">comprehensive concept &#x29C9;</a>) that contains this concept, in a partitive concept relation between the two concepts.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet / <em>Multiplicity</em></p></td>
@@ -3976,8 +3976,8 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse /  <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en samling av <a href="https://termlex.no/term/171137529705724/nb" class="ext-link" target="_blank" rel="noopener">begreper &#x29C9;</a>.</p>
-<p class="tableblock"><em>This class is used to represent a collection of <a href="https://termlex.no/term/171137529705724/en" class="ext-link" target="_blank" rel="noopener">concepts &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en samling av <a href="https://termlex.no/term/174124357008750/nb" class="ext-link" target="_blank" rel="noopener">begreper &#x29C9;</a>.</p>
+<p class="tableblock"><em>This class is used to represent a collection of <a href="https://termlex.no/term/174124357008750/en" class="ext-link" target="_blank" rel="noopener">concepts &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -4276,7 +4276,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">euvoc</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://publications.europa.eu/ontology/euvoc#</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data" class="ext-link" target="_blank" rel="noopener">OP_EuVoc_Ontology &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc" class="ext-link" target="_blank" rel="noopener">EuroVoc &#x29C9;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">org</p></td>
@@ -4311,7 +4311,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">uneskos</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>http://purl.org/umu/uneskos#</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UNESKOS Vocabulary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://skos.um.es/TR/uneskos/" class="ext-link" target="_blank" rel="noopener">UNESKOS Vocabulary &#x29C9;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">vcard</p></td>
@@ -4481,7 +4481,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger</strong>, hentet fra Felles datakatalog, 2022-11-25, for begrepet <a href="https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5" class="ext-link" target="_blank" rel="noopener">«mødrekvote» &#x29C9;</a>:</p>
+<p><strong>Eksempel på en begrepsbeskrivelse med kun obligatoriske opplysninger</strong>, basert på begrepet <a href="https://data.norge.no/concepts/798f7000-6e16-3bb2-9b84-66d37a5523a1" class="ext-link" target="_blank" rel="noopener">«mødrekvote» &#x29C9;</a>, hentet fra Felles datakatalog, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4509,7 +4509,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/concepts/6bd8baed-c9d7-4dbc-b850-78ceeebdc1d5&gt; a skos:Concept ; # begrep
+<pre>&lt;https://data.norge.no/concepts/798f7000-6e16-3bb2-9b84-66d37a5523a1&gt; a skos:Concept ; # begrep
    skos:prefLabel "mødrekvote"@nb , "mødrekvote"@nn ; # anbefalt term
    skos:definition "den delen av foreldrepengeperioden som er forbeholdt mor"@nb ;  # definisjon
    dct:identifier "https://data.nav.no/begrep/BEGREP-975"^^xsd:anyURI ; # identifikator
@@ -4529,7 +4529,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på noen anbefalte opplysninger</strong>, hentet fra Termlex til Standard Norge, 2024-09-16, for begrepet <a href="https://termlex.no/term/171137531106903/nb" class="ext-link" target="_blank" rel="noopener">«innholdsdefinisjon» &#x29C9;</a>:</p>
+<p><strong>Eksempel på noen anbefalte opplysninger</strong>, basert på begrepet <a href="https://termlex.no/term/174124355709972/nb" class="ext-link" target="_blank" rel="noopener">«innholdsdefinisjon» &#x29C9;</a>, hentet fra Termlex til Standard Norge, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4551,7 +4551,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://termlex.no/term/171137531106903/&gt; a skos:Concept ; # begrep
+<pre>&lt;https://termlex.no/term/174124355709972/nb&gt; a skos:Concept ; # begrep
    dct:subject "terminologi"@nb ; # fagområde
    skos:scopeNote "Innholdsdefinisjoner foretrekkes framfor andre typer definisjoner …"@nb ; # merknad
    skos:altLabel "intensjonell definisjon"@nb ; # tillatt term
@@ -4701,7 +4701,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><strong>Eksempel på en assosiativ relasjon</strong>, hentet fra Felles datakatalog, 2022-11-25, for begrepet <a href="https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb" class="ext-link" target="_blank" rel="noopener">«lovlig opphold» &#x29C9;</a>:</p>
+<p><strong>Eksempel på en assosiativ relasjon</strong>, basert på begrepet <a href="https://data.norge.no/concepts/8bea51a9-23e9-3177-9900-850d18d33f97" class="ext-link" target="_blank" rel="noopener">«lovlig opphold» &#x29C9;</a>, hentet fra Felles datakatalog, 2025-11-18:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4709,7 +4709,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 <p><strong>relasjonsrolle</strong>: muliggjør</p>
 </li>
 <li>
-<p><strong>til-begrep</strong>: <a href="https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2" class="ext-link" target="_blank" rel="noopener">«medlem i folketrygden» &#x29C9;</a></p>
+<p><strong>til-begrep</strong>: <a href="https://data.norge.no/concepts/9b4023a0-99b6-3352-9e4e-cc0944e66f40" class="ext-link" target="_blank" rel="noopener">«medlem i folketrygden» &#x29C9;</a></p>
 </li>
 </ul>
 </div></div></td>
@@ -4720,9 +4720,9 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;https://data.norge.no/concepts/adb06f11-2712-3e18-98ce-6def045418fb&gt; a skos:Concept ; # begrep
+<pre>&lt;https://data.norge.no/concepts/8bea51a9-23e9-3177-9900-850d18d33f97&gt; a skos:Concept ; # begrep
    skosno:isFromConceptIn [ a skosno:AssociativeConceptRelation ; # er fra-begrep i en assosiativ begrepsrelasjon
-      skosno:hasToConcept &lt;https://data.norge.no/concepts/68950551-3fec-3fb4-a802-8127bac322c2&gt; ; # … som har til-begrep «medlem i folketrygden»
+      skosno:hasToConcept &lt;https://data.norge.no/concepts/9b4023a0-99b6-3352-9e4e-cc0944e66f40&gt; ; # … som har til-begrep «medlem i folketrygden»
       skosno:relationRole &lt;muliggjør&gt; ; # … og som har relasjonsrollen «muliggjør»
       ] ;
    .</pre>
@@ -5365,7 +5365,7 @@ når tekst brukes, skal det oppgis hvilket skriftspråk teksten er skrevet på</
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2025-08-22 12:43:31 UTC
+Sist oppdatert 2025-11-18 12:26:36 UTC
 </div>
 </div>
 </body>

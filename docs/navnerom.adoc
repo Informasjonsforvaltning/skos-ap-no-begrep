@@ -11,14 +11,14 @@ Navnerom for denne standarden er `\https://data.norge.no/vocabulary/skosno#`
 |adms| `\http://www.w3.org/ns/adms#` | https://www.w3.org/TR/vocab-adms/[Asset Description Metadata Schema &#x29C9;, window="_blank", role="ext-link"]
 |dcat| `\http://www.w3.org/ns/dcat#` | https://www.w3.org/TR/vocab-dcat-2/[Data Catalog Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 |dct| `\http://purl.org/dc/terms/` | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms &#x29C9;, window="_blank", role="ext-link"]
-|euvoc| `\http://publications.europa.eu/ontology/euvoc#` | https://showvoc.op.europa.eu/#/datasets/OP_EuVoc_Ontology/data[OP_EuVoc_Ontology &#x29C9;, window="_blank", role="ext-link"]
+|euvoc| `\http://publications.europa.eu/ontology/euvoc#` | https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc[EuroVoc &#x29C9;, window="_blank", role="ext-link"]
 |org| `\http://www.w3.org/ns/org#` | https://www.w3.org/TR/vocab-org/[The Organization Ontology &#x29C9;, window="_blank", role="ext-link"]
 |owl| `\http://www.w3.org/2002/07/owl#` | https://www.w3.org/OWL/[Web Ontology Language (OWL) &#x29C9;, window="_blank", role="ext-link"]
 |rdf| `\http://www.w3.org/1999/02/22-rdf-syntax-ns#` | https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax &#x29C9;, window="_blank", role="ext-link"]
 |rdfs| `\http://www.w3.org/2000/01/rdf-schema#` | https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1 &#x29C9;, window="_blank", role="ext-link"]
 |skos| `\http://www.w3.org/2004/02/skos/core#` | https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System &#x29C9;, window="_blank", role="ext-link"]
 |skosno| `\https://data.norge.no/vocabulary/skosno#` | Denne standard
-|uneskos| `\http://purl.org/umu/uneskos#` | UNESKOS Vocabulary
+|uneskos| `\http://purl.org/umu/uneskos#` | https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 |vcard| `\http://www.w3.org/2006/vcard/ns#` | https://www.w3.org/TR/vcard-rdf/[vCard Ontology - for describing People and Organizations &#x29C9;, window="_blank", role="ext-link"]
 |xkos| `\http://rdf-vocabulary.ddialliance.org/xkos#` | https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications &#x29C9;, window="_blank", role="ext-link"]
 |xsd| `\http://www.w3.org/2001/XMLSchema#` | https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition &#x29C9;, window="_blank", role="ext-link"]

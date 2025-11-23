@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout v2 branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: v2
           submodules: true

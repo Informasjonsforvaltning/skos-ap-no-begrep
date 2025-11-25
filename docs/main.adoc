@@ -17,9 +17,9 @@ image::images/Digdir.png[width=50%, pdfwidth=30vw, link=https://digdir.no/]
 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: Gjeldende +
-*Versjon*: 2.0.14 (se <<Endringslogg, endringslogg>>) +
+*Versjon*: 2.0.15 (se <<Endringslogg, endringslogg>>) +
 *Publisert*: 2022-12-09 (v.2.0.0) +
-*Oppdatert*: 2025-11-18 (v.2.0.x) +
+*Oppdatert*: 2025-11-24 (v.2.0.x) +
 *Gjeldende versjon*: https://data.norge.no/specification/skos-ap-no-begrep/ +
 *Gjeldende versjon av ontologi*: https://data.norge.no/vocabulary/skosno[https://data.norge.no/vocabulary/skosno  &#x29C9;, window="_blank", role="ext-link"] +
 *Forrige versjon*: https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser[https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser &#x29C9;, window="_blank", role="ext-link"] og https://data.norge.no/specification/skos-ap-no-begrep/v1.1[https://data.norge.no/specification/skos-ap-no-begrep/v1.1 &#x29C9;, window="_blank", role="ext-link"] +

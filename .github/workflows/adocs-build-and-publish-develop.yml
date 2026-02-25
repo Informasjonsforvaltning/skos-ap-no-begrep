@@ -1,7 +1,7 @@
 name: Build adocs and publish develop to GitHub pages
 
 permissions:
-  contents: read
+  contents: write
   pages: write
 
 on:
